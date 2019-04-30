@@ -9,6 +9,7 @@ import { IMainStore } from '../stores';
 import Login from './Login';
 import Register from './Register';
 import AdminRoute from './admin/index';
+import NotFound from './404';
 
 
 export default observer(function({store}:{
@@ -29,6 +30,8 @@ export default observer(function({store}:{
                     ) : (
                         <Route path="*" exact component={Login} />
                     )}
+
+                    <Route component={NotFound} />
                 </Switch>
             </div>
         </Router>
