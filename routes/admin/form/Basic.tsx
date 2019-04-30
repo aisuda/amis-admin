@@ -11,6 +11,7 @@ const schema = {
             mode: 'horizontal',
             title: '',
             affixFooter: true,
+            api: '/api/form/save',
             actions: [
                 {
                     label: '保存',
@@ -36,7 +37,7 @@ const schema = {
                     name: 'b',
                     size: 'md',
                     validations: {
-                        matchRegexp: '/^\w{4}\-\w{4}\-\w{4}$/'
+                        matchRegexp: '/^\\w{4}-\\w{4}-\\w{4}$/'
                     },
                     validationErrors: {
                         matchRegexp: '您输入的内容格式不对，请按提示输入！'
