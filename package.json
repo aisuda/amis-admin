@@ -1,0 +1,49 @@
+{
+  "name": "amis-boilerplate",
+  "version": "1.0.0",
+  "description": "基于 amis 的项目模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "fis3 server start --www ./public --port 8080 --no-daemon",
+    "server": "fis3 server start --www ./public --port 8080 --no-daemon",
+    "dev": "fis3 release -cwd ./public"
+  },
+  "keywords": [
+    "amis",
+    "boilerplate",
+    "admin",
+    "react"
+  ],
+  "author": "fex",
+  "license": "MIT",
+  "dependencies": {
+    "amis": "^1.0.0-rc.1",
+    "axios": "^0.18.0",
+    "bootstrap": "^3.4.1",
+    "copy-to-clipboard": "3.0.8",
+    "lodash": "^4.17.11",
+    "mobx": "4.5.0",
+    "mobx-react": "5.2.8",
+    "mobx-state-tree": "3.7.0",
+    "qs": "6.5.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.123",
+    "@types/qs": "^6.5.3",
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.2",
+    "fis-parser-node-sass": "^1.0.5",
+    "fis3": "^3.4.41",
+    "fis3-hook-commonjs": "^0.1.31",
+    "fis3-hook-node_modules": "^2.3.1",
+    "fis3-parser-typescript": "^1.2.2",
+    "fis3-postpackager-loader": "^2.1.11",
+    "fis3-preprocessor-js-require-css": "^0.1.3"
+  }
+}
