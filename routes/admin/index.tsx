@@ -10,6 +10,7 @@ import { inject, observer } from 'mobx-react';
 import UserInfo from '../../components/UserInfo';
 import { mapTree } from 'amis/lib/utils/helper';
 import Dashboard from './Dashboard';
+import BasicForm from './form/Basic';
 
 const navigations = [
     {
@@ -28,6 +29,8 @@ const navigations = [
                 children: [
                     {
                         label: '常规表单',
+                        path: 'form/basic',
+                        component: BasicForm
                     },
 
                     {
