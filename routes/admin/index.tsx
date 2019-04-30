@@ -11,6 +11,7 @@ import UserInfo from '../../components/UserInfo';
 import { mapTree } from 'amis/lib/utils/helper';
 import Dashboard from './Dashboard';
 import BasicForm from './form/Basic';
+import AdvancedForm from './form/Advanced';
 
 const navigations = [
     {
@@ -35,6 +36,8 @@ const navigations = [
 
                     {
                         label: '复杂表单',
+                        path: 'form/advanced',
+                        component: AdvancedForm
                     },
 
                     {

@@ -9,7 +9,7 @@ const schema = {
         {
             type: 'form',
             mode: 'horizontal',
-            title: '',
+            title: '常规表单示例',
             affixFooter: true,
             api: '/api/form/save',
             actions: [
