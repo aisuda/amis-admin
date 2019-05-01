@@ -57,7 +57,7 @@ export default function():JSX.Element {
     // 正式环境会部署在 gh-pages 上，所以用纯前端 api mock
     // 如果你要用于自己的项目，请删掉这段代码
     if (process.env.NODE_ENV === 'production') {
-        require(['./mock/axiosMock'], (mock:Function) => mock());
+        require(['./mock/axiosMock'], (mock:any) => mock.init());
     }
 
     return (

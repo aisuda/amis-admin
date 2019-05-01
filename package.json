@@ -8,7 +8,7 @@
     "start": "fis3 server start --www ./public --port 8080 --no-daemon",
     "server": "fis3 server start --www ./public --port 8080 --no-daemon",
     "dev": "fis3 release -cwd ./public",
-    "gh-pages": "rm -rf gh-pages && fis3 release gh-pages -c"
+    "gh-pages": "rm -rf gh-pages && fis3 release gh-pages -c && git subtree push --prefix gh-pages origin gh-pages"
   },
   "keywords": [
     "amis",
