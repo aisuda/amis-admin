@@ -43,8 +43,10 @@
     "axios-mock-adapter": "^1.16.0",
     "fis-parser-node-sass": "^1.0.5",
     "fis3": "^3.4.41",
+    "fis3-deploy-skip-packed": "0.0.5",
     "fis3-hook-commonjs": "^0.1.31",
     "fis3-hook-node_modules": "^2.3.1",
+    "fis3-packager-deps-pack": "^0.1.2",
     "fis3-parser-typescript": "^1.2.2",
     "fis3-postpackager-loader": "^2.1.11",
     "fis3-preprocessor-js-require-css": "^0.1.3"
