@@ -1,5 +1,58 @@
+const packConfig = {
+    'pkg/npm.js': [
+        '/mod.js',
+        'node_modules/**.js',
+        '!monaco-editor/**',
+        '!flv.js/**',
+        '!hls.js/**',
+        '!amis/lib/editor/**',
+        '!froala-editor/**',
+        '!amis/lib/components/RichText.js',
+        '!jquery/**',
+        '!zrender/**',
+        '!echarts/**',
+    ],
+    'pkg/rich-text.js': [
+        'amis/lib/components/RichText.js',
+        'froala-editor/**',
+        'jquery/**'
+    ],
+    'pkg/echarts.js': [
+        'zrender/**',
+        'echarts/**'
+    ],
+    'pkg/api-mock.js': [
+        'mock/*.ts'
+    ],
+    'pkg/app.js': [
+        '/app.tsx',
+        '/app.tsx:deps'
+    ],
+    'pkg/rest.js': [
+        '**.{js,jsx,ts,tsx}',
+        '!static/mod.js',
+        '!monaco-editor/**',
+        '!echarts/**',
+        '!flv.js/**',
+        '!hls.js/**',
+        '!froala-editor/**',
+        '!jquery/**',
+        '!amis/lib/components/RichText.js',
+        '!zrender/**',
+        '!echarts/**',
+    ],
+    // css 打包
+    'pkg/style.css': [
+        'node_modules/*/**.css',
+        '*.scss',
+        '!/scss/*.scss',
+        '/scss/*.scss'
+    ]
+};
+
 fis.get('project.ignore').push(
-    'public/**'
+    'public/**',
+    'gh-pages'
 );
 
 // 配置只编译哪些文件。
@@ -9,7 +62,7 @@ fis.set('project.files', [
     'mock/**'
 ]);
 
-fis.match('/mock/**', {
+fis.match('/mock/**.{json,js,conf}', {
     useCompile: false
 });
 
@@ -28,7 +81,7 @@ fis.match('/node_modules/**.js', {
     isMod: true
 });
 
-fis.match('{*.jsx,*.tsx,*.ts}', {
+fis.match('*.{jsx,tsx,ts}', {
     parser: [fis.plugin('typescript', {
         importHelpers: true,
         experimentalDecorators: true,
@@ -101,3 +154,61 @@ fis
         packTo: null
     });
 
+
+const ghPages = fis.media('gh-pages');
+
+ghPages.match('/node_modules/(**)', {
+    release: '/n/$1'
+});
+
+ghPages.match('mock/**.{json,js,conf}', {
+    release: false
+});
+
+ghPages.match('::package', {
+    packager: fis.plugin('deps-pack', packConfig)
+});
+
+ghPages.match('*.{css,less,scss}', {
+    optimizer: fis.plugin('clean-css'),
+    useHash: true
+});
+
+ghPages.match('::image', {
+    useHash: true
+});
+
+ghPages.match('*.{js,ts,tsx}', {
+    optimizer: fis.plugin('uglify-js'),
+    useHash: true
+});
+
+ghPages.match('*.map', {
+    release: false,
+    url: 'null',
+    useHash: false
+});
+ghPages.match('{*.jsx,*.tsx,*.ts}', {
+    moduleId: function (m, path) {
+        return fis.util.md5('amis' + path);
+    },
+    parser: fis.plugin('typescript', {
+        sourceMap: false,
+        importHelpers: true
+    })
+});
+ghPages.match('*', {
+    domain: '/amis-admin',
+    deploy: [
+        fis.plugin('skip-packed'),
+        fis.plugin('local-deliver', {
+            to: './gh-pages'
+        })
+    ]
+});
+ghPages.match('{*.min.js,monaco-editor/**.js}', {
+    optimizer: null
+});
+ghPages.match('monaco-editor/**.js', {
+    useHash: false
+});

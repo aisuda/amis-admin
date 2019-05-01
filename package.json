@@ -34,10 +34,12 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.123",
+    "@types/node": "^11.13.8",
     "@types/qs": "^6.5.3",
     "@types/react": "^16.8.4",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.2",
+    "axios-mock-adapter": "^1.16.0",
     "fis-parser-node-sass": "^1.0.5",
     "fis3": "^3.4.41",
     "fis3-hook-commonjs": "^0.1.31",
