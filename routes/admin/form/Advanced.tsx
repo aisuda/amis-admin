@@ -158,6 +158,39 @@ const schema = {
                     collapsable: true,
                     controls: [
                         {
+                            type: 'combo',
+                            name: 'admins',
+                            label: '用户列表',
+                            value: [''],
+                            description: '请输入用户信息，不要重复。',
+                            multiple: true,
+                            inline: true,
+                            controls: [
+                                {
+                                    type: 'text',
+                                    name: 'name',
+                                    unique: true
+                                },
+
+                                {
+                                    type: 'select',
+                                    name: 'perm',
+                                    value: 'read',
+                                    options: [
+                                        {
+                                            label: '可读',
+                                            value: 'read'
+                                        },
+
+                                        {
+                                            label: '可写',
+                                            value: 'write'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             label: '新增一行',
                             type: 'button',
                             actionType: 'add',
