@@ -52,7 +52,7 @@ const packConfig = {
 
 fis.get('project.ignore').push(
     'public/**',
-    'gh-pages'
+    'gh-pages/**'
 );
 
 // 配置只编译哪些文件。
