@@ -4646,7 +4646,7 @@ require.resourceMap({
   },
   "pkg": {
     "p3": {
-      "url": "/amis-admin/pkg/api-mock_7969f9c.js",
+      "url": "/amis-admin/pkg/api-mock_0640b18.js",
       "type": "js"
     },
     "p1": {
