@@ -12,6 +12,7 @@ import { mapTree } from 'amis/lib/utils/helper';
 import Dashboard from './Dashboard';
 import BasicForm from './form/Basic';
 import AdvancedForm from './form/Advanced';
+import Wizard from './form/Wizard';
 
 const navigations = [
     {
@@ -42,6 +43,8 @@ const navigations = [
 
                     {
                         label: '向导',
+                        path: 'form/wizard',
+                        component: Wizard
                     }
                 ]
             }
