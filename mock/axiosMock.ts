@@ -19,6 +19,16 @@ export function init() {
             msg: ''
         });
 
+    mock.onAny('/api/form/save')
+        .reply(async () => {
+            await wait(2000);
+
+            return [200, {
+                status: 0,
+                msg: '保存成功'
+            }];
+        });
+
 
     mock.onAny('/api/saveWizard')
         .reply(async () => {
@@ -27,7 +37,7 @@ export function init() {
             return [200, {
                 status: 0,
                 msg: '保存成功'
-            }]
+            }];
         });
 
 }
