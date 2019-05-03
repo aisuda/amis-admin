@@ -1,2 +1,0 @@
-;/*!mock/axiosMock.ts*/
-define("6b68254",function(e,n){"use strict";function i(){var e=new d.default(o.default);e.onAny("/api/login").reply(200,{status:0,msg:""})}Object.defineProperty(n,"__esModule",{value:!0});var o=e("node_modules/axios/index"),d=e("node_modules/axios-mock-adapter/src/index");n.init=i});
