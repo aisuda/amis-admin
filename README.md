@@ -1,7 +1,7 @@
 AMis Boilerplate
 ==========================
 
-基于 [amis](https://github.com/baidu/amis) 渲染器，快速搭建自己的管理系统。
+基于 [AMis](https://github.com/baidu/amis) 渲染器，快速搭建自己的管理系统。
 
 ## 快速开始
 
