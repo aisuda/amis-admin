@@ -4636,25 +4636,25 @@ require.resourceMap({
       "pkg": "p2"
     },
     "node_modules/flv.js/dist/flv": {
-      "url": "/amis-admin/n/flv.js/dist/flv_d7c9b57.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/n/flv.js/dist/flv_d7c9b57.js",
       "type": "js"
     },
     "node_modules/hls.js/dist/hls": {
-      "url": "/amis-admin/n/hls.js/dist/hls_9355c57.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/n/hls.js/dist/hls_9355c57.js",
       "type": "js"
     }
   },
   "pkg": {
     "p3": {
-      "url": "/amis-admin/pkg/api-mock_0640b18.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/api-mock_0640b18.js",
       "type": "js"
     },
     "p1": {
-      "url": "/amis-admin/pkg/rich-text_cbd7e4b.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/rich-text_01dac60.js",
       "type": "js"
     },
     "p2": {
-      "url": "/amis-admin/pkg/echarts_522d286.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/echarts_522d286.js",
       "type": "js"
     }
   }
