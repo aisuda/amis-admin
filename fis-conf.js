@@ -171,7 +171,7 @@ ghPages.match('::package', {
         useInlineMap: false,
         resourceType: 'mod'
     }), function(ret) {
-        const indexHtml = ret.src['/examples/index.html'];
+        const indexHtml = ret.src['/index.html'];
         const pages = [
             'login',
             'register',
@@ -183,7 +183,7 @@ ghPages.match('::package', {
         ];
         const contents = indexHtml.getContent();
         pages.forEach(function(path) {
-            const file = fis.file(fis.project.getProjectPath(), '/examples/' + path + '.html');
+            const file = fis.file(fis.project.getProjectPath(), '/' + path + '.html');
             file.setContent(contents);
             ret.pkg[file.getId()] = file;
         });
