@@ -52,7 +52,14 @@ const navigations = [
     },
 ];
 
-const PATH_PREFIX = '/admin';
+let PATH_PREFIX = '/admin';
+let ContextPath = '';
+
+if (process.env.NODE_ENV === 'production') {
+    ContextPath = '/amis-admin'
+}
+
+
 function navigations2route(pathPrefix = PATH_PREFIX) {
     let routes:Array<JSX.Element> = [];
 
@@ -60,11 +67,11 @@ function navigations2route(pathPrefix = PATH_PREFIX) {
         root.children && mapTree(root.children, (item:any) => {
             if (item.path && item.component) {
                 routes.push(
-                    <Route key={routes.length + 1} path={item.path[0] === '/' ? item.path : `${pathPrefix}/${item.path}`} component={item.component} />
+                    <Route key={routes.length + 1} path={item.path[0] === '/' ? (ContextPath + item.path) : `${ContextPath}${pathPrefix}/${item.path}`} component={item.component} />
                 )
             } else if (item.path && item.getComponent) {
                 routes.push(
-                    <Route key={routes.length + 1} path={item.path[0] === '/' ? item.path : `${pathPrefix}/${item.path}`} getComponent={item.getComponent} />
+                    <Route key={routes.length + 1} path={item.path[0] === '/' ? (ContextPath + item.path) : `${ContextPath}${pathPrefix}/${item.path}`} getComponent={item.getComponent} />
                 )
             }
         });
@@ -139,6 +146,7 @@ export default class Admin extends React.Component<AdminProps> {
                         children.push(
                             <span
                                 key="expand-toggle"
+                                onClick={(e) => toggleExpand(link, e)}
                                 className={cx('AsideNav-itemArrow')}
                             ></span>
                         );

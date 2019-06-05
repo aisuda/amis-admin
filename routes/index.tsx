@@ -11,6 +11,13 @@ import Register from './Register';
 import AdminRoute from './admin/index';
 import NotFound from './404';
 
+let ContextPath = '';
+
+// gh-pages 环境时
+if (process.env.NODE_ENV === 'production') {
+    ContextPath = '/amis-admin'
+}
+
 export default observer(function({store}:{
     store:IMainStore
 }) {
@@ -20,12 +27,12 @@ export default observer(function({store}:{
                 <ToastComponent key="toast" position={'top-right'} theme={store.theme} />
                 <AlertComponent key="alert" theme={store.theme} />
                 <Switch>
-                    <Redirect to="/login" from="/" exact />
-                    <Route path="/login" exact component={Login} />
-                    <Route path="/register" exact component={Register} />
+                    <Redirect to={`${ContextPath}/login`} from={`${ContextPath}/`} exact />
+                    <Route path={`${ContextPath}/login`} exact component={Login} />
+                    <Route path={`${ContextPath}/register`} exact component={Register} />
                     
                     {store.user.isAuthenticated ? (
-                        <Route path="/admin" component={AdminRoute} />
+                        <Route path={`${ContextPath}/admin`} component={AdminRoute} />
                     ) : (
                         <Route path="*" exact component={Login} />
                     )}
