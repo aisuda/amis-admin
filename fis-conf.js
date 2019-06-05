@@ -210,14 +210,16 @@ ghPages.match('*.map', {
     useHash: false
 });
 ghPages.match('{*.jsx,*.tsx,*.ts}', {
-    moduleId: function (m, path) {
-        return fis.util.md5('amis' + path);
-    },
     parser: fis.plugin('typescript', {
         sourceMap: false,
         importHelpers: true
     })
 });
+ghPages.match('{*.jsx,*.tsx,*.ts,*.js}', {
+    moduleId: function (m, path) {
+        return fis.util.md5('amis' + path);
+    }
+})
 ghPages.match('*', {
     domain: 'https://bce.bdstatic.com/fex/amis-admin-gh-pages',
     deploy: [
