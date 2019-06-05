@@ -178,9 +178,9 @@ export default class Admin extends React.Component<AdminProps> {
                         <span className={cx(`AsideNav-itemLabel`)} key="label">{link.label}</span>
                     );
 
-                    return link.path ? (<Link to={link.path[0] === '/' ? link.path : `${ContextPath}${PATH_PREFIX}/${link.path}`}>{children}</Link>) : (<a onClick={link.children ? () => toggleExpand(link) : undefined}>{children}</a>);
+                    return link.path ? (<Link to={link.path[0] === '/' ? (ContextPath + link.path) : `${ContextPath}${PATH_PREFIX}/${link.path}`}>{children}</Link>) : (<a onClick={link.children ? () => toggleExpand(link) : undefined}>{children}</a>);
                 }}
-                isActive={(link:any) => isActive(link.path && link.path[0] === '/' ? link.path : `${PATH_PREFIX}/${link.path}`, location)}
+                isActive={(link:any) => isActive(link.path && link.path[0] === '/' ? (ContextPath + link.path) : `${ContextPath}${PATH_PREFIX}/${link.path}`, location)}
             />
         );
     }
