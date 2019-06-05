@@ -25,8 +25,8 @@ const packConfig = {
         'mock/*.ts'
     ],
     'pkg/app.js': [
-        '/app.tsx',
-        '/app.tsx:deps'
+        '/App.tsx',
+        '/App.tsx:deps'
     ],
     'pkg/rest.js': [
         '**.{js,jsx,ts,tsx}',
