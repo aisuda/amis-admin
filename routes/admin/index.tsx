@@ -14,7 +14,15 @@ import BasicForm from './form/Basic';
 import AdvancedForm from './form/Advanced';
 import Wizard from './form/Wizard';
 
-const navigations = [
+type NavItem = {
+    label: string;
+    children?: Array<NavItem>;
+    icon?: string;
+    path?: string;
+    component?: React.ReactType;
+    getComponent?: () => Promise<React.ReactType>;
+};
+const navigations:Array<NavItem> = [
     {
         label: '导航',
         children: [
@@ -170,7 +178,7 @@ export default class Admin extends React.Component<AdminProps> {
                         <span className={cx(`AsideNav-itemLabel`)} key="label">{link.label}</span>
                     );
 
-                    return link.path ? (<Link to={link.path[0] === '/' ? link.path : `${PATH_PREFIX}/${link.path}`}>{children}</Link>) : (<a onClick={link.children ? () => toggleExpand(link) : null}>{children}</a>);
+                    return link.path ? (<Link to={link.path[0] === '/' ? link.path : `${ContextPath}${PATH_PREFIX}/${link.path}`}>{children}</Link>) : (<a onClick={link.children ? () => toggleExpand(link) : undefined}>{children}</a>);
                 }}
                 isActive={(link:any) => isActive(link.path && link.path[0] === '/' ? link.path : `${PATH_PREFIX}/${link.path}`, location)}
             />
