@@ -1,0 +1,2 @@
+;/*!index.tsx*/
+define("8d0e5e4",function(e,d){"use strict";function n(e){o.render(t.createElement(r.default,null),e)}Object.defineProperty(d,"__esModule",{value:!0});var t=e("node_modules/react/index"),o=e("node_modules/react-dom/index"),r=e("4c5556c");d.bootstrap=n});
