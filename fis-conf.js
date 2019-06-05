@@ -166,7 +166,28 @@ ghPages.match('mock/**.{json,js,conf}', {
 });
 
 ghPages.match('::package', {
-    packager: fis.plugin('deps-pack', packConfig)
+    packager: fis.plugin('deps-pack', packConfig),
+    postpackager: [fis.plugin('loader', {
+        useInlineMap: false,
+        resourceType: 'mod'
+    }), function(ret) {
+        const indexHtml = ret.src['/examples/index.html'];
+        const pages = [
+            'login',
+            'register',
+            '404',
+            'admin/dashboard',
+            'admin/form/basic',
+            'admin/form/advanced',
+            'admin/form/wizard',
+        ];
+        const contents = indexHtml.getContent();
+        pages.forEach(function(path) {
+            const file = fis.file(fis.project.getProjectPath(), '/examples/' + path + '.html');
+            file.setContent(contents);
+            ret.pkg[file.getId()] = file;
+        });
+    }]
 });
 
 ghPages.match('*.{css,less,scss}', {
@@ -198,7 +219,7 @@ ghPages.match('{*.jsx,*.tsx,*.ts}', {
     })
 });
 ghPages.match('*', {
-    domain: '/amis-admin',
+    domain: 'https://bce.bdstatic.com/fex/amis-admin-gh-pages',
     deploy: [
         fis.plugin('skip-packed'),
         fis.plugin('local-deliver', {
