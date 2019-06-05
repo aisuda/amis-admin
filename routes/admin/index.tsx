@@ -189,9 +189,9 @@ export default class Admin extends React.Component<AdminProps> {
                 offScreen={store.offScreen}
             >
                 <Switch>
-                    <Redirect to={`${PATH_PREFIX}/dashboard`} from={`${PATH_PREFIX}/`} exact />
+                    <Redirect to={`${ContextPath}${PATH_PREFIX}/dashboard`} from={`${ContextPath}${PATH_PREFIX}/`} exact />
                     {navigations2route()}
-                    <Redirect to="/404" />
+                    <Redirect to={`${ContextPath}/404`} />
                 </Switch>
             </Layout>
         );

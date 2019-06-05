@@ -5,6 +5,13 @@ import { inject, observer } from 'mobx-react';
 import { IMainStore } from '../stores/index';
 import { RouteComponentProps, withRouter } from 'react-router';
 
+let ContextPath = '';
+
+// gh-pages 环境时
+if (process.env.NODE_ENV === 'production') {
+    ContextPath = '/amis-admin'
+}
+
 interface LoginProps extends RouteComponentProps<any> {
     store: IMainStore;
 };
@@ -75,7 +82,7 @@ export default class LoginRoute extends React.Component<LoginProps> {
         const history = this.props.history;
         
         store.user.login(value.username);
-        history.replace('/admin')
+        history.replace(`${ContextPath}/admin`)
     }
     
     render() {
