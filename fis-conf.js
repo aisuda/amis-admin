@@ -63,7 +63,7 @@ fis.set('project.files', [
 ]);
 
 fis.match('/mock/**.{json,js,conf}', {
-    useCompile: false
+    isMod: false
 });
 
 fis.match('*.scss', {

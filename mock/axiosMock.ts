@@ -40,4 +40,18 @@ export function init() {
             }];
         });
 
+    mock.onAny('/api/customer')
+        .reply(async () => {
+            await wait(2000);
+            __inline('./customer.db.js');
+
+
+
+            return [200, {
+                status: 0,
+                msg: '',
+                data: db.index(1, 10)
+            }];
+        });
+
 }

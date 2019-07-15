@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { RouteComponentProps, Route, Link, Switch, Redirect } from 'react-router-dom';
+import { RouteComponentProps, Route, Link, Switch, Redirect, matchPath } from 'react-router-dom';
 import {
     Layout,
     Button,
@@ -13,6 +13,7 @@ import Dashboard from './Dashboard';
 import BasicForm from './form/Basic';
 import AdvancedForm from './form/Advanced';
 import Wizard from './form/Wizard';
+import CustomIndex from './customer/index';
 
 type NavItem = {
     label: string;
@@ -55,6 +56,17 @@ const navigations:Array<NavItem> = [
                         component: Wizard
                     }
                 ]
+            },
+
+            {
+                label: '会员管理',
+                children: [
+                    {
+                        label: '列表',
+                        path: 'customer/index',
+                        component: CustomIndex
+                    }
+                ]
             }
         ]
     },
@@ -88,8 +100,14 @@ function navigations2route(pathPrefix = PATH_PREFIX) {
     return routes;
 }
 
-function isActive(link:any, location:any) {
-    return !!(link && link === location.pathname);
+function isActive(link: any, location: any) {
+    const ret = matchPath(location.pathname, {
+        path: link ? link.replace(/\?.*$/, '') : '',
+        exact: true,
+        strict: true
+    });
+
+    return !!ret;
 }
 
 export interface AdminProps extends RouteComponentProps<any>  {
@@ -147,38 +165,45 @@ export default class Admin extends React.Component<AdminProps> {
             <AsideNav
                 key={store.asideFolded ? 'folded-aside' : 'aside'}
                 navigations={navigations}
-                renderLink={({link, active, toggleExpand, classnames: cx}:any) => {
-                    let children = [];
+                renderLink={({link, toggleExpand, classnames: cx}:any) => {
 
+                    if (link.hidden) {
+                        return null;
+                    }
+    
+                    let children = [];
+    
                     if (link.children) {
                         children.push(
                             <span
                                 key="expand-toggle"
-                                onClick={(e) => toggleExpand(link, e)}
                                 className={cx('AsideNav-itemArrow')}
+                                onClick={(e) => toggleExpand(link, e)}
                             ></span>
                         );
                     }
-
+    
                     link.badge && children.push(
                         <b key="badge" className={cx(`AsideNav-itemBadge`, link.badgeClassName || 'bg-info')}>{link.badge}</b>
                     );
-
+    
                     if (link.icon) {
                         children.push(
                             <i key="icon" className={cx(`AsideNav-itemIcon`, link.icon)} />
-                        );
+                        )
                     } else if (store.asideFolded) {
                         children.push(
-                            <i key="icon" className={cx(`AsideNav-itemIcon`, 'fa fa-file')} />
-                        );
-                    }
-
+                            <i key="icon" className={cx(`AsideNav-itemIcon`, link.children ? 'fa fa-folder' : 'fa fa-info')} />
+                        )
+                    };
+    
                     children.push(
-                        <span className={cx(`AsideNav-itemLabel`)} key="label">{link.label}</span>
+                        <span key="label" className={cx('AsideNav-itemLabel')}>{link.label}</span>
                     );
-
-                    return link.path ? (<Link to={link.path[0] === '/' ? (ContextPath + link.path) : `${ContextPath}${PATH_PREFIX}/${link.path}`}>{children}</Link>) : (<a onClick={link.children ? () => toggleExpand(link) : undefined}>{children}</a>);
+    
+                    return link.path && !link.children
+                        ? (link.active ? <a>{children}</a> : <Link to={link.path[0] === '/' ? (ContextPath + link.path) : `${ContextPath}${PATH_PREFIX}/${link.path}`}>{children}</Link>)
+                        : (<a onClick={link.onClick ? link.onClick : link.children ? () => toggleExpand(link) : undefined}>{children}</a>);
                 }}
                 isActive={(link:any) => isActive(link.path && link.path[0] === '/' ? (ContextPath + link.path) : `${ContextPath}${PATH_PREFIX}/${link.path}`, location)}
             />
