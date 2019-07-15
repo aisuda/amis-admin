@@ -4646,7 +4646,7 @@ require.resourceMap({
   },
   "pkg": {
     "p3": {
-      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/api-mock_a6f4a1b.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/api-mock_686e78d.js",
       "type": "js"
     },
     "p1": {
