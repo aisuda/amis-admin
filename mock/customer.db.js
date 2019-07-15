@@ -1,7 +1,7 @@
 const db = {
     data: [],
 
-    init() {
+    init: function() {
         this.data = [
             {
                 id: 1,
@@ -32,7 +32,7 @@ const db = {
         ];
     },
 
-    index(page, perPage) {
+    index: function(page, perPage) {
         page = page || 1;
         perPage = perPage || 10;
         const arr = this.data.concat().splice((page - 1) * perPage, 10);
