@@ -165,7 +165,7 @@ export default class Admin extends React.Component<AdminProps> {
             <AsideNav
                 key={store.asideFolded ? 'folded-aside' : 'aside'}
                 navigations={navigations}
-                renderLink={({link, toggleExpand, classnames: cx}:any) => {
+                renderLink={({link, toggleExpand, classnames: cx, depth}:any) => {
 
                     if (link.hidden) {
                         return null;
@@ -191,7 +191,7 @@ export default class Admin extends React.Component<AdminProps> {
                         children.push(
                             <i key="icon" className={cx(`AsideNav-itemIcon`, link.icon)} />
                         )
-                    } else if (store.asideFolded) {
+                    } else if (store.asideFolded && depth === 1) {
                         children.push(
                             <i key="icon" className={cx(`AsideNav-itemIcon`, link.children ? 'fa fa-folder' : 'fa fa-info')} />
                         )
