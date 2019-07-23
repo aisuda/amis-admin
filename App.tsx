@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Provider } from "mobx-react";
 import {
-    toast
+    toast,
+    alert,
+    confirm
 } from 'amis';
 import * as axios from 'axios';
 import { MainStore } from './stores/index';
