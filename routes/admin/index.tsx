@@ -41,7 +41,14 @@ const navigations:Array<NavItem> = [
                     {
                         label: '常规表单',
                         path: 'form/basic',
-                        component: BasicForm
+                        component: BasicForm,
+                        children: [
+                            {
+                                label: '三级目录测试',
+                                path: 'form/basic/advanced',
+                                component: AdvancedForm
+                            }
+                        ]
                     },
 
                     {
@@ -87,11 +94,21 @@ function navigations2route(pathPrefix = PATH_PREFIX) {
         root.children && mapTree(root.children, (item:any) => {
             if (item.path && item.component) {
                 routes.push(
-                    <Route key={routes.length + 1} path={item.path[0] === '/' ? (ContextPath + item.path) : `${ContextPath}${pathPrefix}/${item.path}`} component={item.component} />
+                    <Route 
+                        key={routes.length + 1} 
+                        path={item.path[0] === '/' ? (ContextPath + item.path) : `${ContextPath}${pathPrefix}/${item.path}`} 
+                        component={item.component} 
+                        exact
+                    />
                 )
             } else if (item.path && item.getComponent) {
                 routes.push(
-                    <Route key={routes.length + 1} path={item.path[0] === '/' ? (ContextPath + item.path) : `${ContextPath}${pathPrefix}/${item.path}`} getComponent={item.getComponent} />
+                    <Route 
+                        key={routes.length + 1} 
+                        path={item.path[0] === '/' ? (ContextPath + item.path) : `${ContextPath}${pathPrefix}/${item.path}`} 
+                        getComponent={item.getComponent} 
+                        exact
+                    />
                 )
             }
         });
@@ -201,7 +218,7 @@ export default class Admin extends React.Component<AdminProps> {
                         <span key="label" className={cx('AsideNav-itemLabel')}>{link.label}</span>
                     );
     
-                    return link.path && !link.children
+                    return link.path
                         ? (link.active ? <a>{children}</a> : <Link to={link.path[0] === '/' ? (ContextPath + link.path) : `${ContextPath}${PATH_PREFIX}/${link.path}`}>{children}</Link>)
                         : (<a onClick={link.onClick ? link.onClick : link.children ? () => toggleExpand(link) : undefined}>{children}</a>);
                 }}

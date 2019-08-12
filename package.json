@@ -20,7 +20,7 @@
   "author": "fex",
   "license": "MIT",
   "dependencies": {
-    "amis": "^1.0.0-rc.3",
+    "amis": "^1.0.0-rc.9",
     "axios": "^0.18.0",
     "bootstrap": "^3.4.1",
     "copy-to-clipboard": "3.0.8",
