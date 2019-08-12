@@ -20,6 +20,13 @@ require.resourceMap({
       ],
       "pkg": "p2"
     },
+    "1820883": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
     "2158111": {
       "type": "js",
       "deps": [
@@ -201,6 +208,48 @@ require.resourceMap({
       ],
       "pkg": "p1"
     },
+    "4abbd07": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
+    "c2633af": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
+    "5dc1a56": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
+    "cb23057": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
+    "3d1aeb6": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
+    "b3fde94": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
     "beae209": {
       "type": "js",
       "deps": [
@@ -209,6 +258,27 @@ require.resourceMap({
       "pkg": "p1"
     },
     "2615c5b": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
+    "343e12f": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
+    "8d57bec": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
+    "82c502a": {
       "type": "js",
       "deps": [
         "c5bbfa6"
@@ -229,6 +299,13 @@ require.resourceMap({
       ],
       "pkg": "p1"
     },
+    "2cf4857": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
     "638b50f": {
       "type": "js",
       "deps": [
@@ -237,6 +314,13 @@ require.resourceMap({
       "pkg": "p1"
     },
     "8b04589": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
+    "fa32fb9": {
       "type": "js",
       "deps": [
         "c5bbfa6"
@@ -271,6 +355,13 @@ require.resourceMap({
       ],
       "pkg": "p1"
     },
+    "0712a92": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
     "5b320ac": {
       "type": "js",
       "deps": [
@@ -285,6 +376,13 @@ require.resourceMap({
       ],
       "pkg": "p1"
     },
+    "f0b23d9": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
     "80dd2c7": {
       "type": "js",
       "deps": [
@@ -292,14 +390,7 @@ require.resourceMap({
       ],
       "pkg": "p1"
     },
-    "5dc1a56": {
-      "type": "js",
-      "deps": [
-        "c5bbfa6"
-      ],
-      "pkg": "p1"
-    },
-    "8d57bec": {
+    "368fbb5": {
       "type": "js",
       "deps": [
         "c5bbfa6"
@@ -313,29 +404,50 @@ require.resourceMap({
       ],
       "pkg": "p1"
     },
+    "f5e2aad": {
+      "type": "js",
+      "deps": [
+        "c5bbfa6"
+      ],
+      "pkg": "p1"
+    },
     "40b8028": {
       "type": "js",
       "deps": [
         "c5bbfa6",
         "ab783e1",
         "82081a3",
+        "4abbd07",
+        "c2633af",
+        "5dc1a56",
         "6245753",
+        "cb23057",
+        "3d1aeb6",
+        "b3fde94",
         "beae209",
         "2615c5b",
+        "343e12f",
+        "8d57bec",
+        "82c502a",
         "46b34e7",
         "ed716b5",
+        "2cf4857",
         "638b50f",
         "8b04589",
+        "fa32fb9",
         "732a468",
         "fc39066",
         "7604ebf",
         "352551a",
+        "0712a92",
+        "1820883",
         "5b320ac",
         "508d226",
+        "f0b23d9",
         "80dd2c7",
-        "5dc1a56",
-        "8d57bec",
-        "b516763"
+        "368fbb5",
+        "b516763",
+        "f5e2aad"
       ],
       "pkg": "p1"
     },
@@ -4650,7 +4762,7 @@ require.resourceMap({
       "type": "js"
     },
     "p1": {
-      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/rich-text_db433ab.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/rich-text_7b3687e.js",
       "type": "js"
     },
     "p2": {
