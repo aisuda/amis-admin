@@ -219,3 +219,8 @@ ghPages.match("*", {
     })
   ]
 });
+ghPages.hook("node_modules", {
+    shimProcess: false,
+    shimGlobal: true,
+    shimBuffer: false
+  });
