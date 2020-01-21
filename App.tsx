@@ -5,7 +5,7 @@ import {
     alert,
     confirm
 } from 'amis';
-import * as axios from 'axios';
+import axios from 'axios';
 import { MainStore } from './stores/index';
 import * as copy from 'copy-to-clipboard';
 import RootRoute from './routes/index';
@@ -24,7 +24,7 @@ export default function():JSX.Element {
             config.withCredentials = true;
 
             if (config.cancelExecutor) {
-                config.cancelToken = new (axios as any).CancelToken(config.cancelExecutor);
+                config.cancelToken = new axios.CancelToken(config.cancelExecutor);
             }
 
             config.headers = headers || {};
@@ -47,9 +47,9 @@ export default function():JSX.Element {
 
             data && (config.data = data);
 
-            return (axios as any)(url, config);
+            return axios(url, config);
         },
-        isCancel: (e:any) => (axios as any).isCancel(e),
+        isCancel: (e:any) => axios.isCancel(e),
         notify: (type: 'success' | 'error' | 'info', msg: string) => {
             toast[type] ? toast[type](msg, type === 'error' ? '系统错误' : '系统消息') : console.warn('[Notify]', type, msg);
             console.log('[notify]', type, msg);
