@@ -1,0 +1,1 @@
+define("776b99f",function(t,a){"use strict";function e(){return a.builtinDataProviders.concat(n)}function r(t){t.forEach(function(t){n.push(t)})}Object.defineProperty(a,"__esModule",{value:!0});var i=t("8aab4ba");a.builtinDataProviders=[i.getHTML5DataProvider()];var n=[];a.getAllDataProviders=e,a.handleCustomDataProviders=r});

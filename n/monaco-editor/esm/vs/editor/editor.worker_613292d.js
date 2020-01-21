@@ -1,0 +1,1 @@
+define("b16a4ac",function(e,n){"use strict";function i(e){if(!a){a=!0;var n=new o.EditorSimpleWorkerImpl(e),i=new s.SimpleWorkerServer(function(e){self.postMessage(e)},n);self.onmessage=function(e){i.onmessage(e.data)}}}Object.defineProperty(n,"__esModule",{value:!0});var s=e("6c1fbf8"),o=e("654e4ab"),a=!1;n.initialize=i,self.onmessage=function(){a||i(null)}});
