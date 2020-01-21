@@ -10790,11 +10790,11 @@ require.resourceMap({
       "pkg": "p2"
     },
     "b582765": {
-      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/n/flv.js/dist/flv_3ddea20.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/n/flv.js/dist/flv_53a1644.js",
       "type": "js"
     },
     "a3e49d7": {
-      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/n/hls.js/dist/hls_7fa6d68.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/n/hls.js/dist/hls_2584abf.js",
       "type": "js"
     }
   },
@@ -10804,15 +10804,15 @@ require.resourceMap({
       "type": "js"
     },
     "p3": {
-      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/editor_8ab7695.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/editor_057ef0f.js",
       "type": "js"
     },
     "p1": {
-      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/rich-text_e942a3d.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/rich-text_2f26f33.js",
       "type": "js"
     },
     "p2": {
-      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/charts_3455cc0.js",
+      "url": "https://bce.bdstatic.com/fex/amis-admin-gh-pages/pkg/charts_f04b491.js",
       "type": "js"
     }
   }
