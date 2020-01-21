@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
     render as renderSchema
 } from 'amis';
-import { IMainStore } from '../store';
+import { IMainStore } from '../stores';
 import { getEnv } from 'mobx-state-tree';
 import { inject, observer } from 'mobx-react';
 import { withRouter, RouteComponentProps } from 'react-router';
@@ -15,6 +15,7 @@ interface RendererProps {
 };
 
 @inject("store")
+// @ts-ignore
 @withRouter
 @observer
 export default class AMisRenderer extends React.Component<RendererProps> {

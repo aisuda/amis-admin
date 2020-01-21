@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "fis3 server start --www ./public --port 8080 --no-daemon",
-    "server": "fis3 server start --www ./public --port 8080 --no-daemon",
-    "dev": "fis3 release -cwd ./public",
-    "gh-pages": "rm -rf gh-pages && fis3 release gh-pages -c",
-    "deploy-gh-pages": "git subtree push --prefix gh-pages origin gh-pages"
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
   },
   "keywords": [
     "amis",
@@ -43,16 +41,20 @@
     "@types/react-router-dom": "^4.3.2",
     "axios-mock-adapter": "1.16.0",
     "bce-sdk-js": "^0.2.9",
-    "fis-parser-node-sass": "^1.0.5",
-    "fis3": "^3.4.41",
-    "fis3-deploy-skip-packed": "0.0.5",
-    "fis3-hook-commonjs": "^0.1.31",
-    "fis3-hook-node_modules": "^2.3.1",
-    "fis3-packager-deps-pack": "^0.1.2",
-    "fis3-parser-typescript": "^1.2.2",
-    "fis3-postpackager-loader": "^2.1.11",
-    "fis3-preprocessor-js-require-css": "^0.1.3",
-    "fis3-prepackager-stand-alone-pack": "^1.0.0",
-    "fs-walk": "0.0.2"
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "fs-walk": "0.0.2",
+    "html-minifier": "^4.0.0",
+    "html-webpack-plugin": "^4.0.0-beta.9",
+    "mocker-api": "^1.11.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }

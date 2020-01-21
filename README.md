@@ -6,14 +6,10 @@ AMis Boilerplate
 ## 快速开始
 
 ```bash
-
-# 安装依赖
-npm i
-
-# 编译项目并且监听文件变化, 程序不会自动关闭，要关闭请 ctrl + c
-npm run dev
-
 # 打开服务
 npm start
 ```
 
+## 注意
+
+Editor 渲染器用到了 monaco-editor, 需要额外生成 worker 版本。 请参考文档：https://github.com/microsoft/monaco-editor/blob/master/docs/integrate-esm.md#option-2-using-plain-webpack

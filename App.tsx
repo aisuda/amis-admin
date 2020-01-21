@@ -11,6 +11,12 @@ import * as copy from 'copy-to-clipboard';
 import RootRoute from './routes/index';
 import './utils/polyfill';
 
+// css
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'amis/lib/themes/default.css';
+import './scss/style.scss'
+
 export default function():JSX.Element {
     const store = (window as any).store = MainStore.create({}, {
         fetcher: ({
@@ -63,12 +69,6 @@ export default function():JSX.Element {
             return ret;
         }
     });
-
-    // 正式环境会部署在 gh-pages 上，所以用纯前端 api mock
-    // 如果你要用于自己的项目，请删掉这段代码
-    if (process.env.NODE_ENV === 'production') {
-        (require as any)(['./mock/axiosMock'], (mock:any) => mock.init());
-    }
 
     return (
         <Provider store={store}>

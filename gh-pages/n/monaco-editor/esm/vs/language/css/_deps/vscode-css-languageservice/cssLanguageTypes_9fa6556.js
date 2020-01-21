@@ -1,1 +1,0 @@
-define("1ea32d2",function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=e("6b31927");t.Range=n.Range,t.TextEdit=n.TextEdit,t.Position=n.Position,function(e){e.Empty="",e.Statement="statement",e.Declaration="declaration"}(t.SelectionRangeKind||(t.SelectionRangeKind={}))});

@@ -74,6 +74,7 @@ const schema = {
 };
 
 @inject("store")
+// @ts-ignore
 @withRouter
 @observer
 export default class LoginRoute extends React.Component<LoginProps> {

@@ -12,13 +12,14 @@ import 'promise/polyfill';
 
 
 if (!Element.prototype.matches) {
+    // @ts-ignore
     Element.prototype.matches = Element.prototype.msMatchesSelector
     || Element.prototype.webkitMatchesSelector;
 }
 
 if (!Element.prototype.closest) {
-    Element.prototype.closest = function (s) {
-        var el = this;
+    Element.prototype.closest = function (s:any) {
+        var el:any = this;
         if (!document.documentElement.contains(el)) {
             return null;
         }
