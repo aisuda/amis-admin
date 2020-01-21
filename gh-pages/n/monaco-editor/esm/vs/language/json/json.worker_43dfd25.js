@@ -1,0 +1,1 @@
+define("f92cc99",function(e,n){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var i=e("849c8c1"),t=i.__importStar(e("b16a4ac")),c=e("77b9e21");self.onmessage=function(){t.initialize(function(e,n){return new c.JSONWorker(e,n)})}});
