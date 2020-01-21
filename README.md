@@ -17,3 +17,7 @@ npm run dev
 npm start
 ```
 
+
+## 注意
+
+master 采用 fis3 进行编译，如果想用 webpack，请切到 webpack 分支。
