@@ -13,6 +13,7 @@ import Dashboard from './Dashboard';
 import BasicForm from './form/Basic';
 import AdvancedForm from './form/Advanced';
 import Wizard from './form/Wizard';
+import Editor from './form/Editor';
 import CustomIndex from './customer/index';
 
 type NavItem = {
@@ -61,6 +62,12 @@ const navigations:Array<NavItem> = [
                         label: '向导',
                         path: 'form/wizard',
                         component: Wizard
+                    },
+
+                    {
+                        label: '代码编辑器',
+                        path: 'form/editor',
+                        component: Editor
                     }
                 ]
             },
