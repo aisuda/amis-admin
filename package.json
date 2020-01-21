@@ -41,7 +41,7 @@
     "@types/react": "^16.8.4",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.2",
-    "axios-mock-adapter": "^1.16.0",
+    "axios-mock-adapter": "1.16.0",
     "bce-sdk-js": "^0.2.9",
     "fis-parser-node-sass": "^1.0.5",
     "fis3": "^3.4.41",

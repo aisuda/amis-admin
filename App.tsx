@@ -9,6 +9,7 @@ import axios from 'axios';
 import { MainStore } from './stores/index';
 import * as copy from 'copy-to-clipboard';
 import RootRoute from './routes/index';
+import './utils/polyfill';
 
 export default function():JSX.Element {
     const store = (window as any).store = MainStore.create({}, {
