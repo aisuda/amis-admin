@@ -16,6 +16,12 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /froala-editor\//,
+        parser: {
+          amd: false,
+        }
+      },
+      {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/

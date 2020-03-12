@@ -11,6 +11,9 @@ import Register from './Register';
 import AdminRoute from './admin/index';
 import NotFound from './404';
 
+import 'froala-editor/css/froala_style.min.css';
+import 'froala-editor/css/froala_editor.pkgd.min.css';
+
 let ContextPath = '';
 
 // gh-pages 环境时
