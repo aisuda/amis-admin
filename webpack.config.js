@@ -16,7 +16,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /froala-editor\//,
+        test: /froala-editor/,
         parser: {
           amd: false,
         }
