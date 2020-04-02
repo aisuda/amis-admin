@@ -101,6 +101,10 @@ fis.match("monaco-editor/esm/**.js", {
   preprocessor: fis.plugin("js-require-css")
 });
 
+fis.match('amis/**.js', {
+  preprocessor: fis.plugin('js-require-css')
+});
+
 fis.match("*.html:jsx", {
   parser: fis.plugin("typescript"),
   rExt: ".js",
