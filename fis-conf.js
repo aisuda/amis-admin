@@ -105,6 +105,14 @@ fis.match('amis/**.js', {
   preprocessor: fis.plugin('js-require-css')
 });
 
+fis.match('tinymce/{tinymce.js,plugins/**.js,themes/silver/theme.js}', {
+  ignoreDependencies: true
+});
+
+fis.match('tinymce/plugins/*/index.js', {
+  ignoreDependencies: false
+});
+
 fis.match("*.html:jsx", {
   parser: fis.plugin("typescript"),
   rExt: ".js",
