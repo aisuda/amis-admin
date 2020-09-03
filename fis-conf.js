@@ -206,6 +206,10 @@ ghPages.match("*.{js,ts,tsx}", {
   useHash: true
 });
 
+ghPages.match("mobx-react/**", {
+  optimizer: false
+});
+
 ghPages.match("*.map", {
   release: false,
   url: "null",
