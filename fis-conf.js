@@ -260,6 +260,10 @@ ghPages.match("*.{js,ts,tsx}", {
   useHash: true,
 });
 
+ghPages.match("{*.min.js,monaco-editor/min/**.js}", {
+  optimizer: null,
+});
+
 ghPages.match("mobx-react/**", {
   optimizer: false,
 });
