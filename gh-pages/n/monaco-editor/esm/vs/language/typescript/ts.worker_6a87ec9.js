@@ -1,1 +1,0 @@
-define("edfeaa6",function(e,i){"use strict";Object.defineProperty(i,"__esModule",{value:!0});var n=e("849c8c1"),t=n.__importStar(e("b16a4ac")),r=e("b2bae0f");self.onmessage=function(){t.initialize(function(e,i){return new r.TypeScriptWorker(e,i)})}});
