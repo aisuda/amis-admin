@@ -1,0 +1,64 @@
+{
+  "type": "page",
+  "title": "修改 ${params.id}",
+  "remark": null,
+  "toolbar": [
+    {
+      "type": "button",
+      "actionType": "link",
+      "link": "/crud/list",
+      "label": "返回列表"
+    }
+  ],
+  "body": [
+    {
+      "type": "form",
+      "initApi": "/api/sample/${params.id}",
+      "api": "/api/sample/$id",
+      "redirect": "/crud/list",
+      "controls": [
+        {
+          "type": "text",
+          "name": "engine",
+          "label": "Engine",
+          "required": true
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "text",
+          "name": "browser",
+          "label": "Browser",
+          "required": true
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "text",
+          "name": "platform",
+          "label": "Platform(s)",
+          "required": true
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "text",
+          "name": "version",
+          "label": "Engine version"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "select",
+          "name": "grade",
+          "label": "CSS grade",
+          "options": ["A", "B", "C", "D", "X"]
+        }
+      ]
+    }
+  ]
+}

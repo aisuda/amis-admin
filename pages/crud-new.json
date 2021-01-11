@@ -1,0 +1,69 @@
+{
+  "type": "page",
+  "title": "新增",
+  "remark": null,
+  "toolbar": [
+    {
+      "type": "button",
+      "actionType": "link",
+      "link": "/crud/list",
+      "label": "返回列表"
+    }
+  ],
+  "body": [
+    {
+      "title": "",
+      "type": "form",
+      "redirect": "/crud/list",
+      "name": "sample-edit-form",
+      "api": "/api/sample",
+      "controls": [
+        {
+          "type": "text",
+          "name": "engine",
+          "label": "Engine",
+          "required": true,
+          "inline": false,
+          "description": "",
+          "descriptionClassName": "help-block",
+          "placeholder": "",
+          "addOn": null
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "text",
+          "name": "browser",
+          "label": "Browser",
+          "required": true
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "text",
+          "name": "platform",
+          "label": "Platform(s)",
+          "required": true
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "text",
+          "name": "version",
+          "label": "Engine version"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "text",
+          "name": "grade",
+          "label": "CSS grade"
+        }
+      ]
+    }
+  ]
+}

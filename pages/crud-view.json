@@ -1,0 +1,65 @@
+{
+  "type": "page",
+  "title": "查看详情 ${params.id}",
+  "remark": null,
+  "toolbar": [
+    {
+      "type": "button",
+      "actionType": "link",
+      "link": "/crud/list",
+      "label": "返回列表"
+    }
+  ],
+  "body": [
+    {
+      "type": "form",
+      "initApi": "/api/sample/${params.id}",
+      "controls": [
+        {
+          "type": "static",
+          "name": "engine",
+          "label": "Engine"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "static",
+          "name": "browser",
+          "label": "Browser"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "static",
+          "name": "platform",
+          "label": "Platform(s)"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "static",
+          "name": "version",
+          "label": "Engine version"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "static",
+          "name": "grade",
+          "label": "CSS grade"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "html",
+          "html": "<p>添加其他 <span>Html 片段</span> 需要支持变量替换（todo）.</p>"
+        }
+      ]
+    }
+  ]
+}

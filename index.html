@@ -1,36 +1,264 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <title>AMis Boilerplate</title>
+    <title>amis admin</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
-    <!--DEPENDENCIES_INJECT_PLACEHOLDER-->
-    <link rel="stylesheet" title="default" href="amis/lib/themes/default.css" />
-    <link rel="stylesheet" href="./scss/style.scss" />
+    <link
+      rel="stylesheet"
+      title="default"
+      href="node_modules/amis/sdk/sdk.css"
+    />
+    <link rel="stylesheet" href="node_modules/amis/sdk/helper.css" />
+    <script src="node_modules/amis/sdk/sdk.js"></script>
+    <script src="static/path-to-regexp/index.js"></script>
     <style>
+      html,
+      body,
       .app-wrapper {
         position: relative;
         width: 100%;
         height: 100%;
+        margin: 0;
+        padding: 0;
       }
     </style>
   </head>
   <body>
     <div id="root" class="app-wrapper"></div>
-    <script src="./mod.js"></script>
-    <script type="text/javascript">
-      /* @require ./index.tsx fis 用法，标记为同步依赖，将依赖用 <script> 打在 html 中加载 */
-      mod.require(["./index.tsx"], function (app) {
-        // var initialState = {};
-        app.bootstrap(document.getElementById("root") /*, initialState*/);
-      });
+    <script>
+      (function () {
+        let amis = amisRequire("amis/embed");
+
+        const app = {
+          type: "app",
+          brandName: "Admin",
+          logo: "static/logo.png",
+          header: {
+            type: "tpl",
+            inline: false,
+            className: "w-full",
+            tpl:
+              '<div class="flex justify-between"><div>顶部区域左侧</div><div>顶部区域右侧</div></div>',
+          },
+          // footer: '<div class="p-2 text-center bg-light">底部区域</div>',
+          // asideBefore: '<div class="p-2 text-center">菜单前面区域</div>',
+          // asideAfter: '<div class="p-2 text-center">菜单后面区域</div>',
+          pages: [
+            {
+              label: "Home",
+              url: "/index",
+            },
+            {
+              label: "示例",
+              children: [
+                {
+                  label: "页面A",
+                  url: "index",
+                  schema: {
+                    type: "page",
+                    title: "页面A",
+                    body: "页面A",
+                  },
+
+                  children: [
+                    {
+                      label: "页面A-1",
+                      url: "1",
+                      schema: {
+                        type: "page",
+                        title: "页面A-1",
+                        body: "页面A-1",
+                      },
+                    },
+
+                    {
+                      label: "页面A-2",
+                      url: "2",
+                      schema: {
+                        type: "page",
+                        title: "页面A-2",
+                        body: "页面A-2",
+                      },
+                    },
+
+                    {
+                      label: "页面A-3",
+                      url: "3",
+                      schema: {
+                        type: "page",
+                        title: "页面A-3",
+                        body: "页面A-3",
+                      },
+                    },
+                  ],
+                },
+
+                {
+                  label: "页面B",
+                  schema: {
+                    type: "page",
+                    title: "页面B",
+                    body: "页面B",
+                  },
+                },
+
+                {
+                  label: "页面C",
+                  schema: {
+                    type: "page",
+                    title: "页面C",
+                    body: "页面C",
+                  },
+                },
+
+                {
+                  label: "列表示例",
+                  url: "/crud",
+                  rewrite: "/crud/list",
+                  icon: "fa fa-cube",
+                  children: [
+                    {
+                      label: "列表",
+                      url: "/crud/list",
+                      icon: "fa fa-list",
+                      schemaApi: "get:/pages/crud-list.json",
+                    },
+
+                    {
+                      label: "新增",
+                      url: "/crud/new",
+                      icon: "fa fa-plus",
+                      schemaApi: "get:/pages/crud-new.json",
+                    },
+
+                    {
+                      label: "查看",
+                      url: "/crud/:id",
+                      schemaApi: "get:/pages/crud-view.json",
+                    },
+
+                    {
+                      label: "修改",
+                      url: "/crud/:id/edit",
+                      schemaApi: "get:/pages/crud-edit.json",
+                    },
+                  ],
+                },
+              ],
+            },
+
+            {
+              label: "分组2",
+              children: [
+                {
+                  label: "用户管理",
+                  schema: {
+                    type: "page",
+                    title: "用户管理",
+                    body: "页面C",
+                  },
+                },
+
+                {
+                  label: "外部链接",
+                  link: "http://baidu.gitee.io/amis",
+                },
+
+                {
+                  label: "部门管理",
+                  schemaApi: "/api/mock2/service/form?tpl=tpl3",
+                },
+              ],
+            },
+
+            // {
+            //   label: '404',
+            //   visible: false,
+            //   isDefaultPage: true,
+            //   schema: {
+            //     type: 'page',
+            //     body: '自定义 404 页面，可以不配置'
+            //   }
+            // }
+          ],
+        };
+
+        function normalizeLink(to, location = window.location) {
+          to = to || "";
+
+          if (to && to[0] === "#") {
+            to = location.pathname + location.search + to;
+          } else if (to && to[0] === "?") {
+            to = location.pathname + to;
+          }
+
+          const idx = to.indexOf("?");
+          const idx2 = to.indexOf("#");
+          let pathname = ~idx
+            ? to.substring(0, idx)
+            : ~idx2
+            ? to.substring(0, idx2)
+            : to;
+          let search = ~idx ? to.substring(idx, ~idx2 ? idx2 : undefined) : "";
+          let hash = ~idx2 ? to.substring(idx2) : location.hash;
+
+          if (!pathname) {
+            pathname = location.pathname;
+          } else if (pathname[0] != "/" && !/^https?\:\/\//.test(pathname)) {
+            let relativeBase = location.pathname;
+            const paths = relativeBase.split("/");
+            paths.pop();
+            let m;
+            while ((m = /^\.\.?\//.exec(pathname))) {
+              if (m[0] === "../") {
+                paths.pop();
+              }
+              pathname = pathname.substring(m[0].length);
+            }
+            pathname = paths.concat(pathname).join("/");
+          }
+
+          return pathname + search + hash;
+        }
+
+        let amisScoped = amis.embed(
+          "#root",
+          app,
+          {},
+          {
+            jumpTo: (to) => {
+              location.hash = to;
+            },
+            isCurrentUrl: (to, ctx) => {
+              if (!to) {
+                return false;
+              }
+              const pathname = location.hash ? location.hash.substring(1) : "/";
+              const link = normalizeLink(to, {
+                ...location,
+                pathname,
+                hash: "",
+              });
+
+              if (!~link.indexOf("http") && ~link.indexOf(":")) {
+                return match(link, {
+                  decode: decodeURIComponent,
+                  strict: ctx?.strict ?? true,
+                })(pathname);
+              }
+
+              return pathname === link;
+            },
+          }
+        );
+      })();
     </script>
+    <script src="/reload/reload.js"></script>
   </body>
 </html>
