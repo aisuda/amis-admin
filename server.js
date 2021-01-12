@@ -11,8 +11,7 @@ app.set("port", process.env.PORT || 3000);
 app.use(logger("dev"));
 app.use(bodyParser.json()); // Parses json, multi-part (file), url-encoded
 
-app.use("/node_modules", express.static("node_modules"));
-app.use("/static", express.static("static"));
+app.use("/public", express.static("public"));
 app.use("/pages", express.static("pages"));
 
 app.get("/", function (req, res) {
