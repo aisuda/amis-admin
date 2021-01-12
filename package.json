@@ -18,8 +18,7 @@
   "author": "fex",
   "license": "MIT",
   "dependencies": {
-    "amis": "^1.1.1",
-    "path-to-regexp": "^6.2.0",
+    "amis": "^1.1.2-beta.1",
     "vue": "^2.6.12"
   },
   "devDependencies": {

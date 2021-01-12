@@ -52,7 +52,8 @@
           pages: [
             {
               label: "Home",
-              url: "/index",
+              url: "/",
+              redirect: "/index/1",
             },
             {
               label: "示例",
@@ -226,12 +227,19 @@
 
           return pathname + search + hash;
         }
+        const match = amisRequire("path-to-regexp").match;
 
         let amisScoped = amis.embed(
           "#root",
           app,
           {},
           {
+            watchRouteChange: (fn) => {
+              window.addEventListener("hashchange", fn);
+              return () => {
+                window.removeEventListener("hashchange", fn);
+              };
+            },
             jumpTo: (to) => {
               location.hash = to;
             },
