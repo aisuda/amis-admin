@@ -113,9 +113,10 @@
               });
 
               if (!~link.indexOf("http") && ~link.indexOf(":")) {
+                let strict = cxt && cxt.strict;
                 return match(link, {
                   decode: decodeURIComponent,
-                  strict: ctx?.strict ?? true,
+                  strict: typeof strict !== "undefined" ? strict : true,
                 })(pathname);
               }
 
