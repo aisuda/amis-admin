@@ -29,99 +29,100 @@
     <div id="root" class="app-wrapper"></div>
     <script>
       (function () {
-        let amis = amisRequire("amis/embed");
+        let amis = amisRequire('amis/embed');
 
         const app = {
-          type: "app",
-          brandName: "Admin",
-          logo: "public/logo.png",
+          type: 'app',
+          brandName: 'Admin',
+          logo: 'public/logo.png',
           header: {
-            type: "tpl",
+            type: 'tpl',
             inline: false,
-            className: "w-full",
+            className: 'w-full',
             tpl:
-              '<div class="flex justify-between"><div>顶部区域左侧</div><div>顶部区域右侧</div></div>',
+              '<div class="flex justify-between"><div>顶部区域左侧</div><div>顶部区域右侧</div></div>'
           },
           // footer: '<div class="p-2 text-center bg-light">底部区域</div>',
           // asideBefore: '<div class="p-2 text-center">菜单前面区域</div>',
           // asideAfter: '<div class="p-2 text-center">菜单后面区域</div>',
-          api: "/pages/site.json",
+          api: '/pages/site.json'
         };
 
         function normalizeLink(to, location = window.location) {
-          to = to || "";
+          to = to || '';
 
-          if (to && to[0] === "#") {
+          if (to && to[0] === '#') {
             to = location.pathname + location.search + to;
-          } else if (to && to[0] === "?") {
+          } else if (to && to[0] === '?') {
             to = location.pathname + to;
           }
 
-          const idx = to.indexOf("?");
-          const idx2 = to.indexOf("#");
+          const idx = to.indexOf('?');
+          const idx2 = to.indexOf('#');
           let pathname = ~idx
             ? to.substring(0, idx)
             : ~idx2
             ? to.substring(0, idx2)
             : to;
-          let search = ~idx ? to.substring(idx, ~idx2 ? idx2 : undefined) : "";
+          let search = ~idx ? to.substring(idx, ~idx2 ? idx2 : undefined) : '';
           let hash = ~idx2 ? to.substring(idx2) : location.hash;
 
           if (!pathname) {
             pathname = location.pathname;
-          } else if (pathname[0] != "/" && !/^https?\:\/\//.test(pathname)) {
+          } else if (pathname[0] != '/' && !/^https?\:\/\//.test(pathname)) {
             let relativeBase = location.pathname;
-            const paths = relativeBase.split("/");
+            const paths = relativeBase.split('/');
             paths.pop();
             let m;
             while ((m = /^\.\.?\//.exec(pathname))) {
-              if (m[0] === "../") {
+              if (m[0] === '../') {
                 paths.pop();
               }
               pathname = pathname.substring(m[0].length);
             }
-            pathname = paths.concat(pathname).join("/");
+            pathname = paths.concat(pathname).join('/');
           }
 
           return pathname + search + hash;
         }
-        const match = amisRequire("path-to-regexp").match;
+        const match = amisRequire('path-to-regexp').match;
 
         let amisScoped = amis.embed(
-          "#root",
+          '#root',
           app,
           {},
           {
-            watchRouteChange: (fn) => {
-              window.addEventListener("hashchange", fn);
+            watchRouteChange: fn => {
+              window.addEventListener('hashchange', fn);
               return () => {
-                window.removeEventListener("hashchange", fn);
+                window.removeEventListener('hashchange', fn);
               };
             },
-            jumpTo: (to) => {
+            jumpTo: to => {
               location.hash = to;
             },
             isCurrentUrl: (to, ctx) => {
               if (!to) {
                 return false;
               }
-              const pathname = location.hash ? location.hash.substring(1) : "/";
+              const pathname = location.hash ? location.hash.substring(1) : '/';
               const link = normalizeLink(to, {
                 ...location,
                 pathname,
-                hash: "",
+                hash: ''
               });
 
-              if (!~link.indexOf("http") && ~link.indexOf(":")) {
+              if (!~link.indexOf('http') && ~link.indexOf(':')) {
                 let strict = ctx && ctx.strict;
                 return match(link, {
                   decode: decodeURIComponent,
-                  strict: typeof strict !== "undefined" ? strict : true,
+                  strict: typeof strict !== 'undefined' ? strict : true
                 })(pathname);
               }
 
               return pathname === link;
             },
+            theme: 'default'
           }
         );
       })();
