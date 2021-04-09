@@ -8775,7 +8775,7 @@
 .amis-scope .dark-Layout-brandBar > button {
   padding: 0.625rem 1.0625rem;
   font-size: 1rem;
-  line-height: calc(3.125rem - 1.25rem);
+  line-height: calc(3.125rem - 1rem);
   text-decoration: none;
   background: transparent;
   border: none;
@@ -8784,14 +8784,14 @@
 .amis-scope .dark-Layout-brand {
   color: #c6c6c6;
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   max-width: 100%;
   height: auto;
   line-height: 3.125rem;
   display: inline-block;
   vertical-align: middle;
-  padding: 0 1.25rem;
+  padding: 0 0.75rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -8810,7 +8810,7 @@
 .amis-scope .dark-Layout-headerBar {
   border-bottom: none;
   min-height: 3.125rem;
-  padding: 0 0.625rem;
+  padding: 0 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8819,7 +8819,7 @@
 .amis-scope .dark-Layout-offScreenBtn {
   display: none;
   float: right;
-  padding: 13px 15px;
+  padding: 13px 1rem;
 }
 
 .amis-scope .dark-Layout-aside {
@@ -9022,7 +9022,7 @@
   .amis-scope .dark-Layout--folded .dark-Layout-brand {
     display: block;
     padding: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -9572,11 +9572,11 @@
 
 .amis-scope .dark-AsideNav-label {
   color: #6d6d6d;
-  margin-top: 0.9375rem;
-  margin-bottom: 0.625rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
   font-size: 0.6875rem;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .amis-scope .dark-AsideNav-list {
@@ -9588,7 +9588,7 @@
 .amis-scope .dark-AsideNav-itemArrow {
   float: right;
   display: block;
-  width: 1.25rem;
+  width: 1rem;
   text-align: center;
   line-height: 1.0625rem;
   margin-top: 0.125rem;
@@ -9624,7 +9624,7 @@
 }
 
 .amis-scope .dark-AsideNav-itemBadge {
-  padding: 0.125rem 0.3125rem;
+  padding: 0.125rem 0.25rem;
   margin-top: 0.125rem;
   font-size: 0.6875rem;
   text-shadow: 0 0.0625rem 0 rgba(0, 0, 0, 0.2);
@@ -9663,7 +9663,7 @@
   opacity: 0;
   height: 0;
   overflow: hidden;
-  margin-left: -1.25rem;
+  margin-left: calc(1rem * -1);
   transition: all 0.2s ease-in-out 0s;
   background: #131519;
 }
@@ -9695,7 +9695,7 @@
   text-transform: none;
   display: block;
   font-size: 0.875rem;
-  padding: calc( ( 2.5rem - 1.5 * 0.875rem ) / 2 ) 0.9375rem;
+  padding: calc( ( 2.5rem - 1.5 * 0.875rem ) / 2 ) 0.75rem;
   position: relative;
   transition: background-color 0.2s ease-in-out 0s;
   color: #b4b6bd;
@@ -9723,7 +9723,7 @@
 }
 
 .amis-scope .dark-AsideNav-item.is-lg > a {
-  padding: calc( ( 3.125rem - 1.5 * 0.875rem ) / 2 ) 0.9375rem;
+  padding: calc( ( 3.125rem - 1.5 * 0.875rem ) / 2 ) 1rem;
 }
 
 .amis-scope .dark-AsideNav-item .dark-AsideNav-item a {
@@ -9731,11 +9731,15 @@
 }
 
 .amis-scope .dark-AsideNav-item .dark-AsideNav-item .dark-AsideNav-item a {
-  padding-left: calc(2.5rem + 2.1875rem);
+  padding-left: calc(2.5rem + 0.9375rem);
 }
 
 .amis-scope .dark-AsideNav-item .dark-AsideNav-item .dark-AsideNav-item .dark-AsideNav-item a {
-  padding-left: calc(2.5rem + 4.0625rem);
+  padding-left: calc(2.5rem + 1.875rem);
+}
+
+.amis-scope .dark-AsideNav-item .dark-AsideNav-item .dark-AsideNav-item .dark-AsideNav-item .dark-AsideNav-item a {
+  padding-left: calc(2.5rem + 2.8125rem);
 }
 
 .amis-scope .dark-AsideNav-item .dark-AsideNav-item .dark-AsideNav-subList {
@@ -9754,7 +9758,7 @@
   cursor: default;
   background: transparent;
   color: #b4b6bd;
-  padding: calc( ( 3.125rem - 1.5 * 0.875rem ) / 2 ) 1.25rem;
+  padding: calc( ( 3.125rem - 1.5 * 0.875rem ) / 2 ) 1rem;
 }
 
 .amis-scope .dark-AsideNav-subHeader a:hover {
@@ -9786,7 +9790,7 @@
 .amis-scope .dark-AsideNav-divider {
   width: auto;
   height: 0.0625rem;
-  margin: 0.625rem 0;
+  margin: 0.5rem 0;
   overflow: hidden;
   font-size: 0;
   background: #2e3344;
@@ -9796,7 +9800,7 @@
   float: none;
   height: 0.875rem;
   width: auto;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
   vertical-align: middle;
 }
 
@@ -9812,7 +9816,7 @@
   .amis-scope .dark-Layout--folded .dark-AsideNav-item:hover > .dark-AsideNav-tooltip {
     opacity: 1;
     z-index: 1600;
-    margin: 0 0 0 0.625rem;
+    margin: 0 0 0 0.5rem;
     opacity: 1;
   }
 
@@ -9856,7 +9860,7 @@
   }
 
   .amis-scope .dark-Layout--folded .dark-AsideNav-item .dark-AsideNav-item a {
-    padding-left: 1.25rem !important;
+    padding-left: 1rem !important;
   }
 
   .amis-scope .dark-Layout--folded .dark-AsideNav-subList {
@@ -9898,13 +9902,13 @@
 }
 
 .amis-scope .dark-FormHbox {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: calc(1rem * -1);
+  margin-right: calc(1rem * -1);
 }
 
 .amis-scope .dark-FormHbox > .dark-Hbox > .dark-Hbox-col {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   vertical-align: top;
 }
 
@@ -10036,14 +10040,14 @@
   min-width: auto;
   padding: calc(
     (
-        2.125rem - 0.0625rem * 2 -
+        1.875rem - 0.0625rem * 2 -
           1.4285714286 * 0.875rem
       ) / 2
   ) 0.75rem;
   font-size: 0.875rem;
   line-height: 1.4285714286;
   border-radius: 0.142rem;
-  height: 2.125rem;
+  height: 1.875rem;
 }
 
 .amis-scope .dark-Button:active,
@@ -10404,7 +10408,7 @@
         1.375rem - 0.0625rem * 2 -
           18 / 11 * 0.6875rem
       ) / 2
-  ) 0.3125rem;
+  ) 0.25rem;
   font-size: 0.6875rem;
   line-height: 18 / 11;
   border-radius: 0.142rem;
@@ -10414,12 +10418,12 @@
 .amis-scope .dark-Button--xs .dark-Button-icon:first-child:not(:last-child):not(.pull-right),
 .amis-scope .dark-Button--xs > svg.icon:not(:last-child):not(.pull-right),
 .amis-scope .dark-Button--xs > .pull-left {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Button--xs .dark-Button-icon:last-child:not(:first-child):not(.pull-left),
 .amis-scope .dark-Button--xs > .pull-right {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Button--xs img.dark-Button-icon {
@@ -10467,14 +10471,14 @@
 .amis-scope .dark-Button--md {
   padding: calc(
     (
-        2.125rem - 0.0625rem * 2 -
+        1.875rem - 0.0625rem * 2 -
           1.4285714286 * 0.875rem
       ) / 2
   ) 0.75rem;
   font-size: 0.875rem;
   line-height: 1.4285714286;
   border-radius: 0.142rem;
-  height: 2.125rem;
+  height: 1.875rem;
 }
 
 .amis-scope .dark-Button--md .dark-Button-icon:first-child:not(:last-child):not(.pull-right),
@@ -10494,17 +10498,17 @@
 }
 
 .amis-scope .dark-Button--md.dark-Button--iconOnly {
-  min-width: calc( 2.125rem * 4 / 3);
+  min-width: calc( 1.875rem * 4 / 3);
 }
 
 .amis-scope .dark-Button--lg {
   padding: calc(
     (
         2.875rem - 0.0625rem * 2 -
-          24 / 20 * 1.25rem
+          24 / 20 * 1rem
       ) / 2
   ) 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 24 / 20;
   border-radius: 0.142rem;
   height: 2.875rem;
@@ -10531,7 +10535,7 @@
 }
 
 .amis-scope .dark-Button--iconOnly {
-  min-width: calc(2.125rem * 4 / 3);
+  min-width: calc(1.875rem * 4 / 3);
 }
 
 .amis-scope .dark-Button--iconOnly:not(.dark-Button--link) > svg.icon {
@@ -10542,7 +10546,7 @@
 
 .amis-scope .dark-Button--iconOnly:not(.dark-Button--link) > .fa,
 .amis-scope .dark-Button--iconOnly:not(.dark-Button--link) > .iconfont {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .amis-scope .dark-Button--iconOnly:not(.dark-Button--link) > .iconfont {
@@ -10553,7 +10557,7 @@
   width: auto;
   min-width: auto;
   font-weight: 400;
-  color: #f3f1f1;
+  color: #0983ff;
   text-decoration: none;
   border: none;
   padding-top: 0;
@@ -10580,7 +10584,7 @@
 }
 
 .amis-scope .dark-Button--block + .dark-Button--block {
-  margin-top: 0.9375rem;
+  margin-top: 0.75rem;
 }
 
 .amis-scope input[type=submit].dark-Button--block,
@@ -10590,22 +10594,124 @@
 }
 
 .amis-scope .dark-ButtonToolbar {
-  margin-left: -0.3125rem;
-  margin-top: -0.3125rem;
+  margin-left: calc(0.25rem * -1);
+  margin-top: calc(0.25rem * -1);
 }
 
 .amis-scope .dark-ButtonToolbar > .dark-Button {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .dark-ButtonToolbar > .dark-Button--disabled-wrap > .dark-Button {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .dark-Button--disabled-wrap {
   display: inline-block !important;
+}
+
+.amis-scope .dark-Avatar {
+  background: #d1d5db;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  display: inline-block;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.amis-scope .dark-Avatar--square {
+  border-radius: 0%;
+}
+
+.amis-scope .dark-Avatar--rounded {
+  border-radius: 10%;
+}
+
+.amis-scope .dark-Avatar i {
+  font-size: 1rem;
+}
+
+.amis-scope .dark-Avatar img {
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amis-scope .dark-Avatar:hover img,
+.amis-scope .dark-Avatar:hover i {
+  transform: scale(1.1);
+}
+
+.amis-scope .dark-Breadcrumb-icon {
+  margin-right: 0.125rem;
+}
+
+.amis-scope .dark-Breadcrumb-separator {
+  user-select: none;
+  margin: 0 0.25rem;
+}
+
+.amis-scope .dark-Badge {
+  display: inline-block;
+  position: relative;
+}
+
+.amis-scope .dark-Badge-text,
+.amis-scope .dark-Badge-dot {
+  background: #dc3545;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  transform-origin: 100% 0;
+  z-index: auto;
+  border-radius: calc(1rem / 2);
+  box-shadow: 0 0 0 1px #fff;
+}
+
+.amis-scope .dark-Badge--top-left {
+  top: 0;
+  left: 0;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.amis-scope .dark-Badge--bottom-left {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  transform: translate(-50%, 50%);
+}
+
+.amis-scope .dark-Badge--bottom-right {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.amis-scope .dark-Badge-text {
+  color: #fff;
+  height: 1rem;
+  line-height: 1rem;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.amis-scope .dark-Badge-dot {
+  z-index: auto;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
 }
 
 .is-modalOpened {
@@ -10613,7 +10719,7 @@
 }
 
 .is-modalOpened.has-scrollbar {
-  padding-right: 0.9375rem;
+  padding-right: 1rem;
 }
 
 .is-modalOpened .amis-scope .dark-Modal {
@@ -10660,7 +10766,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 3.75rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   border: 0.0625rem solid #656565;
   border-radius: 0.142rem;
 }
@@ -10706,7 +10812,7 @@
         2.5rem - 1.5 *
           0.875rem
       ) / 2
-  ) 1.25rem;
+  ) 1rem;
   background: #f9f9f9;
   border-bottom: 0.0625rem solid #dfe2e6;
   border-top-left-radius: 0.142rem;
@@ -10758,25 +10864,25 @@
 
 .amis-scope .dark-Modal-content > .dark-Modal-close {
   position: absolute;
-  right: 1.25rem;
-  top: 0.625rem;
+  right: 1rem;
+  top: 0.5rem;
   z-index: 10;
 }
 
 .amis-scope .dark-Modal-body {
-  padding: 0.9375rem 1.25rem 1.25rem;
+  padding: 0.75rem 1rem 1rem;
   flex-grow: 1;
 }
 
 .amis-scope .dark-Modal-header + .dark-Modal-body {
-  padding-top: 1.25rem;
+  padding-top: 1rem;
 }
 
 .amis-scope .dark-Modal-footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0.625rem;
+  padding: 0.5rem;
   border-top: 0.0625rem solid #dfe2e6;
   margin: 0 0;
   border-bottom-left-radius: 0.142rem;
@@ -10784,7 +10890,7 @@
 }
 
 .amis-scope .dark-Modal-footer .dark-Button {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .dark-Modal--2th .dark-Modal-content {
@@ -10924,7 +11030,7 @@
 }
 
 .amis-scope .dark-Drawer-header {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   background: #f9f9f9;
   border-bottom: 0.0625rem solid #dfe2e6;
   border-top-left-radius: 0;
@@ -10942,7 +11048,7 @@
 }
 
 .amis-scope .dark-Drawer-title {
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #dbd6d6;
 }
 
@@ -10973,7 +11079,7 @@
 }
 
 .amis-scope .dark-Drawer-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
   overflow: auto;
@@ -10983,14 +11089,14 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 0.9375rem;
+  padding: 0.75rem;
   border-top: 0.0625rem solid #dfe2e6;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .amis-scope .dark-Drawer-footer .dark-Button {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Drawer-footer .dark-Drawer-info {
@@ -11011,8 +11117,8 @@
 
 .amis-scope .dark-Drawer.dark-Drawer--noOverlay .dark-Drawer-close svg {
   margin-top: 0.125rem;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   fill: #99a6ad;
 }
 
@@ -11068,13 +11174,13 @@
 
 .amis-scope .dark-Drawer--top .dark-Drawer-close {
   top: 100%;
-  margin-top: 0.625rem;
-  left: 0.625rem;
+  margin-top: 0.5rem;
+  left: 0.5rem;
 }
 
 .amis-scope .dark-Drawer--top.dark-Drawer--noOverlay .dark-Drawer-close {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
   left: auto;
   margin-top: 0;
 }
@@ -11100,13 +11206,13 @@
 
 .amis-scope .dark-Drawer--right .dark-Drawer-close {
   right: 100%;
-  margin-right: 0.625rem;
-  top: 0.625rem;
+  margin-right: 0.5rem;
+  top: 0.5rem;
 }
 
 .amis-scope .dark-Drawer--right.dark-Drawer--noOverlay .dark-Drawer-close {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
   margin-right: 0;
 }
 
@@ -11127,7 +11233,7 @@
 
 .amis-scope .dark-Drawer--right .dark-Drawer-footer .dark-Button {
   margin-left: 0;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Drawer--right .dark-Drawer-footer .dark-Drawer-info {
@@ -11153,13 +11259,13 @@
 
 .amis-scope .dark-Drawer--bottom .dark-Drawer-close {
   bottom: 100%;
-  margin-bottom: 0.625rem;
-  left: 0.625rem;
+  margin-bottom: 0.5rem;
+  left: 0.5rem;
 }
 
 .amis-scope .dark-Drawer--bottom.dark-Drawer--noOverlay .dark-Drawer-close {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
   left: auto;
   margin-bottom: 0;
 }
@@ -11185,14 +11291,14 @@
 
 .amis-scope .dark-Drawer--left .dark-Drawer-close {
   left: 100%;
-  margin-left: 0.625rem;
-  top: 0.625rem;
+  margin-left: 0.5rem;
+  top: 0.5rem;
 }
 
 .amis-scope .dark-Drawer--left.dark-Drawer--noOverlay .dark-Drawer-close {
   left: auto;
-  right: 0.9375rem;
-  top: 0.9375rem;
+  right: 0.75rem;
+  top: 0.75rem;
 }
 
 .amis-scope .dark-Drawer--left .dark-Drawer-content {
@@ -11364,7 +11470,7 @@
 }
 
 .amis-scope .dark-Tooltip-title {
-  padding: 0.3125rem 0.625rem;
+  padding: 0.25rem 0.5rem;
   margin-bottom: 0;
   font-size: 0.875rem;
   color: #dbd6d6;
@@ -11380,7 +11486,7 @@
 
 .amis-scope .dark-Tooltip-body {
   color: #f3f1f1;
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 @keyframes tooltipIn {
@@ -11432,7 +11538,7 @@
   animation-name: tooltipIn;
   opacity: 1;
   z-index: 1600;
-  margin: 0 0 0 0.625rem;
+  margin: 0 0 0 0.5rem;
   opacity: 1;
 }
 
@@ -11443,7 +11549,7 @@
 }
 
 .amis-scope [data-tooltip][data-position=bottom]:hover:after {
-  margin: 0.625rem 0 0 0;
+  margin: 0.5rem 0 0 0;
 }
 
 .amis-scope [data-tooltip][data-position=left]:after {
@@ -11454,7 +11560,7 @@
 }
 
 .amis-scope [data-tooltip][data-position=left]:hover:after {
-  margin: 0 0.625rem 0 0;
+  margin: 0 0.5rem 0 0;
 }
 
 .amis-scope [data-tooltip][data-position=top]:after {
@@ -11465,7 +11571,7 @@
 }
 
 .amis-scope [data-tooltip][data-position=top]:hover:after {
-  margin: calc(0.625rem * -1) 0 0 0;
+  margin: calc(0.5rem * -1) 0 0 0;
 }
 
 .amis-scope [data-tooltip]:hover:active:after {
@@ -11571,8 +11677,8 @@
 .amis-scope .dark-Toast {
   width: 18.75rem;
   pointer-events: auto;
-  margin-bottom: 0.3125rem;
-  padding: 0.9375rem 0.9375rem 0.9375rem calc(0.9375rem + 2.5rem);
+  margin-bottom: 0.25rem;
+  padding: 0.75rem 0.75rem 0.75rem calc(0.75rem + 2.5rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 0.428rem;
   border: 0 solid;
@@ -11607,8 +11713,8 @@
 
 .amis-scope .dark-Toast-close {
   position: absolute;
-  top: 0.3125rem;
-  right: 0.625rem;
+  top: 0.25rem;
+  right: 0.5rem;
   color: #fff;
   line-height: 1;
   opacity: 0.8;
@@ -11621,8 +11727,8 @@
 
 .amis-scope .dark-Toast-title {
   display: block;
-  margin-right: 0.9375rem;
-  font-size: 1rem;
+  margin-right: 0.75rem;
+  font-size: 0.875rem;
   vertical-align: middle;
 }
 
@@ -11638,10 +11744,10 @@
   -webkit-font-smoothing: antialiased;
   vertical-align: middle;
   position: absolute;
-  left: 0.9375rem;
-  top: 0.9375rem;
-  width: calc(2.5rem - 0.9375rem);
-  height: calc(2.5rem - 0.9375rem);
+  left: 0.75rem;
+  top: 0.75rem;
+  width: calc(2.5rem - 0.75rem);
+  height: calc(2.5rem - 0.75rem);
   align-items: center;
   justify-content: center;
 }
@@ -11678,44 +11784,44 @@
 }
 
 .amis-scope .dark-Toast-wrap--topRight {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
 }
 
 .amis-scope .dark-Toast-wrap--topCenter {
-  top: 0.9375rem;
+  top: 0.75rem;
   left: 50%;
   margin-left: calc(18.75rem / -2);
 }
 
 .amis-scope .dark-Toast-wrap--topLeft {
-  top: 0.9375rem;
-  left: 0.9375rem;
+  top: 0.75rem;
+  left: 0.75rem;
 }
 
 .amis-scope .dark-Toast-wrap--bottomLeft {
-  left: 0.9375rem;
-  bottom: 0.9375rem;
+  left: 0.75rem;
+  bottom: 0.75rem;
 }
 
 .amis-scope .dark-Toast-wrap--bottomCenter {
   left: 50%;
   margin-left: calc(18.75rem / -2);
-  bottom: 0.9375rem;
+  bottom: 0.75rem;
 }
 
 .amis-scope .dark-Toast-wrap--bottomRight {
-  bottom: 0.9375rem;
-  right: 0.9375rem;
+  bottom: 0.75rem;
+  right: 0.75rem;
 }
 
 .amis-scope .dark-Alert {
   font-size: 0.875rem;
   box-shadow: none;
-  padding: 0.9375rem 0.9375rem;
+  padding: 0.75rem 0.75rem;
   border: 0.0625rem solid transparent;
   border-radius: 0.285rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -11732,7 +11838,7 @@
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
   opacity: 0.2;
-  right: 0.9375rem;
+  right: 0.75rem;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -11775,7 +11881,7 @@
   font-size: 0.75rem;
   list-style: none;
   margin: 0;
-  padding: 0 0 0 0.9375rem;
+  padding: 0 0 0 1rem;
   border-bottom: 0.0625rem solid #656565;
 }
 
@@ -11809,7 +11915,7 @@
   color: white;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
@@ -11885,7 +11991,7 @@
 }
 
 .amis-scope .dark-ArrayInput-toolbar {
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -11903,18 +12009,18 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .dark-ArrayInput-item > div {
   flex-grow: 1;
   width: 0;
   min-width: 120px;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-ArrayInput-item > div:not(:first-child) {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-ArrayInput-item--dragging {
@@ -11929,10 +12035,10 @@
   display: inline-block;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
-  ) 0.3125rem;
+  ) 0.25rem;
   cursor: pointer;
 }
 
@@ -11982,7 +12088,7 @@
   border-top-right-radius: 0.142rem;
   color: #f3f1f1;
   margin: 0 0.1875rem 0 0;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -12036,7 +12142,7 @@
 
 .amis-scope .dark-Tabs-pane {
   display: none;
-  padding: 0.9375rem;
+  padding: 0.75rem;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
@@ -12080,7 +12186,7 @@
 
 .amis-scope .dark-Tabs--line > .dark-Tabs-content {
   border-width: 0;
-  padding: 20px 0;
+  padding: 0.75rem 0;
   background: transparent;
 }
 
@@ -12315,7 +12421,7 @@
 .amis-scope .dark-Tabs-toolbar {
   display: inline-block;
   float: right;
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
 }
 
 .amis-scope .dark-Nav {
@@ -12326,7 +12432,7 @@
 }
 
 .amis-scope .dark-Nav .dark-Nav-itemIcon {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Nav img.dark-Nav-itemIcon {
@@ -12353,7 +12459,7 @@
   color: #f3f1f1;
   text-decoration: none;
   margin-right: 0.125rem;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
 }
 
@@ -12388,10 +12494,10 @@
   outline: none;
   color: #f3f1f1;
   text-decoration: none;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
   background: transparent;
-  border-radius: 0.285rem;
+  border-radius: 0;
 }
 
 .amis-scope .dark-Nav--stacked .dark-Nav-item > a:hover,
@@ -12422,7 +12528,7 @@
 
 .amis-scope .dark-Nav--stacked .dark-Nav-item.is-unfolded > .dark-Nav-subItems {
   display: block;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .dark-Nav--stacked .dark-Nav-item .dark-Nav-itemToggler {
@@ -12473,10 +12579,11 @@
 
 .amis-scope .dark-Page {
   width: 100%;
+  height: 100%;
 }
 
 .amis-scope .dark-Page-header {
-  padding: 0.9375rem 0.9375rem;
+  padding: 0.75rem 0.75rem;
 }
 
 .amis-scope .dark-Page-main {
@@ -12512,7 +12619,7 @@
 
 .amis-scope .dark-Page-headerRow .dark-Page-toolbar {
   text-align: right;
-  padding-right: 0.9375rem;
+  padding-right: 0.75rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -12524,22 +12631,22 @@
   margin: 0;
   padding: 0;
   color: #dbd6d6;
-  line-height: 1.1;
+  line-height: 1.5;
   font-size: 1rem;
   font-weight: 400;
 }
 
 .amis-scope .dark-Page-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   flex: 1 auto;
 }
 
 .amis-scope .dark-Page-asideTplWrapper {
-  padding: 0.3125rem;
+  padding: 0.25rem;
 }
 
 .amis-scope .dark-Page-toolbar > * + * {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Page-aside {
@@ -12548,7 +12655,7 @@
 
 @media (min-width: 768px) {
   .amis-scope .dark-Page-aside {
-    width: 12.5rem;
+    min-width: 12.5rem;
     max-width: 18.75rem;
     border-right: 0.0625rem solid #656565;
   }
@@ -12579,7 +12686,7 @@
 .amis-scope .dark-Remark {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   cursor: pointer;
   text-align: center;
 }
@@ -12613,7 +12720,7 @@
 }
 
 .amis-scope .dark-Remark > span + .dark-Remark-icon {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Remark:hover > .dark-Remark-icon {
@@ -12735,14 +12842,14 @@
 }
 
 .amis-scope .dark-Audio-play {
-  width: 1.25rem;
+  width: 1rem;
   cursor: pointer;
   margin-right: 0.625rem;
 }
 
 .amis-scope .dark-Audio-play svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   top: 0.375rem;
 }
@@ -12787,7 +12894,7 @@
 }
 
 .amis-scope .dark-Audio-volume {
-  width: 1.25rem;
+  width: 1rem;
   height: 3.125rem;
   line-height: 3.125rem;
   cursor: pointer;
@@ -12795,8 +12902,8 @@
 }
 
 .amis-scope .dark-Audio-volume svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   top: 0.375rem;
 }
@@ -12842,8 +12949,8 @@
 }
 
 .amis-scope .dark-Audio-volumeControl svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   top: 0.375rem;
 }
@@ -12862,7 +12969,8 @@
 .amis-scope .dark-Panel-fixedBottom {
   position: absolute;
   background: #fff;
-  z-index: 900;
+  z-index: -1;
+  opacity: 0;
   bottom: 999999px;
   box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-top: none;
@@ -12871,6 +12979,8 @@
 .amis-scope .dark-Panel-fixedBottom.in {
   position: fixed;
   bottom: 0;
+  z-index: 900;
+  opacity: 1;
 }
 
 .amis-scope .dark-Panel--default {
@@ -12987,7 +13097,7 @@
 }
 
 .amis-scope .dark-Panel-heading {
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   border-bottom: 0.0625rem solid transparent;
   border-radius: 0.142rem 0.142rem 0 0;
 }
@@ -12995,26 +13105,26 @@
 .amis-scope .dark-Panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: inherit;
 }
 
 .amis-scope .dark-Panel-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
 }
 
 .amis-scope .dark-Panel-footer {
   border-color: #dfe2e6;
   border-radius: 0 0 0.125rem 0.125rem;
   background: linear-gradient(#524e48, #423e3a);
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   border-style: solid;
   border-width: 0.0625rem 0 0 0;
   clear: both;
 }
 
 .amis-scope .dark-Panel-footer .dark-Button + .dark-Button {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .dark-Panel-btnToolbar {
@@ -13032,7 +13142,7 @@
 }
 
 .amis-scope .dark-Panel-btnToolbar .dark-Button {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .dark-Panel-btnToolbar:empty {
@@ -13194,8 +13304,8 @@
 }
 
 .amis-scope .dark-ButtonToolbar .dark-ButtonGroup {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
   width: auto;
 }
 
@@ -13256,11 +13366,11 @@
 }
 
 .amis-scope .dark-ButtonGroupControl > .dark-ButtonGroup--sm {
-  margin-top: calc((2.125rem - 1.875rem) / 2);
+  margin-top: calc((1.875rem - 1.875rem) / 2);
 }
 
 .amis-scope .dark-ButtonGroupControl > .dark-ButtonGroup--xs {
-  margin-top: calc((2.125rem - 1.375rem) / 2);
+  margin-top: calc((1.875rem - 1.375rem) / 2);
 }
 
 .amis-scope .dark-DropDown {
@@ -13269,7 +13379,7 @@
 }
 
 .amis-scope .dark-DropDown-caret {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   display: inline-block;
   vertical-align: top;
   transition: transform 0.2s ease;
@@ -13301,7 +13411,7 @@
   margin: 0.0625rem 0 0;
   background: #333538;
   list-style: none;
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
   border: 0.0625rem solid #656565;
   border-radius: 0.142rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -13319,12 +13429,14 @@
   padding: calc(
     (2.125rem - 0.875rem * 1.5) /
       2
-  ) 0.625rem;
+  ) 0.5rem;
   white-space: nowrap;
   box-sizing: border-box;
   height: 2.125rem;
   vertical-align: middle;
   user-select: none;
+  color: #2296f3;
+  text-decoration: none;
 }
 
 .amis-scope .dark-DropDown-menuItem:hover,
@@ -13345,6 +13457,13 @@
   cursor: pointer;
 }
 
+.amis-scope .dark-DropDown-menuItem.is-disabled,
+.amis-scope .dark-DropDown-menu > li.is-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: white;
+}
+
 .amis-scope .dark-DropDown-menuItem.dark-DropDown-divider,
 .amis-scope .dark-DropDown-menu > li.dark-DropDown-divider {
   height: 0.0625rem;
@@ -13355,6 +13474,7 @@
 }
 
 .amis-scope .dark-DropDown-menu > li a {
+  color: inherit;
   display: block;
   text-decoration: none;
 }
@@ -13371,20 +13491,20 @@
 .amis-scope .dark-Each-placeholder {
   color: white;
   text-align: center;
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .dark-Collapse {
   border: none;
   padding: 0;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .dark-Collapse-header {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #dbd6d6;
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
   border-bottom: 0.0625rem solid #dfe2e6;
 }
 
@@ -13392,7 +13512,7 @@
   display: inline-block;
   width: 1rem;
   text-align: center;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 
@@ -13503,11 +13623,11 @@
   transition: opacity 0.2s;
   display: flex;
   align-items: center;
-  margin-left: 0.9375rem;
+  margin-left: 0.75rem;
 }
 
 .amis-scope .dark-CBGroup-toolbar .dark-CBGroup-toolbarConditionAdd .dark-CBDelete {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-CBGroup-toolbar:not(:hover) .dark-CBGroup-toolbarConditionAdd {
@@ -13561,7 +13681,7 @@
   content: "";
   top: -10px;
   left: -30px;
-  width: 20px;
+  width: 1rem;
   border-left: solid 1px #656565;
   bottom: 0;
 }
@@ -13570,7 +13690,7 @@
   position: absolute;
   content: "";
   top: 50%;
-  width: 20px;
+  width: 1rem;
   left: -30px;
   border-top: solid 1px #656565;
 }
@@ -13643,7 +13763,7 @@
   cursor: move;
   width: 20px;
   margin-left: -5px;
-  opacity: 0;
+  opacity: 0.6;
   text-align: center;
   transition: opacity 0.2s ease-out;
   color: #4b5563;
@@ -13820,8 +13940,8 @@
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.34);
   color: rgba(0, 0, 0, 0.75);
   font-family: -apple-system, Lucida Grande;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 0.875rem;
+  line-height: 1.1;
 }
 
 .amis-scope .dark-ContextMenu-menu.in,
@@ -13938,8 +14058,8 @@
   border-radius: 7px;
   color: rgba(0, 0, 0, 0.75);
   font-family: -apple-system, Lucida Grande;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 0.875rem;
+  line-height: 1.1;
 }
 
 .amis-scope .dark-ContextMenu-item:hover > .dark-ContextMenu-subList::before {
@@ -14000,10 +14120,10 @@
 .amis-scope .dark-Wizard .dark-Badge,
 .amis-scope .dark-Wizard-tabs .dark-Badge {
   display: inline-block;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   font-size: 0.75rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   color: #fff;
   text-align: center;
   white-space: nowrap;
@@ -14031,7 +14151,7 @@
 .amis-scope .dark-Wizard .dark-Panel-footer > .btn,
 .amis-scope .dark-Wizard-tabs .dark-Panel-footer > .dark-Form-group,
 .amis-scope .dark-Wizard-tabs .dark-Panel-footer > .btn {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Wizard > ul.nav,
@@ -14045,7 +14165,7 @@
 .amis-scope .dark-Wizard-tabs > ul.nav li {
   position: relative;
   float: left;
-  padding: 0 0.9375rem 0 1.5625rem;
+  padding: 0 1rem 0 1.5625rem;
   margin: 0;
   color: #999999;
   cursor: pointer;
@@ -14069,7 +14189,7 @@
 
 .amis-scope .dark-Wizard > ul.nav li:first-child,
 .amis-scope .dark-Wizard-tabs > ul.nav li:first-child {
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
   border-radius: 0.25rem 0 0 0;
 }
 
@@ -14080,7 +14200,7 @@
   content: "";
   position: absolute;
   right: -0.625rem;
-  border: 1.25rem solid transparent;
+  border: 1rem solid transparent;
   border-right: 0;
   border-left: 0.625rem solid #656565;
   border-left-color: rgba(0, 0, 0, 0.05);
@@ -14134,7 +14254,7 @@
 .amis-scope .dark-Wizard-steps ul li {
   position: relative;
   float: left;
-  padding: 0 0.9375rem 0 1.5625rem;
+  padding: 0 1rem 0 1.5625rem;
   margin: 0;
   color: #999999;
   cursor: default;
@@ -14143,7 +14263,7 @@
 }
 
 .amis-scope .dark-Wizard-steps ul li:first-child {
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
   border-radius: 0.25rem 0 0 0;
 }
 
@@ -14154,7 +14274,7 @@
   position: absolute;
   bottom: 0;
   right: -0.625rem;
-  border: 1.25rem solid transparent;
+  border: 1.125rem solid transparent;
   border-right: 0;
   border-left: 0.625rem solid #656565;
   border-left-color: rgba(0, 0, 0, 0.05);
@@ -14188,7 +14308,7 @@
 }
 
 .amis-scope .dark-Wizard-stepContent {
-  padding: 0.9375rem;
+  padding: 0.75rem;
 }
 
 .amis-scope .dark-Wizard-stepContent .Step-pane {
@@ -14225,7 +14345,7 @@
   position: relative;
   float: none;
   border-bottom: 0.0625rem solid #656565;
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .dark-Wizard--vertical > .dark-Wizard-step > .dark-Wizard-steps ul li.is-active {
@@ -14246,13 +14366,13 @@
 }
 
 .amis-scope .dark-Crud-selection {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .dark-Crud-selectionLabel {
   display: inline-block;
   vertical-align: top;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .dark-Crud-value {
@@ -14266,8 +14386,8 @@
   background: #302d2a;
   border: 0.0625rem solid #b2dbfc;
   border-radius: 2px;
-  margin-right: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .dark-Crud-value:hover {
@@ -14290,21 +14410,21 @@
 }
 
 .amis-scope .dark-Crud-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .dark-Crud-selectionClear {
   display: inline-block;
   cursor: pointer;
   user-select: none;
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
   vertical-align: middle;
 }
 
 .amis-scope .dark-Crud-toolbar-item {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
   line-height: 1.5;
   height: 1.875rem;
   vertical-align: middle;
@@ -14323,7 +14443,7 @@
 .amis-scope .dark-Crud-actions > * + .dark-Button,
 .amis-scope .dark-Crud-actions > * + .dark-ButtonGroup,
 .amis-scope .dark-Crud-actions > * + .dark-ButtonToolbar {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Crud-statistics {
@@ -14332,7 +14452,7 @@
 }
 
 .amis-scope .dark-Crud-pageSwitch .dark-Select {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Crud-pager {
@@ -14341,8 +14461,8 @@
 
 @media (min-width: 576px) {
   .amis-scope .dark-Crud-toolbar {
-    margin-left: calc(0.3125rem * -1);
-    margin-top: calc(0.3125rem * -1);
+    margin-left: calc(0.25rem * -1);
+    margin-top: calc(0.25rem * -1);
     flex-basis: 0;
     flex-grow: 1;
   }
@@ -14358,7 +14478,7 @@
   }
 
   .amis-scope .dark-Crud-toolbar-item {
-    margin-left: 0.3125rem;
+    margin-left: 0.25rem;
     line-height: 1.5;
     height: 1.875rem;
     vertical-align: middle;
@@ -14372,8 +14492,9 @@
     float: right;
   }
 
-  .amis-scope .dark-Crud-actions > .dark-Button + .dark-Button {
-    margin-left: 0.3125rem;
+  .amis-scope .dark-Crud-actions > * + .dark-Button,
+  .amis-scope .dark-Crud-actions > * + .dark-Button--disabled-wrap {
+    margin-left: 0.25rem;
   }
 }
 
@@ -14382,11 +14503,11 @@
   background: #333538;
   border: 0.0625rem solid #656565;
   border-radius: 0.142rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .amis-scope .dark-Form-control > .dark-Table {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .dark-Table-fixedLeft,
@@ -14410,7 +14531,7 @@
 
 .amis-scope .dark-Table-fixedLeft > .dark-Table-table > thead > tr > th:last-child,
 .amis-scope .dark-Table-fixedLeft > .dark-Table-table > tbody > tr > td:last-child {
-  padding-right: 0.625rem;
+  padding-right: 0.5rem;
 }
 
 .amis-scope .dark-Table-fixedRight {
@@ -14425,7 +14546,7 @@
 
 .amis-scope .dark-Table-fixedRight > .dark-Table-table > thead > tr > th:first-child,
 .amis-scope .dark-Table-fixedRight > .dark-Table-table > tbody > tr > td:first-child {
-  padding-left: 0.625rem;
+  padding-left: 0.5rem;
 }
 
 .amis-scope .dark-Table-fixedTop {
@@ -14451,7 +14572,7 @@
 
 .amis-scope .dark-Table-fixedTop > .dark-Table-fixedLeft > table,
 .amis-scope .dark-Table-fixedTop > .dark-Table-fixedRight > table {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .dark-Table-fixedTop > .dark-Table-heading {
@@ -14472,7 +14593,7 @@
 .amis-scope .dark-Table-heading {
   background: #fff;
   border-bottom: 0.0625rem solid #656565;
-  padding: calc( ( 2.5rem - 0.875rem * 1.5 ) / 2 ) 0.625rem;
+  padding: calc( ( 2.5rem - 0.875rem * 1.5 ) / 2 ) 0.5rem;
 }
 
 .amis-scope .dark-Table--unsaved .dark-Table-heading {
@@ -14502,18 +14623,18 @@
 }
 
 .amis-scope .dark-Table-header {
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .amis-scope .dark-Table-header > * + .dark-Button,
 .amis-scope .dark-Table-header > * + .dark-ButtonGroup,
 .amis-scope .dark-Table-header > * + .dark-ButtonToolbar {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Table-toolbar {
   display: flex;
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
   flex-wrap: wrap;
 }
 
@@ -14558,7 +14679,7 @@
 }
 
 .amis-scope .dark-Table-actions > * {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Table-content {
@@ -14580,12 +14701,12 @@
 
 .amis-scope .dark-Table-table--withCombine > thead > tr > th:first-child,
 .amis-scope .dark-Table-table--withCombine > tbody > tr > td:first-child {
-  padding-left: 0.625rem !important;
+  padding-left: 0.5rem !important;
 }
 
 .amis-scope .dark-Table-table--withCombine > thead > tr > th:last-child,
 .amis-scope .dark-Table-table--withCombine > tbody > tr > td:last-child {
-  padding-right: 0.625rem !important;
+  padding-right: 0.5rem !important;
 }
 
 .amis-scope .dark-Table-table--withCombine > tbody > tr.dark-Table-tr--odd {
@@ -14610,7 +14731,7 @@
   padding: calc(
     (2.5rem - 0.875rem * 1.5) /
       2
-  ) 0.625rem;
+  ) 0.5rem;
   border-bottom: 0.0625rem solid #656565;
   font-size: 0.875rem;
   color: #dbd6d6;
@@ -14623,11 +14744,11 @@
 }
 
 .amis-scope .dark-Table-table > thead > tr > th:first-child {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .dark-Table-table > thead > tr > th:last-child {
-  padding-right: 1.25rem;
+  padding-right: 1rem;
 }
 
 .amis-scope .dark-Table-table > thead > tr > th:not(:last-child) {
@@ -14635,7 +14756,7 @@
 }
 
 .amis-scope .dark-Table-table > thead > tr > th .dark-Remark {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Table-table > thead > tr + tr {
@@ -14672,18 +14793,17 @@
   padding: calc(
     (2.5rem - 0.875rem * 1.5) /
       2
-  ) 0.625rem;
-  vertical-align: top;
+  ) 0.5rem;
 }
 
 .amis-scope .dark-Table-table > tbody > tr > td:first-child,
 .amis-scope .dark-Table-table > tbody > tr > th:first-child {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .dark-Table-table > tbody > tr > td:last-child,
 .amis-scope .dark-Table-table > tbody > tr > th:last-child {
-  padding-right: 1.25rem;
+  padding-right: 1rem;
 }
 
 .amis-scope .dark-Table-table > tbody > tr.dark-Table-tr--odd {
@@ -15143,17 +15263,17 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--2th.is-expanded .dark-Table-expandCell:before {
-  right: -0.8125rem;
+  right: -0.6875rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--2th .dark-Table-expandBtn {
   position: relative;
-  right: -1.25rem;
+  right: -1.125rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--2th .dark-Table-expandCell + td {
   position: relative;
-  padding-left: 1.25rem;
+  padding-left: 1.125rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--2th .dark-Table-expandCell + td::before {
@@ -15178,7 +15298,7 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--2th.is-expandable .dark-Table-expandCell + td {
-  padding-left: 1.25rem;
+  padding-left: 1.125rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--2th.is-last:not(.is-expanded) .dark-Table-expandCell + td::before {
@@ -15187,17 +15307,17 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--3th.is-expanded .dark-Table-expandCell:before {
-  right: -2.0625rem;
+  right: -1.8125rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--3th .dark-Table-expandBtn {
   position: relative;
-  right: -2.5rem;
+  right: -2.25rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--3th .dark-Table-expandCell + td {
   position: relative;
-  padding-left: 2.5rem;
+  padding-left: 2.25rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--3th .dark-Table-expandCell + td::before {
@@ -15206,7 +15326,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 0.75rem;
+  left: 0.625rem;
   height: auto;
   background: #656565;
 }
@@ -15216,13 +15336,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 0.75rem;
+  left: 0.625rem;
   width: 0.625rem;
   background: #656565;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--3th.is-expandable .dark-Table-expandCell + td {
-  padding-left: 2.5rem;
+  padding-left: 2.25rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--3th.is-last:not(.is-expanded) .dark-Table-expandCell + td::before {
@@ -15231,17 +15351,17 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--4th.is-expanded .dark-Table-expandCell:before {
-  right: -3.3125rem;
+  right: -2.9375rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--4th .dark-Table-expandBtn {
   position: relative;
-  right: -3.75rem;
+  right: -3.375rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--4th .dark-Table-expandCell + td {
   position: relative;
-  padding-left: 3.75rem;
+  padding-left: 3.375rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--4th .dark-Table-expandCell + td::before {
@@ -15250,7 +15370,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 2rem;
+  left: 1.75rem;
   height: auto;
   background: #656565;
 }
@@ -15260,13 +15380,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 2rem;
+  left: 1.75rem;
   width: 0.625rem;
   background: #656565;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--4th.is-expandable .dark-Table-expandCell + td {
-  padding-left: 3.75rem;
+  padding-left: 3.375rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--4th.is-last:not(.is-expanded) .dark-Table-expandCell + td::before {
@@ -15275,17 +15395,17 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--5th.is-expanded .dark-Table-expandCell:before {
-  right: -4.5625rem;
+  right: -4.0625rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--5th .dark-Table-expandBtn {
   position: relative;
-  right: -5rem;
+  right: -4.5rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--5th .dark-Table-expandCell + td {
   position: relative;
-  padding-left: 5rem;
+  padding-left: 4.5rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--5th .dark-Table-expandCell + td::before {
@@ -15294,7 +15414,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 3.25rem;
+  left: 2.875rem;
   height: auto;
   background: #656565;
 }
@@ -15304,13 +15424,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 3.25rem;
+  left: 2.875rem;
   width: 0.625rem;
   background: #656565;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--5th.is-expandable .dark-Table-expandCell + td {
-  padding-left: 5rem;
+  padding-left: 4.5rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--5th.is-last:not(.is-expanded) .dark-Table-expandCell + td::before {
@@ -15319,17 +15439,17 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--6th.is-expanded .dark-Table-expandCell:before {
-  right: -5.8125rem;
+  right: -5.1875rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--6th .dark-Table-expandBtn {
   position: relative;
-  right: -6.25rem;
+  right: -5.625rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--6th .dark-Table-expandCell + td {
   position: relative;
-  padding-left: 6.25rem;
+  padding-left: 5.625rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--6th .dark-Table-expandCell + td::before {
@@ -15338,7 +15458,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 4.5rem;
+  left: 4rem;
   height: auto;
   background: #656565;
 }
@@ -15348,13 +15468,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 4.5rem;
+  left: 4rem;
   width: 0.625rem;
   background: #656565;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--6th.is-expandable .dark-Table-expandCell + td {
-  padding-left: 6.25rem;
+  padding-left: 5.625rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--6th.is-last:not(.is-expanded) .dark-Table-expandCell + td::before {
@@ -15363,17 +15483,17 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--7th.is-expanded .dark-Table-expandCell:before {
-  right: -7.0625rem;
+  right: -6.3125rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--7th .dark-Table-expandBtn {
   position: relative;
-  right: -7.5rem;
+  right: -6.75rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--7th .dark-Table-expandCell + td {
   position: relative;
-  padding-left: 7.5rem;
+  padding-left: 6.75rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--7th .dark-Table-expandCell + td::before {
@@ -15382,7 +15502,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 5.75rem;
+  left: 5.125rem;
   height: auto;
   background: #656565;
 }
@@ -15392,13 +15512,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 5.75rem;
+  left: 5.125rem;
   width: 0.625rem;
   background: #656565;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--7th.is-expandable .dark-Table-expandCell + td {
-  padding-left: 7.5rem;
+  padding-left: 6.75rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--7th.is-last:not(.is-expanded) .dark-Table-expandCell + td::before {
@@ -15407,17 +15527,17 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--8th.is-expanded .dark-Table-expandCell:before {
-  right: -8.3125rem;
+  right: -7.4375rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--8th .dark-Table-expandBtn {
   position: relative;
-  right: -8.75rem;
+  right: -7.875rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--8th .dark-Table-expandCell + td {
   position: relative;
-  padding-left: 8.75rem;
+  padding-left: 7.875rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--8th .dark-Table-expandCell + td::before {
@@ -15426,7 +15546,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 7rem;
+  left: 6.25rem;
   height: auto;
   background: #656565;
 }
@@ -15436,13 +15556,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 7rem;
+  left: 6.25rem;
   width: 0.625rem;
   background: #656565;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--8th.is-expandable .dark-Table-expandCell + td {
-  padding-left: 8.75rem;
+  padding-left: 7.875rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--8th.is-last:not(.is-expanded) .dark-Table-expandCell + td::before {
@@ -15451,17 +15571,17 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--9th.is-expanded .dark-Table-expandCell:before {
-  right: -9.5625rem;
+  right: -8.5625rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--9th .dark-Table-expandBtn {
   position: relative;
-  right: -10rem;
+  right: -9rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--9th .dark-Table-expandCell + td {
   position: relative;
-  padding-left: 10rem;
+  padding-left: 9rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--9th .dark-Table-expandCell + td::before {
@@ -15470,7 +15590,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 8.25rem;
+  left: 7.375rem;
   height: auto;
   background: #656565;
 }
@@ -15480,13 +15600,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 8.25rem;
+  left: 7.375rem;
   width: 0.625rem;
   background: #656565;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--9th.is-expandable .dark-Table-expandCell + td {
-  padding-left: 10rem;
+  padding-left: 9rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--9th.is-last:not(.is-expanded) .dark-Table-expandCell + td::before {
@@ -15495,17 +15615,17 @@
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--10th.is-expanded .dark-Table-expandCell:before {
-  right: -10.8125rem;
+  right: -9.6875rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--10th .dark-Table-expandBtn {
   position: relative;
-  right: -11.25rem;
+  right: -10.125rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--10th .dark-Table-expandCell + td {
   position: relative;
-  padding-left: 11.25rem;
+  padding-left: 10.125rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--10th .dark-Table-expandCell + td::before {
@@ -15514,7 +15634,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 9.5rem;
+  left: 8.5rem;
   height: auto;
   background: #656565;
 }
@@ -15524,13 +15644,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 9.5rem;
+  left: 8.5rem;
   width: 0.625rem;
   background: #656565;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--10th.is-expandable .dark-Table-expandCell + td {
-  padding-left: 11.25rem;
+  padding-left: 10.125rem;
 }
 
 .amis-scope .dark-Table-table tr.dark-Table-tr--10th.is-last:not(.is-expanded) .dark-Table-expandCell + td::before {
@@ -15542,7 +15662,7 @@
 .amis-scope .dark-Table-table > tbody > tr > td.dark-Table-checkCell {
   border-right: 0;
   width: 0.0625rem;
-  padding-right: 0.625rem;
+  padding-right: 0.5rem;
 }
 
 .amis-scope .dark-Table-table > thead > tr > th.dark-Table-checkCell .dark-Checkbox,
@@ -15586,7 +15706,7 @@
   bottom: 0;
   height: 100%;
   background: #656565;
-  right: -0.8125rem;
+  right: -0.6875rem;
 }
 
 .amis-scope .dark-Table-table > tbody > tr > td.dark-Table-expandCell .dark-Table-divider-3 {
@@ -15596,7 +15716,7 @@
   bottom: 0;
   height: 100%;
   background: #656565;
-  right: -2.0625rem;
+  right: -1.8125rem;
 }
 
 .amis-scope .dark-Table-table > tbody > tr > td.dark-Table-expandCell .dark-Table-divider-4 {
@@ -15606,7 +15726,7 @@
   bottom: 0;
   height: 100%;
   background: #656565;
-  right: -3.3125rem;
+  right: -2.9375rem;
 }
 
 .amis-scope .dark-Table-table > tbody > tr > td.dark-Table-expandCell .dark-Table-divider-5 {
@@ -15616,7 +15736,7 @@
   bottom: 0;
   height: 100%;
   background: #656565;
-  right: -4.5625rem;
+  right: -4.0625rem;
 }
 
 .amis-scope .dark-Table-table > tbody > tr > td.dark-Table-expandCell .dark-Table-divider-6 {
@@ -15626,7 +15746,7 @@
   bottom: 0;
   height: 100%;
   background: #656565;
-  right: -5.8125rem;
+  right: -5.1875rem;
 }
 
 .amis-scope .dark-Table-table > tbody > tr > td.dark-Table-expandCell .dark-Table-divider-7 {
@@ -15636,7 +15756,7 @@
   bottom: 0;
   height: 100%;
   background: #656565;
-  right: -7.0625rem;
+  right: -6.3125rem;
 }
 
 .amis-scope .dark-Table-table > tbody > tr.is-expanded > td.dark-Table-expandCell::before {
@@ -15651,30 +15771,30 @@
 }
 
 .amis-scope .dark-Table-table > thead > tr > th.dark-TableCell--sortable {
-  padding-right: calc( 0.625rem + 0.5rem);
+  padding-right: calc( 0.5rem + 0.5rem);
   position: relative;
 }
 
 .amis-scope .dark-Table-table > thead > tr > th.dark-TableCell--searchable {
-  padding-right: calc( 0.625rem + 1rem);
+  padding-right: calc( 0.5rem + 1rem);
   position: relative;
 }
 
 .amis-scope .dark-Table-table > thead > tr > th.dark-TableCell--filterable {
-  padding-right: calc( 0.625rem + 1rem);
+  padding-right: calc( 0.5rem + 1rem);
   position: relative;
 }
 
 .amis-scope .dark-TableCell-sortBtn {
   cursor: pointer;
   width: 0.5rem;
-  height: 1.25rem;
+  height: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: calc(0.625rem - 0.5rem / 2);
+  right: calc(0.5rem - 0.5rem / 2);
   top: 50%;
   transform: translateY(-50%);
   color: #4b5563;
@@ -15723,7 +15843,7 @@
 .amis-scope .dark-TableCell-searchBtn {
   cursor: pointer;
   position: absolute;
-  right: 0.3125rem;
+  right: 0.25rem;
   top: 50%;
   transform: translateY(-50%);
   color: white;
@@ -15756,7 +15876,7 @@
   cursor: pointer;
   width: 1rem;
   position: absolute;
-  right: calc( 0.625rem - 1rem / 2 );
+  right: calc( 0.5rem - 1rem / 2 );
   top: 50%;
   transform: translateY(-50%);
   color: white;
@@ -15832,14 +15952,14 @@
   bottom: 0;
   right: 0;
   padding-left: 3.125rem;
-  padding-right: 0.625rem;
+  padding-right: 0.5rem;
   display: flex;
   align-items: center;
 }
 
 .amis-scope .dark-Table-itemActions a {
   cursor: pointer;
-  padding: 0.3125rem 0.625rem;
+  padding: 0.25rem 0.5rem;
   color: #2296f3;
   text-decoration: none;
 }
@@ -15858,7 +15978,7 @@
 .amis-scope .dark-Table-dragTip {
   color: #dbd6d6;
   clear: both;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
   width: 100%;
   color: #2296f3;
 }
@@ -15878,7 +15998,7 @@
   padding: calc(
     (2.5rem - 0.875rem * 1.5) /
       2
-  ) 0.625rem;
+  ) 0.5rem;
 }
 
 .amis-scope .dark-Table-footTable > tbody > tr > td {
@@ -15886,7 +16006,7 @@
   padding: calc(
     (2.5rem - 0.875rem * 1.5) /
       2
-  ) 0.625rem;
+  ) 0.5rem;
 }
 
 .amis-scope .dark-Table-footTable > tbody > tr:not(:first-child) {
@@ -15923,7 +16043,7 @@
 }
 
 .amis-scope .dark-Table-dragBtn {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
   display: inline-block;
   visibility: hidden;
   cursor: move;
@@ -15968,14 +16088,14 @@
   border: 0.0625rem solid #656565;
   border-radius: 0.142rem;
   background: #302d2a;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
 .amis-scope .dark-List-toolbar {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .amis-scope .dark-List-toolbar::before,
@@ -15993,17 +16113,17 @@
 }
 
 .amis-scope .dark-List-actions > * {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-List-header {
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .amis-scope .dark-List-header > * + .dark-Button,
 .amis-scope .dark-List-header > * + .dark-ButtonGroup,
 .amis-scope .dark-List-header > * + .dark-ButtonToolbar {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-List-header + .dark-List-toolbar {
@@ -16011,7 +16131,7 @@
 }
 
 .amis-scope .dark-List-heading {
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
 }
 
 .amis-scope .dark-List-fixedTop {
@@ -16020,7 +16140,6 @@
   z-index: -1;
   opacity: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 0.625rem;
 }
 
 .amis-scope .dark-List-fixedTop.in {
@@ -16040,15 +16159,15 @@
 .amis-scope .dark-List--unsaved .dark-List-heading {
   background: #e8f0fe;
   color: #4285f4;
-  padding: 0.3125rem 0.625rem;
-  margin-bottom: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .dark-List-dragTip {
   width: 100%;
   color: #2296f3;
   clear: both;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .dark-List-placeholder {
@@ -16067,7 +16186,7 @@
 .amis-scope .dark-ListGroup-item {
   position: relative;
   display: block;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   margin-bottom: -0.0625rem;
   background: #fff;
   border: 0.0625rem solid #656565;
@@ -16098,7 +16217,7 @@
 
 .amis-scope .dark-ListGroup--expanded .dark-ListGroup-item {
   border-radius: 0.142rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .dark-ListGroup--expanded .dark-ListGroup-item:last-child {
@@ -16108,7 +16227,7 @@
 .amis-scope .dark-ListItem {
   position: relative;
   display: block;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
 }
 
 .amis-scope .dark-ListItem::before,
@@ -16131,13 +16250,13 @@
 
 .amis-scope .dark-ListItem-checkBtn {
   float: left;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-ListItem-dragBtn {
   cursor: move;
   float: left;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-ListItem-actions {
@@ -16146,7 +16265,7 @@
 
 .amis-scope .dark-ListItem--actions-at-left .dark-ListItem-actions {
   float: left;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
 }
 
 .amis-scope .dark-ListItem-title {
@@ -16219,7 +16338,7 @@
 
 .amis-scope .dark-Cards-toolbar {
   padding: 0 0;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .dark-Cards-toolbar::before,
@@ -16237,11 +16356,11 @@
 }
 
 .amis-scope .dark-Cards-actions > * {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Cards-heading {
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
 }
 
 .amis-scope .dark-Cards-header {
@@ -16251,7 +16370,7 @@
 .amis-scope .dark-Cards-header > * + .dark-Button,
 .amis-scope .dark-Cards-header > * + .dark-ButtonGroup,
 .amis-scope .dark-Cards-header > * + .dark-ButtonToolbar {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Cards-header + .dark-Cards-toolbar {
@@ -16264,7 +16383,7 @@
   z-index: -1;
   opacity: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .dark-Cards-fixedTop.in {
@@ -16284,15 +16403,15 @@
 .amis-scope .dark-Cards--unsaved .dark-Cards-heading {
   background: #e8f0fe;
   color: #4285f4;
-  padding: 0.3125rem 0.625rem;
-  margin-bottom: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .dark-Cards-dragTip {
   width: 100%;
   color: #2296f3;
   clear: both;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .dark-Cards-placeholder {
@@ -16415,7 +16534,7 @@
   background: #302d2a;
   border: 0.0625rem solid #656565;
   border-radius: 0.142rem;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -16424,7 +16543,7 @@
 
 .amis-scope .dark-Card-title {
   color: #dbd6d6;
-  font-size: 1rem;
+  font-size: 0.875rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -16441,14 +16560,14 @@
 }
 
 .amis-scope .dark-Card-title + .dark-Card-subTitle {
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .dark-Card-checkBtn {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0.625rem;
+  margin: 0.5rem;
   z-index: 1;
 }
 
@@ -16459,18 +16578,18 @@
 .amis-scope .dark-Card-dragBtn {
   cursor: pointer;
   float: right;
-  margin: 0.625rem;
+  margin: 0.5rem;
 }
 
 .amis-scope .dark-Card-heading {
   overflow: hidden;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   flex: 1 0 auto;
 }
 
 .amis-scope .dark-Card-avtar {
   float: left;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   max-width: 12.5rem;
 }
 
@@ -16488,8 +16607,8 @@
   vertical-align: middle;
   border-radius: 500px;
   float: left;
-  margin-right: 0.9375rem;
-  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
   text-transform: uppercase();
 }
 
@@ -16498,7 +16617,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
 .amis-scope .dark-Card-highlight {
@@ -16508,17 +16627,17 @@
   border-radius: 100%;
   display: inline-block;
   position: absolute;
-  top: 0.3125rem;
+  top: 0.25rem;
   right: 0.125rem;
 }
 
 .amis-scope .dark-Card-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   flex: 1 0 auto;
 }
 
 .amis-scope .dark-Card-heading + .dark-Card-body {
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
 }
 
 .amis-scope .dark-Card-field {
@@ -16636,7 +16755,7 @@
 
 .amis-scope .dark-Field-quickEditBtn {
   color: inherit;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: inline-block;
   vertical-align: text-top;
   cursor: pointer;
@@ -16685,7 +16804,7 @@
 
 .amis-scope .dark-Field-popOverBtn {
   color: inherit;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   visibility: hidden;
   display: inline-block;
   cursor: pointer;
@@ -16788,9 +16907,48 @@
   }
 }
 
+.amis-scope .dark-Property > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.amis-scope .dark-Property > table > thead > tr > th {
+  padding: 0.5rem;
+  background: #f2f2f2;
+  border: 1px solid #656565;
+}
+
+.amis-scope .dark-Property > table > tbody > tr {
+  background: #333538;
+}
+
+.amis-scope .dark-Property > table > tbody > tr > td,
+.amis-scope .dark-Property > table > tbody > tr > th {
+  border: 1px solid #656565;
+  padding: 0.5rem;
+}
+
+.amis-scope .dark-Property > table > tbody > tr > th {
+  background: #f7f7f7;
+}
+
+.amis-scope .dark-Property--simple > table > thead > tr > th {
+  background: transparent;
+  border: none;
+}
+
+.amis-scope .dark-Property--simple > table > tbody > tr {
+  background: transparent;
+}
+
+.amis-scope .dark-Property--simple > table > tbody > tr > td,
+.amis-scope .dark-Property--simple > table > tbody > tr > th {
+  border: none;
+}
+
 .amis-scope .dark-Field-copyBtn {
   color: #4b5563;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: inline-block;
   cursor: pointer;
 }
@@ -16800,7 +16958,7 @@
 }
 
 .amis-scope .dark-Divider {
-  margin: 0.9375rem calc(0.9375rem * -1);
+  margin: 0.75rem calc(0.75rem * -1);
   border-bottom: 0.0625rem dashed #656565;
   height: 0.125rem;
   font-size: 0;
@@ -16812,7 +16970,6 @@
 
 .amis-scope .dark-Pagination {
   display: inline-block;
-  padding-left: 0;
   padding: 0;
   margin: 0 0 -0.625rem;
   border-radius: 0.25rem;
@@ -16891,27 +17048,23 @@
 .amis-scope .dark-Pagination-inputGroup {
   display: inline-flex;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
-.amis-scope .dark-Pagination-inputGroup .dark-Pagination-input {
+.amis-scope .dark-Pagination-inputGroup input {
   width: 3.125rem;
   height: 1.875rem;
   border: 0.0625rem solid #656565;
-  border-top-left-radius: 0.142rem;
-  border-bottom-left-radius: 0.142rem;
-  padding: 0.3125rem 0.625rem;
+  border-radius: 0.142rem;
+  padding: 0.25rem 0.625rem;
+  margin: 0 0.625rem;
+  text-align: center;
 }
 
-.amis-scope .dark-Pagination-inputGroup .dark-Pagination-input:focus {
+.amis-scope .dark-Pagination-inputGroup input:focus,
+.amis-scope .dark-Pagination-inputGroup input:hover {
   outline: none;
   border: 0.0625rem solid #0983ff;
-}
-
-.amis-scope .dark-Pagination-inputGroup .dark-Button {
-  height: 1.875rem;
-  margin-left: -0.0625rem;
-  border-radius: 0 0.142rem 0.142rem 0;
-  padding: 0 0.625rem;
 }
 
 .amis-scope .dark-PaginationWrapper-pager {
@@ -16919,31 +17072,31 @@
 }
 
 .amis-scope .dark-PaginationWrapper-pager:first-child {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .dark-Wrapper {
-  padding: 0.9375rem;
+  padding: 1rem;
 }
 
 .amis-scope .dark-Wrapper--xs {
-  padding: 0.3125rem;
+  padding: 0.25rem;
 }
 
 .amis-scope .dark-Wrapper--sm {
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .dark-Wrapper--md {
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 .amis-scope .dark-Wrapper--lg {
-  padding: 1.875rem;
+  padding: 1.25rem;
 }
 
 .amis-scope .dark-Wrapper--xl {
-  padding: 3.125rem;
+  padding: 1.5rem;
 }
 
 .amis-scope .dark-Wrapper--none {
@@ -16960,7 +17113,7 @@
 
 .amis-scope .dark-StatusField-label {
   font-size: 0.75rem;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 @keyframes animation-rolling_red {
@@ -17164,7 +17317,7 @@
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 0.25rem;
-  margin: 0.4375rem 0.3125rem;
+  margin: 0.4375rem 0.25rem;
   transition-duration: 0.2s;
   opacity: 0.3;
 }
@@ -17188,6 +17341,7 @@
   cursor: pointer;
   position: absolute;
   transition-duration: 0.2s;
+  display: none;
   left: 0;
 }
 
@@ -17208,6 +17362,7 @@
   cursor: pointer;
   position: absolute;
   transition-duration: 0.2s;
+  display: none;
   right: 0;
 }
 
@@ -17219,6 +17374,14 @@
   transform: translate(-50%, -50%);
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.amis-scope .dark-Carousel-arrowsControl:hover .dark-Carousel-leftArrow {
+  display: block;
+}
+
+.amis-scope .dark-Carousel-arrowsControl:hover .dark-Carousel-rightArrow {
+  display: block;
 }
 
 @keyframes disappear {
@@ -17325,11 +17488,11 @@
 }
 
 .amis-scope .dark-ImageGallery-prevBtn {
-  left: 1.25rem;
+  left: 1rem;
 }
 
 .amis-scope .dark-ImageGallery-nextBtn {
-  right: 1.25rem;
+  right: 1rem;
 }
 
 .amis-scope .dark-ImageGallery-footer {
@@ -17342,7 +17505,7 @@
 
 .amis-scope .dark-ImageGallery-prevList,
 .amis-scope .dark-ImageGallery-nextList {
-  width: 1.25rem;
+  width: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17436,23 +17599,22 @@
 .amis-scope .dark-Images {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(0.3125rem * -1);
+  margin: calc(0.25rem * -1);
 }
 
 .amis-scope .dark-Images-item {
   display: flex;
-  margin: 0.3125rem;
+  margin: 0.25rem;
 }
 
 .amis-scope .dark-Image {
   display: inline-block;
-  width: 7.5rem;
   border: 0.0625rem solid #656565;
-  padding: 0.3125rem;
+  padding: 0.25rem;
 }
 
 .amis-scope .dark-Image-thumb {
-  width: 100%;
+  width: 6.75rem;
   height: 6.75rem;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwMCIgaGVpZ2h0PSI0MDAiPgogICAgPGRlZnM+CiAgICAgICAgPHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgICAgICAgIDxyZWN0IGZpbGw9ImJsYWNrIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIG9wYWNpdHk9IjAuMSIgLz4KICAgICAgICAgICAgPHJlY3QgZmlsbD0id2hpdGUiIHg9IjEwIiB5PSIwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIC8+CiAgICAgICAgICAgIDxyZWN0IGZpbGw9ImJsYWNrIiB4PSIxMCIgeT0iMTAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgb3BhY2l0eT0iMC4xIiAvPgogICAgICAgICAgICA8cmVjdCBmaWxsPSJ3aGl0ZSIgeD0iMCIgeT0iMTAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICA8L2RlZnM+CiAgICA8cmVjdCBmaWxsPSJ1cmwoI2dyaWQpIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiAvPgo8L3N2Zz4=");
   overflow: hidden;
@@ -17468,12 +17630,34 @@
   transform: translate(-50%, -50%);
 }
 
+.amis-scope .dark-Image-info {
+  width: 6.75rem;
+}
+
 .amis-scope .dark-Image-thumb--4-3 {
   height: 5.0625rem;
 }
 
 .amis-scope .dark-Image-thumb--16-9 {
   height: 3.796875rem;
+}
+
+.amis-scope .dark-Image-thumb--fixed-size {
+  min-width: 6.75rem;
+  min-height: 6.75rem;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+}
+
+.amis-scope .dark-Image-thumb--fixed-size .dark-Image-thumb {
+  width: 100%;
+  height: 100%;
+}
+
+.amis-scope .dark-Image-thumb--fixed-size .dark-Image-thumb > img {
+  width: auto;
+  height: 100%;
 }
 
 .amis-scope .dark-Image-thumb--w-full > img {
@@ -17507,6 +17691,16 @@
 
 .amis-scope .dark-Image-caption {
   font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.amis-scope .dark-Image-title {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .amis-scope .dark-Image-overlay {
@@ -17580,7 +17774,7 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
@@ -17682,7 +17876,7 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
@@ -17691,7 +17885,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   padding: 0 0.1875rem;
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   align-items: center;
 }
 
@@ -17801,7 +17995,7 @@
   background: #f5f5f5;
   color: #000;
   font-size: 0.875rem;
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
   min-height: 1.5rem;
   flex-wrap: nowrap;
   display: inline-flex;
@@ -17812,7 +18006,7 @@
 
 .amis-scope .dark-ResultBox-value > a {
   cursor: pointer;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   color: #999;
 }
 
@@ -17924,7 +18118,7 @@
 .amis-scope .dark-ListMenu-groupLabel {
   font-size: 0.6875rem;
   color: white;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem - 0.625rem ) / 2 ) 0 0 calc(0.75rem - 0.3125rem);
+  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem - 0.5rem ) / 2 ) 0 0 calc(0.75rem - 0.25rem);
 }
 
 .amis-scope .dark-ListMenu-group:not(:first-child) > .dark-ListMenu-groupLabel {
@@ -17973,14 +18167,14 @@
 .amis-scope .dark-Log {
   background: #222;
   color: #f1f1f1;
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
   overflow-y: auto;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
 
 .amis-scope .dark-Log-line {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
@@ -18144,8 +18338,8 @@
 
 .amis-scope fieldset.dark-Collapse > legend {
   font-weight: 400;
-  padding: 0.3125rem 0;
-  font-size: 1rem;
+  padding: 0.25rem 0;
+  font-size: 0.875rem;
   color: #dbd6d6;
   border-left: #0983ff 0.25rem solid;
   line-height: 1.2;
@@ -18186,11 +18380,11 @@
 }
 
 .amis-scope fieldset.dark-Collapse--base {
-  padding: 30px 15px 15px 15px;
+  padding: 30px 1rem 1rem 1rem;
 }
 
 .amis-scope fieldset.dark-Collapse--base > legend {
-  left: 15px;
+  left: 1rem;
   font-size: 0.875rem;
   padding: 0 8px;
   margin: 0 0 0 -8px;
@@ -18206,7 +18400,7 @@
 
 .amis-scope fieldset.dark-Collapse--md > legend {
   left: 20px;
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 0 10px;
   margin: 0 0 0 -10px;
 }
@@ -18221,9 +18415,9 @@
 
 .amis-scope fieldset.dark-Collapse--lg > legend {
   left: 30px;
-  font-size: 1.25rem;
-  padding: 0 15px;
-  margin: 0 0 0 -15px;
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin: 0 0 0 calc(1rem * -1);
 }
 
 .amis-scope fieldset.dark-Collapse--lg:after {
@@ -18231,12 +18425,12 @@
 }
 
 .amis-scope .dark-Form-groupColumn {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 768px) {
   .amis-scope .dark-Form-group {
-    margin-bottom: 0.9375rem;
+    margin-bottom: 0.75rem;
   }
 
   .amis-scope .dark-Form-value > .dark-Form-group {
@@ -18246,8 +18440,8 @@
   .amis-scope .dark-Form-group--hor {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(1.25rem / -2);
-    margin-right: calc(1.25rem / -2);
+    margin-left: calc(1rem / -2);
+    margin-right: calc(1rem / -2);
     align-items: flex-start;
   }
 
@@ -18260,8 +18454,8 @@
   }
 
   .amis-scope .dark-Form-group--hor > * {
-    padding-left: calc(1.25rem / 2);
-    padding-right: calc(1.25rem / 2);
+    padding-left: calc(1rem / 2);
+    padding-right: calc(1rem / 2);
   }
 
   .amis-scope .dark-Form-group--hor > .dark-Form-item--inline {
@@ -18298,13 +18492,13 @@
   }
 
   .amis-scope .dark-Form-group--sm {
-    margin-left: calc(1.25rem / -2);
-    margin-right: calc(1.25rem / -2);
+    margin-left: calc(1rem / -2);
+    margin-right: calc(1rem / -2);
   }
 
   .amis-scope .dark-Form-group--sm > * {
-    padding-left: calc(1.25rem / 2);
-    padding-right: calc(1.25rem / 2);
+    padding-left: calc(1rem / 2);
+    padding-right: calc(1rem / 2);
   }
 
   .amis-scope .dark-Form-group--xs {
@@ -18419,17 +18613,17 @@
 .amis-scope .dark-InputGroup-addOn {
   background: #3c3c3c;
   border: 0.0625rem solid #656565;
-  line-height: calc( 2.125rem - calc(
+  line-height: calc( 1.875rem - calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) * 2 - 0.0625rem * 2 );
-  height: 2.125rem;
+  height: 1.875rem;
   box-sizing: border-box;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
@@ -18565,7 +18759,7 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
@@ -18659,7 +18853,7 @@
   left: 0.75rem;
   top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   );
@@ -18791,7 +18985,7 @@
 }
 
 .amis-scope .dark-TextControl-sugItem {
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0.75rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .dark-TextControl-sugItem svg {
@@ -18819,10 +19013,10 @@
 
 .amis-scope .dark-TextControl-input--multiple {
   height: auto;
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   padding: calc(calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) - 0.125rem) calc(0.75rem - 0.1875rem);
@@ -18838,11 +19032,11 @@
 
 .amis-scope .dark-TextControl-input--multiple .dark-TextControl-valueWrap {
   white-space: normal;
-  margin-bottom: calc(0.3125rem * -1);
+  margin-bottom: calc(0.25rem * -1);
 }
 
 .amis-scope .dark-TextControl-input--multiple .dark-TextControl-valueWrap > input {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .dark-TextControl-input--multiple .dark-TextControl-value {
@@ -18867,7 +19061,7 @@
 }
 
 .amis-scope .dark-TextControl-input--multiple .dark-TextControl-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .dark-TextareaControl {
@@ -18875,7 +19069,7 @@
   border-radius: 0.142rem;
   line-height: 1.4285714286;
   background: #3c3c3c;
-  padding: 0.375rem calc( 2.125rem - 1.4285714286 * 0.875rem - 0.125rem );
+  padding: 0.375rem calc( 1.875rem - 1.4285714286 * 0.875rem - 0.125rem );
   font-size: 0.875rem;
   outline: none;
   resize: none;
@@ -18900,7 +19094,7 @@
 }
 
 .amis-scope .dark-Checkbox {
-  margin: 0 0.625rem 0 0;
+  margin: 0 0.5rem 0 0;
   font-weight: 400;
   user-select: none;
   pointer-events: none;
@@ -18929,12 +19123,12 @@
 
 .amis-scope .dark-Checkbox > i + span {
   pointer-events: all;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   cursor: pointer;
 }
 
 .amis-scope .dark-Checkbox > i + span > a {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: none;
 }
 
@@ -18986,7 +19180,6 @@
   width: calc(1.25rem / 2);
   height: calc(calc(1.25rem / 2) / 2);
   background: #302d2a;
-  border-color: #4e4e4e;
 }
 
 .amis-scope .dark-Checkbox--checkbox input[disabled] + i + span {
@@ -19120,7 +19313,7 @@
 }
 
 .amis-scope .dark-Checkbox--sm > i + span {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Checkbox--sm.dark-Checkbox--full input[type=checkbox]:checked + i:before {
@@ -19130,15 +19323,15 @@
 
 .amis-scope .dark-Checkbox-desc {
   color: white;
-  margin-left: 0.625rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
   pointer-events: all;
 }
 
 .amis-scope .dark-CheckboxControl,
 .amis-scope .dark-RadiosControl,
 .amis-scope .dark-CheckboxesControl {
-  padding-top: calc((2.125rem - 1.25rem) / 2);
+  padding-top: calc((1.875rem - 1.25rem) / 2);
 }
 
 .amis-scope .dark-RadiosControl .dark-Checkbox,
@@ -19146,7 +19339,7 @@
   display: block;
   margin-bottom: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
@@ -19155,7 +19348,7 @@
 .amis-scope .dark-RadiosControl.is-inline .dark-Checkbox,
 .amis-scope .dark-CheckboxesControl.is-inline .dark-Checkbox {
   display: inline-block;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
 .amis-scope .dark-RadiosControl-group .dark-RadiosControl-group,
@@ -19204,10 +19397,10 @@
 
 .amis-scope .dark-Checkboxes > .dark-Checkbox {
   display: block;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) calc(0.625rem + 1.25rem);
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) calc(0.5rem + 1.25rem);
 }
 
 .amis-scope .dark-Checkboxes--inline > .dark-Checkbox {
@@ -19226,7 +19419,7 @@
 .amis-scope .dark-Checkboxes-addBtn > svg {
   width: 0.875rem;
   height: 0.875rem;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-ListCheckboxes-group:not(:first-child) > .dark-ListCheckboxes-itemLabel,
@@ -19241,17 +19434,17 @@
 .amis-scope .dark-ListRadios-group > .dark-ListCheckboxes-itemLabel,
 .amis-scope .dark-ListRadios-group > .dark-ListRadios-itemLabel {
   font-size: 0.75rem;
-  padding: 0.3125rem 0.3125rem;
+  padding: 0.25rem 0.25rem;
   color: white;
 }
 
 .amis-scope .dark-ListCheckboxes-item,
 .amis-scope .dark-ListRadios-item {
   display: flex;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
   cursor: pointer;
   user-select: none;
@@ -19287,7 +19480,7 @@
 .amis-scope .dark-ListRadios-group > .dark-ListCheckboxes-items > .dark-ListRadios-item,
 .amis-scope .dark-ListRadios-group > .dark-ListRadios-items > .dark-ListCheckboxes-item,
 .amis-scope .dark-ListRadios-group > .dark-ListRadios-items > .dark-ListRadios-item {
-  padding-left: 0.9375rem;
+  padding-left: 0.75rem;
 }
 
 .amis-scope .dark-ListCheckboxes-itemLabel,
@@ -19297,10 +19490,10 @@
 
 .amis-scope .dark-ListCheckboxes-placeholder,
 .amis-scope .dark-ListRadios-placeholder {
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: white;
 }
 
@@ -19311,7 +19504,7 @@
 .amis-scope .dark-TableCheckboxes .dark-Table-table > thead > tr > th,
 .amis-scope .dark-TableCheckboxes .dark-Table-table > tbody > tr > td {
   font-size: 0.75rem;
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
   padding-bottom: 0.375rem;
   vertical-align: middle;
 }
@@ -19328,7 +19521,7 @@
 
 .amis-scope .dark-TableCheckboxes .dark-Table-table > thead > tr > th:last-child,
 .amis-scope .dark-TableCheckboxes .dark-Table-table > tbody > tr > td:last-child {
-  padding-right: 0.9375rem;
+  padding-right: 1rem;
 }
 
 .amis-scope .dark-TableCheckboxes .dark-Table-table > tbody > tr {
@@ -19354,8 +19547,8 @@
   content: "";
   display: block;
   position: absolute;
-  top: -0.3125rem;
-  bottom: calc(2.125rem / 2);
+  top: calc(0.25rem * -1);
+  bottom: calc(1.875rem / 2);
   left: -19px;
   border-left: dashed 1px #4b5563;
 }
@@ -19387,7 +19580,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: calc(2.125rem / 2);
+  top: calc(1.875rem / 2);
   width: 19px;
   left: -19px;
   border-top: dashed 1px #4b5563;
@@ -19397,10 +19590,10 @@
 .amis-scope .dark-TreeRadios-itemInner {
   display: flex;
   align-items: center;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
   cursor: pointer;
   user-select: none;
@@ -19409,7 +19602,7 @@
 .amis-scope .dark-TreeCheckboxes-itemInner > .dark-Checkbox,
 .amis-scope .dark-TreeRadios-itemInner > .dark-Checkbox {
   margin-right: 0;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .dark-TreeCheckboxes-itemInner.is-active,
@@ -19436,10 +19629,10 @@
 
 .amis-scope .dark-TreeCheckboxes-placeholder,
 .amis-scope .dark-TreeRadios-placeholder {
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: white;
 }
 
@@ -19459,16 +19652,16 @@
 
 .amis-scope .dark-ChainedCheckboxes-subTitle {
   font-size: 0.75rem;
-  padding: 0.3125rem 0.3125rem;
+  padding: 0.25rem 0.25rem;
   color: white;
 }
 
 .amis-scope .dark-ChainedCheckboxes-item {
   display: flex;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
   cursor: pointer;
   user-select: none;
@@ -19497,10 +19690,10 @@
 }
 
 .amis-scope .dark-ChainedCheckboxes-placeholder {
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: white;
 }
 
@@ -19513,6 +19706,7 @@
 .amis-scope .dark-AssociatedCheckboxes-right {
   flex-grow: 1;
   width: 0;
+  height: 10.9375rem;
   overflow: auto;
 }
 
@@ -19549,8 +19743,8 @@
 }
 
 .amis-scope .dark-CityPicker .dark-Select {
-  margin-right: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .dark-CityPicker-input {
@@ -19561,7 +19755,7 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
@@ -19587,22 +19781,23 @@
   cursor: pointer;
   position: relative;
   display: inline-block;
-  width: 3.125rem;
   height: 1.375rem;
+  min-width: 3.125rem;
   overflow: hidden;
   border-radius: 1.875rem;
-  background: #2296f3;
+  background: #4b5563;
   margin: 0;
   vertical-align: middle;
   text-align: left;
 }
 
 .amis-scope .dark-Switch.is-disabled {
-  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.4;
 }
 
-.amis-scope .dark-Switch i:before {
-  content: "关";
+.amis-scope .dark-Switch .text {
+  margin: 0 0.4375rem 0 1.5625rem;
   color: #fff;
   text-indent: calc(3.125rem / 2);
   text-transform: uppercase;
@@ -19610,18 +19805,10 @@
   line-height: 1.375rem;
   font-style: normal;
   font-weight: bold;
-  position: absolute;
-  top: -0.0625rem;
-  bottom: -0.0625rem;
-  left: -0.0625rem;
-  right: -0.0625rem;
-  background: #4b5563;
-  border: 0.0625rem solid #353c46;
-  border-radius: 1.875rem;
   transition: all 0.2s;
 }
 
-.amis-scope .dark-Switch i:after {
+.amis-scope .dark-Switch .slider:before {
   content: "";
   position: absolute;
   background: #fff;
@@ -19633,49 +19820,43 @@
   transition: margin-left 0.2s;
 }
 
+.amis-scope .dark-Switch.is-checked {
+  background: #2296f3;
+}
+
+.amis-scope .dark-Switch.is-checked .slider::before {
+  left: auto;
+  right: 0.0625rem;
+  border-width: 0;
+}
+
+.amis-scope .dark-Switch.is-checked .text {
+  margin: 0 25px 0 7px;
+  color: #fff;
+  text-indent: 0.25rem;
+}
+
+.amis-scope .dark-Switch.is-checked.is-disabled .slider:before {
+  color: #fff;
+}
+
+.amis-scope .dark-Switch.is-checked.is-disabled .text {
+  color: #fff;
+}
+
 .amis-scope .dark-Switch input {
   position: absolute;
   opacity: 0;
 }
 
-.amis-scope .dark-Switch input:disabled + i:before,
-.amis-scope .dark-Switch input:disabled:checked + i:before {
-  color: #fff;
-  background: #ccc;
-  cursor: not-allowed;
-}
-
-.amis-scope .dark-Switch input:disabled + i:after,
-.amis-scope .dark-Switch input:disabled:checked + i:after {
-  background: #fff;
-  color: #fff;
-}
-
-.amis-scope .dark-Switch input:checked + i:before {
-  left: 100%;
-  border-width: 0;
-}
-
-.amis-scope .dark-Switch input:checked + i:after {
-  margin-left: calc(3.125rem - 1.375rem);
-  content: "开";
-  color: #fff;
-  text-indent: -1.125rem;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1.375rem;
-}
-
 .amis-scope .dark-Switch-option {
   vertical-align: middle;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .dark-Switch-option:first-child {
   margin-left: 0;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-Switch-option:empty {
@@ -19683,7 +19864,7 @@
 }
 
 .amis-scope .dark-SwitchControl {
-  padding-top: calc((2.125rem - 1.375rem) / 2);
+  padding-top: calc((1.875rem - 1.375rem) / 2);
 }
 
 .amis-scope .dark-SwitchControl.is-inline {
@@ -19693,9 +19874,9 @@
 .amis-scope .dark-Number {
   margin: 0;
   padding: 0;
-  line-height: 2.125rem;
+  line-height: 1.875rem;
   font-size: 0.875rem;
-  height: 2.125rem;
+  height: 1.875rem;
   display: inline-block;
   vertical-align: middle;
   background: #3c3c3c;
@@ -19760,7 +19941,7 @@
   vertical-align: top;
   outline: 0;
   -moz-appearance: textfield;
-  line-height: calc(2.125rem - 0.0625rem * 2);
+  line-height: calc(1.875rem - 0.0625rem * 2);
   height: 100%;
   transition: all 0.2s ease;
   border: 0;
@@ -19804,8 +19985,8 @@
 }
 
 .amis-scope .dark-Number-handler {
-  line-height: calc((2.125rem - 0.375rem) / 2);
-  height: calc( (2.125rem - 0.0625rem * 2) / 2 );
+  line-height: calc((1.875rem - 0.375rem) / 2);
+  height: calc( (1.875rem - 0.0625rem * 2) / 2 );
 }
 
 .amis-scope .dark-Number-handler-up {
@@ -19849,8 +20030,8 @@
   border: 0.0625rem solid #656565;
   background: #333538;
   border-radius: 0.142rem;
-  min-height: 2.125rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem - 0.0625rem * 2 ) / 2 ) 0 calc( ( 2.125rem - 1.4285714286 * 0.875rem - 0.0625rem * 2 ) / 2 ) 0.75rem;
+  min-height: 1.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.0625rem * 2 ) / 2 ) 0 calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.0625rem * 2 ) / 2 ) 0.75rem;
   cursor: pointer;
   color: #f3f1f1;
 }
@@ -19891,6 +20072,7 @@
 
 .amis-scope .dark-Select-value {
   line-height: calc( 1.4285714286 * 0.875rem);
+  white-space: nowrap;
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -19898,17 +20080,17 @@
 
 .amis-scope .dark-Select--multi {
   height: auto;
-  min-height: 2.125rem;
+  min-height: 1.875rem;
 }
 
 .amis-scope .dark-Select--multi .dark-Select-valueWrap {
-  margin-bottom: calc(0.3125rem * -1);
+  margin-bottom: calc(0.25rem * -1);
 }
 
 .amis-scope .dark-Select--multi .dark-Select-valueWrap > input {
   display: inline-block;
   width: 6.25rem;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .dark-Select--multi .dark-Select-values + .dark-Select-input {
@@ -19917,6 +20099,7 @@
 
 .amis-scope .dark-Select--multi .dark-Select-value {
   position: static;
+  white-space: normal;
   user-select: none;
   line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   display: inline-block;
@@ -19926,12 +20109,12 @@
   background: #302d2a;
   border: 0.0625rem solid #b2dbfc;
   border-radius: 0.125rem;
-  margin-right: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .dark-Select--multi .dark-Select-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .dark-Select-valueIcon {
@@ -19952,8 +20135,8 @@
 }
 
 .amis-scope .dark-Select-arrow {
-  margin-right: 0.3125rem;
-  width: 1.25rem;
+  margin-right: 0.25rem;
+  width: 1rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -19985,7 +20168,7 @@
   outline: none;
   border: none;
   margin: 0 0.75rem;
-  height: 2.125rem;
+  height: 1.875rem;
   font-size: 0.75rem;
   border-bottom: 1px solid #656565;
   display: flex;
@@ -19997,7 +20180,7 @@
   width: 0.875rem;
   min-width: 0.875rem;
   height: 0.875rem;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Select-input > input {
@@ -20012,7 +20195,7 @@
 .amis-scope .dark-Select-option {
   cursor: pointer;
   min-width: 7.5rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .dark-Select-option.is-active {
@@ -20040,7 +20223,7 @@
 
 .amis-scope .dark-Select-option > a {
   float: right;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: none;
 }
 
@@ -20053,7 +20236,7 @@
   line-height: 1.4285714286;
   font-size: 0.75rem;
   user-select: none;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .dark-Select-option-hl {
@@ -20063,7 +20246,7 @@
 .amis-scope .dark-Select-addBtn {
   display: block;
   cursor: pointer;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .dark-Select-addBtn:hover {
@@ -20073,7 +20256,7 @@
 .amis-scope .dark-Select-addBtn > svg {
   width: 0.875rem;
   height: 0.875rem;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-Select.is-focused,
@@ -20158,17 +20341,17 @@
 }
 
 .amis-scope .dark-Selections-title {
-  height: 2.125rem;
+  height: 1.875rem;
   background: #2f2f2f;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
 }
 
 .amis-scope .dark-Selections-placeholder {
   color: white;
   text-align: center;
   width: 100%;
-  flex-basis: 2.125rem;
+  flex-basis: 1.875rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -20183,10 +20366,10 @@
 .amis-scope .dark-Selections-item {
   display: flex;
   flex-direction: row;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
 }
 
 .amis-scope .dark-Selections-item > label {
@@ -20197,7 +20380,7 @@
 .amis-scope .dark-Selections-item > .dark-Selections-dragbar {
   width: 1.25rem;
   position: relative;
-  left: -0.3125rem;
+  left: calc(0.25rem * -1);
   color: #4b5563;
   cursor: move;
 }
@@ -20295,12 +20478,12 @@
   content: "";
   position: absolute;
   width: 0.625rem;
-  height: 0.3125rem;
+  height: 0.25rem;
   border-color: #0983ff;
   border-style: solid;
   border-width: 0 0 0.125rem 0.125rem;
   right: 0.0625rem;
-  bottom: 0.3125rem;
+  bottom: 0.25rem;
   transform: rotate(-40deg);
 }
 
@@ -20349,10 +20532,10 @@
   font-size: 0.875rem;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
-  height: 2.125rem;
+  height: 1.875rem;
   outline: none;
   white-space: nowrap;
   color: #f3f1f1;
@@ -20390,13 +20573,13 @@
 .amis-scope .dark-LocationPicker-placeholder {
   color: white;
   user-select: none;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .amis-scope .dark-LocationPicker-value {
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
@@ -20419,7 +20602,7 @@
   justify-content: center;
   margin-left: auto;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-LocationPicker-clear svg {
@@ -20483,7 +20666,7 @@
 
 .amis-scope .dark-MapPicker-sugItem {
   cursor: pointer;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .dark-MapPicker-sugItem:hover {
@@ -20508,7 +20691,7 @@
   font-size: 0.875rem;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
   background: #333538;
@@ -20562,7 +20745,7 @@
 .amis-scope .dark-ColorPicker-preview {
   display: flex;
   align-items: center;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 
@@ -20613,10 +20796,10 @@
   font-size: 0.875rem;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
-  height: 2.125rem;
+  height: 1.875rem;
   outline: none;
   white-space: nowrap;
   color: #f3f1f1;
@@ -20653,14 +20836,14 @@
 .amis-scope .dark-DatePicker-placeholder {
   color: white;
   user-select: none;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   min-width: 3.125rem;
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .amis-scope .dark-DatePicker-value {
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
@@ -20683,7 +20866,7 @@
   justify-content: center;
   margin-left: auto;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-DatePicker-clear svg {
@@ -20704,7 +20887,7 @@
 .amis-scope .dark-DatePicker-shortcuts {
   margin: 0;
   background: transparent;
-  padding: calc( ( 1.875rem - 0.875rem * 1.5 ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 0.875rem * 1.5 ) / 2 ) 0.5rem;
   list-style: none;
   width: 15.625rem;
 }
@@ -20715,7 +20898,7 @@
 
 .amis-scope .dark-DatePicker-shortcut {
   display: inline-block;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-DatePicker-shortcut a {
@@ -20747,7 +20930,7 @@
 
 .amis-scope .rdt .rdtPicker {
   margin-top: 0;
-  padding: 0.625rem;
+  padding: 0.5rem;
   background: transparent;
   border: none;
 }
@@ -20810,7 +20993,7 @@
 }
 
 .amis-scope .rdt tfoot td {
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
   text-align: left;
 }
 
@@ -20821,7 +21004,7 @@
 }
 
 .amis-scope .rdt tfoot td .rdtActions {
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
   text-align: right;
 }
 
@@ -20882,7 +21065,7 @@
 }
 
 .amis-scope .dark-CalendarCounter-sep {
-  width: 15px;
+  width: 1rem;
   text-align: center;
 }
 
@@ -20961,7 +21144,7 @@
 }
 
 .amis-scope .rdtBtn + .rdtBtn {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .rdtBtnCancel {
@@ -21007,7 +21190,7 @@
 .amis-scope .rdtPrev,
 .amis-scope .rdtNext {
   cursor: pointer !important;
-  width: 1.25rem;
+  width: 1rem;
   padding: 0;
   color: #999;
   font-size: 1.25rem;
@@ -21048,7 +21231,7 @@
 }
 
 .amis-scope .rdtHeader .rdtSwitch + .rdtSwitch {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope td.rdtMonth,
@@ -21124,10 +21307,10 @@
   font-size: 0.875rem;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
-  height: 2.125rem;
+  height: 1.875rem;
   outline: none;
   border-radius: 0.142rem;
   color: #f3f1f1;
@@ -21163,13 +21346,13 @@
 .amis-scope .dark-DateRangePicker-placeholder {
   color: white;
   user-select: none;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .amis-scope .dark-DateRangePicker-value {
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
@@ -21192,7 +21375,7 @@
   margin-left: auto;
   display: inline-block;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-DateRangePicker-clear svg {
@@ -21208,7 +21391,7 @@
 
 .amis-scope .dark-DateRangePicker-wrap {
   width: auto;
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .dark-DateRangePicker-start,
@@ -21229,14 +21412,14 @@
 }
 
 .amis-scope .dark-DateRangePicker-rangers {
-  margin: 0 0 0.625rem;
+  margin: 0 0 0.5rem;
   padding: 0;
   list-style: none;
 }
 
 .amis-scope .dark-DateRangePicker-ranger {
   display: inline-block;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-DateRangePicker-ranger a {
@@ -21245,7 +21428,7 @@
 
 .amis-scope .dark-DateRangePicker-actions {
   text-align: right;
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
 }
 
 .amis-scope .dark-DateRangeControl:not(.is-inline) > .dark-DateRangePicker {
@@ -21268,7 +21451,7 @@
 
   .amis-scope .dark-DateRangePicker-end {
     margin-top: 0;
-    margin-left: 0.625rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -21289,14 +21472,14 @@
 
 .amis-scope .dark-ImageControl-addBtn {
   margin: 0;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 5rem;
+  height: 5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 0.0625rem solid #656565;
   cursor: pointer;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   color: #f3f1f1;
   background: #141316;
   border-color: #656565;
@@ -21329,8 +21512,8 @@
 }
 
 .amis-scope .dark-ImageControl-addBtn > svg {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 2.5rem;
+  height: 2.5rem;
   top: 0;
 }
 
@@ -21358,7 +21541,7 @@
   left: 100%;
   color: #f3f1f1;
   padding: 0.125rem 0.625rem;
-  margin: 30px 0 0 0.625rem;
+  margin: 30px 0 0 0.5rem;
 }
 
 .amis-scope .dark-ImageControl-dropzone:focus .dark-ImageControl-addBtn {
@@ -21370,10 +21553,10 @@
 .amis-scope .dark-ImageControl-item {
   border: 0.0625rem solid #656565;
   vertical-align: top;
-  padding: 0.3125rem;
+  padding: 0.25rem;
   display: inline-block;
-  margin-right: 0.9375rem;
-  margin-bottom: 0.9375rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
   position: relative;
   width: 7.5rem;
 }
@@ -21392,8 +21575,9 @@
   width: 6.75rem;
   height: 6.75rem;
   display: none;
-  top: 0.3125rem;
-  left: 0.3125rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -21545,6 +21729,17 @@
   text-align: center;
 }
 
+.amis-scope .dark-ImageControl-fixed-size {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.amis-scope .dark-ImageControl-fixed-size .dark-ImageControl-itemOverlay {
+  width: 100%;
+  height: 100%;
+}
+
 .amis-scope .dark-FileControl-dropzone {
   outline: none;
 }
@@ -21600,7 +21795,7 @@
   margin-left: 10px;
   width: 1rem;
   height: 1rem;
-  top: 0.3125rem;
+  top: 0.25rem;
 }
 
 .amis-scope .dark-FileControl-itemInfoText {
@@ -21988,7 +22183,7 @@
 
 .amis-scope .dark-InputRange-label--mid {
   left: 50%;
-  bottom: -0.3125rem;
+  bottom: calc(0.25rem * -1);
 }
 
 .amis-scope .dark-InputRange-label--max {
@@ -22121,7 +22316,7 @@
   top: 2px;
   width: 1rem;
   height: 1rem;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Tree-rootItem {
@@ -22149,13 +22344,13 @@
   vertical-align: top;
   height: 1.875rem;
   line-height: 1.875rem;
-  padding-right: 0.3125rem;
+  padding-right: 0.25rem;
 }
 
 .amis-scope .dark-Tree-item-icons > a {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 
@@ -22175,7 +22370,7 @@
 .amis-scope .dark-Tree-itemInput > a {
   display: inline-block;
   cursor: pointer;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   color: #4b5563;
 }
 
@@ -22192,7 +22387,7 @@
   border: 0.0625rem solid #656565;
   border-radius: 0.142rem;
   line-height: 1.4285714286;
-  padding: calc( ( calc(2.125rem * 0.85) - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0.75rem;
+  padding: calc( ( calc(1.875rem * 0.85) - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0.75rem;
   font-size: 0.875rem;
 }
 
@@ -22227,14 +22422,14 @@
   width: 0.875rem;
   height: 0.875rem;
   top: 0.109375rem;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Tree-itemArrow {
   cursor: pointer;
   width: 0.625rem;
   display: inline-flex;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Tree-itemArrow > svg {
@@ -22252,12 +22447,12 @@
 
 .amis-scope .dark-Tree-itemArrowPlaceholder {
   display: inline-block;
-  width: calc(0.625rem + 0.3125rem);
+  width: calc(0.625rem + 0.25rem);
 }
 
 .amis-scope .dark-Tree-itemIcon {
   display: inline-flex;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Tree-rootIcon > svg,
@@ -22299,44 +22494,44 @@
 
 .amis-scope .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel,
 .amis-scope .dark-Tree-item .dark-Tree-item > .dark-Tree-placeholder {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel,
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-placeholder {
-  padding-left: calc(1.25rem * 2);
+  padding-left: calc(1rem * 2);
 }
 
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel {
-  padding-left: calc(1.25rem * 3);
+  padding-left: calc(1rem * 3);
 }
 
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel {
-  padding-left: calc(1.25rem * 4);
+  padding-left: calc(1rem * 4);
 }
 
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel {
-  padding-left: calc(1.25rem * 5);
+  padding-left: calc(1rem * 5);
 }
 
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel {
-  padding-left: calc(1.25rem * 6);
+  padding-left: calc(1rem * 6);
 }
 
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel {
-  padding-left: calc(1.25rem * 7);
+  padding-left: calc(1rem * 7);
 }
 
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel {
-  padding-left: calc(1.25rem * 8);
+  padding-left: calc(1rem * 8);
 }
 
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel {
-  padding-left: calc(1.25rem * 9);
+  padding-left: calc(1rem * 9);
 }
 
 .amis-scope .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item .dark-Tree-item > .dark-Tree-itemLabel {
-  padding-left: calc(1.25rem * 10);
+  padding-left: calc(1rem * 10);
 }
 
 .amis-scope .dark-TreeSelectControl {
@@ -22366,7 +22561,7 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
@@ -22468,7 +22663,7 @@
 .amis-scope .dark-TreeSelect-popover > .dark-Tree {
   background: #302d2a;
   border: 0.0625rem solid #2296f3;
-  padding: 0.3125rem 0.75rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 0;
   margin-top: -1px;
   max-height: 400px;
@@ -22479,7 +22674,7 @@
   color: white;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
@@ -22487,9 +22682,9 @@
 
 .amis-scope .dark-Combo-toolbarBtn {
   line-height: 1;
-  height: 1.25rem;
+  height: 1rem;
   color: #4b5563;
-  padding: 0.125rem 0.3125rem;
+  padding: 0.125rem 0.25rem;
   cursor: pointer;
 }
 
@@ -22498,7 +22693,7 @@
 }
 
 .amis-scope .dark-Combo-setNullBtn {
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
   display: inline-block;
 }
 
@@ -22583,7 +22778,7 @@
 .amis-scope .dark-Combo-tab-delBtn {
   color: #4b5563;
   cursor: pointer;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   display: inline-block;
 }
 
@@ -22597,7 +22792,7 @@
 }
 
 .amis-scope .dark-Combo-items {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .dark-Combo-items:empty {
@@ -22605,7 +22800,7 @@
 }
 
 .amis-scope .dark-Combo-items:empty + .dark-Combo-toolbar {
-  padding-top: calc( (2.125rem - 1.625rem) / 2 );
+  padding-top: calc( (1.875rem - 1.625rem) / 2 );
 }
 
 .amis-scope .dark-Combo-item {
@@ -22635,7 +22830,7 @@
 }
 
 .amis-scope .dark-Combo--hor .dark-Combo-item + .dark-Combo-item {
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .dark-Combo--hor .dark-Combo-itemInner {
@@ -22644,22 +22839,22 @@
 }
 
 .amis-scope .dark-Combo--hor .dark-Combo-itemTag {
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-Combo--hor .dark-Combo-itemTag label {
   color: #2296f3;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-Combo--hor .dark-Combo-delBtn {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: flex;
   white-space: nowrap;
   align-items: flex-start;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
@@ -22677,7 +22872,7 @@
 .amis-scope .dark-Combo--hor .dark-Combo-itemDrager {
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   ) 0.375rem 0 0;
@@ -22694,11 +22889,11 @@
 }
 
 .amis-scope .dark-Combo--ver:not(.dark-Combo--noBorder) > .dark-Combo-items {
-  margin: calc(0.3125rem * -2) calc(0.3125rem * -2) 0 calc(0.3125rem * -2);
+  margin: calc(0.25rem * -2) calc(0.25rem * -2) 0 calc(0.25rem * -2);
 }
 
 .amis-scope .dark-Combo--ver:not(.dark-Combo--noBorder) > .dark-Combo-items > .dark-Combo-placeholder {
-  margin: calc(0.3125rem * 2);
+  margin: calc(0.25rem * 2);
 }
 
 .amis-scope .dark-Combo--ver:not(.dark-Combo--noBorder) .dark-Combo-itemTag {
@@ -22707,7 +22902,7 @@
 
 .amis-scope .dark-Combo--ver:not(.dark-Combo--noBorder) .dark-Combo-itemTag label {
   color: #2296f3;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .dark-Combo--ver:not(.dark-Combo--noBorder) > .dark-Combo-item,
@@ -22718,14 +22913,14 @@
 }
 
 .amis-scope .dark-Combo--ver:not(.dark-Combo--noBorder) > .dark-Combo-items > .dark-Combo-item {
-  margin: calc(0.3125rem * 2);
+  margin: calc(0.25rem * 2);
 }
 
 .amis-scope .dark-Combo--ver:not(.dark-Combo--noBorder) > .dark-Combo-items > .dark-Combo-item > .dark-Combo-delBtn {
   position: absolute;
   opacity: 0;
-  top: 0.3125rem;
-  right: 0.3125rem;
+  top: 0.25rem;
+  right: 0.25rem;
 }
 
 .amis-scope .dark-Combo--ver:not(.dark-Combo--noBorder):not(.is-disabled) > .dark-Combo-item:hover,
@@ -22742,7 +22937,7 @@
   position: absolute;
   top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
@@ -22790,13 +22985,13 @@
 }
 
 .amis-scope .dark-ComboTabs-addLink > a svg {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Combo-dragableTip {
   color: white;
   font-size: 0.75rem;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .dark-Combo-dragableTip:empty {
@@ -22821,8 +23016,8 @@
 
 .amis-scope .dark-SubForm-values {
   display: inline-block;
-  margin-top: calc(0.3125rem * -1);
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0;
+  margin-top: calc(0.25rem * -1);
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0;
 }
 
 .amis-scope .dark-SubForm-value {
@@ -22835,8 +23030,8 @@
   background: #302d2a;
   border: 0.0625rem solid #b2dbfc;
   border-radius: 2px;
-  margin-right: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .dark-SubForm-value:hover {
@@ -22859,7 +23054,7 @@
 }
 
 .amis-scope .dark-SubForm-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .dark-SubForm-addBtn {
@@ -22927,11 +23122,11 @@
 }
 
 .amis-scope .dark-SubFormControl {
-  padding-top: calc(2.125rem - 1.875rem);
+  padding-top: calc(1.875rem - 1.875rem);
 }
 
 .amis-scope .dark-ChainedSelectControl .dark-Select {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Picker {
@@ -22953,7 +23148,7 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
@@ -23059,7 +23254,7 @@
 }
 
 .amis-scope .dark-Picker-input {
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   height: auto;
 }
 
@@ -23078,7 +23273,7 @@
 }
 
 .amis-scope .dark-Picker .dark-Picker-valueWrap {
-  margin-bottom: calc(0.3125rem * -1);
+  margin-bottom: calc(0.25rem * -1);
   line-height: 1;
 }
 
@@ -23094,8 +23289,8 @@
   background: #302d2a;
   border: 0.0625rem solid #b2dbfc;
   border-radius: 2px;
-  margin-right: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .dark-Picker .dark-Picker-valueIcon {
@@ -23109,7 +23304,7 @@
 }
 
 .amis-scope .dark-Picker .dark-Picker-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .dark-Picker-btn {
@@ -23130,7 +23325,7 @@
   justify-content: center;
   margin-left: auto;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Picker-clear svg {
@@ -23150,7 +23345,7 @@
 }
 
 .amis-scope .dark-QrCode {
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   padding: 0.4375rem 0;
 }
 
@@ -23197,8 +23392,8 @@
 }
 
 .amis-scope .dark-TagControl-sugItem {
-  margin-right: 0.625rem;
-  margin-bottom: 0.625rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   display: inline-block;
   font-size: 0.75rem;
   cursor: pointer;
@@ -23332,7 +23527,7 @@
   height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
 }
 
@@ -23376,7 +23571,7 @@
 }
 
 .amis-scope .dark-Transfer-search {
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .dark-Transfer-mid {
@@ -23476,10 +23671,10 @@
 }
 
 .amis-scope .dark-TabsTransfer-placeholder {
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
   font-size: 0.875rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: white;
 }
 
@@ -23527,9 +23722,9 @@
 
 .amis-scope .dark-NestedSelect-menu .dark-NestedSelect-option {
   position: relative;
-  padding-left: 0.9375rem;
-  min-height: 2.125rem;
-  line-height: 2.125rem;
+  padding-left: 1rem;
+  min-height: 1.875rem;
+  line-height: 1.875rem;
   cursor: pointer;
   display: flex;
 }
@@ -23579,7 +23774,7 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
@@ -23673,7 +23868,7 @@
   left: 0.75rem;
   top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   );
@@ -23735,7 +23930,7 @@
 
 .amis-scope .dark-IconPickerControl-sugs {
   position: relative;
-  padding: 0.3125rem;
+  padding: 0.25rem;
   max-height: 21.875rem;
   overflow-y: auto;
 }
@@ -23767,7 +23962,7 @@
 
 .amis-scope .dark-IconPickerControl-value > i {
   display: inline-block;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .dark-Form {
@@ -23775,7 +23970,7 @@
   position: relative;
 }
 
-.amis-scope .dark-Form--quickEdit .dark-Form-item:last-child {
+.amis-scope .dark-Form--quickEdit > div:last-of-type {
   margin-bottom: 0;
 }
 
@@ -23783,23 +23978,23 @@
   display: inline-block;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   );
 }
 
 .amis-scope .dark-Form-static {
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
   padding-bottom: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
@@ -23813,7 +24008,7 @@
 
 .amis-scope .dark-Form-label {
   font-weight: 400;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
   position: relative;
 }
 
@@ -23830,7 +24025,7 @@
 .amis-scope .dark-Form-feedback {
   color: #dc3545;
   margin: 0.375rem 0 0;
-  padding-left: 0.9375rem;
+  padding-left: 0.75rem;
   font-size: 0.75rem;
 }
 
@@ -23843,10 +24038,10 @@
 
 .amis-scope .dark-Form-hint {
   display: inline-block;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem - 0.125rem
       ) / 2
   );
@@ -23854,7 +24049,7 @@
 }
 
 .amis-scope .dark-Form-item {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .dark-Grid-form > .dark-Form-item:last-child {
@@ -23869,7 +24064,7 @@
 .amis-scope .dark-Form-item .dark-Form-remark {
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
@@ -23877,8 +24072,8 @@
 }
 
 .amis-scope .dark-Form-item--inline {
-  margin-bottom: calc(0.9375rem / 2);
-  margin-right: calc(0.9375rem / 2);
+  margin-bottom: calc(0.75rem / 2);
+  margin-right: calc(0.75rem / 2);
 }
 
 .amis-scope .dark-Form-item--horizontal > .dark-Form-label {
@@ -23906,8 +24101,8 @@
 
 .amis-scope .dark-Form-caption {
   display: inline-block;
-  line-height: 2.125rem;
-  height: 2.125rem;
+  line-height: 1.875rem;
+  height: 1.875rem;
   margin-left: 0.625rem;
 }
 
@@ -23976,13 +24171,13 @@
   .amis-scope .dark-Form-item--horizontal {
     display: flex;
     flex-wrap: nowrap;
-    margin-left: calc(1.25rem / 2 * -1);
-    margin-right: calc(1.25rem / 2 * -1);
+    margin-left: calc(1rem / 2 * -1);
+    margin-right: calc(1rem / 2 * -1);
   }
 
   .amis-scope .dark-Form-item--horizontal > * {
-    padding-left: calc(1.25rem / 2);
-    padding-right: calc(1.25rem / 2);
+    padding-left: calc(1rem / 2);
+    padding-right: calc(1rem / 2);
   }
 
   .amis-scope .dark-Form-item--horizontal > .dark-Form-label,
@@ -24006,7 +24201,7 @@
   .amis-scope .dark-Form-item--horizontal > .dark-Form-label {
     padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
@@ -24136,23 +24331,23 @@
 
   .amis-scope .dark-Form-item--inline .dark-TextControl.dark-Form-control--sizeMd {
     min-width: auto;
-    width: var(--Form-control-sizeMd);
+    width: 15rem;
   }
 
   .amis-scope .dark-Form-item--inline .dark-TextControl.dark-Form-control--sizeLg {
     min-width: auto;
-    width: var(--Form-control-sizeLg);
+    width: 20rem;
   }
 
   .amis-scope .dark-Form-item--inline > .dark-Form-label {
     padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
     margin-bottom: 0;
-    margin-right: calc(0.9375rem / 2);
+    margin-right: calc(0.75rem / 2);
   }
 
   .amis-scope .dark-Form-item--inline > .dark-Form-label .dark-Form-star {
@@ -24206,7 +24401,7 @@
     vertical-align: top;
     padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
+        1.875rem - 1.4285714286 *
           0.875rem
       ) / 2
   );
@@ -24221,6 +24416,60 @@
 
 .amis-scope .dark-Form--quickEdit {
   min-width: 10rem;
+}
+
+.amis-scope .dark-AnchorNav {
+  display: flex;
+  height: 25rem;
+}
+
+.amis-scope .dark-AnchorNav-link-wrap {
+  margin: 0;
+  padding: 0;
+  width: 8.75rem;
+  border-right: 0.0625rem solid #d3dae0;
+  padding-bottom: 3.75rem;
+}
+
+.amis-scope .dark-AnchorNav-link-wrap > .dark-AnchorNav-link {
+  position: relative;
+  display: block;
+}
+
+.amis-scope .dark-AnchorNav-link-wrap > .dark-AnchorNav-link > a {
+  display: block;
+  border: 0.0625rem solid transparent;
+  border-width: 0 0.125rem 0 0;
+  color: #f3f1f1;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+  text-align: right;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+.amis-scope .dark-AnchorNav-link-wrap > .dark-AnchorNav-link > a:hover {
+  color: #0983ff;
+}
+
+.amis-scope .dark-AnchorNav-link-wrap > .dark-AnchorNav-link.is-active > a,
+.amis-scope .dark-AnchorNav-link-wrap > .dark-AnchorNav-link.is-active > a:hover {
+  color: #0983ff;
+  border-color: #0983ff;
+}
+
+.amis-scope .dark-AnchorNav-section-wrap {
+  border: none;
+  flex-grow: 1;
+  overflow: auto;
+  background: #302d2a;
+}
+
+.amis-scope .dark-AnchorNav-section-wrap > .dark-AnchorNav-section {
+  display: block;
+  padding: 0.75rem;
 }
 
 /*
@@ -25078,15 +25327,15 @@
 }
 
 .amis-scope .text-xl {
-  font-size: 1.5rem !important;
-}
-
-.amis-scope .text-lg {
   font-size: 1.25rem !important;
 }
 
-.amis-scope .text-md {
+.amis-scope .text-lg {
   font-size: 1rem !important;
+}
+
+.amis-scope .text-md {
+  font-size: 0.875rem !important;
 }
 
 .amis-scope .text-base {
@@ -26342,6 +26591,10 @@
   white-space: normal;
   word-break: break-all;
   word-wrap: break-word;
+}
+
+.amis-scope .white-space-pre {
+  white-space: pre;
 }
 
 .amis-scope .label {

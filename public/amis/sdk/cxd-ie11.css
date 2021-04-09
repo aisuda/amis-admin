@@ -8774,7 +8774,7 @@
 .amis-scope .cxd-Layout-brandBar > button {
   padding: 0.625rem 1.0625rem;
   font-size: 1rem;
-  line-height: calc(3.125rem - 1.25rem);
+  line-height: calc(3.125rem - 1rem);
   text-decoration: none;
   background: transparent;
   border: none;
@@ -8783,14 +8783,14 @@
 .amis-scope .cxd-Layout-brand {
   color: #fff;
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   max-width: 100%;
   height: auto;
   line-height: 3.125rem;
   display: inline-block;
   vertical-align: middle;
-  padding: 0 1.25rem;
+  padding: 0 0.75rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -8809,7 +8809,7 @@
 .amis-scope .cxd-Layout-headerBar {
   border-bottom: 0 none;
   min-height: 3.125rem;
-  padding: 0 0.625rem;
+  padding: 0 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8818,7 +8818,7 @@
 .amis-scope .cxd-Layout-offScreenBtn {
   display: none;
   float: right;
-  padding: 13px 15px;
+  padding: 13px 1rem;
 }
 
 .amis-scope .cxd-Layout-aside {
@@ -9021,7 +9021,7 @@
   .amis-scope .cxd-Layout--folded .cxd-Layout-brand {
     display: block;
     padding: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -9571,11 +9571,11 @@
 
 .amis-scope .cxd-AsideNav-label {
   color: #868787;
-  margin-top: 0.9375rem;
-  margin-bottom: 0.625rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
   font-size: 0.6875rem;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .amis-scope .cxd-AsideNav-list {
@@ -9587,7 +9587,7 @@
 .amis-scope .cxd-AsideNav-itemArrow {
   float: right;
   display: block;
-  width: 1.25rem;
+  width: 1rem;
   text-align: center;
   line-height: 1.0625rem;
   margin-top: 0.125rem;
@@ -9623,7 +9623,7 @@
 }
 
 .amis-scope .cxd-AsideNav-itemBadge {
-  padding: 0.125rem 0.3125rem;
+  padding: 0.125rem 0.25rem;
   margin-top: 0.125rem;
   font-size: 0.6875rem;
   text-shadow: 0 0.0625rem 0 rgba(0, 0, 0, 0.2);
@@ -9662,7 +9662,7 @@
   opacity: 0;
   height: 0;
   overflow: hidden;
-  margin-left: -1.25rem;
+  margin-left: calc(1rem * -1);
   transition: all 0.2s ease-in-out 0s;
   background: #1e1e28;
 }
@@ -9694,7 +9694,7 @@
   text-transform: none;
   display: block;
   font-size: 0.75rem;
-  padding: calc( ( 2.5rem - 1.5 * 0.75rem ) / 2 ) 0.9375rem;
+  padding: calc( ( 2.5rem - 1.5 * 0.75rem ) / 2 ) 0.75rem;
   position: relative;
   transition: background-color 0.2s ease-in-out 0s;
   color: #fff;
@@ -9722,7 +9722,7 @@
 }
 
 .amis-scope .cxd-AsideNav-item.is-lg > a {
-  padding: calc( ( 3.125rem - 1.5 * 0.75rem ) / 2 ) 0.9375rem;
+  padding: calc( ( 3.125rem - 1.5 * 0.75rem ) / 2 ) 1rem;
 }
 
 .amis-scope .cxd-AsideNav-item .cxd-AsideNav-item a {
@@ -9730,11 +9730,15 @@
 }
 
 .amis-scope .cxd-AsideNav-item .cxd-AsideNav-item .cxd-AsideNav-item a {
-  padding-left: calc(2.5rem + 2.1875rem);
+  padding-left: calc(2.5rem + 0.9375rem);
 }
 
 .amis-scope .cxd-AsideNav-item .cxd-AsideNav-item .cxd-AsideNav-item .cxd-AsideNav-item a {
-  padding-left: calc(2.5rem + 4.0625rem);
+  padding-left: calc(2.5rem + 1.875rem);
+}
+
+.amis-scope .cxd-AsideNav-item .cxd-AsideNav-item .cxd-AsideNav-item .cxd-AsideNav-item .cxd-AsideNav-item a {
+  padding-left: calc(2.5rem + 2.8125rem);
 }
 
 .amis-scope .cxd-AsideNav-item .cxd-AsideNav-item .cxd-AsideNav-subList {
@@ -9753,7 +9757,7 @@
   cursor: default;
   background: transparent;
   color: #fff;
-  padding: calc( ( 2.5rem - 1.5 * 0.75rem ) / 2 ) 1.25rem;
+  padding: calc( ( 2.5rem - 1.5 * 0.75rem ) / 2 ) 1rem;
 }
 
 .amis-scope .cxd-AsideNav-subHeader a:hover {
@@ -9795,7 +9799,7 @@
   float: none;
   height: 0.75rem;
   width: auto;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
   vertical-align: middle;
 }
 
@@ -9811,7 +9815,7 @@
   .amis-scope .cxd-Layout--folded .cxd-AsideNav-item:hover > .cxd-AsideNav-tooltip {
     opacity: 1;
     z-index: 1600;
-    margin: 0 0 0 0.625rem;
+    margin: 0 0 0 0.5rem;
     opacity: 1;
   }
 
@@ -9855,7 +9859,7 @@
   }
 
   .amis-scope .cxd-Layout--folded .cxd-AsideNav-item .cxd-AsideNav-item a {
-    padding-left: 1.25rem !important;
+    padding-left: 1rem !important;
   }
 
   .amis-scope .cxd-Layout--folded .cxd-AsideNav-subList {
@@ -9897,13 +9901,13 @@
 }
 
 .amis-scope .cxd-FormHbox {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: calc(1rem * -1);
+  margin-right: calc(1rem * -1);
 }
 
 .amis-scope .cxd-FormHbox > .cxd-Hbox > .cxd-Hbox-col {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   vertical-align: top;
 }
 
@@ -10032,14 +10036,14 @@
     border-color 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out;
   white-space: nowrap;
-  min-width: 4.25rem;
+  min-width: auto;
   padding: calc(
     (
         1.875rem - 0.0625rem * 2 -
-          1.4285714286 * 0.75rem
+          1.4285714286 * 0.875rem
       ) / 2
   ) 0.625rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.4285714286;
   border-radius: 0;
   height: 1.875rem;
@@ -10067,7 +10071,7 @@
 }
 
 .amis-scope .cxd-Button img.cxd-Button-icon {
-  height: 0.75rem;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -10414,7 +10418,7 @@
         1.375rem - 0.0625rem * 2 -
           18 / 11 * 0.6875rem
       ) / 2
-  ) 0.3125rem;
+  ) 0.25rem;
   font-size: 0.6875rem;
   line-height: 18 / 11;
   border-radius: 0;
@@ -10424,16 +10428,16 @@
 .amis-scope .cxd-Button--xs .cxd-Button-icon:first-child:not(:last-child):not(.pull-right),
 .amis-scope .cxd-Button--xs > svg.icon:not(:last-child):not(.pull-right),
 .amis-scope .cxd-Button--xs > .pull-left {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Button--xs .cxd-Button-icon:last-child:not(:first-child):not(.pull-left),
 .amis-scope .cxd-Button--xs > .pull-right {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-Button--xs img.cxd-Button-icon {
-  height: 0.75rem;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -10466,7 +10470,7 @@
 }
 
 .amis-scope .cxd-Button--sm img.cxd-Button-icon {
-  height: 0.75rem;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -10478,10 +10482,10 @@
   padding: calc(
     (
         1.875rem - 0.0625rem * 2 -
-          1.4285714286 * 0.75rem
+          1.4285714286 * 0.875rem
       ) / 2
   ) 0.625rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.4285714286;
   border-radius: 0;
   height: 1.875rem;
@@ -10499,7 +10503,7 @@
 }
 
 .amis-scope .cxd-Button--md img.cxd-Button-icon {
-  height: 0.75rem;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -10532,7 +10536,7 @@
 }
 
 .amis-scope .cxd-Button--lg img.cxd-Button-icon {
-  height: 0.75rem;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -10552,7 +10556,7 @@
 
 .amis-scope .cxd-Button--iconOnly:not(.cxd-Button--link) > .fa,
 .amis-scope .cxd-Button--iconOnly:not(.cxd-Button--link) > .iconfont {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .amis-scope .cxd-Button--iconOnly:not(.cxd-Button--link) > .iconfont {
@@ -10590,7 +10594,7 @@
 }
 
 .amis-scope .cxd-Button--block + .cxd-Button--block {
-  margin-top: 0.9375rem;
+  margin-top: 0.75rem;
 }
 
 .amis-scope input[type=submit].cxd-Button--block,
@@ -10600,22 +10604,124 @@
 }
 
 .amis-scope .cxd-ButtonToolbar {
-  margin-left: -0.3125rem;
-  margin-top: -0.3125rem;
+  margin-left: calc(0.25rem * -1);
+  margin-top: calc(0.25rem * -1);
 }
 
 .amis-scope .cxd-ButtonToolbar > .cxd-Button {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .cxd-ButtonToolbar > .cxd-Button--disabled-wrap > .cxd-Button {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .cxd-Button--disabled-wrap {
   display: inline-block !important;
+}
+
+.amis-scope .cxd-Avatar {
+  background: #d1d5db;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  display: inline-block;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.amis-scope .cxd-Avatar--square {
+  border-radius: 0%;
+}
+
+.amis-scope .cxd-Avatar--rounded {
+  border-radius: 10%;
+}
+
+.amis-scope .cxd-Avatar i {
+  font-size: 1rem;
+}
+
+.amis-scope .cxd-Avatar img {
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amis-scope .cxd-Avatar:hover img,
+.amis-scope .cxd-Avatar:hover i {
+  transform: scale(1.1);
+}
+
+.amis-scope .cxd-Breadcrumb-icon {
+  margin-right: 0.125rem;
+}
+
+.amis-scope .cxd-Breadcrumb-separator {
+  user-select: none;
+  margin: 0 0.25rem;
+}
+
+.amis-scope .cxd-Badge {
+  display: inline-block;
+  position: relative;
+}
+
+.amis-scope .cxd-Badge-text,
+.amis-scope .cxd-Badge-dot {
+  background: #ea2e2e;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  transform-origin: 100% 0;
+  z-index: auto;
+  border-radius: calc(1rem / 2);
+  box-shadow: 0 0 0 1px #fff;
+}
+
+.amis-scope .cxd-Badge--top-left {
+  top: 0;
+  left: 0;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.amis-scope .cxd-Badge--bottom-left {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  transform: translate(-50%, 50%);
+}
+
+.amis-scope .cxd-Badge--bottom-right {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.amis-scope .cxd-Badge-text {
+  color: #fff;
+  height: 1rem;
+  line-height: 1rem;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.amis-scope .cxd-Badge-dot {
+  z-index: auto;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
 }
 
 .is-modalOpened {
@@ -10623,7 +10729,7 @@
 }
 
 .is-modalOpened.has-scrollbar {
-  padding-right: 0.9375rem;
+  padding-right: 1rem;
 }
 
 .is-modalOpened .amis-scope .cxd-Modal {
@@ -10670,7 +10776,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 3.75rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   border: 0 solid #eceff8;
   border-radius: 0;
 }
@@ -10716,7 +10822,7 @@
         2.5rem - 1.5 *
           0.875rem
       ) / 2
-  ) 1.25rem;
+  ) 1rem;
   background: #f6f7fb;
   border-bottom: none;
   border-top-left-radius: 0;
@@ -10768,33 +10874,33 @@
 
 .amis-scope .cxd-Modal-content > .cxd-Modal-close {
   position: absolute;
-  right: 1.25rem;
-  top: 0.625rem;
+  right: 1rem;
+  top: 0.5rem;
   z-index: 10;
 }
 
 .amis-scope .cxd-Modal-body {
-  padding: 0.9375rem 1.875rem 1.875rem;
+  padding: 0.75rem 1rem 1rem;
   flex-grow: 1;
 }
 
 .amis-scope .cxd-Modal-header + .cxd-Modal-body {
-  padding-top: 1.875rem;
+  padding-top: 1rem;
 }
 
 .amis-scope .cxd-Modal-footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0.9375rem 0;
+  padding: 0.75rem 0;
   border-top: 0.0625rem solid #eceff8;
-  margin: 0 1.875rem;
+  margin: 0 1rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .amis-scope .cxd-Modal-footer .cxd-Button {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .cxd-Modal--2th .cxd-Modal-content {
@@ -10934,7 +11040,7 @@
 }
 
 .amis-scope .cxd-Drawer-header {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   background: #f9f9f9;
   border-bottom: 0.0625rem solid #dfe2e6;
   border-top-left-radius: 0;
@@ -10952,7 +11058,7 @@
 }
 
 .amis-scope .cxd-Drawer-title {
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #333;
 }
 
@@ -10983,7 +11089,7 @@
 }
 
 .amis-scope .cxd-Drawer-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
   overflow: auto;
@@ -10993,14 +11099,14 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 0.9375rem;
+  padding: 0.75rem;
   border-top: 0.0625rem solid #dfe2e6;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .amis-scope .cxd-Drawer-footer .cxd-Button {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-Drawer-footer .cxd-Drawer-info {
@@ -11021,8 +11127,8 @@
 
 .amis-scope .cxd-Drawer.cxd-Drawer--noOverlay .cxd-Drawer-close svg {
   margin-top: 0.125rem;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   fill: #99a6ad;
 }
 
@@ -11078,13 +11184,13 @@
 
 .amis-scope .cxd-Drawer--top .cxd-Drawer-close {
   top: 100%;
-  margin-top: 0.625rem;
-  left: 0.625rem;
+  margin-top: 0.5rem;
+  left: 0.5rem;
 }
 
 .amis-scope .cxd-Drawer--top.cxd-Drawer--noOverlay .cxd-Drawer-close {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
   left: auto;
   margin-top: 0;
 }
@@ -11110,13 +11216,13 @@
 
 .amis-scope .cxd-Drawer--right .cxd-Drawer-close {
   right: 100%;
-  margin-right: 0.625rem;
-  top: 0.625rem;
+  margin-right: 0.5rem;
+  top: 0.5rem;
 }
 
 .amis-scope .cxd-Drawer--right.cxd-Drawer--noOverlay .cxd-Drawer-close {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
   margin-right: 0;
 }
 
@@ -11137,7 +11243,7 @@
 
 .amis-scope .cxd-Drawer--right .cxd-Drawer-footer .cxd-Button {
   margin-left: 0;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Drawer--right .cxd-Drawer-footer .cxd-Drawer-info {
@@ -11163,13 +11269,13 @@
 
 .amis-scope .cxd-Drawer--bottom .cxd-Drawer-close {
   bottom: 100%;
-  margin-bottom: 0.625rem;
-  left: 0.625rem;
+  margin-bottom: 0.5rem;
+  left: 0.5rem;
 }
 
 .amis-scope .cxd-Drawer--bottom.cxd-Drawer--noOverlay .cxd-Drawer-close {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
   left: auto;
   margin-bottom: 0;
 }
@@ -11195,14 +11301,14 @@
 
 .amis-scope .cxd-Drawer--left .cxd-Drawer-close {
   left: 100%;
-  margin-left: 0.625rem;
-  top: 0.625rem;
+  margin-left: 0.5rem;
+  top: 0.5rem;
 }
 
 .amis-scope .cxd-Drawer--left.cxd-Drawer--noOverlay .cxd-Drawer-close {
   left: auto;
-  right: 0.9375rem;
-  top: 0.9375rem;
+  right: 0.75rem;
+  top: 0.75rem;
 }
 
 .amis-scope .cxd-Drawer--left .cxd-Drawer-content {
@@ -11374,7 +11480,7 @@
 }
 
 .amis-scope .cxd-Tooltip-title {
-  padding: 0.3125rem 0.625rem;
+  padding: 0.25rem 0.5rem;
   margin-bottom: 0;
   font-size: 0.875rem;
   color: #333;
@@ -11390,7 +11496,7 @@
 
 .amis-scope .cxd-Tooltip-body {
   color: #666;
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 @keyframes tooltipIn {
@@ -11442,7 +11548,7 @@
   animation-name: tooltipIn;
   opacity: 1;
   z-index: 1600;
-  margin: 0 0 0 0.625rem;
+  margin: 0 0 0 0.5rem;
   opacity: 1;
 }
 
@@ -11453,7 +11559,7 @@
 }
 
 .amis-scope [data-tooltip][data-position=bottom]:hover:after {
-  margin: 0.625rem 0 0 0;
+  margin: 0.5rem 0 0 0;
 }
 
 .amis-scope [data-tooltip][data-position=left]:after {
@@ -11464,7 +11570,7 @@
 }
 
 .amis-scope [data-tooltip][data-position=left]:hover:after {
-  margin: 0 0.625rem 0 0;
+  margin: 0 0.5rem 0 0;
 }
 
 .amis-scope [data-tooltip][data-position=top]:after {
@@ -11475,7 +11581,7 @@
 }
 
 .amis-scope [data-tooltip][data-position=top]:hover:after {
-  margin: calc(0.625rem * -1) 0 0 0;
+  margin: calc(0.5rem * -1) 0 0 0;
 }
 
 .amis-scope [data-tooltip]:hover:active:after {
@@ -11581,8 +11687,8 @@
 .amis-scope .cxd-Toast {
   width: 18.75rem;
   pointer-events: auto;
-  margin-bottom: 0.3125rem;
-  padding: 0.3125rem 0.9375rem;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 0;
   border: 0.0625rem solid;
@@ -11617,8 +11723,8 @@
 
 .amis-scope .cxd-Toast-close {
   position: absolute;
-  top: 0.3125rem;
-  right: 0.625rem;
+  top: 0.25rem;
+  right: 0.5rem;
   color: #999;
   line-height: 1;
   opacity: 0.8;
@@ -11631,8 +11737,8 @@
 
 .amis-scope .cxd-Toast-title {
   display: inline;
-  margin-right: 0.9375rem;
-  font-size: 1rem;
+  margin-right: 0.75rem;
+  font-size: 0.875rem;
   vertical-align: middle;
 }
 
@@ -11647,7 +11753,7 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   vertical-align: middle;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Toast-icon > svg {
@@ -11682,44 +11788,44 @@
 }
 
 .amis-scope .cxd-Toast-wrap--topRight {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
 }
 
 .amis-scope .cxd-Toast-wrap--topCenter {
-  top: 0.9375rem;
+  top: 0.75rem;
   left: 50%;
   margin-left: calc(18.75rem / -2);
 }
 
 .amis-scope .cxd-Toast-wrap--topLeft {
-  top: 0.9375rem;
-  left: 0.9375rem;
+  top: 0.75rem;
+  left: 0.75rem;
 }
 
 .amis-scope .cxd-Toast-wrap--bottomLeft {
-  left: 0.9375rem;
-  bottom: 0.9375rem;
+  left: 0.75rem;
+  bottom: 0.75rem;
 }
 
 .amis-scope .cxd-Toast-wrap--bottomCenter {
   left: 50%;
   margin-left: calc(18.75rem / -2);
-  bottom: 0.9375rem;
+  bottom: 0.75rem;
 }
 
 .amis-scope .cxd-Toast-wrap--bottomRight {
-  bottom: 0.9375rem;
-  right: 0.9375rem;
+  bottom: 0.75rem;
+  right: 0.75rem;
 }
 
 .amis-scope .cxd-Alert {
   font-size: 0.75rem;
   box-shadow: none;
-  padding: 0.3125rem 1.25rem;
+  padding: 0.75rem 0.75rem;
   border: 0.0625rem solid transparent;
   border-radius: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--Alert-md);
   position: relative;
 }
 
@@ -11736,7 +11842,7 @@
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
   opacity: 0.2;
-  right: 1.25rem;
+  right: 0.75rem;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -11779,7 +11885,7 @@
   font-size: 0.75rem;
   list-style: none;
   margin: 0;
-  padding: 0 0 0 0.9375rem;
+  padding: 0 0 0 1rem;
   border-bottom: 0.0625rem solid #eceff8;
 }
 
@@ -11814,7 +11920,7 @@
   padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
 }
@@ -11855,7 +11961,7 @@
 }
 
 .amis-scope .cxd-ArrayInput-addBtn img.cxd-Button-icon {
-  height: 0.75rem;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -11890,7 +11996,7 @@
 }
 
 .amis-scope .cxd-ArrayInput-toolbar {
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -11908,18 +12014,18 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .cxd-ArrayInput-item > div {
   flex-grow: 1;
   width: 0;
   min-width: 120px;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-ArrayInput-item > div:not(:first-child) {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-ArrayInput-item--dragging {
@@ -11935,9 +12041,9 @@
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
-  ) 0.3125rem;
+  ) 0.25rem;
   cursor: pointer;
 }
 
@@ -11987,7 +12093,7 @@
   border-top-right-radius: 0.142rem;
   color: #666;
   margin: 0 0.1875rem 0 0;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -12041,7 +12147,7 @@
 
 .amis-scope .cxd-Tabs-pane {
   display: none;
-  padding: 0.9375rem;
+  padding: 0.75rem;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
@@ -12085,7 +12191,7 @@
 
 .amis-scope .cxd-Tabs--line > .cxd-Tabs-content {
   border-width: 0;
-  padding: 20px 0;
+  padding: 0.75rem 0;
   background: transparent;
 }
 
@@ -12320,7 +12426,7 @@
 .amis-scope .cxd-Tabs-toolbar {
   display: inline-block;
   float: right;
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
 }
 
 .amis-scope .cxd-Nav {
@@ -12331,7 +12437,7 @@
 }
 
 .amis-scope .cxd-Nav .cxd-Nav-itemIcon {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Nav img.cxd-Nav-itemIcon {
@@ -12358,7 +12464,7 @@
   color: #666;
   text-decoration: none;
   margin-right: 0.125rem;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
 }
 
@@ -12393,7 +12499,7 @@
   outline: none;
   color: #666;
   text-decoration: none;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
   background: transparent;
   border-radius: 0;
@@ -12427,7 +12533,7 @@
 
 .amis-scope .cxd-Nav--stacked .cxd-Nav-item.is-unfolded > .cxd-Nav-subItems {
   display: block;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .cxd-Nav--stacked .cxd-Nav-item .cxd-Nav-itemToggler {
@@ -12478,10 +12584,11 @@
 
 .amis-scope .cxd-Page {
   width: 100%;
+  height: 100%;
 }
 
 .amis-scope .cxd-Page-header {
-  padding: 0.625rem 1.25rem;
+  padding: 0.625rem 1rem;
 }
 
 .amis-scope .cxd-Page-main {
@@ -12517,7 +12624,7 @@
 
 .amis-scope .cxd-Page-headerRow .cxd-Page-toolbar {
   text-align: right;
-  padding-right: 0.9375rem;
+  padding-right: 0.75rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -12529,22 +12636,22 @@
   margin: 0;
   padding: 0;
   color: #000;
-  line-height: 1.75;
+  line-height: 1.5;
   font-size: 1rem;
   font-weight: 400;
 }
 
 .amis-scope .cxd-Page-body {
-  padding: 1.25rem;
+  padding: 0.75rem;
   flex: 1 auto;
 }
 
 .amis-scope .cxd-Page-asideTplWrapper {
-  padding: 0.3125rem;
+  padding: 0.25rem;
 }
 
 .amis-scope .cxd-Page-toolbar > * + * {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-Page-aside {
@@ -12553,7 +12660,7 @@
 
 @media (min-width: 768px) {
   .amis-scope .cxd-Page-aside {
-    width: 10rem;
+    min-width: 10rem;
     max-width: 18.75rem;
     border-right: 0.0625rem solid #eceff8;
   }
@@ -12584,7 +12691,7 @@
 .amis-scope .cxd-Remark {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   cursor: pointer;
   text-align: center;
 }
@@ -12618,7 +12725,7 @@
 }
 
 .amis-scope .cxd-Remark > span + .cxd-Remark-icon {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-Remark:hover > .cxd-Remark-icon {
@@ -12740,14 +12847,14 @@
 }
 
 .amis-scope .cxd-Audio-play {
-  width: 1.25rem;
+  width: 1rem;
   cursor: pointer;
   margin-right: 0.625rem;
 }
 
 .amis-scope .cxd-Audio-play svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   top: 0.375rem;
 }
@@ -12792,7 +12899,7 @@
 }
 
 .amis-scope .cxd-Audio-volume {
-  width: 1.25rem;
+  width: 1rem;
   height: 3.125rem;
   line-height: 3.125rem;
   cursor: pointer;
@@ -12800,8 +12907,8 @@
 }
 
 .amis-scope .cxd-Audio-volume svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   top: 0.375rem;
 }
@@ -12847,8 +12954,8 @@
 }
 
 .amis-scope .cxd-Audio-volumeControl svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   top: 0.375rem;
 }
@@ -12867,7 +12974,8 @@
 .amis-scope .cxd-Panel-fixedBottom {
   position: absolute;
   background: #fff;
-  z-index: 900;
+  z-index: -1;
+  opacity: 0;
   bottom: 999999px;
   box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.05);
   border-top: none;
@@ -12876,6 +12984,8 @@
 .amis-scope .cxd-Panel-fixedBottom.in {
   position: fixed;
   bottom: 0;
+  z-index: 900;
+  opacity: 1;
 }
 
 .amis-scope .cxd-Panel--default {
@@ -12992,7 +13102,7 @@
 }
 
 .amis-scope .cxd-Panel-heading {
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   border-bottom: 0.0625rem solid transparent;
   border-radius: 0.142rem 0.142rem 0 0;
 }
@@ -13000,26 +13110,26 @@
 .amis-scope .cxd-Panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: inherit;
 }
 
 .amis-scope .cxd-Panel-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
 }
 
 .amis-scope .cxd-Panel-footer {
   border-color: #dfe2e6;
   border-radius: 0 0 0.125rem 0.125rem;
   background: transparent;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   border-style: solid;
   border-width: 0.0625rem 0 0 0;
   clear: both;
 }
 
 .amis-scope .cxd-Panel-footer .cxd-Button + .cxd-Button {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .cxd-Panel-btnToolbar {
@@ -13037,7 +13147,7 @@
 }
 
 .amis-scope .cxd-Panel-btnToolbar .cxd-Button {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .cxd-Panel-btnToolbar:empty {
@@ -13199,8 +13309,8 @@
 }
 
 .amis-scope .cxd-ButtonToolbar .cxd-ButtonGroup {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
   width: auto;
 }
 
@@ -13274,7 +13384,7 @@
 }
 
 .amis-scope .cxd-DropDown-caret {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   display: inline-block;
   vertical-align: top;
   transition: transform 0.2s ease;
@@ -13306,7 +13416,7 @@
   margin: 0.0625rem 0 0;
   background: #fff;
   list-style: none;
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
   border: 0.0625rem solid #eceff8;
   border-radius: 0.142rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -13324,12 +13434,14 @@
   padding: calc(
     (2.125rem - 0.875rem * 1.5) /
       2
-  ) 0.625rem;
+  ) 0.5rem;
   white-space: nowrap;
   box-sizing: border-box;
   height: 2.125rem;
   vertical-align: middle;
   user-select: none;
+  color: #108cee;
+  text-decoration: none;
 }
 
 .amis-scope .cxd-DropDown-menuItem:hover,
@@ -13350,6 +13462,13 @@
   cursor: pointer;
 }
 
+.amis-scope .cxd-DropDown-menuItem.is-disabled,
+.amis-scope .cxd-DropDown-menu > li.is-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #999;
+}
+
 .amis-scope .cxd-DropDown-menuItem.cxd-DropDown-divider,
 .amis-scope .cxd-DropDown-menu > li.cxd-DropDown-divider {
   height: 0.0625rem;
@@ -13360,6 +13479,7 @@
 }
 
 .amis-scope .cxd-DropDown-menu > li a {
+  color: inherit;
   display: block;
   text-decoration: none;
 }
@@ -13376,20 +13496,20 @@
 .amis-scope .cxd-Each-placeholder {
   color: #999;
   text-align: center;
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .cxd-Collapse {
   border: none;
   padding: 0;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .cxd-Collapse-header {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #333;
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
   border-bottom: 0.0625rem solid #dfe2e6;
 }
 
@@ -13397,7 +13517,7 @@
   display: inline-block;
   width: 1rem;
   text-align: center;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 
@@ -13508,11 +13628,11 @@
   transition: opacity 0.2s;
   display: flex;
   align-items: center;
-  margin-left: 0.9375rem;
+  margin-left: 0.75rem;
 }
 
 .amis-scope .cxd-CBGroup-toolbar .cxd-CBGroup-toolbarConditionAdd .cxd-CBDelete {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-CBGroup-toolbar:not(:hover) .cxd-CBGroup-toolbarConditionAdd {
@@ -13566,7 +13686,7 @@
   content: "";
   top: -10px;
   left: -30px;
-  width: 20px;
+  width: 1rem;
   border-left: solid 1px #eceff8;
   bottom: 0;
 }
@@ -13575,7 +13695,7 @@
   position: absolute;
   content: "";
   top: 50%;
-  width: 20px;
+  width: 1rem;
   left: -30px;
   border-top: solid 1px #eceff8;
 }
@@ -13648,7 +13768,7 @@
   cursor: move;
   width: 20px;
   margin-left: -5px;
-  opacity: 0;
+  opacity: 0.6;
   text-align: center;
   transition: opacity 0.2s ease-out;
   color: #999;
@@ -13825,8 +13945,8 @@
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.34);
   color: rgba(0, 0, 0, 0.75);
   font-family: -apple-system, Lucida Grande;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 0.875rem;
+  line-height: 1.1;
 }
 
 .amis-scope .cxd-ContextMenu-menu.in,
@@ -13943,8 +14063,8 @@
   border-radius: 7px;
   color: rgba(0, 0, 0, 0.75);
   font-family: -apple-system, Lucida Grande;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 0.875rem;
+  line-height: 1.1;
 }
 
 .amis-scope .cxd-ContextMenu-item:hover > .cxd-ContextMenu-subList::before {
@@ -14036,7 +14156,7 @@
 .amis-scope .cxd-Wizard .cxd-Panel-footer > .btn,
 .amis-scope .cxd-Wizard-tabs .cxd-Panel-footer > .cxd-Form-group,
 .amis-scope .cxd-Wizard-tabs .cxd-Panel-footer > .btn {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-Wizard > ul.nav,
@@ -14050,7 +14170,7 @@
 .amis-scope .cxd-Wizard-tabs > ul.nav li {
   position: relative;
   float: left;
-  padding: 0 0.9375rem 0 1.5625rem;
+  padding: 0 1rem 0 1.5625rem;
   margin: 0;
   color: #999999;
   cursor: pointer;
@@ -14074,7 +14194,7 @@
 
 .amis-scope .cxd-Wizard > ul.nav li:first-child,
 .amis-scope .cxd-Wizard-tabs > ul.nav li:first-child {
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
   border-radius: 0.25rem 0 0 0;
 }
 
@@ -14085,7 +14205,7 @@
   content: "";
   position: absolute;
   right: -0.625rem;
-  border: 1.25rem solid transparent;
+  border: 1rem solid transparent;
   border-right: 0;
   border-left: 0.625rem solid #eceff8;
   border-left-color: rgba(0, 0, 0, 0.05);
@@ -14139,7 +14259,7 @@
 .amis-scope .cxd-Wizard-steps ul li {
   position: relative;
   float: left;
-  padding: 0 0.9375rem 0 1.5625rem;
+  padding: 0 1rem 0 1.5625rem;
   margin: 0;
   color: #999999;
   cursor: default;
@@ -14148,7 +14268,7 @@
 }
 
 .amis-scope .cxd-Wizard-steps ul li:first-child {
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
   border-radius: 0.25rem 0 0 0;
 }
 
@@ -14193,7 +14313,7 @@
 }
 
 .amis-scope .cxd-Wizard-stepContent {
-  padding: 0.9375rem;
+  padding: 0.75rem;
 }
 
 .amis-scope .cxd-Wizard-stepContent .Step-pane {
@@ -14230,7 +14350,7 @@
   position: relative;
   float: none;
   border-bottom: 0.0625rem solid #eceff8;
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .cxd-Wizard--vertical > .cxd-Wizard-step > .cxd-Wizard-steps ul li.is-active {
@@ -14251,28 +14371,28 @@
 }
 
 .amis-scope .cxd-Crud-selection {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .cxd-Crud-selectionLabel {
   display: inline-block;
   vertical-align: top;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .cxd-Crud-value {
   cursor: pointer;
   vertical-align: middle;
   user-select: none;
-  line-height: calc( 1.4285714286 * 0.75rem - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   display: inline-block;
   font-size: 0.75rem;
   color: #108cee;
   background: #cee8fc;
   border: 0.0625rem solid #9dd1fa;
   border-radius: 2px;
-  margin-right: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .cxd-Crud-value:hover {
@@ -14295,15 +14415,15 @@
 }
 
 .amis-scope .cxd-Crud-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .cxd-Crud-selectionClear {
   display: inline-block;
   cursor: pointer;
   user-select: none;
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
   vertical-align: middle;
 }
 
@@ -14377,7 +14497,8 @@
     float: right;
   }
 
-  .amis-scope .cxd-Crud-actions > .cxd-Button + .cxd-Button {
+  .amis-scope .cxd-Crud-actions > * + .cxd-Button,
+  .amis-scope .cxd-Crud-actions > * + .cxd-Button--disabled-wrap {
     margin-left: 0.625rem;
   }
 }
@@ -14387,11 +14508,11 @@
   background: #fff;
   border: 0.0625rem solid #f5f5f5;
   border-radius: 0.142rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .amis-scope .cxd-Form-control > .cxd-Table {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .cxd-Table-fixedLeft,
@@ -14456,7 +14577,7 @@
 
 .amis-scope .cxd-Table-fixedTop > .cxd-Table-fixedLeft > table,
 .amis-scope .cxd-Table-fixedTop > .cxd-Table-fixedRight > table {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .cxd-Table-fixedTop > .cxd-Table-heading {
@@ -14477,7 +14598,7 @@
 .amis-scope .cxd-Table-heading {
   background: #fff;
   border-bottom: 0.0625rem solid #f5f5f5;
-  padding: calc( ( 2.5rem - 0.75rem * 1.5 ) / 2 ) 0.625rem;
+  padding: calc( ( 2.5rem - 0.75rem * 1.5 ) / 2 ) 0.5rem;
 }
 
 .amis-scope .cxd-Table--unsaved .cxd-Table-heading {
@@ -14507,7 +14628,7 @@
 }
 
 .amis-scope .cxd-Table-header {
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .amis-scope .cxd-Table-header > * + .cxd-Button,
@@ -14518,7 +14639,7 @@
 
 .amis-scope .cxd-Table-toolbar {
   display: flex;
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
   flex-wrap: wrap;
 }
 
@@ -14628,11 +14749,11 @@
 }
 
 .amis-scope .cxd-Table-table > thead > tr > th:first-child {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .cxd-Table-table > thead > tr > th:last-child {
-  padding-right: 1.25rem;
+  padding-right: 1rem;
 }
 
 .amis-scope .cxd-Table-table > thead > tr > th:not(:last-child) {
@@ -14640,7 +14761,7 @@
 }
 
 .amis-scope .cxd-Table-table > thead > tr > th .cxd-Remark {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-Table-table > thead > tr + tr {
@@ -14678,17 +14799,16 @@
     (2.5rem - 0.75rem * 20 / 12) /
       2
   ) 0.625rem;
-  vertical-align: top;
 }
 
 .amis-scope .cxd-Table-table > tbody > tr > td:first-child,
 .amis-scope .cxd-Table-table > tbody > tr > th:first-child {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .cxd-Table-table > tbody > tr > td:last-child,
 .amis-scope .cxd-Table-table > tbody > tr > th:last-child {
-  padding-right: 1.25rem;
+  padding-right: 1rem;
 }
 
 .amis-scope .cxd-Table-table > tbody > tr.cxd-Table-tr--odd {
@@ -15148,17 +15268,17 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--2th.is-expanded .cxd-Table-expandCell:before {
-  right: -0.8125rem;
+  right: -0.6875rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--2th .cxd-Table-expandBtn {
   position: relative;
-  right: -1.25rem;
+  right: -1.125rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--2th .cxd-Table-expandCell + td {
   position: relative;
-  padding-left: 1.25rem;
+  padding-left: 1.125rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--2th .cxd-Table-expandCell + td::before {
@@ -15183,7 +15303,7 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--2th.is-expandable .cxd-Table-expandCell + td {
-  padding-left: 1.25rem;
+  padding-left: 1.125rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--2th.is-last:not(.is-expanded) .cxd-Table-expandCell + td::before {
@@ -15192,17 +15312,17 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--3th.is-expanded .cxd-Table-expandCell:before {
-  right: -2.0625rem;
+  right: -1.8125rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--3th .cxd-Table-expandBtn {
   position: relative;
-  right: -2.5rem;
+  right: -2.25rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--3th .cxd-Table-expandCell + td {
   position: relative;
-  padding-left: 2.5rem;
+  padding-left: 2.25rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--3th .cxd-Table-expandCell + td::before {
@@ -15211,7 +15331,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 0.75rem;
+  left: 0.625rem;
   height: auto;
   background: gainsboro;
 }
@@ -15221,13 +15341,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 0.75rem;
+  left: 0.625rem;
   width: 0.625rem;
   background: gainsboro;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--3th.is-expandable .cxd-Table-expandCell + td {
-  padding-left: 2.5rem;
+  padding-left: 2.25rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--3th.is-last:not(.is-expanded) .cxd-Table-expandCell + td::before {
@@ -15236,17 +15356,17 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--4th.is-expanded .cxd-Table-expandCell:before {
-  right: -3.3125rem;
+  right: -2.9375rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--4th .cxd-Table-expandBtn {
   position: relative;
-  right: -3.75rem;
+  right: -3.375rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--4th .cxd-Table-expandCell + td {
   position: relative;
-  padding-left: 3.75rem;
+  padding-left: 3.375rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--4th .cxd-Table-expandCell + td::before {
@@ -15255,7 +15375,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 2rem;
+  left: 1.75rem;
   height: auto;
   background: gainsboro;
 }
@@ -15265,13 +15385,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 2rem;
+  left: 1.75rem;
   width: 0.625rem;
   background: gainsboro;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--4th.is-expandable .cxd-Table-expandCell + td {
-  padding-left: 3.75rem;
+  padding-left: 3.375rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--4th.is-last:not(.is-expanded) .cxd-Table-expandCell + td::before {
@@ -15280,17 +15400,17 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--5th.is-expanded .cxd-Table-expandCell:before {
-  right: -4.5625rem;
+  right: -4.0625rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--5th .cxd-Table-expandBtn {
   position: relative;
-  right: -5rem;
+  right: -4.5rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--5th .cxd-Table-expandCell + td {
   position: relative;
-  padding-left: 5rem;
+  padding-left: 4.5rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--5th .cxd-Table-expandCell + td::before {
@@ -15299,7 +15419,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 3.25rem;
+  left: 2.875rem;
   height: auto;
   background: gainsboro;
 }
@@ -15309,13 +15429,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 3.25rem;
+  left: 2.875rem;
   width: 0.625rem;
   background: gainsboro;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--5th.is-expandable .cxd-Table-expandCell + td {
-  padding-left: 5rem;
+  padding-left: 4.5rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--5th.is-last:not(.is-expanded) .cxd-Table-expandCell + td::before {
@@ -15324,17 +15444,17 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--6th.is-expanded .cxd-Table-expandCell:before {
-  right: -5.8125rem;
+  right: -5.1875rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--6th .cxd-Table-expandBtn {
   position: relative;
-  right: -6.25rem;
+  right: -5.625rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--6th .cxd-Table-expandCell + td {
   position: relative;
-  padding-left: 6.25rem;
+  padding-left: 5.625rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--6th .cxd-Table-expandCell + td::before {
@@ -15343,7 +15463,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 4.5rem;
+  left: 4rem;
   height: auto;
   background: gainsboro;
 }
@@ -15353,13 +15473,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 4.5rem;
+  left: 4rem;
   width: 0.625rem;
   background: gainsboro;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--6th.is-expandable .cxd-Table-expandCell + td {
-  padding-left: 6.25rem;
+  padding-left: 5.625rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--6th.is-last:not(.is-expanded) .cxd-Table-expandCell + td::before {
@@ -15368,17 +15488,17 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--7th.is-expanded .cxd-Table-expandCell:before {
-  right: -7.0625rem;
+  right: -6.3125rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--7th .cxd-Table-expandBtn {
   position: relative;
-  right: -7.5rem;
+  right: -6.75rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--7th .cxd-Table-expandCell + td {
   position: relative;
-  padding-left: 7.5rem;
+  padding-left: 6.75rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--7th .cxd-Table-expandCell + td::before {
@@ -15387,7 +15507,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 5.75rem;
+  left: 5.125rem;
   height: auto;
   background: gainsboro;
 }
@@ -15397,13 +15517,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 5.75rem;
+  left: 5.125rem;
   width: 0.625rem;
   background: gainsboro;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--7th.is-expandable .cxd-Table-expandCell + td {
-  padding-left: 7.5rem;
+  padding-left: 6.75rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--7th.is-last:not(.is-expanded) .cxd-Table-expandCell + td::before {
@@ -15412,17 +15532,17 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--8th.is-expanded .cxd-Table-expandCell:before {
-  right: -8.3125rem;
+  right: -7.4375rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--8th .cxd-Table-expandBtn {
   position: relative;
-  right: -8.75rem;
+  right: -7.875rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--8th .cxd-Table-expandCell + td {
   position: relative;
-  padding-left: 8.75rem;
+  padding-left: 7.875rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--8th .cxd-Table-expandCell + td::before {
@@ -15431,7 +15551,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 7rem;
+  left: 6.25rem;
   height: auto;
   background: gainsboro;
 }
@@ -15441,13 +15561,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 7rem;
+  left: 6.25rem;
   width: 0.625rem;
   background: gainsboro;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--8th.is-expandable .cxd-Table-expandCell + td {
-  padding-left: 8.75rem;
+  padding-left: 7.875rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--8th.is-last:not(.is-expanded) .cxd-Table-expandCell + td::before {
@@ -15456,17 +15576,17 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--9th.is-expanded .cxd-Table-expandCell:before {
-  right: -9.5625rem;
+  right: -8.5625rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--9th .cxd-Table-expandBtn {
   position: relative;
-  right: -10rem;
+  right: -9rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--9th .cxd-Table-expandCell + td {
   position: relative;
-  padding-left: 10rem;
+  padding-left: 9rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--9th .cxd-Table-expandCell + td::before {
@@ -15475,7 +15595,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 8.25rem;
+  left: 7.375rem;
   height: auto;
   background: gainsboro;
 }
@@ -15485,13 +15605,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 8.25rem;
+  left: 7.375rem;
   width: 0.625rem;
   background: gainsboro;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--9th.is-expandable .cxd-Table-expandCell + td {
-  padding-left: 10rem;
+  padding-left: 9rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--9th.is-last:not(.is-expanded) .cxd-Table-expandCell + td::before {
@@ -15500,17 +15620,17 @@
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--10th.is-expanded .cxd-Table-expandCell:before {
-  right: -10.8125rem;
+  right: -9.6875rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--10th .cxd-Table-expandBtn {
   position: relative;
-  right: -11.25rem;
+  right: -10.125rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--10th .cxd-Table-expandCell + td {
   position: relative;
-  padding-left: 11.25rem;
+  padding-left: 10.125rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--10th .cxd-Table-expandCell + td::before {
@@ -15519,7 +15639,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 9.5rem;
+  left: 8.5rem;
   height: auto;
   background: gainsboro;
 }
@@ -15529,13 +15649,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 9.5rem;
+  left: 8.5rem;
   width: 0.625rem;
   background: gainsboro;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--10th.is-expandable .cxd-Table-expandCell + td {
-  padding-left: 11.25rem;
+  padding-left: 10.125rem;
 }
 
 .amis-scope .cxd-Table-table tr.cxd-Table-tr--10th.is-last:not(.is-expanded) .cxd-Table-expandCell + td::before {
@@ -15591,7 +15711,7 @@
   bottom: 0;
   height: 100%;
   background: gainsboro;
-  right: -0.8125rem;
+  right: -0.6875rem;
 }
 
 .amis-scope .cxd-Table-table > tbody > tr > td.cxd-Table-expandCell .cxd-Table-divider-3 {
@@ -15601,7 +15721,7 @@
   bottom: 0;
   height: 100%;
   background: gainsboro;
-  right: -2.0625rem;
+  right: -1.8125rem;
 }
 
 .amis-scope .cxd-Table-table > tbody > tr > td.cxd-Table-expandCell .cxd-Table-divider-4 {
@@ -15611,7 +15731,7 @@
   bottom: 0;
   height: 100%;
   background: gainsboro;
-  right: -3.3125rem;
+  right: -2.9375rem;
 }
 
 .amis-scope .cxd-Table-table > tbody > tr > td.cxd-Table-expandCell .cxd-Table-divider-5 {
@@ -15621,7 +15741,7 @@
   bottom: 0;
   height: 100%;
   background: gainsboro;
-  right: -4.5625rem;
+  right: -4.0625rem;
 }
 
 .amis-scope .cxd-Table-table > tbody > tr > td.cxd-Table-expandCell .cxd-Table-divider-6 {
@@ -15631,7 +15751,7 @@
   bottom: 0;
   height: 100%;
   background: gainsboro;
-  right: -5.8125rem;
+  right: -5.1875rem;
 }
 
 .amis-scope .cxd-Table-table > tbody > tr > td.cxd-Table-expandCell .cxd-Table-divider-7 {
@@ -15641,7 +15761,7 @@
   bottom: 0;
   height: 100%;
   background: gainsboro;
-  right: -7.0625rem;
+  right: -6.3125rem;
 }
 
 .amis-scope .cxd-Table-table > tbody > tr.is-expanded > td.cxd-Table-expandCell::before {
@@ -15673,7 +15793,7 @@
 .amis-scope .cxd-TableCell-sortBtn {
   cursor: pointer;
   width: 0.875rem;
-  height: 1.25rem;
+  height: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15728,7 +15848,7 @@
 .amis-scope .cxd-TableCell-searchBtn {
   cursor: pointer;
   position: absolute;
-  right: 0.3125rem;
+  right: 0.25rem;
   top: 50%;
   transform: translateY(-50%);
   color: #999;
@@ -15844,7 +15964,7 @@
 
 .amis-scope .cxd-Table-itemActions a {
   cursor: pointer;
-  padding: 0.3125rem 0.625rem;
+  padding: 0.25rem 0.5rem;
   color: #108cee;
   text-decoration: none;
 }
@@ -15863,7 +15983,7 @@
 .amis-scope .cxd-Table-dragTip {
   color: #333;
   clear: both;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
   width: 100%;
   color: #108cee;
 }
@@ -15928,7 +16048,7 @@
 }
 
 .amis-scope .cxd-Table-dragBtn {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
   display: inline-block;
   visibility: hidden;
   cursor: move;
@@ -15973,14 +16093,14 @@
   border: 0.0625rem solid #eceff8;
   border-radius: 0.142rem;
   background: #fff;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
 .amis-scope .cxd-List-toolbar {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .amis-scope .cxd-List-toolbar::before,
@@ -16002,7 +16122,7 @@
 }
 
 .amis-scope .cxd-List-header {
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .amis-scope .cxd-List-header > * + .cxd-Button,
@@ -16016,7 +16136,7 @@
 }
 
 .amis-scope .cxd-List-heading {
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
 }
 
 .amis-scope .cxd-List-fixedTop {
@@ -16025,7 +16145,6 @@
   z-index: -1;
   opacity: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 0.625rem;
 }
 
 .amis-scope .cxd-List-fixedTop.in {
@@ -16045,15 +16164,15 @@
 .amis-scope .cxd-List--unsaved .cxd-List-heading {
   background: #e8f0fe;
   color: #4285f4;
-  padding: 0.3125rem 0.625rem;
-  margin-bottom: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .cxd-List-dragTip {
   width: 100%;
   color: #108cee;
   clear: both;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .cxd-List-placeholder {
@@ -16072,7 +16191,7 @@
 .amis-scope .cxd-ListGroup-item {
   position: relative;
   display: block;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   margin-bottom: -0.0625rem;
   background: #fff;
   border: 0.0625rem solid #eceff8;
@@ -16103,7 +16222,7 @@
 
 .amis-scope .cxd-ListGroup--expanded .cxd-ListGroup-item {
   border-radius: 0.142rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .cxd-ListGroup--expanded .cxd-ListGroup-item:last-child {
@@ -16113,7 +16232,7 @@
 .amis-scope .cxd-ListItem {
   position: relative;
   display: block;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
 }
 
 .amis-scope .cxd-ListItem::before,
@@ -16136,13 +16255,13 @@
 
 .amis-scope .cxd-ListItem-checkBtn {
   float: left;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-ListItem-dragBtn {
   cursor: move;
   float: left;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-ListItem-actions {
@@ -16151,7 +16270,7 @@
 
 .amis-scope .cxd-ListItem--actions-at-left .cxd-ListItem-actions {
   float: left;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
 }
 
 .amis-scope .cxd-ListItem-title {
@@ -16224,7 +16343,7 @@
 
 .amis-scope .cxd-Cards-toolbar {
   padding: 0 0;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .cxd-Cards-toolbar::before,
@@ -16246,7 +16365,7 @@
 }
 
 .amis-scope .cxd-Cards-heading {
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
 }
 
 .amis-scope .cxd-Cards-header {
@@ -16269,7 +16388,7 @@
   z-index: -1;
   opacity: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .cxd-Cards-fixedTop.in {
@@ -16289,15 +16408,15 @@
 .amis-scope .cxd-Cards--unsaved .cxd-Cards-heading {
   background: #e8f0fe;
   color: #4285f4;
-  padding: 0.3125rem 0.625rem;
-  margin-bottom: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .cxd-Cards-dragTip {
   width: 100%;
   color: #108cee;
   clear: both;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .cxd-Cards-placeholder {
@@ -16420,7 +16539,7 @@
   background: #fff;
   border: 0.0625rem solid #eceff8;
   border-radius: 0.142rem;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -16429,7 +16548,7 @@
 
 .amis-scope .cxd-Card-title {
   color: #333;
-  font-size: 1rem;
+  font-size: 0.875rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -16446,14 +16565,14 @@
 }
 
 .amis-scope .cxd-Card-title + .cxd-Card-subTitle {
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .cxd-Card-checkBtn {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0.625rem;
+  margin: 0.5rem;
   z-index: 1;
 }
 
@@ -16464,18 +16583,18 @@
 .amis-scope .cxd-Card-dragBtn {
   cursor: pointer;
   float: right;
-  margin: 0.625rem;
+  margin: 0.5rem;
 }
 
 .amis-scope .cxd-Card-heading {
   overflow: hidden;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   flex: 1 0 auto;
 }
 
 .amis-scope .cxd-Card-avtar {
   float: left;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   max-width: 12.5rem;
 }
 
@@ -16493,8 +16612,8 @@
   vertical-align: middle;
   border-radius: 500px;
   float: left;
-  margin-right: 0.9375rem;
-  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
   text-transform: uppercase();
 }
 
@@ -16503,7 +16622,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
 .amis-scope .cxd-Card-highlight {
@@ -16513,17 +16632,17 @@
   border-radius: 100%;
   display: inline-block;
   position: absolute;
-  top: 0.3125rem;
+  top: 0.25rem;
   right: 0.125rem;
 }
 
 .amis-scope .cxd-Card-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   flex: 1 0 auto;
 }
 
 .amis-scope .cxd-Card-heading + .cxd-Card-body {
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
 }
 
 .amis-scope .cxd-Card-field {
@@ -16641,7 +16760,7 @@
 
 .amis-scope .cxd-Field-quickEditBtn {
   color: inherit;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: inline-block;
   vertical-align: text-top;
   cursor: pointer;
@@ -16690,7 +16809,7 @@
 
 .amis-scope .cxd-Field-popOverBtn {
   color: inherit;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   visibility: hidden;
   display: inline-block;
   cursor: pointer;
@@ -16793,9 +16912,48 @@
   }
 }
 
+.amis-scope .cxd-Property > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.amis-scope .cxd-Property > table > thead > tr > th {
+  padding: 0.5rem;
+  background: #f2f2f2;
+  border: 1px solid #eceff8;
+}
+
+.amis-scope .cxd-Property > table > tbody > tr {
+  background: #fff;
+}
+
+.amis-scope .cxd-Property > table > tbody > tr > td,
+.amis-scope .cxd-Property > table > tbody > tr > th {
+  border: 1px solid #eceff8;
+  padding: 0.5rem;
+}
+
+.amis-scope .cxd-Property > table > tbody > tr > th {
+  background: #f7f7f7;
+}
+
+.amis-scope .cxd-Property--simple > table > thead > tr > th {
+  background: transparent;
+  border: none;
+}
+
+.amis-scope .cxd-Property--simple > table > tbody > tr {
+  background: transparent;
+}
+
+.amis-scope .cxd-Property--simple > table > tbody > tr > td,
+.amis-scope .cxd-Property--simple > table > tbody > tr > th {
+  border: none;
+}
+
 .amis-scope .cxd-Field-copyBtn {
   color: #999;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: inline-block;
   cursor: pointer;
 }
@@ -16805,7 +16963,7 @@
 }
 
 .amis-scope .cxd-Divider {
-  margin: 0.9375rem calc(0.9375rem * -1);
+  margin: 0.75rem calc(0.75rem * -1);
   border-bottom: 0.0625rem dashed #eceff8;
   height: 0.125rem;
   font-size: 0;
@@ -16817,7 +16975,6 @@
 
 .amis-scope .cxd-Pagination {
   display: inline-block;
-  padding-left: 0;
   padding: 0;
   margin: 0 0 -0.625rem;
   border-radius: 0.25rem;
@@ -16896,27 +17053,23 @@
 .amis-scope .cxd-Pagination-inputGroup {
   display: inline-flex;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
-.amis-scope .cxd-Pagination-inputGroup .cxd-Pagination-input {
+.amis-scope .cxd-Pagination-inputGroup input {
   width: 3.125rem;
   height: 1.875rem;
   border: 0.0625rem solid #eceff8;
-  border-top-left-radius: 0.142rem;
-  border-bottom-left-radius: 0.142rem;
-  padding: 0.3125rem 0.625rem;
+  border-radius: 0.142rem;
+  padding: 0.25rem 0.625rem;
+  margin: 0 0.625rem;
+  text-align: center;
 }
 
-.amis-scope .cxd-Pagination-inputGroup .cxd-Pagination-input:focus {
+.amis-scope .cxd-Pagination-inputGroup input:focus,
+.amis-scope .cxd-Pagination-inputGroup input:hover {
   outline: none;
   border: 0.0625rem solid #108cee;
-}
-
-.amis-scope .cxd-Pagination-inputGroup .cxd-Button {
-  height: 1.875rem;
-  margin-left: -0.0625rem;
-  border-radius: 0 0.142rem 0.142rem 0;
-  padding: 0 0.625rem;
 }
 
 .amis-scope .cxd-PaginationWrapper-pager {
@@ -16924,31 +17077,31 @@
 }
 
 .amis-scope .cxd-PaginationWrapper-pager:first-child {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .cxd-Wrapper {
-  padding: 0.9375rem;
+  padding: 1rem;
 }
 
 .amis-scope .cxd-Wrapper--xs {
-  padding: 0.3125rem;
+  padding: 0.25rem;
 }
 
 .amis-scope .cxd-Wrapper--sm {
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .cxd-Wrapper--md {
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 .amis-scope .cxd-Wrapper--lg {
-  padding: 1.875rem;
+  padding: 1.25rem;
 }
 
 .amis-scope .cxd-Wrapper--xl {
-  padding: 3.125rem;
+  padding: 1.5rem;
 }
 
 .amis-scope .cxd-Wrapper--none {
@@ -16965,7 +17118,7 @@
 
 .amis-scope .cxd-StatusField-label {
   font-size: 0.75rem;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 @keyframes animation-rolling_red {
@@ -17169,7 +17322,7 @@
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 0.25rem;
-  margin: 0.4375rem 0.3125rem;
+  margin: 0.4375rem 0.25rem;
   transition-duration: 0.2s;
   opacity: 0.3;
 }
@@ -17193,6 +17346,7 @@
   cursor: pointer;
   position: absolute;
   transition-duration: 0.2s;
+  display: none;
   left: 0;
 }
 
@@ -17213,6 +17367,7 @@
   cursor: pointer;
   position: absolute;
   transition-duration: 0.2s;
+  display: none;
   right: 0;
 }
 
@@ -17224,6 +17379,14 @@
   transform: translate(-50%, -50%);
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.amis-scope .cxd-Carousel-arrowsControl:hover .cxd-Carousel-leftArrow {
+  display: block;
+}
+
+.amis-scope .cxd-Carousel-arrowsControl:hover .cxd-Carousel-rightArrow {
+  display: block;
 }
 
 @keyframes disappear {
@@ -17330,11 +17493,11 @@
 }
 
 .amis-scope .cxd-ImageGallery-prevBtn {
-  left: 1.25rem;
+  left: 1rem;
 }
 
 .amis-scope .cxd-ImageGallery-nextBtn {
-  right: 1.25rem;
+  right: 1rem;
 }
 
 .amis-scope .cxd-ImageGallery-footer {
@@ -17347,7 +17510,7 @@
 
 .amis-scope .cxd-ImageGallery-prevList,
 .amis-scope .cxd-ImageGallery-nextList {
-  width: 1.25rem;
+  width: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17441,23 +17604,22 @@
 .amis-scope .cxd-Images {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(0.3125rem * -1);
+  margin: calc(0.25rem * -1);
 }
 
 .amis-scope .cxd-Images-item {
   display: flex;
-  margin: 0.3125rem;
+  margin: 0.25rem;
 }
 
 .amis-scope .cxd-Image {
   display: inline-block;
-  width: 7.5rem;
   border: 0.0625rem solid #eceff8;
-  padding: 0.3125rem;
+  padding: 0.25rem;
 }
 
 .amis-scope .cxd-Image-thumb {
-  width: 100%;
+  width: 6.75rem;
   height: 6.75rem;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwMCIgaGVpZ2h0PSI0MDAiPgogICAgPGRlZnM+CiAgICAgICAgPHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgICAgICAgIDxyZWN0IGZpbGw9ImJsYWNrIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIG9wYWNpdHk9IjAuMSIgLz4KICAgICAgICAgICAgPHJlY3QgZmlsbD0id2hpdGUiIHg9IjEwIiB5PSIwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIC8+CiAgICAgICAgICAgIDxyZWN0IGZpbGw9ImJsYWNrIiB4PSIxMCIgeT0iMTAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgb3BhY2l0eT0iMC4xIiAvPgogICAgICAgICAgICA8cmVjdCBmaWxsPSJ3aGl0ZSIgeD0iMCIgeT0iMTAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICA8L2RlZnM+CiAgICA8cmVjdCBmaWxsPSJ1cmwoI2dyaWQpIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiAvPgo8L3N2Zz4=");
   overflow: hidden;
@@ -17473,12 +17635,34 @@
   transform: translate(-50%, -50%);
 }
 
+.amis-scope .cxd-Image-info {
+  width: 6.75rem;
+}
+
 .amis-scope .cxd-Image-thumb--4-3 {
   height: 5.0625rem;
 }
 
 .amis-scope .cxd-Image-thumb--16-9 {
   height: 3.796875rem;
+}
+
+.amis-scope .cxd-Image-thumb--fixed-size {
+  min-width: 6.75rem;
+  min-height: 6.75rem;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+}
+
+.amis-scope .cxd-Image-thumb--fixed-size .cxd-Image-thumb {
+  width: 100%;
+  height: 100%;
+}
+
+.amis-scope .cxd-Image-thumb--fixed-size .cxd-Image-thumb > img {
+  width: auto;
+  height: 100%;
 }
 
 .amis-scope .cxd-Image-thumb--w-full > img {
@@ -17512,6 +17696,16 @@
 
 .amis-scope .cxd-Image-caption {
   font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.amis-scope .cxd-Image-title {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .amis-scope .cxd-Image-overlay {
@@ -17586,10 +17780,10 @@
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -17602,7 +17796,7 @@
   border: none;
   color: #666;
   width: 100%;
-  height: calc(1.4285714286 * 0.75rem);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-InputBox input::placeholder {
@@ -17688,10 +17882,10 @@
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -17708,7 +17902,7 @@
   border: none;
   color: #666;
   width: 100%;
-  height: calc(1.4285714286 * 0.75rem);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-ResultBox input::placeholder {
@@ -17805,8 +17999,8 @@
 .amis-scope .cxd-ResultBox-value {
   background: #f5f5f5;
   color: #000;
-  font-size: 0.75rem;
-  padding: 0 0.3125rem;
+  font-size: 0.875rem;
+  padding: 0 0.25rem;
   min-height: 1.5rem;
   flex-wrap: nowrap;
   display: inline-flex;
@@ -17817,7 +18011,7 @@
 
 .amis-scope .cxd-ResultBox-value > a {
   cursor: pointer;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   color: #999;
 }
 
@@ -17858,7 +18052,7 @@
   display: inline-flex;
   flex-direction: row;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-end;
@@ -17911,7 +18105,7 @@
   background: transparent;
   color: #666;
   width: 0;
-  height: calc(1.4285714286 * 0.75rem);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-SearchBox > input::placeholder {
@@ -17929,7 +18123,7 @@
 .amis-scope .cxd-ListMenu-groupLabel {
   font-size: 0.6875rem;
   color: #999;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem - 0.625rem ) / 2 ) 0 0 calc(0.625rem - 0.3125rem);
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.5rem ) / 2 ) 0 0 calc(0.625rem - 0.25rem);
 }
 
 .amis-scope .cxd-ListMenu-group:not(:first-child) > .cxd-ListMenu-groupLabel {
@@ -17941,9 +18135,9 @@
   min-height: 1.875rem;
   color: #333;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   cursor: pointer;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
 }
 
 .amis-scope .cxd-ListMenu-item.is-active {
@@ -17966,9 +18160,9 @@
   min-height: 1.875rem;
   color: #999;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   cursor: pointer;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
 }
 
 .amis-scope .cxd-PopOver > .cxd-ListMenu {
@@ -17978,14 +18172,14 @@
 .amis-scope .cxd-Log {
   background: #222;
   color: #f1f1f1;
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
   overflow-y: auto;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
 
 .amis-scope .cxd-Log-line {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
@@ -18149,8 +18343,8 @@
 
 .amis-scope fieldset.cxd-Collapse > legend {
   font-weight: 400;
-  padding: 0.3125rem 0;
-  font-size: 1rem;
+  padding: 0.25rem 0;
+  font-size: 0.875rem;
   color: #333;
   border-left: #108cee 0.25rem solid;
   line-height: 1.2;
@@ -18191,11 +18385,11 @@
 }
 
 .amis-scope fieldset.cxd-Collapse--base {
-  padding: 30px 15px 15px 15px;
+  padding: 30px 1rem 1rem 1rem;
 }
 
 .amis-scope fieldset.cxd-Collapse--base > legend {
-  left: 15px;
+  left: 1rem;
   font-size: 0.875rem;
   padding: 0 8px;
   margin: 0 0 0 -8px;
@@ -18211,7 +18405,7 @@
 
 .amis-scope fieldset.cxd-Collapse--md > legend {
   left: 20px;
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 0 10px;
   margin: 0 0 0 -10px;
 }
@@ -18226,9 +18420,9 @@
 
 .amis-scope fieldset.cxd-Collapse--lg > legend {
   left: 30px;
-  font-size: 1.25rem;
-  padding: 0 15px;
-  margin: 0 0 0 -15px;
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin: 0 0 0 calc(1rem * -1);
 }
 
 .amis-scope fieldset.cxd-Collapse--lg:after {
@@ -18236,12 +18430,12 @@
 }
 
 .amis-scope .cxd-Form-groupColumn {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 768px) {
   .amis-scope .cxd-Form-group {
-    margin-bottom: 0.9375rem;
+    margin-bottom: 0.75rem;
   }
 
   .amis-scope .cxd-Form-value > .cxd-Form-group {
@@ -18251,8 +18445,8 @@
   .amis-scope .cxd-Form-group--hor {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(1.25rem / -2);
-    margin-right: calc(1.25rem / -2);
+    margin-left: calc(1rem / -2);
+    margin-right: calc(1rem / -2);
     align-items: flex-start;
   }
 
@@ -18265,8 +18459,8 @@
   }
 
   .amis-scope .cxd-Form-group--hor > * {
-    padding-left: calc(1.25rem / 2);
-    padding-right: calc(1.25rem / 2);
+    padding-left: calc(1rem / 2);
+    padding-right: calc(1rem / 2);
   }
 
   .amis-scope .cxd-Form-group--hor > .cxd-Form-item--inline {
@@ -18303,13 +18497,13 @@
   }
 
   .amis-scope .cxd-Form-group--sm {
-    margin-left: calc(1.25rem / -2);
-    margin-right: calc(1.25rem / -2);
+    margin-left: calc(1rem / -2);
+    margin-right: calc(1rem / -2);
   }
 
   .amis-scope .cxd-Form-group--sm > * {
-    padding-left: calc(1.25rem / 2);
-    padding-right: calc(1.25rem / 2);
+    padding-left: calc(1rem / 2);
+    padding-right: calc(1rem / 2);
   }
 
   .amis-scope .cxd-Form-group--xs {
@@ -18427,7 +18621,7 @@
   line-height: calc( 1.875rem - calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) * 2 - 0.0625rem * 2 );
   height: 1.875rem;
@@ -18435,7 +18629,7 @@
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
 }
@@ -18571,10 +18765,10 @@
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -18587,7 +18781,7 @@
   border: none;
   color: #666;
   width: 100%;
-  height: calc(1.4285714286 * 0.75rem);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-TextControl-input input::placeholder {
@@ -18624,7 +18818,7 @@
 }
 
 .amis-scope .cxd-TextControl-spinner {
-  line-height: calc( 1.4285714286 * 0.75rem);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-TextControl-clear {
@@ -18665,7 +18859,7 @@
   top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   );
   margin-top: calc(2 * 0.0625rem);
@@ -18796,7 +18990,7 @@
 }
 
 .amis-scope .cxd-TextControl-sugItem {
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem - 0.125rem ) / 2 ) 0.75rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .cxd-TextControl-sugItem svg {
@@ -18817,7 +19011,7 @@
 
 .amis-scope .cxd-TextControl-value {
   user-select: none;
-  line-height: calc( 1.4285714286 * 0.75rem);
+  line-height: calc( 1.4285714286 * 0.875rem);
   vertical-align: middle;
   display: inline-block;
 }
@@ -18828,7 +19022,7 @@
   padding: calc(calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) - 0.125rem) calc(0.625rem - 0.1875rem);
 }
@@ -18843,16 +19037,16 @@
 
 .amis-scope .cxd-TextControl-input--multiple .cxd-TextControl-valueWrap {
   white-space: normal;
-  margin-bottom: calc(0.3125rem * -1);
+  margin-bottom: calc(0.25rem * -1);
 }
 
 .amis-scope .cxd-TextControl-input--multiple .cxd-TextControl-valueWrap > input {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .cxd-TextControl-input--multiple .cxd-TextControl-value {
   white-space: nowrap;
-  line-height: calc( 1.4285714286 * 0.75rem - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   font-size: 0.75rem;
   color: #108cee;
   background: #cee8fc;
@@ -18872,7 +19066,7 @@
 }
 
 .amis-scope .cxd-TextControl-input--multiple .cxd-TextControl-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .cxd-TextareaControl {
@@ -18880,8 +19074,8 @@
   border-radius: 0;
   line-height: 1.4285714286;
   background: #fff;
-  padding: 0.375rem calc( 1.875rem - 1.4285714286 * 0.75rem - 0.125rem );
-  font-size: 0.75rem;
+  padding: 0.375rem calc( 1.875rem - 1.4285714286 * 0.875rem - 0.125rem );
+  font-size: 0.875rem;
   outline: none;
   resize: none;
   display: block;
@@ -18905,7 +19099,7 @@
 }
 
 .amis-scope .cxd-Checkbox {
-  margin: 0 0.625rem 0 0;
+  margin: 0 0.5rem 0 0;
   font-weight: 400;
   user-select: none;
   pointer-events: none;
@@ -18934,12 +19128,12 @@
 
 .amis-scope .cxd-Checkbox > i + span {
   pointer-events: all;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   cursor: pointer;
 }
 
 .amis-scope .cxd-Checkbox > i + span > a {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: none;
 }
 
@@ -18965,11 +19159,11 @@
 }
 
 .amis-scope .cxd-Checkbox--checkbox {
-  padding-left: 0.875rem;
+  padding-left: 1.25rem;
 }
 
 .amis-scope .cxd-Checkbox--checkbox input {
-  margin-left: calc(0.875rem * -1);
+  margin-left: calc(1.25rem * -1);
 }
 
 .amis-scope .cxd-Checkbox--checkbox input:checked + i {
@@ -18991,7 +19185,6 @@
   width: 0.5rem;
   height: calc(0.5rem / 2);
   background: #cccccc;
-  border-color: #ebebeb;
 }
 
 .amis-scope .cxd-Checkbox--checkbox input[disabled] + i + span {
@@ -19000,11 +19193,11 @@
 }
 
 .amis-scope .cxd-Checkbox--checkbox > i {
-  width: 0.875rem;
-  height: 0.875rem;
+  width: 1.25rem;
+  height: 1.25rem;
   border: 0.0625rem solid #ccc;
   border-radius: 0.142rem;
-  margin-left: calc(0.875rem * -1);
+  margin-left: calc(1.25rem * -1);
   margin-top: -0.1875rem;
 }
 
@@ -19125,7 +19318,7 @@
 }
 
 .amis-scope .cxd-Checkbox--sm > i + span {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-Checkbox--sm.cxd-Checkbox--full input[type=checkbox]:checked + i:before {
@@ -19135,15 +19328,15 @@
 
 .amis-scope .cxd-Checkbox-desc {
   color: #999;
-  margin-left: 0.625rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
   pointer-events: all;
 }
 
 .amis-scope .cxd-CheckboxControl,
 .amis-scope .cxd-RadiosControl,
 .amis-scope .cxd-CheckboxesControl {
-  padding-top: calc((1.875rem - 0.875rem) / 2);
+  padding-top: calc((1.875rem - 1.25rem) / 2);
 }
 
 .amis-scope .cxd-RadiosControl .cxd-Checkbox,
@@ -19152,7 +19345,7 @@
   margin-bottom: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
 }
@@ -19160,7 +19353,7 @@
 .amis-scope .cxd-RadiosControl.is-inline .cxd-Checkbox,
 .amis-scope .cxd-CheckboxesControl.is-inline .cxd-Checkbox {
   display: inline-block;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
 .amis-scope .cxd-RadiosControl-group .cxd-RadiosControl-group,
@@ -19211,8 +19404,8 @@
   display: block;
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) calc(0.625rem + 0.875rem);
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) calc(0.5rem + 1.25rem);
 }
 
 .amis-scope .cxd-Checkboxes--inline > .cxd-Checkbox {
@@ -19231,7 +19424,7 @@
 .amis-scope .cxd-Checkboxes-addBtn > svg {
   width: 0.875rem;
   height: 0.875rem;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-ListCheckboxes-group:not(:first-child) > .cxd-ListCheckboxes-itemLabel,
@@ -19246,7 +19439,7 @@
 .amis-scope .cxd-ListRadios-group > .cxd-ListCheckboxes-itemLabel,
 .amis-scope .cxd-ListRadios-group > .cxd-ListRadios-itemLabel {
   font-size: 0.75rem;
-  padding: 0.3125rem 0.3125rem;
+  padding: 0.25rem 0.25rem;
   color: #999;
 }
 
@@ -19255,8 +19448,8 @@
   display: flex;
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
   cursor: pointer;
   user-select: none;
@@ -19292,7 +19485,7 @@
 .amis-scope .cxd-ListRadios-group > .cxd-ListCheckboxes-items > .cxd-ListRadios-item,
 .amis-scope .cxd-ListRadios-group > .cxd-ListRadios-items > .cxd-ListCheckboxes-item,
 .amis-scope .cxd-ListRadios-group > .cxd-ListRadios-items > .cxd-ListRadios-item {
-  padding-left: 0.9375rem;
+  padding-left: 0.75rem;
 }
 
 .amis-scope .cxd-ListCheckboxes-itemLabel,
@@ -19304,8 +19497,8 @@
 .amis-scope .cxd-ListRadios-placeholder {
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: #999;
 }
 
@@ -19316,7 +19509,7 @@
 .amis-scope .cxd-TableCheckboxes .cxd-Table-table > thead > tr > th,
 .amis-scope .cxd-TableCheckboxes .cxd-Table-table > tbody > tr > td {
   font-size: 0.75rem;
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
   padding-bottom: 0.375rem;
   vertical-align: middle;
 }
@@ -19333,7 +19526,7 @@
 
 .amis-scope .cxd-TableCheckboxes .cxd-Table-table > thead > tr > th:last-child,
 .amis-scope .cxd-TableCheckboxes .cxd-Table-table > tbody > tr > td:last-child {
-  padding-right: 0.9375rem;
+  padding-right: 1rem;
 }
 
 .amis-scope .cxd-TableCheckboxes .cxd-Table-table > tbody > tr {
@@ -19359,7 +19552,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: -0.3125rem;
+  top: calc(0.25rem * -1);
   bottom: calc(1.875rem / 2);
   left: -19px;
   border-left: dashed 1px #999;
@@ -19404,8 +19597,8 @@
   align-items: center;
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
   cursor: pointer;
   user-select: none;
@@ -19414,7 +19607,7 @@
 .amis-scope .cxd-TreeCheckboxes-itemInner > .cxd-Checkbox,
 .amis-scope .cxd-TreeRadios-itemInner > .cxd-Checkbox {
   margin-right: 0;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .cxd-TreeCheckboxes-itemInner.is-active,
@@ -19443,8 +19636,8 @@
 .amis-scope .cxd-TreeRadios-placeholder {
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: #999;
 }
 
@@ -19464,7 +19657,7 @@
 
 .amis-scope .cxd-ChainedCheckboxes-subTitle {
   font-size: 0.75rem;
-  padding: 0.3125rem 0.3125rem;
+  padding: 0.25rem 0.25rem;
   color: #999;
 }
 
@@ -19472,8 +19665,8 @@
   display: flex;
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
   cursor: pointer;
   user-select: none;
@@ -19504,8 +19697,8 @@
 .amis-scope .cxd-ChainedCheckboxes-placeholder {
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: #999;
 }
 
@@ -19518,6 +19711,7 @@
 .amis-scope .cxd-AssociatedCheckboxes-right {
   flex-grow: 1;
   width: 0;
+  height: 10.9375rem;
   overflow: auto;
 }
 
@@ -19554,8 +19748,8 @@
 }
 
 .amis-scope .cxd-CityPicker .cxd-Select {
-  margin-right: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .cxd-CityPicker-input {
@@ -19567,10 +19761,10 @@
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .amis-scope .cxd-CityPicker-input::placeholder {
@@ -19592,22 +19786,23 @@
   cursor: pointer;
   position: relative;
   display: inline-block;
-  width: 3.125rem;
   height: 1.375rem;
+  min-width: 3.125rem;
   overflow: hidden;
   border-radius: 1.875rem;
-  background: #108cee;
+  background: #ccc;
   margin: 0;
   vertical-align: middle;
   text-align: left;
 }
 
 .amis-scope .cxd-Switch.is-disabled {
-  background: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.4;
 }
 
-.amis-scope .cxd-Switch i:before {
-  content: "关";
+.amis-scope .cxd-Switch .text {
+  margin: 0 0.4375rem 0 1.5625rem;
   color: #fff;
   text-indent: calc(3.125rem / 2);
   text-transform: uppercase;
@@ -19615,18 +19810,10 @@
   line-height: 1.375rem;
   font-style: normal;
   font-weight: bold;
-  position: absolute;
-  top: -0.0625rem;
-  bottom: -0.0625rem;
-  left: -0.0625rem;
-  right: -0.0625rem;
-  background: #ccc;
-  border: 0.0625rem solid #f0f0f0;
-  border-radius: 1.875rem;
   transition: all 0.2s;
 }
 
-.amis-scope .cxd-Switch i:after {
+.amis-scope .cxd-Switch .slider:before {
   content: "";
   position: absolute;
   background: #fff;
@@ -19638,49 +19825,43 @@
   transition: margin-left 0.2s;
 }
 
+.amis-scope .cxd-Switch.is-checked {
+  background: #108cee;
+}
+
+.amis-scope .cxd-Switch.is-checked .slider::before {
+  left: auto;
+  right: 0.0625rem;
+  border-width: 0;
+}
+
+.amis-scope .cxd-Switch.is-checked .text {
+  margin: 0 25px 0 7px;
+  color: #fff;
+  text-indent: 0.25rem;
+}
+
+.amis-scope .cxd-Switch.is-checked.is-disabled .slider:before {
+  color: #ccc;
+}
+
+.amis-scope .cxd-Switch.is-checked.is-disabled .text {
+  color: #ccc;
+}
+
 .amis-scope .cxd-Switch input {
   position: absolute;
   opacity: 0;
 }
 
-.amis-scope .cxd-Switch input:disabled + i:before,
-.amis-scope .cxd-Switch input:disabled:checked + i:before {
-  color: #ccc;
-  background: #f5f5f5;
-  cursor: not-allowed;
-}
-
-.amis-scope .cxd-Switch input:disabled + i:after,
-.amis-scope .cxd-Switch input:disabled:checked + i:after {
-  background: #ccc;
-  color: #ccc;
-}
-
-.amis-scope .cxd-Switch input:checked + i:before {
-  left: 100%;
-  border-width: 0;
-}
-
-.amis-scope .cxd-Switch input:checked + i:after {
-  margin-left: calc(3.125rem - 1.375rem);
-  content: "开";
-  color: #fff;
-  text-indent: -1.125rem;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1.375rem;
-}
-
 .amis-scope .cxd-Switch-option {
   vertical-align: middle;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .cxd-Switch-option:first-child {
   margin-left: 0;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-Switch-option:empty {
@@ -19699,7 +19880,7 @@
   margin: 0;
   padding: 0;
   line-height: 1.875rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   height: 1.875rem;
   display: inline-block;
   vertical-align: middle;
@@ -19804,7 +19985,7 @@
 .amis-scope .cxd-Number-handler-wrap {
   float: right;
   border-left: 0.0625rem solid #ccc;
-  width: 1.25rem;
+  width: 1rem;
   height: 100%;
 }
 
@@ -19850,12 +20031,12 @@
   text-align: left;
   outline: none;
   position: relative;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   border: 0.0625rem solid #ccc;
   background: #fff;
   border-radius: 0;
   min-height: 1.875rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem - 0.0625rem * 2 ) / 2 ) 0 calc( ( 1.875rem - 1.4285714286 * 0.75rem - 0.0625rem * 2 ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.0625rem * 2 ) / 2 ) 0 calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.0625rem * 2 ) / 2 ) 0.625rem;
   cursor: pointer;
   color: #000;
 }
@@ -19895,7 +20076,8 @@
 }
 
 .amis-scope .cxd-Select-value {
-  line-height: calc( 1.4285714286 * 0.75rem);
+  line-height: calc( 1.4285714286 * 0.875rem);
+  white-space: nowrap;
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -19907,13 +20089,13 @@
 }
 
 .amis-scope .cxd-Select--multi .cxd-Select-valueWrap {
-  margin-bottom: calc(0.3125rem * -1);
+  margin-bottom: calc(0.25rem * -1);
 }
 
 .amis-scope .cxd-Select--multi .cxd-Select-valueWrap > input {
   display: inline-block;
   width: 6.25rem;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .cxd-Select--multi .cxd-Select-values + .cxd-Select-input {
@@ -19922,8 +20104,9 @@
 
 .amis-scope .cxd-Select--multi .cxd-Select-value {
   position: static;
+  white-space: normal;
   user-select: none;
-  line-height: calc( 1.4285714286 * 0.75rem - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   display: inline-block;
   vertical-align: middle;
   font-size: 0.75rem;
@@ -19931,12 +20114,12 @@
   background: #cee8fc;
   border: 0.0625rem solid #9dd1fa;
   border-radius: 0.125rem;
-  margin-right: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .cxd-Select--multi .cxd-Select-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .cxd-Select-valueIcon {
@@ -19957,8 +20140,8 @@
 }
 
 .amis-scope .cxd-Select-arrow {
-  margin-right: 0.3125rem;
-  width: 1.25rem;
+  margin-right: 0.25rem;
+  width: 1rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -20002,7 +20185,7 @@
   width: 0.875rem;
   min-width: 0.875rem;
   height: 0.875rem;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Select-input > input {
@@ -20017,7 +20200,7 @@
 .amis-scope .cxd-Select-option {
   cursor: pointer;
   min-width: 7.5rem;
-  padding: calc( ( 1.5rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.5rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
 }
 
 .amis-scope .cxd-Select-option.is-active {
@@ -20045,7 +20228,7 @@
 
 .amis-scope .cxd-Select-option > a {
   float: right;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: none;
 }
 
@@ -20058,7 +20241,7 @@
   line-height: 1.4285714286;
   font-size: 0.75rem;
   user-select: none;
-  padding: calc( ( 1.5rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.5rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
 }
 
 .amis-scope .cxd-Select-option-hl {
@@ -20068,7 +20251,7 @@
 .amis-scope .cxd-Select-addBtn {
   display: block;
   cursor: pointer;
-  padding: calc( ( 1.5rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.5rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
 }
 
 .amis-scope .cxd-Select-addBtn:hover {
@@ -20078,7 +20261,7 @@
 .amis-scope .cxd-Select-addBtn > svg {
   width: 0.875rem;
   height: 0.875rem;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-Select.is-focused,
@@ -20088,7 +20271,7 @@
 }
 
 .amis-scope .cxd-Select-spinner {
-  line-height: calc( 1.4285714286 * 0.75rem);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-Select-clear {
@@ -20165,8 +20348,8 @@
 .amis-scope .cxd-Selections-title {
   height: 1.875rem;
   background: #f5f5f5;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
 }
 
 .amis-scope .cxd-Selections-placeholder {
@@ -20178,7 +20361,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .amis-scope .cxd-Selections-items {
@@ -20190,8 +20373,8 @@
   flex-direction: row;
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
 }
 
 .amis-scope .cxd-Selections-item > label {
@@ -20202,7 +20385,7 @@
 .amis-scope .cxd-Selections-item > .cxd-Selections-dragbar {
   width: 1.25rem;
   position: relative;
-  left: -0.3125rem;
+  left: calc(0.25rem * -1);
   color: #999;
   cursor: move;
 }
@@ -20237,7 +20420,7 @@
 .amis-scope .cxd-ListControl-item {
   position: relative;
   user-select: none;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   display: inline-block;
   vertical-align: middle;
   margin: calc(0.625rem / 2);
@@ -20300,12 +20483,12 @@
   content: "";
   position: absolute;
   width: 0.625rem;
-  height: 0.3125rem;
+  height: 0.25rem;
   border-color: #fff;
   border-style: solid;
   border-width: 0 0 0.125rem 0.125rem;
   right: 0.0625rem;
-  bottom: 0.3125rem;
+  bottom: 0.25rem;
   transform: rotate(-40deg);
 }
 
@@ -20351,11 +20534,11 @@
   display: inline-flex;
   flex-wrap: nowrap;
   border: 0.0625rem solid #ccc;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
   height: 1.875rem;
   outline: none;
@@ -20395,13 +20578,13 @@
 .amis-scope .cxd-LocationPicker-placeholder {
   color: #999;
   user-select: none;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .amis-scope .cxd-LocationPicker-value {
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
@@ -20424,7 +20607,7 @@
   justify-content: center;
   margin-left: auto;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-LocationPicker-clear svg {
@@ -20488,7 +20671,7 @@
 
 .amis-scope .cxd-MapPicker-sugItem {
   cursor: pointer;
-  padding: calc( ( 1.5rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  padding: calc( ( 1.5rem - 1.4285714286 * 0.875rem ) / 2 ) 0.625rem;
 }
 
 .amis-scope .cxd-MapPicker-sugItem:hover {
@@ -20510,11 +20693,11 @@
   flex-wrap: nowrap;
   white-space: nowrap;
   border: 0.0625rem solid #ccc;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
   background: #fff;
   color: #000;
@@ -20538,7 +20721,7 @@
   flex-grow: 1;
   padding: 0;
   margin: 0;
-  height: calc(0.75rem * 1.4285714286);
+  height: calc(0.875rem * 1.4285714286);
 }
 
 .amis-scope .cxd-ColorPicker-input::placeholder {
@@ -20567,7 +20750,7 @@
 .amis-scope .cxd-ColorPicker-preview {
   display: flex;
   align-items: center;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 
@@ -20615,11 +20798,11 @@
   display: inline-flex;
   flex-wrap: nowrap;
   border: 0.0625rem solid #ccc;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
   height: 1.875rem;
   outline: none;
@@ -20658,14 +20841,14 @@
 .amis-scope .cxd-DatePicker-placeholder {
   color: #999;
   user-select: none;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   min-width: 3.125rem;
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .amis-scope .cxd-DatePicker-value {
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
@@ -20688,7 +20871,7 @@
   justify-content: center;
   margin-left: auto;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-DatePicker-clear svg {
@@ -20709,7 +20892,7 @@
 .amis-scope .cxd-DatePicker-shortcuts {
   margin: 0;
   background: #f5f5f5;
-  padding: calc( ( 1.875rem - 0.875rem * 1.5 ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 0.875rem * 1.5 ) / 2 ) 0.5rem;
   list-style: none;
   width: 15.625rem;
 }
@@ -20720,7 +20903,7 @@
 
 .amis-scope .cxd-DatePicker-shortcut {
   display: inline-block;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-DatePicker-shortcut a {
@@ -20752,7 +20935,7 @@
 
 .amis-scope .rdt .rdtPicker {
   margin-top: 0;
-  padding: 0.625rem;
+  padding: 0.5rem;
   background: transparent;
   border: none;
 }
@@ -20815,7 +20998,7 @@
 }
 
 .amis-scope .rdt tfoot td {
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
   text-align: left;
 }
 
@@ -20826,7 +21009,7 @@
 }
 
 .amis-scope .rdt tfoot td .rdtActions {
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
   text-align: right;
 }
 
@@ -20887,7 +21070,7 @@
 }
 
 .amis-scope .cxd-CalendarCounter-sep {
-  width: 15px;
+  width: 1rem;
   text-align: center;
 }
 
@@ -20967,7 +21150,7 @@
 }
 
 .amis-scope .rdtBtn + .rdtBtn {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .rdtBtnCancel {
@@ -21014,7 +21197,7 @@
 .amis-scope .rdtPrev,
 .amis-scope .rdtNext {
   cursor: pointer !important;
-  width: 1.25rem;
+  width: 1rem;
   padding: 0;
   color: #999;
   font-size: 1.25rem;
@@ -21055,7 +21238,7 @@
 }
 
 .amis-scope .rdtHeader .rdtSwitch + .rdtSwitch {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope td.rdtMonth,
@@ -21128,11 +21311,11 @@
   display: inline-flex;
   flex-wrap: nowrap;
   border: 0.0625rem solid #ccc;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
   height: 1.875rem;
   outline: none;
@@ -21170,13 +21353,13 @@
 .amis-scope .cxd-DateRangePicker-placeholder {
   color: #999;
   user-select: none;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .amis-scope .cxd-DateRangePicker-value {
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
@@ -21199,7 +21382,7 @@
   margin-left: auto;
   display: inline-block;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-DateRangePicker-clear svg {
@@ -21215,7 +21398,7 @@
 
 .amis-scope .cxd-DateRangePicker-wrap {
   width: auto;
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .cxd-DateRangePicker-start,
@@ -21236,14 +21419,14 @@
 }
 
 .amis-scope .cxd-DateRangePicker-rangers {
-  margin: 0 0 0.625rem;
+  margin: 0 0 0.5rem;
   padding: 0;
   list-style: none;
 }
 
 .amis-scope .cxd-DateRangePicker-ranger {
   display: inline-block;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-DateRangePicker-ranger a {
@@ -21252,7 +21435,7 @@
 
 .amis-scope .cxd-DateRangePicker-actions {
   text-align: right;
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
 }
 
 .amis-scope .cxd-DateRangeControl:not(.is-inline) > .cxd-DateRangePicker {
@@ -21275,7 +21458,7 @@
 
   .amis-scope .cxd-DateRangePicker-end {
     margin-top: 0;
-    margin-left: 0.625rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -21296,14 +21479,14 @@
 
 .amis-scope .cxd-ImageControl-addBtn {
   margin: 0;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 5rem;
+  height: 5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 0.0625rem solid #eceff8;
   cursor: pointer;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   color: #666;
   background: #fff;
   border-color: #dbdbdb;
@@ -21337,8 +21520,8 @@
 }
 
 .amis-scope .cxd-ImageControl-addBtn > svg {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 2.5rem;
+  height: 2.5rem;
   top: 0;
 }
 
@@ -21366,7 +21549,7 @@
   left: 100%;
   color: #fff;
   padding: 0.125rem 0.625rem;
-  margin: 30px 0 0 0.625rem;
+  margin: 30px 0 0 0.5rem;
 }
 
 .amis-scope .cxd-ImageControl-dropzone:focus .cxd-ImageControl-addBtn {
@@ -21378,10 +21561,10 @@
 .amis-scope .cxd-ImageControl-item {
   border: 0.0625rem solid #eceff8;
   vertical-align: top;
-  padding: 0.3125rem;
+  padding: 0.25rem;
   display: inline-block;
-  margin-right: 0.9375rem;
-  margin-bottom: 0.9375rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
   position: relative;
   width: 7.5rem;
 }
@@ -21400,8 +21583,9 @@
   width: 6.75rem;
   height: 6.75rem;
   display: none;
-  top: 0.3125rem;
-  left: 0.3125rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -21553,6 +21737,17 @@
   text-align: center;
 }
 
+.amis-scope .cxd-ImageControl-fixed-size {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.amis-scope .cxd-ImageControl-fixed-size .cxd-ImageControl-itemOverlay {
+  width: 100%;
+  height: 100%;
+}
+
 .amis-scope .cxd-FileControl-dropzone {
   outline: none;
 }
@@ -21608,7 +21803,7 @@
   margin-left: 10px;
   width: 1rem;
   height: 1rem;
-  top: 0.3125rem;
+  top: 0.25rem;
 }
 
 .amis-scope .cxd-FileControl-itemInfoText {
@@ -21996,7 +22191,7 @@
 
 .amis-scope .cxd-InputRange-label--mid {
   left: 50%;
-  bottom: -0.3125rem;
+  bottom: calc(0.25rem * -1);
 }
 
 .amis-scope .cxd-InputRange-label--max {
@@ -22129,7 +22324,7 @@
   top: 2px;
   width: 1rem;
   height: 1rem;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-Tree-rootItem {
@@ -22157,13 +22352,13 @@
   vertical-align: top;
   height: 1.875rem;
   line-height: 1.875rem;
-  padding-right: 0.3125rem;
+  padding-right: 0.25rem;
 }
 
 .amis-scope .cxd-Tree-item-icons > a {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 
@@ -22183,7 +22378,7 @@
 .amis-scope .cxd-Tree-itemInput > a {
   display: inline-block;
   cursor: pointer;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   color: #999;
 }
 
@@ -22200,8 +22395,8 @@
   border: 0.0625rem solid #ccc;
   border-radius: 0;
   line-height: 1.4285714286;
-  padding: calc( ( calc(1.875rem * 0.85) - 1.4285714286 * 0.75rem - 0.125rem ) / 2 ) 0.625rem;
-  font-size: 0.75rem;
+  padding: calc( ( calc(1.875rem * 0.85) - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
 }
 
 .amis-scope .cxd-Tree-itemInput > input::placeholder {
@@ -22235,14 +22430,14 @@
   width: 0.875rem;
   height: 0.875rem;
   top: 0.109375rem;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Tree-itemArrow {
   cursor: pointer;
   width: 0.625rem;
   display: inline-flex;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Tree-itemArrow > svg {
@@ -22260,12 +22455,12 @@
 
 .amis-scope .cxd-Tree-itemArrowPlaceholder {
   display: inline-block;
-  width: calc(0.625rem + 0.3125rem);
+  width: calc(0.625rem + 0.25rem);
 }
 
 .amis-scope .cxd-Tree-itemIcon {
   display: inline-flex;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Tree-rootIcon > svg,
@@ -22307,44 +22502,44 @@
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel,
 .amis-scope .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-placeholder {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel,
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-placeholder {
-  padding-left: calc(1.25rem * 2);
+  padding-left: calc(1rem * 2);
 }
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 3);
+  padding-left: calc(1rem * 3);
 }
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 4);
+  padding-left: calc(1rem * 4);
 }
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 5);
+  padding-left: calc(1rem * 5);
 }
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 6);
+  padding-left: calc(1rem * 6);
 }
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 7);
+  padding-left: calc(1rem * 7);
 }
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 8);
+  padding-left: calc(1rem * 8);
 }
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 9);
+  padding-left: calc(1rem * 9);
 }
 
 .amis-scope .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item .cxd-Tree-item > .cxd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 10);
+  padding-left: calc(1rem * 10);
 }
 
 .amis-scope .cxd-TreeSelectControl {
@@ -22375,10 +22570,10 @@
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -22391,7 +22586,7 @@
   border: none;
   color: #666;
   width: 100%;
-  height: calc(1.4285714286 * 0.75rem);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-TreeSelect-input input::placeholder {
@@ -22428,7 +22623,7 @@
 }
 
 .amis-scope .cxd-TreeSelect-spinner {
-  line-height: calc( 1.4285714286 * 0.75rem);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-TreeSelect-clear {
@@ -22476,7 +22671,7 @@
 .amis-scope .cxd-TreeSelect-popover > .cxd-Tree {
   background: #fff;
   border: 0.0625rem solid #108cee;
-  padding: 0.3125rem 0.625rem;
+  padding: 0.25rem 0.625rem;
   border-radius: 0;
   margin-top: -1px;
   max-height: 400px;
@@ -22488,16 +22683,16 @@
   padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
 }
 
 .amis-scope .cxd-Combo-toolbarBtn {
   line-height: 1;
-  height: 1.25rem;
+  height: 1rem;
   color: #999;
-  padding: 0.125rem 0.3125rem;
+  padding: 0.125rem 0.25rem;
   cursor: pointer;
 }
 
@@ -22506,7 +22701,7 @@
 }
 
 .amis-scope .cxd-Combo-setNullBtn {
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
   display: inline-block;
 }
 
@@ -22546,7 +22741,7 @@
 }
 
 .amis-scope .cxd-Combo-addBtn img.cxd-Button-icon {
-  height: 0.75rem;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -22592,7 +22787,7 @@
 .amis-scope .cxd-Combo-tab-delBtn {
   color: #999;
   cursor: pointer;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   display: inline-block;
 }
 
@@ -22606,7 +22801,7 @@
 }
 
 .amis-scope .cxd-Combo-items {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .cxd-Combo-items:empty {
@@ -22644,7 +22839,7 @@
 }
 
 .amis-scope .cxd-Combo--hor .cxd-Combo-item + .cxd-Combo-item {
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .cxd-Combo--hor .cxd-Combo-itemInner {
@@ -22653,23 +22848,23 @@
 }
 
 .amis-scope .cxd-Combo--hor .cxd-Combo-itemTag {
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-Combo--hor .cxd-Combo-itemTag label {
   color: #108cee;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-Combo--hor .cxd-Combo-delBtn {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: flex;
   white-space: nowrap;
   align-items: flex-start;
   padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
 }
@@ -22684,7 +22879,7 @@
 }
 
 .amis-scope .cxd-Combo--hor .cxd-Combo-itemDrager {
-  padding: 0.3125rem 0.375rem 0 0;
+  padding: 0.25rem 0.375rem 0 0;
 }
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder)::before,
@@ -22698,11 +22893,11 @@
 }
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder) > .cxd-Combo-items {
-  margin: calc(0.3125rem * -2) calc(0.3125rem * -2) 0 calc(0.3125rem * -2);
+  margin: calc(0.25rem * -2) calc(0.25rem * -2) 0 calc(0.25rem * -2);
 }
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder) > .cxd-Combo-items > .cxd-Combo-placeholder {
-  margin: calc(0.3125rem * 2);
+  margin: calc(0.25rem * 2);
 }
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder) .cxd-Combo-itemTag {
@@ -22711,7 +22906,7 @@
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder) .cxd-Combo-itemTag label {
   color: #108cee;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder) > .cxd-Combo-item,
@@ -22722,14 +22917,14 @@
 }
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder) > .cxd-Combo-items > .cxd-Combo-item {
-  margin: calc(0.3125rem * 2);
+  margin: calc(0.25rem * 2);
 }
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder) > .cxd-Combo-items > .cxd-Combo-item > .cxd-Combo-delBtn {
   position: absolute;
   opacity: 0;
-  top: 0.3125rem;
-  right: 0.3125rem;
+  top: 0.25rem;
+  right: 0.25rem;
 }
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder):not(.is-disabled) > .cxd-Combo-item:hover,
@@ -22744,7 +22939,7 @@
 
 .amis-scope .cxd-Combo--ver:not(.cxd-Combo--noBorder) > .cxd-Combo-items > .cxd-Combo-item > .cxd-Combo-itemDrager {
   position: absolute;
-  top: 0.3125rem;
+  top: 0.25rem;
   left: -1.875rem;
 }
 
@@ -22789,13 +22984,13 @@
 }
 
 .amis-scope .cxd-ComboTabs-addLink > a svg {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Combo-dragableTip {
   color: #999;
   font-size: 0.75rem;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .cxd-Combo-dragableTip:empty {
@@ -22820,22 +23015,22 @@
 
 .amis-scope .cxd-SubForm-values {
   display: inline-block;
-  margin-top: calc(0.3125rem * -1);
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem - 0.125rem ) / 2 ) 0;
+  margin-top: calc(0.25rem * -1);
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0;
 }
 
 .amis-scope .cxd-SubForm-value {
   cursor: pointer;
   user-select: none;
-  line-height: calc( 1.4285714286 * 0.75rem - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   display: inline-block;
   font-size: 0.75rem;
   color: #108cee;
   background: #cee8fc;
   border: 0.0625rem solid #9dd1fa;
   border-radius: 2px;
-  margin-right: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .cxd-SubForm-value:hover {
@@ -22858,7 +23053,7 @@
 }
 
 .amis-scope .cxd-SubForm-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .cxd-SubForm-addBtn {
@@ -22892,7 +23087,7 @@
 }
 
 .amis-scope .cxd-SubForm-addBtn img.cxd-Button-icon {
-  height: 0.75rem;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -22931,7 +23126,7 @@
 }
 
 .amis-scope .cxd-ChainedSelectControl .cxd-Select {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Picker {
@@ -22954,10 +23149,10 @@
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -22970,7 +23165,7 @@
   border: none;
   color: #666;
   width: 100%;
-  height: calc(1.4285714286 * 0.75rem);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-Picker-input input::placeholder {
@@ -23007,7 +23202,7 @@
 }
 
 .amis-scope .cxd-Picker-spinner {
-  line-height: calc( 1.4285714286 * 0.75rem);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-Picker-clear {
@@ -23078,7 +23273,7 @@
 }
 
 .amis-scope .cxd-Picker .cxd-Picker-valueWrap {
-  margin-bottom: calc(0.3125rem * -1);
+  margin-bottom: calc(0.25rem * -1);
   line-height: 1;
 }
 
@@ -23087,15 +23282,15 @@
   user-select: none;
   white-space: nowrap;
   vertical-align: middle;
-  line-height: calc( 1.4285714286 * 0.75rem - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   display: inline-block;
   font-size: 0.75rem;
   color: #108cee;
   background: #cee8fc;
   border: 0.0625rem solid #9dd1fa;
   border-radius: 2px;
-  margin-right: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .cxd-Picker .cxd-Picker-valueIcon {
@@ -23109,7 +23304,7 @@
 }
 
 .amis-scope .cxd-Picker .cxd-Picker-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .cxd-Picker-btn {
@@ -23130,7 +23325,7 @@
   justify-content: center;
   margin-left: auto;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Picker-clear svg {
@@ -23197,8 +23392,8 @@
 }
 
 .amis-scope .cxd-TagControl-sugItem {
-  margin-right: 0.625rem;
-  margin-bottom: 0.625rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   display: inline-block;
   font-size: 0.75rem;
   cursor: pointer;
@@ -23234,7 +23429,7 @@
 }
 
 .amis-scope .cxd-TagControl-sugItem img.cxd-Button-icon {
-  height: 0.75rem;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -23332,8 +23527,8 @@
   background: #f5f5f5;
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
 }
 
@@ -23377,7 +23572,7 @@
 }
 
 .amis-scope .cxd-Transfer-search {
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .cxd-Transfer-mid {
@@ -23479,8 +23674,8 @@
 .amis-scope .cxd-TabsTransfer-placeholder {
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 0.75rem;
-  padding: calc( ( 1.875rem - 1.4285714286 * 0.75rem ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: #999;
 }
 
@@ -23528,7 +23723,7 @@
 
 .amis-scope .cxd-NestedSelect-menu .cxd-NestedSelect-option {
   position: relative;
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
   min-height: 1.875rem;
   line-height: 1.875rem;
   cursor: pointer;
@@ -23581,10 +23776,10 @@
   padding: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -23597,7 +23792,7 @@
   border: none;
   color: #666;
   width: 100%;
-  height: calc(1.4285714286 * 0.75rem);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-IconPickerControl-input input::placeholder {
@@ -23634,7 +23829,7 @@
 }
 
 .amis-scope .cxd-IconPickerControl-spinner {
-  line-height: calc( 1.4285714286 * 0.75rem);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .cxd-IconPickerControl-clear {
@@ -23675,7 +23870,7 @@
   top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   );
   margin-top: calc(2 * 0.0625rem);
@@ -23736,7 +23931,7 @@
 
 .amis-scope .cxd-IconPickerControl-sugs {
   position: relative;
-  padding: 0.3125rem;
+  padding: 0.25rem;
   max-height: 21.875rem;
   overflow-y: auto;
 }
@@ -23761,22 +23956,22 @@
 
 .amis-scope .cxd-IconPickerControl-value {
   user-select: none;
-  line-height: calc( 1.4285714286 * 0.75rem);
+  line-height: calc( 1.4285714286 * 0.875rem);
   vertical-align: middle;
   display: inline-block;
 }
 
 .amis-scope .cxd-IconPickerControl-value > i {
   display: inline-block;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .cxd-Form {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   position: relative;
 }
 
-.amis-scope .cxd-Form--quickEdit .cxd-Form-item:last-child {
+.amis-scope .cxd-Form--quickEdit > div:last-of-type {
   margin-bottom: 0;
 }
 
@@ -23785,7 +23980,7 @@
   padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   );
 }
@@ -23795,13 +23990,13 @@
   padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
   padding-bottom: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
   margin-bottom: 0;
@@ -23814,7 +24009,7 @@
 
 .amis-scope .cxd-Form-label {
   font-weight: 400;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
   position: relative;
 }
 
@@ -23831,7 +24026,7 @@
 .amis-scope .cxd-Form-feedback {
   color: #ea2e2e;
   margin: 0.375rem 0 0;
-  padding-left: 0.9375rem;
+  padding-left: 0.75rem;
   font-size: 0.75rem;
 }
 
@@ -23844,18 +24039,18 @@
 
 .amis-scope .cxd-Form-hint {
   display: inline-block;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem - 0.125rem
+          0.875rem - 0.125rem
       ) / 2
   );
   vertical-align: top;
 }
 
 .amis-scope .cxd-Form-item {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .cxd-Grid-form > .cxd-Form-item:last-child {
@@ -23871,20 +24066,20 @@
   padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
   vertical-align: top;
 }
 
 .amis-scope .cxd-Form-item--inline {
-  margin-bottom: calc(0.9375rem / 2);
-  margin-right: calc(0.9375rem / 2);
+  margin-bottom: calc(0.75rem / 2);
+  margin-right: calc(0.75rem / 2);
 }
 
 .amis-scope .cxd-Form-item--horizontal > .cxd-Form-label {
   text-align: right;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .amis-scope .cxd-Form-item--normal > .cxd-Form-label {
@@ -23977,13 +24172,13 @@
   .amis-scope .cxd-Form-item--horizontal {
     display: flex;
     flex-wrap: nowrap;
-    margin-left: calc(1.25rem / 2 * -1);
-    margin-right: calc(1.25rem / 2 * -1);
+    margin-left: calc(1rem / 2 * -1);
+    margin-right: calc(1rem / 2 * -1);
   }
 
   .amis-scope .cxd-Form-item--horizontal > * {
-    padding-left: calc(1.25rem / 2);
-    padding-right: calc(1.25rem / 2);
+    padding-left: calc(1rem / 2);
+    padding-right: calc(1rem / 2);
   }
 
   .amis-scope .cxd-Form-item--horizontal > .cxd-Form-label,
@@ -24008,7 +24203,7 @@
     padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
     margin-bottom: 0;
@@ -24137,23 +24332,23 @@
 
   .amis-scope .cxd-Form-item--inline .cxd-TextControl.cxd-Form-control--sizeMd {
     min-width: auto;
-    width: var(--Form-control-sizeMd);
+    width: 15rem;
   }
 
   .amis-scope .cxd-Form-item--inline .cxd-TextControl.cxd-Form-control--sizeLg {
     min-width: auto;
-    width: var(--Form-control-sizeLg);
+    width: 20rem;
   }
 
   .amis-scope .cxd-Form-item--inline > .cxd-Form-label {
     padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
     margin-bottom: 0;
-    margin-right: calc(0.9375rem / 2);
+    margin-right: calc(0.75rem / 2);
   }
 
   .amis-scope .cxd-Form-item--inline > .cxd-Form-label .cxd-Form-star {
@@ -24208,7 +24403,7 @@
     padding-top: calc(
     (
         1.875rem - 1.4285714286 *
-          0.75rem
+          0.875rem
       ) / 2
   );
     padding-right: 0.625rem;
@@ -24222,6 +24417,60 @@
 
 .amis-scope .cxd-Form--quickEdit {
   min-width: 10rem;
+}
+
+.amis-scope .cxd-AnchorNav {
+  display: flex;
+  height: 25rem;
+}
+
+.amis-scope .cxd-AnchorNav-link-wrap {
+  margin: 0;
+  padding: 0;
+  width: 8.75rem;
+  border-right: 0.0625rem solid #d3dae0;
+  padding-bottom: 3.75rem;
+}
+
+.amis-scope .cxd-AnchorNav-link-wrap > .cxd-AnchorNav-link {
+  position: relative;
+  display: block;
+}
+
+.amis-scope .cxd-AnchorNav-link-wrap > .cxd-AnchorNav-link > a {
+  display: block;
+  border: 0.0625rem solid transparent;
+  border-width: 0 0.125rem 0 0;
+  color: #666;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+  text-align: right;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+.amis-scope .cxd-AnchorNav-link-wrap > .cxd-AnchorNav-link > a:hover {
+  color: #108cee;
+}
+
+.amis-scope .cxd-AnchorNav-link-wrap > .cxd-AnchorNav-link.is-active > a,
+.amis-scope .cxd-AnchorNav-link-wrap > .cxd-AnchorNav-link.is-active > a:hover {
+  color: #108cee;
+  border-color: #108cee;
+}
+
+.amis-scope .cxd-AnchorNav-section-wrap {
+  border: none;
+  flex-grow: 1;
+  overflow: auto;
+  background: #fff;
+}
+
+.amis-scope .cxd-AnchorNav-section-wrap > .cxd-AnchorNav-section {
+  display: block;
+  padding: 0.75rem;
 }
 
 /*
@@ -25079,15 +25328,15 @@
 }
 
 .amis-scope .text-xl {
-  font-size: 1.5rem !important;
-}
-
-.amis-scope .text-lg {
   font-size: 1.25rem !important;
 }
 
-.amis-scope .text-md {
+.amis-scope .text-lg {
   font-size: 1rem !important;
+}
+
+.amis-scope .text-md {
+  font-size: 0.875rem !important;
 }
 
 .amis-scope .text-base {
@@ -26343,6 +26592,10 @@
   white-space: normal;
   word-break: break-all;
   word-wrap: break-word;
+}
+
+.amis-scope .white-space-pre {
+  white-space: pre;
 }
 
 .amis-scope .label {

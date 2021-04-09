@@ -8672,7 +8672,7 @@
 .amis-scope {
   color: rgba(0, 0, 0, 0.85);
   background: #f0f2f5;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
@@ -8778,7 +8778,7 @@
 .amis-scope .antd-Layout-brandBar > button {
   padding: 0.625rem 1.0625rem;
   font-size: 1rem;
-  line-height: calc(3.125rem - 1.25rem);
+  line-height: calc(3.125rem - 1rem);
   text-decoration: none;
   background: transparent;
   border: none;
@@ -8787,14 +8787,14 @@
 .amis-scope .antd-Layout-brand {
   color: #e0e0e0;
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   max-width: 100%;
   height: auto;
   line-height: 3.125rem;
   display: inline-block;
   vertical-align: middle;
-  padding: 0 1.25rem;
+  padding: 0 0.75rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -8813,7 +8813,7 @@
 .amis-scope .antd-Layout-headerBar {
   border-bottom: none;
   min-height: 3.125rem;
-  padding: 0 0.625rem;
+  padding: 0 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8822,7 +8822,7 @@
 .amis-scope .antd-Layout-offScreenBtn {
   display: none;
   float: right;
-  padding: 13px 15px;
+  padding: 13px 1rem;
 }
 
 .amis-scope .antd-Layout-aside {
@@ -9025,7 +9025,7 @@
   .amis-scope .antd-Layout--folded .antd-Layout-brand {
     display: block;
     padding: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -9575,11 +9575,11 @@
 
 .amis-scope .antd-AsideNav-label {
   color: #868787;
-  margin-top: 0.9375rem;
-  margin-bottom: 0.625rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
   font-size: 0.6875rem;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .amis-scope .antd-AsideNav-list {
@@ -9591,7 +9591,7 @@
 .amis-scope .antd-AsideNav-itemArrow {
   float: right;
   display: block;
-  width: 1.25rem;
+  width: 1rem;
   text-align: center;
   line-height: 1.0625rem;
   margin-top: 0.125rem;
@@ -9627,7 +9627,7 @@
 }
 
 .amis-scope .antd-AsideNav-itemBadge {
-  padding: 0.125rem 0.3125rem;
+  padding: 0.125rem 0.25rem;
   margin-top: 0.125rem;
   font-size: 0.6875rem;
   text-shadow: 0 0.0625rem 0 rgba(0, 0, 0, 0.2);
@@ -9642,7 +9642,7 @@
 }
 
 .amis-scope .antd-AsideNav-itemIcon {
-  margin: calc( ( 2.5rem - 1.57 * 14px ) / -2 ) -0.625rem;
+  margin: calc( ( 2.5rem - 1.57 * 0.875rem ) / -2 ) -0.625rem;
   line-height: 2.5rem;
   width: 2.5rem;
   vertical-align: middle;
@@ -9666,7 +9666,7 @@
   opacity: 0;
   height: 0;
   overflow: hidden;
-  margin-left: -1.25rem;
+  margin-left: calc(1rem * -1);
   transition: all 0.2s ease-in-out 0s;
   background: #000c17;
 }
@@ -9697,8 +9697,8 @@
   cursor: pointer;
   text-transform: none;
   display: block;
-  font-size: 14px;
-  padding: calc( ( 2.5rem - 1.57 * 14px ) / 2 ) 0.9375rem;
+  font-size: 0.875rem;
+  padding: calc( ( 2.5rem - 1.57 * 0.875rem ) / 2 ) 0.75rem;
   position: relative;
   transition: background-color 0.2s ease-in-out 0s;
   color: #b4b6bd;
@@ -9726,7 +9726,7 @@
 }
 
 .amis-scope .antd-AsideNav-item.is-lg > a {
-  padding: calc( ( 3.125rem - 1.57 * 14px ) / 2 ) 0.9375rem;
+  padding: calc( ( 3.125rem - 1.57 * 0.875rem ) / 2 ) 1rem;
 }
 
 .amis-scope .antd-AsideNav-item .antd-AsideNav-item a {
@@ -9734,11 +9734,15 @@
 }
 
 .amis-scope .antd-AsideNav-item .antd-AsideNav-item .antd-AsideNav-item a {
-  padding-left: calc(2.5rem + 2.1875rem);
+  padding-left: calc(2.5rem + 0.9375rem);
 }
 
 .amis-scope .antd-AsideNav-item .antd-AsideNav-item .antd-AsideNav-item .antd-AsideNav-item a {
-  padding-left: calc(2.5rem + 4.0625rem);
+  padding-left: calc(2.5rem + 1.875rem);
+}
+
+.amis-scope .antd-AsideNav-item .antd-AsideNav-item .antd-AsideNav-item .antd-AsideNav-item .antd-AsideNav-item a {
+  padding-left: calc(2.5rem + 2.8125rem);
 }
 
 .amis-scope .antd-AsideNav-item .antd-AsideNav-item .antd-AsideNav-subList {
@@ -9757,7 +9761,7 @@
   cursor: default;
   background: transparent;
   color: #b4b6bd;
-  padding: calc( ( 3.125rem - 1.57 * 14px ) / 2 ) 1.25rem;
+  padding: calc( ( 3.125rem - 1.57 * 0.875rem ) / 2 ) 1rem;
 }
 
 .amis-scope .antd-AsideNav-subHeader a:hover {
@@ -9789,7 +9793,7 @@
 .amis-scope .antd-AsideNav-divider {
   width: auto;
   height: 0.0625rem;
-  margin: 0.625rem 0;
+  margin: 0.5rem 0;
   overflow: hidden;
   font-size: 0;
   background: #2e3344;
@@ -9797,9 +9801,9 @@
 
 .amis-scope img.antd-AsideNav-itemIcon {
   float: none;
-  height: 14px;
+  height: 0.875rem;
   width: auto;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
   vertical-align: middle;
 }
 
@@ -9815,7 +9819,7 @@
   .amis-scope .antd-Layout--folded .antd-AsideNav-item:hover > .antd-AsideNav-tooltip {
     opacity: 1;
     z-index: 1600;
-    margin: 0 0 0 0.625rem;
+    margin: 0 0 0 0.5rem;
     opacity: 1;
   }
 
@@ -9859,7 +9863,7 @@
   }
 
   .amis-scope .antd-Layout--folded .antd-AsideNav-item .antd-AsideNav-item a {
-    padding-left: 1.25rem !important;
+    padding-left: 1rem !important;
   }
 
   .amis-scope .antd-Layout--folded .antd-AsideNav-subList {
@@ -9901,13 +9905,13 @@
 }
 
 .amis-scope .antd-FormHbox {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: calc(1rem * -1);
+  margin-right: calc(1rem * -1);
 }
 
 .amis-scope .antd-FormHbox > .antd-Hbox > .antd-Hbox-col {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   vertical-align: top;
 }
 
@@ -10036,14 +10040,14 @@
   min-width: auto;
   padding: calc(
     (
-        2.125rem - 0.0625rem * 2 -
-          1.4285714286 * 14px
+        1.875rem - 0.0625rem * 2 -
+          1.4285714286 * 0.875rem
       ) / 2
   ) 0.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.4285714286;
   border-radius: 2px;
-  height: 2.125rem;
+  height: 1.875rem;
 }
 
 .amis-scope .antd-Button:active,
@@ -10068,7 +10072,7 @@
 }
 
 .amis-scope .antd-Button img.antd-Button-icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -10406,7 +10410,7 @@
         1.375rem - 0.0625rem * 2 -
           18 / 11 * 0.6875rem
       ) / 2
-  ) 0.3125rem;
+  ) 0.25rem;
   font-size: 0.6875rem;
   line-height: 18 / 11;
   border-radius: 2px;
@@ -10416,16 +10420,16 @@
 .amis-scope .antd-Button--xs .antd-Button-icon:first-child:not(:last-child):not(.pull-right),
 .amis-scope .antd-Button--xs > svg.icon:not(:last-child):not(.pull-right),
 .amis-scope .antd-Button--xs > .pull-left {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Button--xs .antd-Button-icon:last-child:not(:first-child):not(.pull-left),
 .amis-scope .antd-Button--xs > .pull-right {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Button--xs img.antd-Button-icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -10458,7 +10462,7 @@
 }
 
 .amis-scope .antd-Button--sm img.antd-Button-icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -10469,14 +10473,14 @@
 .amis-scope .antd-Button--md {
   padding: calc(
     (
-        2.125rem - 0.0625rem * 2 -
-          1.4285714286 * 14px
+        1.875rem - 0.0625rem * 2 -
+          1.4285714286 * 0.875rem
       ) / 2
   ) 0.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.4285714286;
   border-radius: 2px;
-  height: 2.125rem;
+  height: 1.875rem;
 }
 
 .amis-scope .antd-Button--md .antd-Button-icon:first-child:not(:last-child):not(.pull-right),
@@ -10491,22 +10495,22 @@
 }
 
 .amis-scope .antd-Button--md img.antd-Button-icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
 .amis-scope .antd-Button--md.antd-Button--iconOnly {
-  min-width: calc( 2.125rem * 4 / 3);
+  min-width: calc( 1.875rem * 4 / 3);
 }
 
 .amis-scope .antd-Button--lg {
   padding: calc(
     (
         2.875rem - 0.0625rem * 2 -
-          24 / 20 * 1.25rem
+          24 / 20 * 1rem
       ) / 2
   ) 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 24 / 20;
   border-radius: 2px;
   height: 2.875rem;
@@ -10524,7 +10528,7 @@
 }
 
 .amis-scope .antd-Button--lg img.antd-Button-icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -10533,7 +10537,7 @@
 }
 
 .amis-scope .antd-Button--iconOnly {
-  min-width: calc(2.125rem * 4 / 3);
+  min-width: calc(1.875rem * 4 / 3);
 }
 
 .amis-scope .antd-Button--iconOnly:not(.antd-Button--link) > svg.icon {
@@ -10544,7 +10548,7 @@
 
 .amis-scope .antd-Button--iconOnly:not(.antd-Button--link) > .fa,
 .amis-scope .antd-Button--iconOnly:not(.antd-Button--link) > .iconfont {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-Button--iconOnly:not(.antd-Button--link) > .iconfont {
@@ -10555,7 +10559,7 @@
   width: auto;
   min-width: auto;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.85);
+  color: #1890ff;
   text-decoration: none;
   border: none;
   padding-top: 0;
@@ -10582,7 +10586,7 @@
 }
 
 .amis-scope .antd-Button--block + .antd-Button--block {
-  margin-top: 0.9375rem;
+  margin-top: 0.75rem;
 }
 
 .amis-scope input[type=submit].antd-Button--block,
@@ -10592,22 +10596,124 @@
 }
 
 .amis-scope .antd-ButtonToolbar {
-  margin-left: -0.3125rem;
-  margin-top: -0.3125rem;
+  margin-left: calc(0.25rem * -1);
+  margin-top: calc(0.25rem * -1);
 }
 
 .amis-scope .antd-ButtonToolbar > .antd-Button {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .antd-ButtonToolbar > .antd-Button--disabled-wrap > .antd-Button {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .antd-Button--disabled-wrap {
   display: inline-block !important;
+}
+
+.amis-scope .antd-Avatar {
+  background: #d1d5db;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  display: inline-block;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.amis-scope .antd-Avatar--square {
+  border-radius: 0%;
+}
+
+.amis-scope .antd-Avatar--rounded {
+  border-radius: 10%;
+}
+
+.amis-scope .antd-Avatar i {
+  font-size: 1rem;
+}
+
+.amis-scope .antd-Avatar img {
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amis-scope .antd-Avatar:hover img,
+.amis-scope .antd-Avatar:hover i {
+  transform: scale(1.1);
+}
+
+.amis-scope .antd-Breadcrumb-icon {
+  margin-right: 0.125rem;
+}
+
+.amis-scope .antd-Breadcrumb-separator {
+  user-select: none;
+  margin: 0 0.25rem;
+}
+
+.amis-scope .antd-Badge {
+  display: inline-block;
+  position: relative;
+}
+
+.amis-scope .antd-Badge-text,
+.amis-scope .antd-Badge-dot {
+  background: #ff4d4f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  transform-origin: 100% 0;
+  z-index: auto;
+  border-radius: calc(1rem / 2);
+  box-shadow: 0 0 0 1px #fff;
+}
+
+.amis-scope .antd-Badge--top-left {
+  top: 0;
+  left: 0;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.amis-scope .antd-Badge--bottom-left {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  transform: translate(-50%, 50%);
+}
+
+.amis-scope .antd-Badge--bottom-right {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.amis-scope .antd-Badge-text {
+  color: #fff;
+  height: 1rem;
+  line-height: 1rem;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.amis-scope .antd-Badge-dot {
+  z-index: auto;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
 }
 
 .is-modalOpened {
@@ -10615,7 +10721,7 @@
 }
 
 .is-modalOpened.has-scrollbar {
-  padding-right: 0.9375rem;
+  padding-right: 1rem;
 }
 
 .is-modalOpened .amis-scope .antd-Modal {
@@ -10662,7 +10768,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 3.75rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   border: 0.0625rem solid #eceff8;
   border-radius: 2px;
 }
@@ -10706,9 +10812,9 @@
   padding: calc(
     (
         2.5rem - 1.57 *
-          14px
+          0.875rem
       ) / 2
-  ) 1.25rem;
+  ) 1rem;
   background: #fff;
   border-bottom: 0.0625rem solid #dfe2e6;
   border-top-left-radius: 2px;
@@ -10726,7 +10832,7 @@
 }
 
 .amis-scope .antd-Modal-title {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
   font-weight: 500;
 }
@@ -10760,25 +10866,25 @@
 
 .amis-scope .antd-Modal-content > .antd-Modal-close {
   position: absolute;
-  right: 1.25rem;
-  top: 0.625rem;
+  right: 1rem;
+  top: 0.5rem;
   z-index: 10;
 }
 
 .amis-scope .antd-Modal-body {
-  padding: 0.9375rem 1.25rem 1.25rem;
+  padding: 0.75rem 1rem 1rem;
   flex-grow: 1;
 }
 
 .amis-scope .antd-Modal-header + .antd-Modal-body {
-  padding-top: 1.25rem;
+  padding-top: 1rem;
 }
 
 .amis-scope .antd-Modal-footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0.625rem;
+  padding: 0.5rem;
   border-top: 0.0625rem solid #dfe2e6;
   margin: 0 0;
   border-bottom-left-radius: 2px;
@@ -10786,7 +10892,7 @@
 }
 
 .amis-scope .antd-Modal-footer .antd-Button {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .antd-Modal--2th .antd-Modal-content {
@@ -10926,7 +11032,7 @@
 }
 
 .amis-scope .antd-Drawer-header {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   background: #f9f9f9;
   border-bottom: 0.0625rem solid #dfe2e6;
   border-top-left-radius: 0;
@@ -10944,7 +11050,7 @@
 }
 
 .amis-scope .antd-Drawer-title {
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #333;
 }
 
@@ -10975,7 +11081,7 @@
 }
 
 .amis-scope .antd-Drawer-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
   overflow: auto;
@@ -10985,14 +11091,14 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 0.9375rem;
+  padding: 0.75rem;
   border-top: 0.0625rem solid #dfe2e6;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .amis-scope .antd-Drawer-footer .antd-Button {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Drawer-footer .antd-Drawer-info {
@@ -11013,8 +11119,8 @@
 
 .amis-scope .antd-Drawer.antd-Drawer--noOverlay .antd-Drawer-close svg {
   margin-top: 0.125rem;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   fill: #99a6ad;
 }
 
@@ -11070,13 +11176,13 @@
 
 .amis-scope .antd-Drawer--top .antd-Drawer-close {
   top: 100%;
-  margin-top: 0.625rem;
-  left: 0.625rem;
+  margin-top: 0.5rem;
+  left: 0.5rem;
 }
 
 .amis-scope .antd-Drawer--top.antd-Drawer--noOverlay .antd-Drawer-close {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
   left: auto;
   margin-top: 0;
 }
@@ -11102,13 +11208,13 @@
 
 .amis-scope .antd-Drawer--right .antd-Drawer-close {
   right: 100%;
-  margin-right: 0.625rem;
-  top: 0.625rem;
+  margin-right: 0.5rem;
+  top: 0.5rem;
 }
 
 .amis-scope .antd-Drawer--right.antd-Drawer--noOverlay .antd-Drawer-close {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
   margin-right: 0;
 }
 
@@ -11129,7 +11235,7 @@
 
 .amis-scope .antd-Drawer--right .antd-Drawer-footer .antd-Button {
   margin-left: 0;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Drawer--right .antd-Drawer-footer .antd-Drawer-info {
@@ -11155,13 +11261,13 @@
 
 .amis-scope .antd-Drawer--bottom .antd-Drawer-close {
   bottom: 100%;
-  margin-bottom: 0.625rem;
-  left: 0.625rem;
+  margin-bottom: 0.5rem;
+  left: 0.5rem;
 }
 
 .amis-scope .antd-Drawer--bottom.antd-Drawer--noOverlay .antd-Drawer-close {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
   left: auto;
   margin-bottom: 0;
 }
@@ -11187,14 +11293,14 @@
 
 .amis-scope .antd-Drawer--left .antd-Drawer-close {
   left: 100%;
-  margin-left: 0.625rem;
-  top: 0.625rem;
+  margin-left: 0.5rem;
+  top: 0.5rem;
 }
 
 .amis-scope .antd-Drawer--left.antd-Drawer--noOverlay .antd-Drawer-close {
   left: auto;
-  right: 0.9375rem;
-  top: 0.9375rem;
+  right: 0.75rem;
+  top: 0.75rem;
 }
 
 .amis-scope .antd-Drawer--left .antd-Drawer-content {
@@ -11366,9 +11472,9 @@
 }
 
 .amis-scope .antd-Tooltip-title {
-  padding: 0.3125rem 0.625rem;
+  padding: 0.25rem 0.5rem;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
   background: #f7f7f7;
   border-bottom: 0.0625rem solid #ebebeb;
@@ -11382,7 +11488,7 @@
 
 .amis-scope .antd-Tooltip-body {
   color: rgba(0, 0, 0, 0.85);
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 @keyframes tooltipIn {
@@ -11434,7 +11540,7 @@
   animation-name: tooltipIn;
   opacity: 1;
   z-index: 1600;
-  margin: 0 0 0 0.625rem;
+  margin: 0 0 0 0.5rem;
   opacity: 1;
 }
 
@@ -11445,7 +11551,7 @@
 }
 
 .amis-scope [data-tooltip][data-position=bottom]:hover:after {
-  margin: 0.625rem 0 0 0;
+  margin: 0.5rem 0 0 0;
 }
 
 .amis-scope [data-tooltip][data-position=left]:after {
@@ -11456,7 +11562,7 @@
 }
 
 .amis-scope [data-tooltip][data-position=left]:hover:after {
-  margin: 0 0.625rem 0 0;
+  margin: 0 0.5rem 0 0;
 }
 
 .amis-scope [data-tooltip][data-position=top]:after {
@@ -11467,7 +11573,7 @@
 }
 
 .amis-scope [data-tooltip][data-position=top]:hover:after {
-  margin: calc(0.625rem * -1) 0 0 0;
+  margin: calc(0.5rem * -1) 0 0 0;
 }
 
 .amis-scope [data-tooltip]:hover:active:after {
@@ -11500,7 +11606,7 @@
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border: 0.0625rem solid #eceff8;
   border-radius: 2px;
@@ -11573,8 +11679,8 @@
 .amis-scope .antd-Toast {
   width: 18.75rem;
   pointer-events: auto;
-  margin-bottom: 0.3125rem;
-  padding: 0.9375rem 0.9375rem 0.9375rem calc(0.9375rem + 2.5rem);
+  margin-bottom: 0.25rem;
+  padding: 0.75rem 0.75rem 0.75rem calc(0.75rem + 2.5rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 0.428rem;
   border: 0 solid;
@@ -11609,8 +11715,8 @@
 
 .amis-scope .antd-Toast-close {
   position: absolute;
-  top: 0.3125rem;
-  right: 0.625rem;
+  top: 0.25rem;
+  right: 0.5rem;
   color: #fff;
   line-height: 1;
   opacity: 0.8;
@@ -11623,8 +11729,8 @@
 
 .amis-scope .antd-Toast-title {
   display: block;
-  margin-right: 0.9375rem;
-  font-size: 1rem;
+  margin-right: 0.75rem;
+  font-size: 0.875rem;
   vertical-align: middle;
 }
 
@@ -11640,10 +11746,10 @@
   -webkit-font-smoothing: antialiased;
   vertical-align: middle;
   position: absolute;
-  left: 0.9375rem;
-  top: 0.9375rem;
-  width: calc(2.5rem - 0.9375rem);
-  height: calc(2.5rem - 0.9375rem);
+  left: 0.75rem;
+  top: 0.75rem;
+  width: calc(2.5rem - 0.75rem);
+  height: calc(2.5rem - 0.75rem);
   align-items: center;
   justify-content: center;
 }
@@ -11680,44 +11786,44 @@
 }
 
 .amis-scope .antd-Toast-wrap--topRight {
-  top: 0.9375rem;
-  right: 0.9375rem;
+  top: 0.75rem;
+  right: 0.75rem;
 }
 
 .amis-scope .antd-Toast-wrap--topCenter {
-  top: 0.9375rem;
+  top: 0.75rem;
   left: 50%;
   margin-left: calc(18.75rem / -2);
 }
 
 .amis-scope .antd-Toast-wrap--topLeft {
-  top: 0.9375rem;
-  left: 0.9375rem;
+  top: 0.75rem;
+  left: 0.75rem;
 }
 
 .amis-scope .antd-Toast-wrap--bottomLeft {
-  left: 0.9375rem;
-  bottom: 0.9375rem;
+  left: 0.75rem;
+  bottom: 0.75rem;
 }
 
 .amis-scope .antd-Toast-wrap--bottomCenter {
   left: 50%;
   margin-left: calc(18.75rem / -2);
-  bottom: 0.9375rem;
+  bottom: 0.75rem;
 }
 
 .amis-scope .antd-Toast-wrap--bottomRight {
-  bottom: 0.9375rem;
-  right: 0.9375rem;
+  bottom: 0.75rem;
+  right: 0.75rem;
 }
 
 .amis-scope .antd-Alert {
-  font-size: 14px;
+  font-size: 0.875rem;
   box-shadow: none;
-  padding: 0.9375rem 0.9375rem;
+  padding: 0.75rem 0.75rem;
   border: 0.0625rem solid transparent;
   border-radius: 0.285rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -11734,7 +11840,7 @@
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
   opacity: 0.2;
-  right: 0.9375rem;
+  right: 0.75rem;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -11777,7 +11883,7 @@
   font-size: 0.75rem;
   list-style: none;
   margin: 0;
-  padding: 0 0 0 0.9375rem;
+  padding: 0 0 0 1rem;
   border-bottom: 0.0625rem solid #eceff8;
 }
 
@@ -11811,8 +11917,8 @@
   color: #999;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
 }
@@ -11853,7 +11959,7 @@
 }
 
 .amis-scope .antd-ArrayInput-addBtn img.antd-Button-icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -11887,7 +11993,7 @@
 }
 
 .amis-scope .antd-ArrayInput-toolbar {
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -11905,18 +12011,18 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .antd-ArrayInput-item > div {
   flex-grow: 1;
   width: 0;
   min-width: 120px;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-ArrayInput-item > div:not(:first-child) {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-ArrayInput-item--dragging {
@@ -11931,10 +12037,10 @@
   display: inline-block;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
-  ) 0.3125rem;
+  ) 0.25rem;
   cursor: pointer;
 }
 
@@ -11984,7 +12090,7 @@
   border-top-right-radius: 2px;
   color: rgba(0, 0, 0, 0.85);
   margin: 0 0.1875rem 0 0;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -12038,7 +12144,7 @@
 
 .amis-scope .antd-Tabs-pane {
   display: none;
-  padding: 0.9375rem;
+  padding: 0.75rem;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
@@ -12082,7 +12188,7 @@
 
 .amis-scope .antd-Tabs--line > .antd-Tabs-content {
   border-width: 0;
-  padding: 20px 0;
+  padding: 0.75rem 0;
   background: transparent;
 }
 
@@ -12317,7 +12423,7 @@
 .amis-scope .antd-Tabs-toolbar {
   display: inline-block;
   float: right;
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
 }
 
 .amis-scope .antd-Nav {
@@ -12328,7 +12434,7 @@
 }
 
 .amis-scope .antd-Nav .antd-Nav-itemIcon {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Nav img.antd-Nav-itemIcon {
@@ -12355,7 +12461,7 @@
   color: rgba(0, 0, 0, 0.85);
   text-decoration: none;
   margin-right: 0.125rem;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
 }
 
@@ -12390,10 +12496,10 @@
   outline: none;
   color: rgba(0, 0, 0, 0.85);
   text-decoration: none;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
   background: transparent;
-  border-radius: 0.285rem;
+  border-radius: 0;
 }
 
 .amis-scope .antd-Nav--stacked .antd-Nav-item > a:hover,
@@ -12414,7 +12520,7 @@
 .amis-scope .antd-Nav--stacked .antd-Nav-item.is-active > a {
   color: #fff;
   background: #1890ff;
-  border-left: 4px solid transparent;
+  border-left: 0;
   padding-left: 0.75rem;
 }
 
@@ -12424,7 +12530,7 @@
 
 .amis-scope .antd-Nav--stacked .antd-Nav-item.is-unfolded > .antd-Nav-subItems {
   display: block;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .antd-Nav--stacked .antd-Nav-item .antd-Nav-itemToggler {
@@ -12454,7 +12560,7 @@
 }
 
 .amis-scope .antd-Nav--stacked .antd-Nav-item .antd-Nav-item {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-Nav--stacked .antd-Nav-item .antd-Nav-item a:before {
@@ -12475,10 +12581,11 @@
 
 .amis-scope .antd-Page {
   width: 100%;
+  height: 100%;
 }
 
 .amis-scope .antd-Page-header {
-  padding: 0.9375rem 0.9375rem;
+  padding: 0.75rem 0.75rem;
 }
 
 .amis-scope .antd-Page-main {
@@ -12514,7 +12621,7 @@
 
 .amis-scope .antd-Page-headerRow .antd-Page-toolbar {
   text-align: right;
-  padding-right: 0.9375rem;
+  padding-right: 0.75rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -12526,31 +12633,31 @@
   margin: 0;
   padding: 0;
   color: #333;
-  line-height: 1.1;
+  line-height: 1.5;
   font-size: 1rem;
   font-weight: 400;
 }
 
 .amis-scope .antd-Page-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   flex: 1 auto;
 }
 
 .amis-scope .antd-Page-asideTplWrapper {
-  padding: 0.3125rem;
+  padding: 0.25rem;
 }
 
 .amis-scope .antd-Page-toolbar > * + * {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Page-aside {
-  background: #d1d1d1;
+  background: #ffffff;
 }
 
 @media (min-width: 768px) {
   .amis-scope .antd-Page-aside {
-    width: 12.5rem;
+    min-width: 12.5rem;
     max-width: 18.75rem;
     border-right: 0.0625rem solid #eceff8;
   }
@@ -12581,7 +12688,7 @@
 .amis-scope .antd-Remark {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   cursor: pointer;
   text-align: center;
 }
@@ -12593,7 +12700,7 @@
 
 .amis-scope .antd-Remark-icon {
   color: inherit;
-  font-size: 14px;
+  font-size: 0.875rem;
   background: #fff;
   border: 0.0625rem solid #eceff8;
   width: 1rem;
@@ -12615,7 +12722,7 @@
 }
 
 .amis-scope .antd-Remark > span + .antd-Remark-icon {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Remark:hover > .antd-Remark-icon {
@@ -12737,14 +12844,14 @@
 }
 
 .amis-scope .antd-Audio-play {
-  width: 1.25rem;
+  width: 1rem;
   cursor: pointer;
   margin-right: 0.625rem;
 }
 
 .amis-scope .antd-Audio-play svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   top: 0.375rem;
 }
@@ -12789,7 +12896,7 @@
 }
 
 .amis-scope .antd-Audio-volume {
-  width: 1.25rem;
+  width: 1rem;
   height: 3.125rem;
   line-height: 3.125rem;
   cursor: pointer;
@@ -12797,8 +12904,8 @@
 }
 
 .amis-scope .antd-Audio-volume svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   top: 0.375rem;
 }
@@ -12844,8 +12951,8 @@
 }
 
 .amis-scope .antd-Audio-volumeControl svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   top: 0.375rem;
 }
@@ -12864,7 +12971,8 @@
 .amis-scope .antd-Panel-fixedBottom {
   position: absolute;
   background: #fff;
-  z-index: 900;
+  z-index: -1;
+  opacity: 0;
   bottom: 999999px;
   box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-top: none;
@@ -12873,6 +12981,8 @@
 .amis-scope .antd-Panel-fixedBottom.in {
   position: fixed;
   bottom: 0;
+  z-index: 900;
+  opacity: 1;
 }
 
 .amis-scope .antd-Panel--default {
@@ -12989,7 +13099,7 @@
 }
 
 .amis-scope .antd-Panel-heading {
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   border-bottom: 0.0625rem solid transparent;
   border-radius: 2px 2px 0 0;
 }
@@ -12997,26 +13107,26 @@
 .amis-scope .antd-Panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: inherit;
 }
 
 .amis-scope .antd-Panel-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
 }
 
 .amis-scope .antd-Panel-footer {
   border-color: #dfe2e6;
   border-radius: 0 0 0.125rem 0.125rem;
   background: transparent;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   border-style: solid;
   border-width: 0.0625rem 0 0 0;
   clear: both;
 }
 
 .amis-scope .antd-Panel-footer .antd-Button + .antd-Button {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .antd-Panel-btnToolbar {
@@ -13034,7 +13144,7 @@
 }
 
 .amis-scope .antd-Panel-btnToolbar .antd-Button {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .antd-Panel-btnToolbar:empty {
@@ -13196,8 +13306,8 @@
 }
 
 .amis-scope .antd-ButtonToolbar .antd-ButtonGroup {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
   width: auto;
 }
 
@@ -13258,11 +13368,11 @@
 }
 
 .amis-scope .antd-ButtonGroupControl > .antd-ButtonGroup--sm {
-  margin-top: calc((2.125rem - 1.875rem) / 2);
+  margin-top: calc((1.875rem - 1.875rem) / 2);
 }
 
 .amis-scope .antd-ButtonGroupControl > .antd-ButtonGroup--xs {
-  margin-top: calc((2.125rem - 1.375rem) / 2);
+  margin-top: calc((1.875rem - 1.375rem) / 2);
 }
 
 .amis-scope .antd-DropDown {
@@ -13271,7 +13381,7 @@
 }
 
 .amis-scope .antd-DropDown-caret {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   display: inline-block;
   vertical-align: top;
   transition: transform 0.2s ease;
@@ -13303,7 +13413,7 @@
   margin: 0.0625rem 0 0;
   background: #fff;
   list-style: none;
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
   border: 0.0625rem solid #eceff8;
   border-radius: 2px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -13319,14 +13429,16 @@
 .amis-scope .antd-DropDown-menuItem,
 .amis-scope .antd-DropDown-menu > li {
   padding: calc(
-    (2.125rem - 14px * 1.57) /
+    (2.125rem - 0.875rem * 1.57) /
       2
-  ) 0.625rem;
+  ) 0.5rem;
   white-space: nowrap;
   box-sizing: border-box;
   height: 2.125rem;
   vertical-align: middle;
   user-select: none;
+  color: #1890ff;
+  text-decoration: none;
 }
 
 .amis-scope .antd-DropDown-menuItem:hover,
@@ -13347,6 +13459,13 @@
   cursor: pointer;
 }
 
+.amis-scope .antd-DropDown-menuItem.is-disabled,
+.amis-scope .antd-DropDown-menu > li.is-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #999;
+}
+
 .amis-scope .antd-DropDown-menuItem.antd-DropDown-divider,
 .amis-scope .antd-DropDown-menu > li.antd-DropDown-divider {
   height: 0.0625rem;
@@ -13357,6 +13476,7 @@
 }
 
 .amis-scope .antd-DropDown-menu > li a {
+  color: inherit;
   display: block;
   text-decoration: none;
 }
@@ -13373,20 +13493,20 @@
 .amis-scope .antd-Each-placeholder {
   color: #999;
   text-align: center;
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .antd-Collapse {
   border: none;
   padding: 0;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .antd-Collapse-header {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #333;
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
   border-bottom: 0.0625rem solid #dfe2e6;
 }
 
@@ -13394,7 +13514,7 @@
   display: inline-block;
   width: 1rem;
   text-align: center;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 
@@ -13426,7 +13546,7 @@
   text-align: center;
   color: #1890ff;
   border-left: none;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-Collapse--title-bottom .antd-Collapse-arrow:before {
@@ -13505,11 +13625,11 @@
   transition: opacity 0.2s;
   display: flex;
   align-items: center;
-  margin-left: 0.9375rem;
+  margin-left: 0.75rem;
 }
 
 .amis-scope .antd-CBGroup-toolbar .antd-CBGroup-toolbarConditionAdd .antd-CBDelete {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-CBGroup-toolbar:not(:hover) .antd-CBGroup-toolbarConditionAdd {
@@ -13563,7 +13683,7 @@
   content: "";
   top: -10px;
   left: -30px;
-  width: 20px;
+  width: 1rem;
   border-left: solid 1px #eceff8;
   bottom: 0;
 }
@@ -13572,7 +13692,7 @@
   position: absolute;
   content: "";
   top: 50%;
-  width: 20px;
+  width: 1rem;
   left: -30px;
   border-top: solid 1px #eceff8;
 }
@@ -13645,7 +13765,7 @@
   cursor: move;
   width: 20px;
   margin-left: -5px;
-  opacity: 0;
+  opacity: 0.6;
   text-align: center;
   transition: opacity 0.2s ease-out;
   color: inherit;
@@ -13822,8 +13942,8 @@
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.34);
   color: rgba(0, 0, 0, 0.75);
   font-family: -apple-system, Lucida Grande;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 0.875rem;
+  line-height: 1.1;
 }
 
 .amis-scope .antd-ContextMenu-menu.in,
@@ -13940,8 +14060,8 @@
   border-radius: 7px;
   color: rgba(0, 0, 0, 0.75);
   font-family: -apple-system, Lucida Grande;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 0.875rem;
+  line-height: 1.1;
 }
 
 .amis-scope .antd-ContextMenu-item:hover > .antd-ContextMenu-subList::before {
@@ -14002,10 +14122,10 @@
 .amis-scope .antd-Wizard .antd-Badge,
 .amis-scope .antd-Wizard-tabs .antd-Badge {
   display: inline-block;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   font-size: 0.75rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   color: #fff;
   text-align: center;
   white-space: nowrap;
@@ -14033,7 +14153,7 @@
 .amis-scope .antd-Wizard .antd-Panel-footer > .btn,
 .amis-scope .antd-Wizard-tabs .antd-Panel-footer > .antd-Form-group,
 .amis-scope .antd-Wizard-tabs .antd-Panel-footer > .btn {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Wizard > ul.nav,
@@ -14047,7 +14167,7 @@
 .amis-scope .antd-Wizard-tabs > ul.nav li {
   position: relative;
   float: left;
-  padding: 0 0.9375rem 0 1.5625rem;
+  padding: 0 1rem 0 1.5625rem;
   margin: 0;
   color: #999999;
   cursor: pointer;
@@ -14071,7 +14191,7 @@
 
 .amis-scope .antd-Wizard > ul.nav li:first-child,
 .amis-scope .antd-Wizard-tabs > ul.nav li:first-child {
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
   border-radius: 0.25rem 0 0 0;
 }
 
@@ -14082,7 +14202,7 @@
   content: "";
   position: absolute;
   right: -0.625rem;
-  border: 1.25rem solid transparent;
+  border: 1rem solid transparent;
   border-right: 0;
   border-left: 0.625rem solid #eceff8;
   border-left-color: rgba(0, 0, 0, 0.05);
@@ -14109,7 +14229,7 @@
 }
 
 .amis-scope .antd-Wizard-steps {
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 0;
   background: #f3f4f6;
   border-bottom: 0.0625rem solid #eceff8;
@@ -14136,7 +14256,7 @@
 .amis-scope .antd-Wizard-steps ul li {
   position: relative;
   float: left;
-  padding: 0 0.9375rem 0 1.5625rem;
+  padding: 0 1rem 0 1.5625rem;
   margin: 0;
   color: #999999;
   cursor: default;
@@ -14145,7 +14265,7 @@
 }
 
 .amis-scope .antd-Wizard-steps ul li:first-child {
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
   border-radius: 0.25rem 0 0 0;
 }
 
@@ -14156,7 +14276,7 @@
   position: absolute;
   bottom: 0;
   right: -0.625rem;
-  border: 1.25rem solid transparent;
+  border: 1.125rem solid transparent;
   border-right: 0;
   border-left: 0.625rem solid #eceff8;
   border-left-color: rgba(0, 0, 0, 0.05);
@@ -14190,7 +14310,7 @@
 }
 
 .amis-scope .antd-Wizard-stepContent {
-  padding: 0.9375rem;
+  padding: 0.75rem;
 }
 
 .amis-scope .antd-Wizard-stepContent .Step-pane {
@@ -14227,7 +14347,7 @@
   position: relative;
   float: none;
   border-bottom: 0.0625rem solid #eceff8;
-  padding-left: 0.9375rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .antd-Wizard--vertical > .antd-Wizard-step > .antd-Wizard-steps ul li.is-active {
@@ -14248,28 +14368,28 @@
 }
 
 .amis-scope .antd-Crud-selection {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .antd-Crud-selectionLabel {
   display: inline-block;
   vertical-align: top;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .antd-Crud-value {
   cursor: pointer;
   vertical-align: middle;
   user-select: none;
-  line-height: calc( 1.4285714286 * 14px - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   display: inline-block;
   font-size: 0.75rem;
   color: #1890ff;
   background: #e4f2ff;
   border: 0.0625rem solid #b1daff;
   border-radius: 2px;
-  margin-right: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .antd-Crud-value:hover {
@@ -14292,21 +14412,21 @@
 }
 
 .amis-scope .antd-Crud-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .antd-Crud-selectionClear {
   display: inline-block;
   cursor: pointer;
   user-select: none;
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
   vertical-align: middle;
 }
 
 .amis-scope .antd-Crud-toolbar-item {
-  margin-left: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
   line-height: 1.57;
   height: 1.875rem;
   vertical-align: middle;
@@ -14325,7 +14445,7 @@
 .amis-scope .antd-Crud-actions > * + .antd-Button,
 .amis-scope .antd-Crud-actions > * + .antd-ButtonGroup,
 .amis-scope .antd-Crud-actions > * + .antd-ButtonToolbar {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Crud-statistics {
@@ -14334,7 +14454,7 @@
 }
 
 .amis-scope .antd-Crud-pageSwitch .antd-Select {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Crud-pager {
@@ -14343,8 +14463,8 @@
 
 @media (min-width: 576px) {
   .amis-scope .antd-Crud-toolbar {
-    margin-left: calc(0.3125rem * -1);
-    margin-top: calc(0.3125rem * -1);
+    margin-left: calc(0.25rem * -1);
+    margin-top: calc(0.25rem * -1);
     flex-basis: 0;
     flex-grow: 1;
   }
@@ -14360,7 +14480,7 @@
   }
 
   .amis-scope .antd-Crud-toolbar-item {
-    margin-left: 0.3125rem;
+    margin-left: 0.25rem;
     line-height: 1.57;
     height: 1.875rem;
     vertical-align: middle;
@@ -14374,8 +14494,9 @@
     float: right;
   }
 
-  .amis-scope .antd-Crud-actions > .antd-Button + .antd-Button {
-    margin-left: 0.3125rem;
+  .amis-scope .antd-Crud-actions > * + .antd-Button,
+  .amis-scope .antd-Crud-actions > * + .antd-Button--disabled-wrap {
+    margin-left: 0.25rem;
   }
 }
 
@@ -14384,11 +14505,11 @@
   background: #fff;
   border: 0.0625rem solid #eceff8;
   border-radius: 2px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .amis-scope .antd-Form-control > .antd-Table {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .antd-Table-fixedLeft,
@@ -14412,7 +14533,7 @@
 
 .amis-scope .antd-Table-fixedLeft > .antd-Table-table > thead > tr > th:last-child,
 .amis-scope .antd-Table-fixedLeft > .antd-Table-table > tbody > tr > td:last-child {
-  padding-right: 0.625rem;
+  padding-right: 0.5rem;
 }
 
 .amis-scope .antd-Table-fixedRight {
@@ -14427,7 +14548,7 @@
 
 .amis-scope .antd-Table-fixedRight > .antd-Table-table > thead > tr > th:first-child,
 .amis-scope .antd-Table-fixedRight > .antd-Table-table > tbody > tr > td:first-child {
-  padding-left: 0.625rem;
+  padding-left: 0.5rem;
 }
 
 .amis-scope .antd-Table-fixedTop {
@@ -14453,7 +14574,7 @@
 
 .amis-scope .antd-Table-fixedTop > .antd-Table-fixedLeft > table,
 .amis-scope .antd-Table-fixedTop > .antd-Table-fixedRight > table {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .antd-Table-fixedTop > .antd-Table-heading {
@@ -14474,7 +14595,7 @@
 .amis-scope .antd-Table-heading {
   background: #fff;
   border-bottom: 0.0625rem solid #eceff8;
-  padding: calc( ( 2.5rem - 14px * 1.57 ) / 2 ) 0.625rem;
+  padding: calc( ( 2.5rem - 0.875rem * 1.57 ) / 2 ) 0.5rem;
 }
 
 .amis-scope .antd-Table--unsaved .antd-Table-heading {
@@ -14504,18 +14625,18 @@
 }
 
 .amis-scope .antd-Table-header {
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .amis-scope .antd-Table-header > * + .antd-Button,
 .amis-scope .antd-Table-header > * + .antd-ButtonGroup,
 .amis-scope .antd-Table-header > * + .antd-ButtonToolbar {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Table-toolbar {
   display: flex;
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
   flex-wrap: wrap;
 }
 
@@ -14560,7 +14681,7 @@
 }
 
 .amis-scope .antd-Table-actions > * {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Table-content {
@@ -14573,7 +14694,7 @@
   width: 100%;
   min-width: 100%;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgba(0, 0, 0, 0.85);
   background: #fff;
   border-spacing: 0;
@@ -14582,12 +14703,12 @@
 
 .amis-scope .antd-Table-table--withCombine > thead > tr > th:first-child,
 .amis-scope .antd-Table-table--withCombine > tbody > tr > td:first-child {
-  padding-left: 0.625rem !important;
+  padding-left: 0.5rem !important;
 }
 
 .amis-scope .antd-Table-table--withCombine > thead > tr > th:last-child,
 .amis-scope .antd-Table-table--withCombine > tbody > tr > td:last-child {
-  padding-right: 0.625rem !important;
+  padding-right: 0.5rem !important;
 }
 
 .amis-scope .antd-Table-table--withCombine > tbody > tr.antd-Table-tr--odd {
@@ -14610,11 +14731,11 @@
   background: #fafafa;
   text-align: left;
   padding: calc(
-    (2.5rem - 14px * 1.57) /
+    (2.5rem - 0.875rem * 1.57) /
       2
-  ) 0.625rem;
+  ) 0.5rem;
   border-bottom: 0.0625rem solid #eceff8;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
   font-weight: 400;
   white-space: nowrap;
@@ -14625,11 +14746,11 @@
 }
 
 .amis-scope .antd-Table-table > thead > tr > th:first-child {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .antd-Table-table > thead > tr > th:last-child {
-  padding-right: 1.25rem;
+  padding-right: 1rem;
 }
 
 .amis-scope .antd-Table-table > thead > tr > th:not(:last-child) {
@@ -14637,7 +14758,7 @@
 }
 
 .amis-scope .antd-Table-table > thead > tr > th .antd-Remark {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Table-table > thead > tr + tr {
@@ -14672,20 +14793,19 @@
 .amis-scope .antd-Table-table > tbody > tr > td,
 .amis-scope .antd-Table-table > tbody > tr > th {
   padding: calc(
-    (2.5rem - 14px * 1.57) /
+    (2.5rem - 0.875rem * 1.57) /
       2
-  ) 0.625rem;
-  vertical-align: top;
+  ) 0.5rem;
 }
 
 .amis-scope .antd-Table-table > tbody > tr > td:first-child,
 .amis-scope .antd-Table-table > tbody > tr > th:first-child {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .antd-Table-table > tbody > tr > td:last-child,
 .amis-scope .antd-Table-table > tbody > tr > th:last-child {
-  padding-right: 1.25rem;
+  padding-right: 1rem;
 }
 
 .amis-scope .antd-Table-table > tbody > tr.antd-Table-tr--odd {
@@ -15145,17 +15265,17 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--2th.is-expanded .antd-Table-expandCell:before {
-  right: -0.8125rem;
+  right: -0.6875rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--2th .antd-Table-expandBtn {
   position: relative;
-  right: -1.25rem;
+  right: -1.125rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--2th .antd-Table-expandCell + td {
   position: relative;
-  padding-left: 1.25rem;
+  padding-left: 1.125rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--2th .antd-Table-expandCell + td::before {
@@ -15180,7 +15300,7 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--2th.is-expandable .antd-Table-expandCell + td {
-  padding-left: 1.25rem;
+  padding-left: 1.125rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--2th.is-last:not(.is-expanded) .antd-Table-expandCell + td::before {
@@ -15189,17 +15309,17 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--3th.is-expanded .antd-Table-expandCell:before {
-  right: -2.0625rem;
+  right: -1.8125rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--3th .antd-Table-expandBtn {
   position: relative;
-  right: -2.5rem;
+  right: -2.25rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--3th .antd-Table-expandCell + td {
   position: relative;
-  padding-left: 2.5rem;
+  padding-left: 2.25rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--3th .antd-Table-expandCell + td::before {
@@ -15208,7 +15328,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 0.75rem;
+  left: 0.625rem;
   height: auto;
   background: #eceff8;
 }
@@ -15218,13 +15338,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 0.75rem;
+  left: 0.625rem;
   width: 0.625rem;
   background: #eceff8;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--3th.is-expandable .antd-Table-expandCell + td {
-  padding-left: 2.5rem;
+  padding-left: 2.25rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--3th.is-last:not(.is-expanded) .antd-Table-expandCell + td::before {
@@ -15233,17 +15353,17 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--4th.is-expanded .antd-Table-expandCell:before {
-  right: -3.3125rem;
+  right: -2.9375rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--4th .antd-Table-expandBtn {
   position: relative;
-  right: -3.75rem;
+  right: -3.375rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--4th .antd-Table-expandCell + td {
   position: relative;
-  padding-left: 3.75rem;
+  padding-left: 3.375rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--4th .antd-Table-expandCell + td::before {
@@ -15252,7 +15372,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 2rem;
+  left: 1.75rem;
   height: auto;
   background: #eceff8;
 }
@@ -15262,13 +15382,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 2rem;
+  left: 1.75rem;
   width: 0.625rem;
   background: #eceff8;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--4th.is-expandable .antd-Table-expandCell + td {
-  padding-left: 3.75rem;
+  padding-left: 3.375rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--4th.is-last:not(.is-expanded) .antd-Table-expandCell + td::before {
@@ -15277,17 +15397,17 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--5th.is-expanded .antd-Table-expandCell:before {
-  right: -4.5625rem;
+  right: -4.0625rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--5th .antd-Table-expandBtn {
   position: relative;
-  right: -5rem;
+  right: -4.5rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--5th .antd-Table-expandCell + td {
   position: relative;
-  padding-left: 5rem;
+  padding-left: 4.5rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--5th .antd-Table-expandCell + td::before {
@@ -15296,7 +15416,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 3.25rem;
+  left: 2.875rem;
   height: auto;
   background: #eceff8;
 }
@@ -15306,13 +15426,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 3.25rem;
+  left: 2.875rem;
   width: 0.625rem;
   background: #eceff8;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--5th.is-expandable .antd-Table-expandCell + td {
-  padding-left: 5rem;
+  padding-left: 4.5rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--5th.is-last:not(.is-expanded) .antd-Table-expandCell + td::before {
@@ -15321,17 +15441,17 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--6th.is-expanded .antd-Table-expandCell:before {
-  right: -5.8125rem;
+  right: -5.1875rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--6th .antd-Table-expandBtn {
   position: relative;
-  right: -6.25rem;
+  right: -5.625rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--6th .antd-Table-expandCell + td {
   position: relative;
-  padding-left: 6.25rem;
+  padding-left: 5.625rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--6th .antd-Table-expandCell + td::before {
@@ -15340,7 +15460,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 4.5rem;
+  left: 4rem;
   height: auto;
   background: #eceff8;
 }
@@ -15350,13 +15470,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 4.5rem;
+  left: 4rem;
   width: 0.625rem;
   background: #eceff8;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--6th.is-expandable .antd-Table-expandCell + td {
-  padding-left: 6.25rem;
+  padding-left: 5.625rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--6th.is-last:not(.is-expanded) .antd-Table-expandCell + td::before {
@@ -15365,17 +15485,17 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--7th.is-expanded .antd-Table-expandCell:before {
-  right: -7.0625rem;
+  right: -6.3125rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--7th .antd-Table-expandBtn {
   position: relative;
-  right: -7.5rem;
+  right: -6.75rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--7th .antd-Table-expandCell + td {
   position: relative;
-  padding-left: 7.5rem;
+  padding-left: 6.75rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--7th .antd-Table-expandCell + td::before {
@@ -15384,7 +15504,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 5.75rem;
+  left: 5.125rem;
   height: auto;
   background: #eceff8;
 }
@@ -15394,13 +15514,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 5.75rem;
+  left: 5.125rem;
   width: 0.625rem;
   background: #eceff8;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--7th.is-expandable .antd-Table-expandCell + td {
-  padding-left: 7.5rem;
+  padding-left: 6.75rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--7th.is-last:not(.is-expanded) .antd-Table-expandCell + td::before {
@@ -15409,17 +15529,17 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--8th.is-expanded .antd-Table-expandCell:before {
-  right: -8.3125rem;
+  right: -7.4375rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--8th .antd-Table-expandBtn {
   position: relative;
-  right: -8.75rem;
+  right: -7.875rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--8th .antd-Table-expandCell + td {
   position: relative;
-  padding-left: 8.75rem;
+  padding-left: 7.875rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--8th .antd-Table-expandCell + td::before {
@@ -15428,7 +15548,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 7rem;
+  left: 6.25rem;
   height: auto;
   background: #eceff8;
 }
@@ -15438,13 +15558,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 7rem;
+  left: 6.25rem;
   width: 0.625rem;
   background: #eceff8;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--8th.is-expandable .antd-Table-expandCell + td {
-  padding-left: 8.75rem;
+  padding-left: 7.875rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--8th.is-last:not(.is-expanded) .antd-Table-expandCell + td::before {
@@ -15453,17 +15573,17 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--9th.is-expanded .antd-Table-expandCell:before {
-  right: -9.5625rem;
+  right: -8.5625rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--9th .antd-Table-expandBtn {
   position: relative;
-  right: -10rem;
+  right: -9rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--9th .antd-Table-expandCell + td {
   position: relative;
-  padding-left: 10rem;
+  padding-left: 9rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--9th .antd-Table-expandCell + td::before {
@@ -15472,7 +15592,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 8.25rem;
+  left: 7.375rem;
   height: auto;
   background: #eceff8;
 }
@@ -15482,13 +15602,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 8.25rem;
+  left: 7.375rem;
   width: 0.625rem;
   background: #eceff8;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--9th.is-expandable .antd-Table-expandCell + td {
-  padding-left: 10rem;
+  padding-left: 9rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--9th.is-last:not(.is-expanded) .antd-Table-expandCell + td::before {
@@ -15497,17 +15617,17 @@
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--10th.is-expanded .antd-Table-expandCell:before {
-  right: -10.8125rem;
+  right: -9.6875rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--10th .antd-Table-expandBtn {
   position: relative;
-  right: -11.25rem;
+  right: -10.125rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--10th .antd-Table-expandCell + td {
   position: relative;
-  padding-left: 11.25rem;
+  padding-left: 10.125rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--10th .antd-Table-expandCell + td::before {
@@ -15516,7 +15636,7 @@
   width: 0.0625rem;
   top: 0;
   bottom: 0;
-  left: 9.5rem;
+  left: 8.5rem;
   height: auto;
   background: #eceff8;
 }
@@ -15526,13 +15646,13 @@
   position: absolute;
   height: 0.0625rem;
   top: 1.125rem;
-  left: 9.5rem;
+  left: 8.5rem;
   width: 0.625rem;
   background: #eceff8;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--10th.is-expandable .antd-Table-expandCell + td {
-  padding-left: 11.25rem;
+  padding-left: 10.125rem;
 }
 
 .amis-scope .antd-Table-table tr.antd-Table-tr--10th.is-last:not(.is-expanded) .antd-Table-expandCell + td::before {
@@ -15544,7 +15664,7 @@
 .amis-scope .antd-Table-table > tbody > tr > td.antd-Table-checkCell {
   border-right: 0;
   width: 0.0625rem;
-  padding-right: 0.625rem;
+  padding-right: 0.5rem;
 }
 
 .amis-scope .antd-Table-table > thead > tr > th.antd-Table-checkCell .antd-Checkbox,
@@ -15588,7 +15708,7 @@
   bottom: 0;
   height: 100%;
   background: #eceff8;
-  right: -0.8125rem;
+  right: -0.6875rem;
 }
 
 .amis-scope .antd-Table-table > tbody > tr > td.antd-Table-expandCell .antd-Table-divider-3 {
@@ -15598,7 +15718,7 @@
   bottom: 0;
   height: 100%;
   background: #eceff8;
-  right: -2.0625rem;
+  right: -1.8125rem;
 }
 
 .amis-scope .antd-Table-table > tbody > tr > td.antd-Table-expandCell .antd-Table-divider-4 {
@@ -15608,7 +15728,7 @@
   bottom: 0;
   height: 100%;
   background: #eceff8;
-  right: -3.3125rem;
+  right: -2.9375rem;
 }
 
 .amis-scope .antd-Table-table > tbody > tr > td.antd-Table-expandCell .antd-Table-divider-5 {
@@ -15618,7 +15738,7 @@
   bottom: 0;
   height: 100%;
   background: #eceff8;
-  right: -4.5625rem;
+  right: -4.0625rem;
 }
 
 .amis-scope .antd-Table-table > tbody > tr > td.antd-Table-expandCell .antd-Table-divider-6 {
@@ -15628,7 +15748,7 @@
   bottom: 0;
   height: 100%;
   background: #eceff8;
-  right: -5.8125rem;
+  right: -5.1875rem;
 }
 
 .amis-scope .antd-Table-table > tbody > tr > td.antd-Table-expandCell .antd-Table-divider-7 {
@@ -15638,7 +15758,7 @@
   bottom: 0;
   height: 100%;
   background: #eceff8;
-  right: -7.0625rem;
+  right: -6.3125rem;
 }
 
 .amis-scope .antd-Table-table > tbody > tr.is-expanded > td.antd-Table-expandCell::before {
@@ -15653,30 +15773,30 @@
 }
 
 .amis-scope .antd-Table-table > thead > tr > th.antd-TableCell--sortable {
-  padding-right: calc( 0.625rem + 0.5rem);
+  padding-right: calc( 0.5rem + 0.5rem);
   position: relative;
 }
 
 .amis-scope .antd-Table-table > thead > tr > th.antd-TableCell--searchable {
-  padding-right: calc( 0.625rem + 1rem);
+  padding-right: calc( 0.5rem + 1rem);
   position: relative;
 }
 
 .amis-scope .antd-Table-table > thead > tr > th.antd-TableCell--filterable {
-  padding-right: calc( 0.625rem + 1rem);
+  padding-right: calc( 0.5rem + 1rem);
   position: relative;
 }
 
 .amis-scope .antd-TableCell-sortBtn {
   cursor: pointer;
   width: 0.5rem;
-  height: 1.25rem;
+  height: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: calc(0.625rem - 0.5rem / 2);
+  right: calc(0.5rem - 0.5rem / 2);
   top: 50%;
   transform: translateY(-50%);
   color: inherit;
@@ -15725,7 +15845,7 @@
 .amis-scope .antd-TableCell-searchBtn {
   cursor: pointer;
   position: absolute;
-  right: 0.3125rem;
+  right: 0.25rem;
   top: 50%;
   transform: translateY(-50%);
   color: #999;
@@ -15758,7 +15878,7 @@
   cursor: pointer;
   width: 1rem;
   position: absolute;
-  right: calc( 0.625rem - 1rem / 2 );
+  right: calc( 0.5rem - 1rem / 2 );
   top: 50%;
   transform: translateY(-50%);
   color: #999;
@@ -15834,14 +15954,14 @@
   bottom: 0;
   right: 0;
   padding-left: 3.125rem;
-  padding-right: 0.625rem;
+  padding-right: 0.5rem;
   display: flex;
   align-items: center;
 }
 
 .amis-scope .antd-Table-itemActions a {
   cursor: pointer;
-  padding: 0.3125rem 0.625rem;
+  padding: 0.25rem 0.5rem;
   color: #1890ff;
   text-decoration: none;
 }
@@ -15860,7 +15980,7 @@
 .amis-scope .antd-Table-dragTip {
   color: #333;
   clear: both;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
   width: 100%;
   color: #1890ff;
 }
@@ -15878,17 +15998,17 @@
   width: 7.5rem;
   text-align: right;
   padding: calc(
-    (2.5rem - 14px * 1.57) /
+    (2.5rem - 0.875rem * 1.57) /
       2
-  ) 0.625rem;
+  ) 0.5rem;
 }
 
 .amis-scope .antd-Table-footTable > tbody > tr > td {
   word-break: break-all;
   padding: calc(
-    (2.5rem - 14px * 1.57) /
+    (2.5rem - 0.875rem * 1.57) /
       2
-  ) 0.625rem;
+  ) 0.5rem;
 }
 
 .amis-scope .antd-Table-footTable > tbody > tr:not(:first-child) {
@@ -15925,7 +16045,7 @@
 }
 
 .amis-scope .antd-Table-dragBtn {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
   display: inline-block;
   visibility: hidden;
   cursor: move;
@@ -15970,14 +16090,14 @@
   border: 0.0625rem solid #eceff8;
   border-radius: 2px;
   background: #fff;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
 .amis-scope .antd-List-toolbar {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .amis-scope .antd-List-toolbar::before,
@@ -15995,17 +16115,17 @@
 }
 
 .amis-scope .antd-List-actions > * {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-List-header {
-  padding: 0.625rem 0.625rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .amis-scope .antd-List-header > * + .antd-Button,
 .amis-scope .antd-List-header > * + .antd-ButtonGroup,
 .amis-scope .antd-List-header > * + .antd-ButtonToolbar {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-List-header + .antd-List-toolbar {
@@ -16013,7 +16133,7 @@
 }
 
 .amis-scope .antd-List-heading {
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
 }
 
 .amis-scope .antd-List-fixedTop {
@@ -16022,7 +16142,6 @@
   z-index: -1;
   opacity: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 0.625rem;
 }
 
 .amis-scope .antd-List-fixedTop.in {
@@ -16042,15 +16161,15 @@
 .amis-scope .antd-List--unsaved .antd-List-heading {
   background: #e8f0fe;
   color: #4285f4;
-  padding: 0.3125rem 0.625rem;
-  margin-bottom: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .antd-List-dragTip {
   width: 100%;
   color: #1890ff;
   clear: both;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .antd-List-placeholder {
@@ -16069,7 +16188,7 @@
 .amis-scope .antd-ListGroup-item {
   position: relative;
   display: block;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   margin-bottom: -0.0625rem;
   background: #fff;
   border: 0.0625rem solid #eceff8;
@@ -16100,7 +16219,7 @@
 
 .amis-scope .antd-ListGroup--expanded .antd-ListGroup-item {
   border-radius: 2px;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .antd-ListGroup--expanded .antd-ListGroup-item:last-child {
@@ -16110,7 +16229,7 @@
 .amis-scope .antd-ListItem {
   position: relative;
   display: block;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
 }
 
 .amis-scope .antd-ListItem::before,
@@ -16133,13 +16252,13 @@
 
 .amis-scope .antd-ListItem-checkBtn {
   float: left;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-ListItem-dragBtn {
   cursor: move;
   float: left;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-ListItem-actions {
@@ -16148,13 +16267,13 @@
 
 .amis-scope .antd-ListItem--actions-at-left .antd-ListItem-actions {
   float: left;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
 }
 
 .amis-scope .antd-ListItem-title {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
   font-weight: 400;
 }
@@ -16221,7 +16340,7 @@
 
 .amis-scope .antd-Cards-toolbar {
   padding: 0 0;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .antd-Cards-toolbar::before,
@@ -16239,11 +16358,11 @@
 }
 
 .amis-scope .antd-Cards-actions > * {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Cards-heading {
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
 }
 
 .amis-scope .antd-Cards-header {
@@ -16253,7 +16372,7 @@
 .amis-scope .antd-Cards-header > * + .antd-Button,
 .amis-scope .antd-Cards-header > * + .antd-ButtonGroup,
 .amis-scope .antd-Cards-header > * + .antd-ButtonToolbar {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Cards-header + .antd-Cards-toolbar {
@@ -16266,7 +16385,7 @@
   z-index: -1;
   opacity: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .antd-Cards-fixedTop.in {
@@ -16286,15 +16405,15 @@
 .amis-scope .antd-Cards--unsaved .antd-Cards-heading {
   background: #e8f0fe;
   color: #4285f4;
-  padding: 0.3125rem 0.625rem;
-  margin-bottom: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .antd-Cards-dragTip {
   width: 100%;
   color: #1890ff;
   clear: both;
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .antd-Cards-placeholder {
@@ -16417,7 +16536,7 @@
   background: #fff;
   border: 0.0625rem solid #eceff8;
   border-radius: 2px;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -16426,14 +16545,14 @@
 
 .amis-scope .antd-Card-title {
   color: #333;
-  font-size: 1rem;
+  font-size: 0.875rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .amis-scope .antd-Card-subTitle {
-  max-height: calc(14px * 1.57 * 2);
+  max-height: calc(0.875rem * 1.57 * 2);
   overflow: hidden;
   text-overflow: ellipsis;
   color: #999;
@@ -16443,14 +16562,14 @@
 }
 
 .amis-scope .antd-Card-title + .antd-Card-subTitle {
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .antd-Card-checkBtn {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0.625rem;
+  margin: 0.5rem;
   z-index: 1;
 }
 
@@ -16461,18 +16580,18 @@
 .amis-scope .antd-Card-dragBtn {
   cursor: pointer;
   float: right;
-  margin: 0.625rem;
+  margin: 0.5rem;
 }
 
 .amis-scope .antd-Card-heading {
   overflow: hidden;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.5rem 0.75rem;
   flex: 1 0 auto;
 }
 
 .amis-scope .antd-Card-avtar {
   float: left;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   max-width: 12.5rem;
 }
 
@@ -16490,8 +16609,8 @@
   vertical-align: middle;
   border-radius: 500px;
   float: left;
-  margin-right: 0.9375rem;
-  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
   text-transform: uppercase();
 }
 
@@ -16500,7 +16619,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
 .amis-scope .antd-Card-highlight {
@@ -16510,17 +16629,17 @@
   border-radius: 100%;
   display: inline-block;
   position: absolute;
-  top: 0.3125rem;
+  top: 0.25rem;
   right: 0.125rem;
 }
 
 .amis-scope .antd-Card-body {
-  padding: 0.9375rem;
+  padding: 0.75rem;
   flex: 1 0 auto;
 }
 
 .amis-scope .antd-Card-heading + .antd-Card-body {
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
 }
 
 .amis-scope .antd-Card-field {
@@ -16560,7 +16679,7 @@
   color: rgba(0, 0, 0, 0.85);
   text-align: center;
   line-height: 2.5rem;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-Card-actions > a:not(.is-disabled) {
@@ -16638,7 +16757,7 @@
 
 .amis-scope .antd-Field-quickEditBtn {
   color: inherit;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: inline-block;
   vertical-align: text-top;
   cursor: pointer;
@@ -16687,7 +16806,7 @@
 
 .amis-scope .antd-Field-popOverBtn {
   color: inherit;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   visibility: hidden;
   display: inline-block;
   cursor: pointer;
@@ -16790,9 +16909,48 @@
   }
 }
 
+.amis-scope .antd-Property > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.amis-scope .antd-Property > table > thead > tr > th {
+  padding: 0.5rem;
+  background: #f2f2f2;
+  border: 1px solid #eceff8;
+}
+
+.amis-scope .antd-Property > table > tbody > tr {
+  background: #fff;
+}
+
+.amis-scope .antd-Property > table > tbody > tr > td,
+.amis-scope .antd-Property > table > tbody > tr > th {
+  border: 1px solid #eceff8;
+  padding: 0.5rem;
+}
+
+.amis-scope .antd-Property > table > tbody > tr > th {
+  background: #f7f7f7;
+}
+
+.amis-scope .antd-Property--simple > table > thead > tr > th {
+  background: transparent;
+  border: none;
+}
+
+.amis-scope .antd-Property--simple > table > tbody > tr {
+  background: transparent;
+}
+
+.amis-scope .antd-Property--simple > table > tbody > tr > td,
+.amis-scope .antd-Property--simple > table > tbody > tr > th {
+  border: none;
+}
+
 .amis-scope .antd-Field-copyBtn {
   color: inherit;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: inline-block;
   cursor: pointer;
 }
@@ -16802,7 +16960,7 @@
 }
 
 .amis-scope .antd-Divider {
-  margin: 0.9375rem calc(0.9375rem * -1);
+  margin: 0.75rem calc(0.75rem * -1);
   border-bottom: 0.0625rem solid #eceff8;
   height: 0.125rem;
   font-size: 0;
@@ -16814,7 +16972,6 @@
 
 .amis-scope .antd-Pagination {
   display: inline-block;
-  padding-left: 0;
   padding: 0;
   margin: 0 0 -0.625rem;
   border-radius: 0.25rem;
@@ -16840,7 +16997,7 @@
   color: #666666;
   border-radius: 0;
   margin-left: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-Pagination > li > a:hover,
@@ -16893,27 +17050,23 @@
 .amis-scope .antd-Pagination-inputGroup {
   display: inline-flex;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
-.amis-scope .antd-Pagination-inputGroup .antd-Pagination-input {
+.amis-scope .antd-Pagination-inputGroup input {
   width: 3.125rem;
   height: 1.875rem;
   border: 0.0625rem solid #eceff8;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-  padding: 0.3125rem 0.625rem;
+  border-radius: 2px;
+  padding: 0.25rem 0.625rem;
+  margin: 0 0.625rem;
+  text-align: center;
 }
 
-.amis-scope .antd-Pagination-inputGroup .antd-Pagination-input:focus {
+.amis-scope .antd-Pagination-inputGroup input:focus,
+.amis-scope .antd-Pagination-inputGroup input:hover {
   outline: none;
   border: 0.0625rem solid #1890ff;
-}
-
-.amis-scope .antd-Pagination-inputGroup .antd-Button {
-  height: 1.875rem;
-  margin-left: -0.0625rem;
-  border-radius: 0 2px 2px 0;
-  padding: 0 0.625rem;
 }
 
 .amis-scope .antd-PaginationWrapper-pager {
@@ -16921,31 +17074,31 @@
 }
 
 .amis-scope .antd-PaginationWrapper-pager:first-child {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .antd-Wrapper {
-  padding: 0.9375rem;
+  padding: 1rem;
 }
 
 .amis-scope .antd-Wrapper--xs {
-  padding: 0.3125rem;
+  padding: 0.25rem;
 }
 
 .amis-scope .antd-Wrapper--sm {
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .antd-Wrapper--md {
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 .amis-scope .antd-Wrapper--lg {
-  padding: 1.875rem;
+  padding: 1.25rem;
 }
 
 .amis-scope .antd-Wrapper--xl {
-  padding: 3.125rem;
+  padding: 1.5rem;
 }
 
 .amis-scope .antd-Wrapper--none {
@@ -16962,7 +17115,7 @@
 
 .amis-scope .antd-StatusField-label {
   font-size: 0.75rem;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 @keyframes animation-rolling_red {
@@ -17166,7 +17319,7 @@
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 0.25rem;
-  margin: 0.4375rem 0.3125rem;
+  margin: 0.4375rem 0.25rem;
   transition-duration: 0.2s;
   opacity: 0.3;
 }
@@ -17190,6 +17343,7 @@
   cursor: pointer;
   position: absolute;
   transition-duration: 0.2s;
+  display: none;
   left: 0;
 }
 
@@ -17210,6 +17364,7 @@
   cursor: pointer;
   position: absolute;
   transition-duration: 0.2s;
+  display: none;
   right: 0;
 }
 
@@ -17221,6 +17376,14 @@
   transform: translate(-50%, -50%);
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.amis-scope .antd-Carousel-arrowsControl:hover .antd-Carousel-leftArrow {
+  display: block;
+}
+
+.amis-scope .antd-Carousel-arrowsControl:hover .antd-Carousel-rightArrow {
+  display: block;
 }
 
 @keyframes disappear {
@@ -17327,11 +17490,11 @@
 }
 
 .amis-scope .antd-ImageGallery-prevBtn {
-  left: 1.25rem;
+  left: 1rem;
 }
 
 .amis-scope .antd-ImageGallery-nextBtn {
-  right: 1.25rem;
+  right: 1rem;
 }
 
 .amis-scope .antd-ImageGallery-footer {
@@ -17344,7 +17507,7 @@
 
 .amis-scope .antd-ImageGallery-prevList,
 .amis-scope .antd-ImageGallery-nextList {
-  width: 1.25rem;
+  width: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17438,23 +17601,22 @@
 .amis-scope .antd-Images {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(0.3125rem * -1);
+  margin: calc(0.25rem * -1);
 }
 
 .amis-scope .antd-Images-item {
   display: flex;
-  margin: 0.3125rem;
+  margin: 0.25rem;
 }
 
 .amis-scope .antd-Image {
   display: inline-block;
-  width: 7.5rem;
   border: 0.0625rem solid #eceff8;
-  padding: 0.3125rem;
+  padding: 0.25rem;
 }
 
 .amis-scope .antd-Image-thumb {
-  width: 100%;
+  width: 6.75rem;
   height: 6.75rem;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwMCIgaGVpZ2h0PSI0MDAiPgogICAgPGRlZnM+CiAgICAgICAgPHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgICAgICAgIDxyZWN0IGZpbGw9ImJsYWNrIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIG9wYWNpdHk9IjAuMSIgLz4KICAgICAgICAgICAgPHJlY3QgZmlsbD0id2hpdGUiIHg9IjEwIiB5PSIwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIC8+CiAgICAgICAgICAgIDxyZWN0IGZpbGw9ImJsYWNrIiB4PSIxMCIgeT0iMTAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgb3BhY2l0eT0iMC4xIiAvPgogICAgICAgICAgICA8cmVjdCBmaWxsPSJ3aGl0ZSIgeD0iMCIgeT0iMTAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgLz4KICAgICAgICA8L3BhdHRlcm4+CiAgICA8L2RlZnM+CiAgICA8cmVjdCBmaWxsPSJ1cmwoI2dyaWQpIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiAvPgo8L3N2Zz4=");
   overflow: hidden;
@@ -17470,12 +17632,34 @@
   transform: translate(-50%, -50%);
 }
 
+.amis-scope .antd-Image-info {
+  width: 6.75rem;
+}
+
 .amis-scope .antd-Image-thumb--4-3 {
   height: 5.0625rem;
 }
 
 .amis-scope .antd-Image-thumb--16-9 {
   height: 3.796875rem;
+}
+
+.amis-scope .antd-Image-thumb--fixed-size {
+  min-width: 6.75rem;
+  min-height: 6.75rem;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+}
+
+.amis-scope .antd-Image-thumb--fixed-size .antd-Image-thumb {
+  width: 100%;
+  height: 100%;
+}
+
+.amis-scope .antd-Image-thumb--fixed-size .antd-Image-thumb > img {
+  width: auto;
+  height: 100%;
 }
 
 .amis-scope .antd-Image-thumb--w-full > img {
@@ -17509,6 +17693,16 @@
 
 .amis-scope .antd-Image-caption {
   font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.amis-scope .antd-Image-title {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .amis-scope .antd-Image-overlay {
@@ -17582,11 +17776,11 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -17599,7 +17793,7 @@
   border: none;
   color: rgba(0, 0, 0, 0.85);
   width: 100%;
-  height: calc(1.4285714286 * 14px);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-InputBox input::placeholder {
@@ -17684,16 +17878,16 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding: 0 0.1875rem;
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   align-items: center;
 }
 
@@ -17705,7 +17899,7 @@
   border: none;
   color: rgba(0, 0, 0, 0.85);
   width: 100%;
-  height: calc(1.4285714286 * 14px);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-ResultBox input::placeholder {
@@ -17802,8 +17996,8 @@
 .amis-scope .antd-ResultBox-value {
   background: #f5f5f5;
   color: #000;
-  font-size: 14px;
-  padding: 0 0.3125rem;
+  font-size: 0.875rem;
+  padding: 0 0.25rem;
   min-height: 1.5rem;
   flex-wrap: nowrap;
   display: inline-flex;
@@ -17814,7 +18008,7 @@
 
 .amis-scope .antd-ResultBox-value > a {
   cursor: pointer;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   color: #999;
 }
 
@@ -17855,7 +18049,7 @@
   display: inline-flex;
   flex-direction: row;
   line-height: 1.4285714286;
-  font-size: 14px;
+  font-size: 0.875rem;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-end;
@@ -17908,7 +18102,7 @@
   background: transparent;
   color: rgba(0, 0, 0, 0.85);
   width: 0;
-  height: calc(1.4285714286 * 14px);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-SearchBox > input::placeholder {
@@ -17926,7 +18120,7 @@
 .amis-scope .antd-ListMenu-groupLabel {
   font-size: 0.6875rem;
   color: #999;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px - 0.625rem ) / 2 ) 0 0 calc(0.75rem - 0.3125rem);
+  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem - 0.5rem ) / 2 ) 0 0 calc(0.75rem - 0.25rem);
 }
 
 .amis-scope .antd-ListMenu-group:not(:first-child) > .antd-ListMenu-groupLabel {
@@ -17938,9 +18132,9 @@
   min-height: 2.125rem;
   color: rgba(0, 0, 0, 0.85);
   line-height: 1.4285714286;
-  font-size: 14px;
+  font-size: 0.875rem;
   cursor: pointer;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.75rem;
+  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .antd-ListMenu-item.is-active {
@@ -17963,9 +18157,9 @@
   min-height: 2.125rem;
   color: #999;
   line-height: 1.4285714286;
-  font-size: 14px;
+  font-size: 0.875rem;
   cursor: pointer;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.75rem;
+  padding: calc( ( 2.125rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .antd-PopOver > .antd-ListMenu {
@@ -17975,14 +18169,14 @@
 .amis-scope .antd-Log {
   background: #222;
   color: #f1f1f1;
-  padding: 0.3125rem 0;
+  padding: 0.25rem 0;
   overflow-y: auto;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
 
 .amis-scope .antd-Log-line {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
@@ -18092,7 +18286,7 @@
 }
 
 .amis-scope .antd-Icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -18146,8 +18340,8 @@
 
 .amis-scope fieldset.antd-Collapse > legend {
   font-weight: 400;
-  padding: 0.3125rem 0;
-  font-size: 1rem;
+  padding: 0.25rem 0;
+  font-size: 0.875rem;
   color: #333;
   border-left: #1890ff 0.25rem solid;
   line-height: 1.2;
@@ -18188,12 +18382,12 @@
 }
 
 .amis-scope fieldset.antd-Collapse--base {
-  padding: 30px 15px 15px 15px;
+  padding: 30px 1rem 1rem 1rem;
 }
 
 .amis-scope fieldset.antd-Collapse--base > legend {
-  left: 15px;
-  font-size: 14px;
+  left: 1rem;
+  font-size: 0.875rem;
   padding: 0 8px;
   margin: 0 0 0 -8px;
 }
@@ -18208,7 +18402,7 @@
 
 .amis-scope fieldset.antd-Collapse--md > legend {
   left: 20px;
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 0 10px;
   margin: 0 0 0 -10px;
 }
@@ -18223,9 +18417,9 @@
 
 .amis-scope fieldset.antd-Collapse--lg > legend {
   left: 30px;
-  font-size: 1.25rem;
-  padding: 0 15px;
-  margin: 0 0 0 -15px;
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin: 0 0 0 calc(1rem * -1);
 }
 
 .amis-scope fieldset.antd-Collapse--lg:after {
@@ -18233,12 +18427,12 @@
 }
 
 .amis-scope .antd-Form-groupColumn {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 768px) {
   .amis-scope .antd-Form-group {
-    margin-bottom: 0.9375rem;
+    margin-bottom: 0.75rem;
   }
 
   .amis-scope .antd-Form-value > .antd-Form-group {
@@ -18248,8 +18442,8 @@
   .amis-scope .antd-Form-group--hor {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(1.25rem / -2);
-    margin-right: calc(1.25rem / -2);
+    margin-left: calc(1rem / -2);
+    margin-right: calc(1rem / -2);
     align-items: flex-start;
   }
 
@@ -18262,8 +18456,8 @@
   }
 
   .amis-scope .antd-Form-group--hor > * {
-    padding-left: calc(1.25rem / 2);
-    padding-right: calc(1.25rem / 2);
+    padding-left: calc(1rem / 2);
+    padding-right: calc(1rem / 2);
   }
 
   .amis-scope .antd-Form-group--hor > .antd-Form-item--inline {
@@ -18300,13 +18494,13 @@
   }
 
   .amis-scope .antd-Form-group--sm {
-    margin-left: calc(1.25rem / -2);
-    margin-right: calc(1.25rem / -2);
+    margin-left: calc(1rem / -2);
+    margin-right: calc(1rem / -2);
   }
 
   .amis-scope .antd-Form-group--sm > * {
-    padding-left: calc(1.25rem / 2);
-    padding-right: calc(1.25rem / 2);
+    padding-left: calc(1rem / 2);
+    padding-right: calc(1rem / 2);
   }
 
   .amis-scope .antd-Form-group--xs {
@@ -18421,18 +18615,18 @@
 .amis-scope .antd-InputGroup-addOn {
   background: #edf1f2;
   border: 0.0625rem solid #d9d9d9;
-  line-height: calc( 2.125rem - calc(
+  line-height: calc( 1.875rem - calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) * 2 - 0.0625rem * 2 );
-  height: 2.125rem;
+  height: 1.875rem;
   box-sizing: border-box;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) 0.625rem;
 }
@@ -18567,11 +18761,11 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -18584,7 +18778,7 @@
   border: none;
   color: rgba(0, 0, 0, 0.85);
   width: 100%;
-  height: calc(1.4285714286 * 14px);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-TextControl-input input::placeholder {
@@ -18621,7 +18815,7 @@
 }
 
 .amis-scope .antd-TextControl-spinner {
-  line-height: calc( 1.4285714286 * 14px);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-TextControl-clear {
@@ -18661,8 +18855,8 @@
   left: 0.75rem;
   top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   );
   margin-top: calc(2 * 0.0625rem);
@@ -18793,7 +18987,7 @@
 }
 
 .amis-scope .antd-TextControl-sugItem {
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px - 0.125rem ) / 2 ) 0.75rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .antd-TextControl-sugItem svg {
@@ -18814,18 +19008,18 @@
 
 .amis-scope .antd-TextControl-value {
   user-select: none;
-  line-height: calc( 1.4285714286 * 14px);
+  line-height: calc( 1.4285714286 * 0.875rem);
   vertical-align: middle;
   display: inline-block;
 }
 
 .amis-scope .antd-TextControl-input--multiple {
   height: auto;
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   padding: calc(calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) - 0.125rem) calc(0.75rem - 0.1875rem);
 }
@@ -18840,16 +19034,16 @@
 
 .amis-scope .antd-TextControl-input--multiple .antd-TextControl-valueWrap {
   white-space: normal;
-  margin-bottom: calc(0.3125rem * -1);
+  margin-bottom: calc(0.25rem * -1);
 }
 
 .amis-scope .antd-TextControl-input--multiple .antd-TextControl-valueWrap > input {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .antd-TextControl-input--multiple .antd-TextControl-value {
   white-space: nowrap;
-  line-height: calc( 1.4285714286 * 14px - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   font-size: 0.75rem;
   color: #1890ff;
   background: #e4f2ff;
@@ -18869,7 +19063,7 @@
 }
 
 .amis-scope .antd-TextControl-input--multiple .antd-TextControl-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .antd-TextareaControl {
@@ -18877,8 +19071,8 @@
   border-radius: 2px;
   line-height: 1.4285714286;
   background: #fff;
-  padding: 0.375rem calc( 2.125rem - 1.4285714286 * 14px - 0.125rem );
-  font-size: 14px;
+  padding: 0.375rem calc( 1.875rem - 1.4285714286 * 0.875rem - 0.125rem );
+  font-size: 0.875rem;
   outline: none;
   resize: none;
   display: block;
@@ -18902,7 +19096,7 @@
 }
 
 .amis-scope .antd-Checkbox {
-  margin: 0 0.625rem 0 0;
+  margin: 0 0.5rem 0 0;
   font-weight: 400;
   user-select: none;
   pointer-events: none;
@@ -18931,12 +19125,12 @@
 
 .amis-scope .antd-Checkbox > i + span {
   pointer-events: all;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   cursor: pointer;
 }
 
 .amis-scope .antd-Checkbox > i + span > a {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: none;
 }
 
@@ -18988,7 +19182,6 @@
   width: calc(1.25rem / 2);
   height: calc(calc(1.25rem / 2) / 2);
   background: #f5f5f5;
-  border-color: #d9d9d9;
 }
 
 .amis-scope .antd-Checkbox--checkbox input[disabled] + i + span {
@@ -19122,7 +19315,7 @@
 }
 
 .amis-scope .antd-Checkbox--sm > i + span {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Checkbox--sm.antd-Checkbox--full input[type=checkbox]:checked + i:before {
@@ -19132,15 +19325,15 @@
 
 .amis-scope .antd-Checkbox-desc {
   color: #999;
-  margin-left: 0.625rem;
-  margin-top: 0.3125rem;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
   pointer-events: all;
 }
 
 .amis-scope .antd-CheckboxControl,
 .amis-scope .antd-RadiosControl,
 .amis-scope .antd-CheckboxesControl {
-  padding-top: calc((2.125rem - 1.25rem) / 2);
+  padding-top: calc((1.875rem - 1.25rem) / 2);
 }
 
 .amis-scope .antd-RadiosControl .antd-Checkbox,
@@ -19148,8 +19341,8 @@
   display: block;
   margin-bottom: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
 }
@@ -19157,7 +19350,7 @@
 .amis-scope .antd-RadiosControl.is-inline .antd-Checkbox,
 .amis-scope .antd-CheckboxesControl.is-inline .antd-Checkbox {
   display: inline-block;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
 .amis-scope .antd-RadiosControl-group .antd-RadiosControl-group,
@@ -19206,10 +19399,10 @@
 
 .amis-scope .antd-Checkboxes > .antd-Checkbox {
   display: block;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) calc(0.625rem + 1.25rem);
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) calc(0.5rem + 1.25rem);
 }
 
 .amis-scope .antd-Checkboxes--inline > .antd-Checkbox {
@@ -19228,7 +19421,7 @@
 .amis-scope .antd-Checkboxes-addBtn > svg {
   width: 0.875rem;
   height: 0.875rem;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-ListCheckboxes-group:not(:first-child) > .antd-ListCheckboxes-itemLabel,
@@ -19243,17 +19436,17 @@
 .amis-scope .antd-ListRadios-group > .antd-ListCheckboxes-itemLabel,
 .amis-scope .antd-ListRadios-group > .antd-ListRadios-itemLabel {
   font-size: 0.75rem;
-  padding: 0.3125rem 0.3125rem;
+  padding: 0.25rem 0.25rem;
   color: #999;
 }
 
 .amis-scope .antd-ListCheckboxes-item,
 .amis-scope .antd-ListRadios-item {
   display: flex;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
   cursor: pointer;
   user-select: none;
@@ -19289,7 +19482,7 @@
 .amis-scope .antd-ListRadios-group > .antd-ListCheckboxes-items > .antd-ListRadios-item,
 .amis-scope .antd-ListRadios-group > .antd-ListRadios-items > .antd-ListCheckboxes-item,
 .amis-scope .antd-ListRadios-group > .antd-ListRadios-items > .antd-ListRadios-item {
-  padding-left: 0.9375rem;
+  padding-left: 0.75rem;
 }
 
 .amis-scope .antd-ListCheckboxes-itemLabel,
@@ -19299,10 +19492,10 @@
 
 .amis-scope .antd-ListCheckboxes-placeholder,
 .amis-scope .antd-ListRadios-placeholder {
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: #999;
 }
 
@@ -19313,7 +19506,7 @@
 .amis-scope .antd-TableCheckboxes .antd-Table-table > thead > tr > th,
 .amis-scope .antd-TableCheckboxes .antd-Table-table > tbody > tr > td {
   font-size: 0.75rem;
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
   padding-bottom: 0.375rem;
   vertical-align: middle;
 }
@@ -19330,7 +19523,7 @@
 
 .amis-scope .antd-TableCheckboxes .antd-Table-table > thead > tr > th:last-child,
 .amis-scope .antd-TableCheckboxes .antd-Table-table > tbody > tr > td:last-child {
-  padding-right: 0.9375rem;
+  padding-right: 1rem;
 }
 
 .amis-scope .antd-TableCheckboxes .antd-Table-table > tbody > tr {
@@ -19356,8 +19549,8 @@
   content: "";
   display: block;
   position: absolute;
-  top: -0.3125rem;
-  bottom: calc(2.125rem / 2);
+  top: calc(0.25rem * -1);
+  bottom: calc(1.875rem / 2);
   left: -19px;
   border-left: dashed 1px inherit;
 }
@@ -19389,7 +19582,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: calc(2.125rem / 2);
+  top: calc(1.875rem / 2);
   width: 19px;
   left: -19px;
   border-top: dashed 1px inherit;
@@ -19399,10 +19592,10 @@
 .amis-scope .antd-TreeRadios-itemInner {
   display: flex;
   align-items: center;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
   cursor: pointer;
   user-select: none;
@@ -19411,7 +19604,7 @@
 .amis-scope .antd-TreeCheckboxes-itemInner > .antd-Checkbox,
 .amis-scope .antd-TreeRadios-itemInner > .antd-Checkbox {
   margin-right: 0;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .antd-TreeCheckboxes-itemInner.is-active,
@@ -19438,10 +19631,10 @@
 
 .amis-scope .antd-TreeCheckboxes-placeholder,
 .amis-scope .antd-TreeRadios-placeholder {
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: #999;
 }
 
@@ -19461,16 +19654,16 @@
 
 .amis-scope .antd-ChainedCheckboxes-subTitle {
   font-size: 0.75rem;
-  padding: 0.3125rem 0.3125rem;
+  padding: 0.25rem 0.25rem;
   color: #999;
 }
 
 .amis-scope .antd-ChainedCheckboxes-item {
   display: flex;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
   cursor: pointer;
   user-select: none;
@@ -19499,10 +19692,10 @@
 }
 
 .amis-scope .antd-ChainedCheckboxes-placeholder {
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: #999;
 }
 
@@ -19515,6 +19708,7 @@
 .amis-scope .antd-AssociatedCheckboxes-right {
   flex-grow: 1;
   width: 0;
+  height: 10.9375rem;
   overflow: auto;
 }
 
@@ -19551,8 +19745,8 @@
 }
 
 .amis-scope .antd-CityPicker .antd-Select {
-  margin-right: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .antd-CityPicker-input {
@@ -19563,11 +19757,11 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-CityPicker-input::placeholder {
@@ -19589,22 +19783,23 @@
   cursor: pointer;
   position: relative;
   display: inline-block;
-  width: 3.125rem;
   height: 1.375rem;
+  min-width: 3.125rem;
   overflow: hidden;
   border-radius: 1.875rem;
-  background: #1890ff;
+  background: #bfbfbf;
   margin: 0;
   vertical-align: middle;
   text-align: left;
 }
 
 .amis-scope .antd-Switch.is-disabled {
-  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.4;
 }
 
-.amis-scope .antd-Switch i:before {
-  content: "关";
+.amis-scope .antd-Switch .text {
+  margin: 0 0.4375rem 0 1.5625rem;
   color: #fff;
   text-indent: calc(3.125rem / 2);
   text-transform: uppercase;
@@ -19612,18 +19807,10 @@
   line-height: 1.375rem;
   font-style: normal;
   font-weight: bold;
-  position: absolute;
-  top: -0.0625rem;
-  bottom: -0.0625rem;
-  left: -0.0625rem;
-  right: -0.0625rem;
-  background: #bfbfbf;
-  border: 0.0625rem solid #353c46;
-  border-radius: 1.875rem;
   transition: all 0.2s;
 }
 
-.amis-scope .antd-Switch i:after {
+.amis-scope .antd-Switch .slider:before {
   content: "";
   position: absolute;
   background: #fff;
@@ -19635,49 +19822,43 @@
   transition: margin-left 0.2s;
 }
 
+.amis-scope .antd-Switch.is-checked {
+  background: #1890ff;
+}
+
+.amis-scope .antd-Switch.is-checked .slider::before {
+  left: auto;
+  right: 0.0625rem;
+  border-width: 0;
+}
+
+.amis-scope .antd-Switch.is-checked .text {
+  margin: 0 25px 0 7px;
+  color: #fff;
+  text-indent: 0.25rem;
+}
+
+.amis-scope .antd-Switch.is-checked.is-disabled .slider:before {
+  color: #fff;
+}
+
+.amis-scope .antd-Switch.is-checked.is-disabled .text {
+  color: #fff;
+}
+
 .amis-scope .antd-Switch input {
   position: absolute;
   opacity: 0;
 }
 
-.amis-scope .antd-Switch input:disabled + i:before,
-.amis-scope .antd-Switch input:disabled:checked + i:before {
-  color: #fff;
-  background: #ccc;
-  cursor: not-allowed;
-}
-
-.amis-scope .antd-Switch input:disabled + i:after,
-.amis-scope .antd-Switch input:disabled:checked + i:after {
-  background: #fff;
-  color: #fff;
-}
-
-.amis-scope .antd-Switch input:checked + i:before {
-  left: 100%;
-  border-width: 0;
-}
-
-.amis-scope .antd-Switch input:checked + i:after {
-  margin-left: calc(3.125rem - 1.375rem);
-  content: "开";
-  color: #fff;
-  text-indent: -1.125rem;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1.375rem;
-}
-
 .amis-scope .antd-Switch-option {
   vertical-align: middle;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
 }
 
 .amis-scope .antd-Switch-option:first-child {
   margin-left: 0;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-Switch-option:empty {
@@ -19685,7 +19866,7 @@
 }
 
 .amis-scope .antd-SwitchControl {
-  padding-top: calc((2.125rem - 1.375rem) / 2);
+  padding-top: calc((1.875rem - 1.375rem) / 2);
 }
 
 .amis-scope .antd-SwitchControl.is-inline {
@@ -19695,9 +19876,9 @@
 .amis-scope .antd-Number {
   margin: 0;
   padding: 0;
-  line-height: 2.125rem;
-  font-size: 14px;
-  height: 2.125rem;
+  line-height: 1.875rem;
+  font-size: 0.875rem;
+  height: 1.875rem;
   display: inline-block;
   vertical-align: middle;
   background: #fff;
@@ -19762,7 +19943,7 @@
   vertical-align: top;
   outline: 0;
   -moz-appearance: textfield;
-  line-height: calc(2.125rem - 0.0625rem * 2);
+  line-height: calc(1.875rem - 0.0625rem * 2);
   height: 100%;
   transition: all 0.2s ease;
   border: 0;
@@ -19774,7 +19955,7 @@
   background: #fff;
   color: rgba(0, 0, 0, 0.85);
   font-family: inherit;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-Number-handler:hover {
@@ -19806,8 +19987,8 @@
 }
 
 .amis-scope .antd-Number-handler {
-  line-height: calc((2.125rem - 0.375rem) / 2);
-  height: calc( (2.125rem - 0.0625rem * 2) / 2 );
+  line-height: calc((1.875rem - 0.375rem) / 2);
+  height: calc( (1.875rem - 0.0625rem * 2) / 2 );
 }
 
 .amis-scope .antd-Number-handler-up {
@@ -19847,12 +20028,12 @@
   text-align: left;
   outline: none;
   position: relative;
-  font-size: 14px;
+  font-size: 0.875rem;
   border: 0.0625rem solid #d9d9d9;
   background: #fff;
   border-radius: 0;
-  min-height: 2.125rem;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px - 0.0625rem * 2 ) / 2 ) 0 calc( ( 2.125rem - 1.4285714286 * 14px - 0.0625rem * 2 ) / 2 ) 0.75rem;
+  min-height: 1.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.0625rem * 2 ) / 2 ) 0 calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.0625rem * 2 ) / 2 ) 0.75rem;
   cursor: pointer;
   color: #000;
 }
@@ -19892,7 +20073,8 @@
 }
 
 .amis-scope .antd-Select-value {
-  line-height: calc( 1.4285714286 * 14px);
+  line-height: calc( 1.4285714286 * 0.875rem);
+  white-space: nowrap;
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -19900,17 +20082,17 @@
 
 .amis-scope .antd-Select--multi {
   height: auto;
-  min-height: 2.125rem;
+  min-height: 1.875rem;
 }
 
 .amis-scope .antd-Select--multi .antd-Select-valueWrap {
-  margin-bottom: calc(0.3125rem * -1);
+  margin-bottom: calc(0.25rem * -1);
 }
 
 .amis-scope .antd-Select--multi .antd-Select-valueWrap > input {
   display: inline-block;
   width: 6.25rem;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .antd-Select--multi .antd-Select-values + .antd-Select-input {
@@ -19919,8 +20101,9 @@
 
 .amis-scope .antd-Select--multi .antd-Select-value {
   position: static;
+  white-space: normal;
   user-select: none;
-  line-height: calc( 1.4285714286 * 14px - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   display: inline-block;
   vertical-align: middle;
   font-size: 0.75rem;
@@ -19928,12 +20111,12 @@
   background: #e4f2ff;
   border: 0.0625rem solid #b1daff;
   border-radius: 0.125rem;
-  margin-right: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .antd-Select--multi .antd-Select-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .antd-Select-valueIcon {
@@ -19954,8 +20137,8 @@
 }
 
 .amis-scope .antd-Select-arrow {
-  margin-right: 0.3125rem;
-  width: 1.25rem;
+  margin-right: 0.25rem;
+  width: 1rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -19999,7 +20182,7 @@
   width: 0.875rem;
   min-width: 0.875rem;
   height: 0.875rem;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Select-input > input {
@@ -20014,7 +20197,7 @@
 .amis-scope .antd-Select-option {
   cursor: pointer;
   min-width: 7.5rem;
-  padding: calc( ( 1.5rem - 1.4285714286 * 14px ) / 2 ) 0.75rem;
+  padding: calc( ( 1.5rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .antd-Select-option.is-active {
@@ -20042,7 +20225,7 @@
 
 .amis-scope .antd-Select-option > a {
   float: right;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: none;
 }
 
@@ -20055,7 +20238,7 @@
   line-height: 1.4285714286;
   font-size: 0.75rem;
   user-select: none;
-  padding: calc( ( 1.5rem - 1.4285714286 * 14px ) / 2 ) 0.75rem;
+  padding: calc( ( 1.5rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .antd-Select-option-hl {
@@ -20065,7 +20248,7 @@
 .amis-scope .antd-Select-addBtn {
   display: block;
   cursor: pointer;
-  padding: calc( ( 1.5rem - 1.4285714286 * 14px ) / 2 ) 0.75rem;
+  padding: calc( ( 1.5rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .antd-Select-addBtn:hover {
@@ -20075,7 +20258,7 @@
 .amis-scope .antd-Select-addBtn > svg {
   width: 0.875rem;
   height: 0.875rem;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-Select.is-focused,
@@ -20085,7 +20268,7 @@
 }
 
 .amis-scope .antd-Select-spinner {
-  line-height: calc( 1.4285714286 * 14px);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-Select-clear {
@@ -20161,22 +20344,22 @@
 }
 
 .amis-scope .antd-Selections-title {
-  height: 2.125rem;
+  height: 1.875rem;
   background: #fafafa;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
 }
 
 .amis-scope .antd-Selections-placeholder {
   color: #999;
   text-align: center;
   width: 100%;
-  flex-basis: 2.125rem;
+  flex-basis: 1.875rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-Selections-items {
@@ -20186,10 +20369,10 @@
 .amis-scope .antd-Selections-item {
   display: flex;
   flex-direction: row;
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
 }
 
 .amis-scope .antd-Selections-item > label {
@@ -20200,7 +20383,7 @@
 .amis-scope .antd-Selections-item > .antd-Selections-dragbar {
   width: 1.25rem;
   position: relative;
-  left: -0.3125rem;
+  left: calc(0.25rem * -1);
   color: inherit;
   cursor: move;
 }
@@ -20235,7 +20418,7 @@
 .amis-scope .antd-ListControl-item {
   position: relative;
   user-select: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   display: inline-block;
   vertical-align: middle;
   margin: calc(0.625rem / 2);
@@ -20298,12 +20481,12 @@
   content: "";
   position: absolute;
   width: 0.625rem;
-  height: 0.3125rem;
+  height: 0.25rem;
   border-color: #1890ff;
   border-style: solid;
   border-width: 0 0 0.125rem 0.125rem;
   right: 0.0625rem;
-  bottom: 0.3125rem;
+  bottom: 0.25rem;
   transform: rotate(-40deg);
 }
 
@@ -20349,13 +20532,13 @@
   display: inline-flex;
   flex-wrap: nowrap;
   border: 0.0625rem solid #d9d9d9;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
-  height: 2.125rem;
+  height: 1.875rem;
   outline: none;
   white-space: nowrap;
   color: rgba(0, 0, 0, 0.85);
@@ -20393,13 +20576,13 @@
 .amis-scope .antd-LocationPicker-placeholder {
   color: #999;
   user-select: none;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .amis-scope .antd-LocationPicker-value {
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
@@ -20422,7 +20605,7 @@
   justify-content: center;
   margin-left: auto;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-LocationPicker-clear svg {
@@ -20477,7 +20660,7 @@
 }
 
 .amis-scope .antd-MapPicker-itemTitle {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-MapPicker-itemDesc {
@@ -20486,7 +20669,7 @@
 
 .amis-scope .antd-MapPicker-sugItem {
   cursor: pointer;
-  padding: calc( ( 1.5rem - 1.4285714286 * 14px ) / 2 ) 0.75rem;
+  padding: calc( ( 1.5rem - 1.4285714286 * 0.875rem ) / 2 ) 0.75rem;
 }
 
 .amis-scope .antd-MapPicker-sugItem:hover {
@@ -20508,11 +20691,11 @@
   flex-wrap: nowrap;
   white-space: nowrap;
   border: 0.0625rem solid #d9d9d9;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
   background: #fff;
   color: rgba(0, 0, 0, 0.85);
@@ -20536,7 +20719,7 @@
   flex-grow: 1;
   padding: 0;
   margin: 0;
-  height: calc(14px * 1.4285714286);
+  height: calc(0.875rem * 1.4285714286);
 }
 
 .amis-scope .antd-ColorPicker-input::placeholder {
@@ -20565,7 +20748,7 @@
 .amis-scope .antd-ColorPicker-preview {
   display: flex;
   align-items: center;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 
@@ -20613,13 +20796,13 @@
   display: inline-flex;
   flex-wrap: nowrap;
   border: 0.0625rem solid #d9d9d9;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
-  height: 2.125rem;
+  height: 1.875rem;
   outline: none;
   white-space: nowrap;
   color: rgba(0, 0, 0, 0.85);
@@ -20656,14 +20839,14 @@
 .amis-scope .antd-DatePicker-placeholder {
   color: #999;
   user-select: none;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   min-width: 3.125rem;
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .amis-scope .antd-DatePicker-value {
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
@@ -20686,7 +20869,7 @@
   justify-content: center;
   margin-left: auto;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-DatePicker-clear svg {
@@ -20707,7 +20890,7 @@
 .amis-scope .antd-DatePicker-shortcuts {
   margin: 0;
   background: transparent;
-  padding: calc( ( 1.875rem - 14px * 1.57 ) / 2 ) 0.625rem;
+  padding: calc( ( 1.875rem - 0.875rem * 1.57 ) / 2 ) 0.5rem;
   list-style: none;
   width: 15.625rem;
 }
@@ -20718,11 +20901,11 @@
 
 .amis-scope .antd-DatePicker-shortcut {
   display: inline-block;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-DatePicker-shortcut a {
-  font-size: 14px;
+  font-size: 0.875rem;
   cursor: pointer;
   color: #1890ff;
   text-decoration: none;
@@ -20744,13 +20927,13 @@
 
 .amis-scope .rdt {
   user-select: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgba(0, 0, 0, 0.85);
 }
 
 .amis-scope .rdt .rdtPicker {
   margin-top: 0;
-  padding: 0.625rem;
+  padding: 0.5rem;
   background: transparent;
   border: none;
 }
@@ -20813,7 +20996,7 @@
 }
 
 .amis-scope .rdt tfoot td {
-  padding-top: 0.3125rem;
+  padding-top: 0.25rem;
   text-align: left;
 }
 
@@ -20824,14 +21007,14 @@
 }
 
 .amis-scope .rdt tfoot td .rdtActions {
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
   text-align: right;
 }
 
 .amis-scope .antd-CalendarInput {
   outline: none;
   width: 40px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #1890ff;
   border: 1px solid #eceff8;
   border-radius: 2px;
@@ -20840,7 +21023,7 @@
   padding: calc(
     (
         1.875rem - 1.57 *
-          14px
+          0.875rem
       ) / 2
   ) 0.625rem;
   box-shadow: none;
@@ -20885,7 +21068,7 @@
 }
 
 .amis-scope .antd-CalendarCounter-sep {
-  width: 15px;
+  width: 1rem;
   text-align: center;
 }
 
@@ -20964,7 +21147,7 @@
 }
 
 .amis-scope .rdtBtn + .rdtBtn {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .rdtBtnCancel {
@@ -21010,7 +21193,7 @@
 .amis-scope .rdtPrev,
 .amis-scope .rdtNext {
   cursor: pointer !important;
-  width: 1.25rem;
+  width: 1rem;
   padding: 0;
   color: #999;
   font-size: 1.25rem;
@@ -21051,7 +21234,7 @@
 }
 
 .amis-scope .rdtHeader .rdtSwitch + .rdtSwitch {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope td.rdtMonth,
@@ -21124,13 +21307,13 @@
   display: inline-flex;
   flex-wrap: nowrap;
   border: 0.0625rem solid #d9d9d9;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2 - 0.0625rem) 0.75rem;
-  height: 2.125rem;
+  height: 1.875rem;
   outline: none;
   border-radius: 2px;
   color: rgba(0, 0, 0, 0.85);
@@ -21166,13 +21349,13 @@
 .amis-scope .antd-DateRangePicker-placeholder {
   color: #999;
   user-select: none;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
 
 .amis-scope .antd-DateRangePicker-value {
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   flex-basis: 0;
   flex-grow: 1;
 }
@@ -21195,7 +21378,7 @@
   margin-left: auto;
   display: inline-block;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-DateRangePicker-clear svg {
@@ -21211,7 +21394,7 @@
 
 .amis-scope .antd-DateRangePicker-wrap {
   width: auto;
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .antd-DateRangePicker-start,
@@ -21232,14 +21415,14 @@
 }
 
 .amis-scope .antd-DateRangePicker-rangers {
-  margin: 0 0 0.625rem;
+  margin: 0 0 0.5rem;
   padding: 0;
   list-style: none;
 }
 
 .amis-scope .antd-DateRangePicker-ranger {
   display: inline-block;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-DateRangePicker-ranger a {
@@ -21248,7 +21431,7 @@
 
 .amis-scope .antd-DateRangePicker-actions {
   text-align: right;
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
 }
 
 .amis-scope .antd-DateRangeControl:not(.is-inline) > .antd-DateRangePicker {
@@ -21271,7 +21454,7 @@
 
   .amis-scope .antd-DateRangePicker-end {
     margin-top: 0;
-    margin-left: 0.625rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -21292,14 +21475,14 @@
 
 .amis-scope .antd-ImageControl-addBtn {
   margin: 0;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 5rem;
+  height: 5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 0.0625rem solid #eceff8;
   cursor: pointer;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
   color: rgba(0, 0, 0, 0.85);
   background: #fff;
   border-color: #d9d9d9;
@@ -21332,8 +21515,8 @@
 }
 
 .amis-scope .antd-ImageControl-addBtn > svg {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 2.5rem;
+  height: 2.5rem;
   top: 0;
 }
 
@@ -21361,7 +21544,7 @@
   left: 100%;
   color: #fff;
   padding: 0.125rem 0.625rem;
-  margin: 30px 0 0 0.625rem;
+  margin: 30px 0 0 0.5rem;
 }
 
 .amis-scope .antd-ImageControl-dropzone:focus .antd-ImageControl-addBtn {
@@ -21373,10 +21556,10 @@
 .amis-scope .antd-ImageControl-item {
   border: 0.0625rem solid #eceff8;
   vertical-align: top;
-  padding: 0.3125rem;
+  padding: 0.25rem;
   display: inline-block;
-  margin-right: 0.9375rem;
-  margin-bottom: 0.9375rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
   position: relative;
   width: 7.5rem;
 }
@@ -21395,8 +21578,9 @@
   width: 6.75rem;
   height: 6.75rem;
   display: none;
-  top: 0.3125rem;
-  left: 0.3125rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -21548,6 +21732,17 @@
   text-align: center;
 }
 
+.amis-scope .antd-ImageControl-fixed-size {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.amis-scope .antd-ImageControl-fixed-size .antd-ImageControl-itemOverlay {
+  width: 100%;
+  height: 100%;
+}
+
 .amis-scope .antd-FileControl-dropzone {
   outline: none;
 }
@@ -21603,7 +21798,7 @@
   margin-left: 10px;
   width: 1rem;
   height: 1rem;
-  top: 0.3125rem;
+  top: 0.25rem;
 }
 
 .amis-scope .antd-FileControl-itemInfoText {
@@ -21991,7 +22186,7 @@
 
 .amis-scope .antd-InputRange-label--mid {
   left: 50%;
-  bottom: -0.3125rem;
+  bottom: calc(0.25rem * -1);
 }
 
 .amis-scope .antd-InputRange-label--max {
@@ -22124,7 +22319,7 @@
   top: 2px;
   width: 1rem;
   height: 1rem;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Tree-rootItem {
@@ -22152,13 +22347,13 @@
   vertical-align: top;
   height: 1.875rem;
   line-height: 1.875rem;
-  padding-right: 0.3125rem;
+  padding-right: 0.25rem;
 }
 
 .amis-scope .antd-Tree-item-icons > a {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 
@@ -22178,7 +22373,7 @@
 .amis-scope .antd-Tree-itemInput > a {
   display: inline-block;
   cursor: pointer;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   color: inherit;
 }
 
@@ -22195,8 +22390,8 @@
   border: 0.0625rem solid #d9d9d9;
   border-radius: 2px;
   line-height: 1.4285714286;
-  padding: calc( ( calc(2.125rem * 0.85) - 1.4285714286 * 14px - 0.125rem ) / 2 ) 0.75rem;
-  font-size: 14px;
+  padding: calc( ( calc(1.875rem * 0.85) - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0.75rem;
+  font-size: 0.875rem;
 }
 
 .amis-scope .antd-Tree-itemInput > input::placeholder {
@@ -22230,14 +22425,14 @@
   width: 0.875rem;
   height: 0.875rem;
   top: 0.109375rem;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Tree-itemArrow {
   cursor: pointer;
   width: 0.625rem;
   display: inline-flex;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Tree-itemArrow > svg {
@@ -22255,12 +22450,12 @@
 
 .amis-scope .antd-Tree-itemArrowPlaceholder {
   display: inline-block;
-  width: calc(0.625rem + 0.3125rem);
+  width: calc(0.625rem + 0.25rem);
 }
 
 .amis-scope .antd-Tree-itemIcon {
   display: inline-flex;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Tree-rootIcon > svg,
@@ -22302,44 +22497,44 @@
 
 .amis-scope .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel,
 .amis-scope .antd-Tree-item .antd-Tree-item > .antd-Tree-placeholder {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel,
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-placeholder {
-  padding-left: calc(1.25rem * 2);
+  padding-left: calc(1rem * 2);
 }
 
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 3);
+  padding-left: calc(1rem * 3);
 }
 
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 4);
+  padding-left: calc(1rem * 4);
 }
 
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 5);
+  padding-left: calc(1rem * 5);
 }
 
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 6);
+  padding-left: calc(1rem * 6);
 }
 
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 7);
+  padding-left: calc(1rem * 7);
 }
 
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 8);
+  padding-left: calc(1rem * 8);
 }
 
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 9);
+  padding-left: calc(1rem * 9);
 }
 
 .amis-scope .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item .antd-Tree-item > .antd-Tree-itemLabel {
-  padding-left: calc(1.25rem * 10);
+  padding-left: calc(1rem * 10);
 }
 
 .amis-scope .antd-TreeSelectControl {
@@ -22369,11 +22564,11 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -22386,7 +22581,7 @@
   border: none;
   color: rgba(0, 0, 0, 0.85);
   width: 100%;
-  height: calc(1.4285714286 * 14px);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-TreeSelect-input input::placeholder {
@@ -22423,7 +22618,7 @@
 }
 
 .amis-scope .antd-TreeSelect-spinner {
-  line-height: calc( 1.4285714286 * 14px);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-TreeSelect-clear {
@@ -22471,7 +22666,7 @@
 .amis-scope .antd-TreeSelect-popover > .antd-Tree {
   background: #fff;
   border: 0.0625rem solid #40a9ff;
-  padding: 0.3125rem 0.75rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 0;
   margin-top: -1px;
   max-height: 400px;
@@ -22482,17 +22677,17 @@
   color: #999;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
 }
 
 .amis-scope .antd-Combo-toolbarBtn {
   line-height: 1;
-  height: 1.25rem;
+  height: 1rem;
   color: inherit;
-  padding: 0.125rem 0.3125rem;
+  padding: 0.125rem 0.25rem;
   cursor: pointer;
 }
 
@@ -22501,7 +22696,7 @@
 }
 
 .amis-scope .antd-Combo-setNullBtn {
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
   display: inline-block;
 }
 
@@ -22541,7 +22736,7 @@
 }
 
 .amis-scope .antd-Combo-addBtn img.antd-Button-icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -22586,7 +22781,7 @@
 .amis-scope .antd-Combo-tab-delBtn {
   color: inherit;
   cursor: pointer;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   display: inline-block;
 }
 
@@ -22600,7 +22795,7 @@
 }
 
 .amis-scope .antd-Combo-items {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
 .amis-scope .antd-Combo-items:empty {
@@ -22608,7 +22803,7 @@
 }
 
 .amis-scope .antd-Combo-items:empty + .antd-Combo-toolbar {
-  padding-top: calc( (2.125rem - 1.625rem) / 2 );
+  padding-top: calc( (1.875rem - 1.625rem) / 2 );
 }
 
 .amis-scope .antd-Combo-item {
@@ -22638,7 +22833,7 @@
 }
 
 .amis-scope .antd-Combo--hor .antd-Combo-item + .antd-Combo-item {
-  margin-top: 0.3125rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .antd-Combo--hor .antd-Combo-itemInner {
@@ -22647,23 +22842,23 @@
 }
 
 .amis-scope .antd-Combo--hor .antd-Combo-itemTag {
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-Combo--hor .antd-Combo-itemTag label {
   color: #1890ff;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-Combo--hor .antd-Combo-delBtn {
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
   display: flex;
   white-space: nowrap;
   align-items: flex-start;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
 }
@@ -22680,8 +22875,8 @@
 .amis-scope .antd-Combo--hor .antd-Combo-itemDrager {
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   ) 0.375rem 0 0;
 }
@@ -22697,11 +22892,11 @@
 }
 
 .amis-scope .antd-Combo--ver:not(.antd-Combo--noBorder) > .antd-Combo-items {
-  margin: calc(0.3125rem * -2) calc(0.3125rem * -2) 0 calc(0.3125rem * -2);
+  margin: calc(0.25rem * -2) calc(0.25rem * -2) 0 calc(0.25rem * -2);
 }
 
 .amis-scope .antd-Combo--ver:not(.antd-Combo--noBorder) > .antd-Combo-items > .antd-Combo-placeholder {
-  margin: calc(0.3125rem * 2);
+  margin: calc(0.25rem * 2);
 }
 
 .amis-scope .antd-Combo--ver:not(.antd-Combo--noBorder) .antd-Combo-itemTag {
@@ -22710,7 +22905,7 @@
 
 .amis-scope .antd-Combo--ver:not(.antd-Combo--noBorder) .antd-Combo-itemTag label {
   color: #1890ff;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .amis-scope .antd-Combo--ver:not(.antd-Combo--noBorder) > .antd-Combo-item,
@@ -22721,14 +22916,14 @@
 }
 
 .amis-scope .antd-Combo--ver:not(.antd-Combo--noBorder) > .antd-Combo-items > .antd-Combo-item {
-  margin: calc(0.3125rem * 2);
+  margin: calc(0.25rem * 2);
 }
 
 .amis-scope .antd-Combo--ver:not(.antd-Combo--noBorder) > .antd-Combo-items > .antd-Combo-item > .antd-Combo-delBtn {
   position: absolute;
   opacity: 0;
-  top: 0.3125rem;
-  right: 0.3125rem;
+  top: 0.25rem;
+  right: 0.25rem;
 }
 
 .amis-scope .antd-Combo--ver:not(.antd-Combo--noBorder):not(.is-disabled) > .antd-Combo-item:hover,
@@ -22745,8 +22940,8 @@
   position: absolute;
   top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
   left: -1.875rem;
@@ -22793,13 +22988,13 @@
 }
 
 .amis-scope .antd-ComboTabs-addLink > a svg {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Combo-dragableTip {
   color: #999;
   font-size: 0.75rem;
-  margin-left: 0.3125rem;
+  margin-left: 0.25rem;
 }
 
 .amis-scope .antd-Combo-dragableTip:empty {
@@ -22824,22 +23019,22 @@
 
 .amis-scope .antd-SubForm-values {
   display: inline-block;
-  margin-top: calc(0.3125rem * -1);
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px - 0.125rem ) / 2 ) 0;
+  margin-top: calc(0.25rem * -1);
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem - 0.125rem ) / 2 ) 0;
 }
 
 .amis-scope .antd-SubForm-value {
   cursor: pointer;
   user-select: none;
-  line-height: calc( 1.4285714286 * 14px - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   display: inline-block;
   font-size: 0.75rem;
   color: #1890ff;
   background: #e4f2ff;
   border: 0.0625rem solid #b1daff;
   border-radius: 2px;
-  margin-right: 0.3125rem;
-  margin-top: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .amis-scope .antd-SubForm-value:hover {
@@ -22862,7 +23057,7 @@
 }
 
 .amis-scope .antd-SubForm-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .antd-SubForm-addBtn {
@@ -22896,7 +23091,7 @@
 }
 
 .amis-scope .antd-SubForm-addBtn img.antd-Button-icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -22930,11 +23125,11 @@
 }
 
 .amis-scope .antd-SubFormControl {
-  padding-top: calc(2.125rem - 1.875rem);
+  padding-top: calc(1.875rem - 1.875rem);
 }
 
 .amis-scope .antd-ChainedSelectControl .antd-Select {
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Picker {
@@ -22956,11 +23151,11 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -22973,7 +23168,7 @@
   border: none;
   color: rgba(0, 0, 0, 0.85);
   width: 100%;
-  height: calc(1.4285714286 * 14px);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-Picker-input input::placeholder {
@@ -23010,7 +23205,7 @@
 }
 
 .amis-scope .antd-Picker-spinner {
-  line-height: calc( 1.4285714286 * 14px);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-Picker-clear {
@@ -23062,7 +23257,7 @@
 }
 
 .amis-scope .antd-Picker-input {
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   height: auto;
 }
 
@@ -23081,7 +23276,7 @@
 }
 
 .amis-scope .antd-Picker .antd-Picker-valueWrap {
-  margin-bottom: calc(0.3125rem * -1);
+  margin-bottom: calc(0.25rem * -1);
   line-height: 1;
 }
 
@@ -23090,15 +23285,15 @@
   user-select: none;
   white-space: nowrap;
   vertical-align: middle;
-  line-height: calc( 1.4285714286 * 14px - 0.125rem );
+  line-height: calc( 1.4285714286 * 0.875rem - 0.125rem );
   display: inline-block;
   font-size: 0.75rem;
   color: #1890ff;
   background: #e4f2ff;
   border: 0.0625rem solid #b1daff;
   border-radius: 2px;
-  margin-right: 0.3125rem;
-  margin-bottom: 0.3125rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .amis-scope .antd-Picker .antd-Picker-valueIcon {
@@ -23112,7 +23307,7 @@
 }
 
 .amis-scope .antd-Picker .antd-Picker-valueLabel {
-  padding: 0 0.3125rem;
+  padding: 0 0.25rem;
 }
 
 .amis-scope .antd-Picker-btn {
@@ -23133,7 +23328,7 @@
   justify-content: center;
   margin-left: auto;
   line-height: 1;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Picker-clear svg {
@@ -23153,7 +23348,7 @@
 }
 
 .amis-scope .antd-QrCode {
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   padding: 0.4375rem 0;
 }
 
@@ -23200,8 +23395,8 @@
 }
 
 .amis-scope .antd-TagControl-sugItem {
-  margin-right: 0.625rem;
-  margin-bottom: 0.625rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   display: inline-block;
   font-size: 0.75rem;
   cursor: pointer;
@@ -23237,7 +23432,7 @@
 }
 
 .amis-scope .antd-TagControl-sugItem img.antd-Button-icon {
-  height: 14px;
+  height: 0.875rem;
   vertical-align: middle;
 }
 
@@ -23334,8 +23529,8 @@
   background: #f0f2f5;
   height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 1.875rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   flex-direction: row;
 }
 
@@ -23379,7 +23574,7 @@
 }
 
 .amis-scope .antd-Transfer-search {
-  padding: 0.625rem;
+  padding: 0.5rem;
 }
 
 .amis-scope .antd-Transfer-mid {
@@ -23479,10 +23674,10 @@
 }
 
 .amis-scope .antd-TabsTransfer-placeholder {
-  height: 2.125rem;
+  height: 1.875rem;
   line-height: 1.4285714286;
-  font-size: 14px;
-  padding: calc( ( 2.125rem - 1.4285714286 * 14px ) / 2 ) 0.625rem;
+  font-size: 0.875rem;
+  padding: calc( ( 1.875rem - 1.4285714286 * 0.875rem ) / 2 ) 0.5rem;
   color: #999;
 }
 
@@ -23531,9 +23726,9 @@
 
 .amis-scope .antd-NestedSelect-menu .antd-NestedSelect-option {
   position: relative;
-  padding-left: 0.9375rem;
-  min-height: 2.125rem;
-  line-height: 2.125rem;
+  padding-left: 1rem;
+  min-height: 1.875rem;
+  line-height: 1.875rem;
   cursor: pointer;
   display: flex;
 }
@@ -23583,11 +23778,11 @@
   line-height: 1.4285714286;
   padding: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   ) 0.75rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -23600,7 +23795,7 @@
   border: none;
   color: rgba(0, 0, 0, 0.85);
   width: 100%;
-  height: calc(1.4285714286 * 14px);
+  height: calc(1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-IconPickerControl-input input::placeholder {
@@ -23637,7 +23832,7 @@
 }
 
 .amis-scope .antd-IconPickerControl-spinner {
-  line-height: calc( 1.4285714286 * 14px);
+  line-height: calc( 1.4285714286 * 0.875rem);
 }
 
 .amis-scope .antd-IconPickerControl-clear {
@@ -23677,8 +23872,8 @@
   left: 0.75rem;
   top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   );
   margin-top: calc(2 * 0.0625rem);
@@ -23739,7 +23934,7 @@
 
 .amis-scope .antd-IconPickerControl-sugs {
   position: relative;
-  padding: 0.3125rem;
+  padding: 0.25rem;
   max-height: 21.875rem;
   overflow-y: auto;
 }
@@ -23764,22 +23959,22 @@
 
 .amis-scope .antd-IconPickerControl-value {
   user-select: none;
-  line-height: calc( 1.4285714286 * 14px);
+  line-height: calc( 1.4285714286 * 0.875rem);
   vertical-align: middle;
   display: inline-block;
 }
 
 .amis-scope .antd-IconPickerControl-value > i {
   display: inline-block;
-  margin-right: 0.3125rem;
+  margin-right: 0.25rem;
 }
 
 .amis-scope .antd-Form {
-  font-size: 14px;
+  font-size: 0.875rem;
   position: relative;
 }
 
-.amis-scope .antd-Form--quickEdit .antd-Form-item:last-child {
+.amis-scope .antd-Form--quickEdit > div:last-of-type {
   margin-bottom: 0;
 }
 
@@ -23787,24 +23982,24 @@
   display: inline-block;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   );
 }
 
 .amis-scope .antd-Form-static {
-  min-height: 2.125rem;
+  min-height: 1.875rem;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
   padding-bottom: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
   margin-bottom: 0;
@@ -23817,7 +24012,7 @@
 
 .amis-scope .antd-Form-label {
   font-weight: 400;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.25rem;
   position: relative;
 }
 
@@ -23834,7 +24029,7 @@
 .amis-scope .antd-Form-feedback {
   color: #ff4d4f;
   margin: 0.375rem 0 0;
-  padding-left: 0.9375rem;
+  padding-left: 0.75rem;
   font-size: 0.75rem;
 }
 
@@ -23847,18 +24042,18 @@
 
 .amis-scope .antd-Form-hint {
   display: inline-block;
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px - 0.125rem
+        1.875rem - 1.4285714286 *
+          0.875rem - 0.125rem
       ) / 2
   );
   vertical-align: top;
 }
 
 .amis-scope .antd-Form-item {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 
 .amis-scope .antd-Grid-form > .antd-Form-item:last-child {
@@ -23873,16 +24068,16 @@
 .amis-scope .antd-Form-item .antd-Form-remark {
   padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
   vertical-align: top;
 }
 
 .amis-scope .antd-Form-item--inline {
-  margin-bottom: calc(0.9375rem / 2);
-  margin-right: calc(0.9375rem / 2);
+  margin-bottom: calc(0.75rem / 2);
+  margin-right: calc(0.75rem / 2);
 }
 
 .amis-scope .antd-Form-item--horizontal > .antd-Form-label {
@@ -23910,8 +24105,8 @@
 
 .amis-scope .antd-Form-caption {
   display: inline-block;
-  line-height: 2.125rem;
-  height: 2.125rem;
+  line-height: 1.875rem;
+  height: 1.875rem;
   margin-left: 0.625rem;
 }
 
@@ -23980,13 +24175,13 @@
   .amis-scope .antd-Form-item--horizontal {
     display: flex;
     flex-wrap: nowrap;
-    margin-left: calc(1.25rem / 2 * -1);
-    margin-right: calc(1.25rem / 2 * -1);
+    margin-left: calc(1rem / 2 * -1);
+    margin-right: calc(1rem / 2 * -1);
   }
 
   .amis-scope .antd-Form-item--horizontal > * {
-    padding-left: calc(1.25rem / 2);
-    padding-right: calc(1.25rem / 2);
+    padding-left: calc(1rem / 2);
+    padding-right: calc(1rem / 2);
   }
 
   .amis-scope .antd-Form-item--horizontal > .antd-Form-label,
@@ -24010,8 +24205,8 @@
   .amis-scope .antd-Form-item--horizontal > .antd-Form-label {
     padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
     margin-bottom: 0;
@@ -24140,23 +24335,23 @@
 
   .amis-scope .antd-Form-item--inline .antd-TextControl.antd-Form-control--sizeMd {
     min-width: auto;
-    width: var(--Form-control-sizeMd);
+    width: 15rem;
   }
 
   .amis-scope .antd-Form-item--inline .antd-TextControl.antd-Form-control--sizeLg {
     min-width: auto;
-    width: var(--Form-control-sizeLg);
+    width: 20rem;
   }
 
   .amis-scope .antd-Form-item--inline > .antd-Form-label {
     padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
     margin-bottom: 0;
-    margin-right: calc(0.9375rem / 2);
+    margin-right: calc(0.75rem / 2);
   }
 
   .amis-scope .antd-Form-item--inline > .antd-Form-label .antd-Form-star {
@@ -24210,8 +24405,8 @@
     vertical-align: top;
     padding-top: calc(
     (
-        2.125rem - 1.4285714286 *
-          14px
+        1.875rem - 1.4285714286 *
+          0.875rem
       ) / 2
   );
     padding-right: 0.625rem;
@@ -24225,6 +24420,60 @@
 
 .amis-scope .antd-Form--quickEdit {
   min-width: 10rem;
+}
+
+.amis-scope .antd-AnchorNav {
+  display: flex;
+  height: 25rem;
+}
+
+.amis-scope .antd-AnchorNav-link-wrap {
+  margin: 0;
+  padding: 0;
+  width: 8.75rem;
+  border-right: 0.0625rem solid #d3dae0;
+  padding-bottom: 3.75rem;
+}
+
+.amis-scope .antd-AnchorNav-link-wrap > .antd-AnchorNav-link {
+  position: relative;
+  display: block;
+}
+
+.amis-scope .antd-AnchorNav-link-wrap > .antd-AnchorNav-link > a {
+  display: block;
+  border: 0.0625rem solid transparent;
+  border-width: 0 0.125rem 0 0;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+  text-align: right;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+.amis-scope .antd-AnchorNav-link-wrap > .antd-AnchorNav-link > a:hover {
+  color: #1890ff;
+}
+
+.amis-scope .antd-AnchorNav-link-wrap > .antd-AnchorNav-link.is-active > a,
+.amis-scope .antd-AnchorNav-link-wrap > .antd-AnchorNav-link.is-active > a:hover {
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+.amis-scope .antd-AnchorNav-section-wrap {
+  border: none;
+  flex-grow: 1;
+  overflow: auto;
+  background: #fff;
+}
+
+.amis-scope .antd-AnchorNav-section-wrap > .antd-AnchorNav-section {
+  display: block;
+  padding: 0.75rem;
 }
 
 /*
@@ -25082,19 +25331,19 @@
 }
 
 .amis-scope .text-xl {
-  font-size: 1.5rem !important;
-}
-
-.amis-scope .text-lg {
   font-size: 1.25rem !important;
 }
 
-.amis-scope .text-md {
+.amis-scope .text-lg {
   font-size: 1rem !important;
 }
 
+.amis-scope .text-md {
+  font-size: 0.875rem !important;
+}
+
 .amis-scope .text-base {
-  font-size: 14px !important;
+  font-size: 0.875rem !important;
 }
 
 .amis-scope .text-sm {
@@ -26346,6 +26595,10 @@
   white-space: normal;
   word-break: break-all;
   word-wrap: break-word;
+}
+
+.amis-scope .white-space-pre {
+  white-space: pre;
 }
 
 .amis-scope .label {
