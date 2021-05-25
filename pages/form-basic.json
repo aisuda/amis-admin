@@ -8,7 +8,7 @@
       "mode": "horizontal",
       "title": "常规表单示例",
       "affixFooter": true,
-      "api": "/api/form/save",
+      "api": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/form/save",
       "actions": [
         {
           "label": "保存",

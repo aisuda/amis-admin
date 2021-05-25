@@ -16,7 +16,7 @@
     {
       "type": "crud",
       "name": "sample",
-      "api": "/api/sample",
+      "api": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/sample",
       "filter": {
         "title": "",
         "mode": "inline",
@@ -48,7 +48,7 @@
             "name": "sample-bulk-edit",
             "body": {
               "type": "form",
-              "api": "/api/sample/bulkUpdate2",
+              "api": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/sample/bulkUpdate2",
               "controls": [
                 {
                   "type": "text",
@@ -64,7 +64,7 @@
           "type": "button",
           "level": "danger",
           "actionType": "ajax",
-          "api": "delete:/api/sample/$ids",
+          "api": "delete:https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/sample/$ids",
           "confirmText": "确定要批量删除?"
         }
       ],
@@ -126,7 +126,7 @@
                   "level": "danger",
                   "actionType": "ajax",
                   "confirmText": "您确认要删除?",
-                  "api": "delete:/api/sample/$id"
+                  "api": "delete:https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/sample/$id"
                 }
               ]
             }

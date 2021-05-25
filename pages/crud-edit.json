@@ -13,8 +13,8 @@
   "body": [
     {
       "type": "form",
-      "initApi": "/api/sample/${params.id}",
-      "api": "/api/sample/$id",
+      "initApi": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/sample/${params.id}",
+      "api": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/sample/$id",
       "redirect": "/crud/list",
       "controls": [
         {

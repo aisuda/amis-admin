@@ -13,7 +13,7 @@
   "body": [
     {
       "type": "form",
-      "initApi": "/api/sample/${params.id}",
+      "initApi": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/sample/${params.id}",
       "controls": [
         {
           "type": "static",
