@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/amis@beta/sdk/helper.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/amis@beta/sdk/sdk.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/amis@1.1.8-beta.3/sdk/sdk.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/history/umd/history.js"></script>
     <style>
@@ -39,8 +39,10 @@
       (function () {
         let amis = amisRequire('amis/embed');
         const match = amisRequire('path-to-regexp').match;
-        const history = History.createBrowserHistory();
-        // const history = History.createHashHistory();
+
+        // 如果想用 browserHistory 请切换下这处代码, 其他不用变
+        // const history = History.createBrowserHistory();
+        const history = History.createHashHistory();
 
         const app = {
           type: 'app',
@@ -118,14 +120,16 @@
           return decodeURI(pathname) === link;
         }
 
-        let amisScoped = amis.embed(
+        let amisInstance = amis.embed(
           '#root',
           app,
-          {},
           {
-            watchRouteChange: fn => {
-              return history.listen(fn);
-            },
+            location: history.location
+          },
+          {
+            // watchRouteChange: fn => {
+            //   return history.listen(fn);
+            // },
             updateLocation: (location, replace) => {
               location = normalizeLink(location);
               if (location === 'goBack') {
@@ -181,6 +185,12 @@
             theme: 'default'
           }
         );
+
+        history.listen(state => {
+          amisInstance.updateProps({
+            location: state.location
+          });
+        });
       })();
     </script>
   </body>
