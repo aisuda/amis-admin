@@ -51,6 +51,8 @@
           },
           {
             "label": "页面B",
+            "badge": 3,
+            "badgeClassName": "bg-info",
             "schema": {
               "type": "page",
               "title": "页面B",
