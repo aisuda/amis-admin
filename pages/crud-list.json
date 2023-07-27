@@ -16,7 +16,7 @@
     {
       "type": "crud",
       "name": "sample",
-      "api": "${API_HOST}/api/amis-mock/sample",
+      "api": "${API_HOST}/api/amis-mock/sample?page=${page}&perPage=${perPage}&keywords=${keywords}",
       "filter": {
         "title": "",
         "mode": "inline",
