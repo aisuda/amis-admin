@@ -6,7 +6,7 @@
     {
       "type": "wizard",
       "actionFinishLabel": "确认",
-      "api": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/saveWizard",
+      "api": "${API_HOST}/api/amis-mock/saveWizard",
       "steps": [
         {
           "title": "填写活动信息",

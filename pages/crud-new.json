@@ -16,7 +16,7 @@
       "type": "form",
       "redirect": "/crud/list",
       "name": "sample-edit-form",
-      "api": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/sample",
+      "api": "${API_HOST}/api/amis-mock/sample",
       "controls": [
         {
           "type": "text",
