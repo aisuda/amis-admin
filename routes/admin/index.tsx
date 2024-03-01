@@ -8,7 +8,7 @@ import {
 import { IMainStore } from '../../stores';
 import { inject, observer } from 'mobx-react';
 import UserInfo from '../../components/UserInfo';
-import { mapTree } from 'amis/lib/utils/helper';
+import { mapTree } from 'amis';
 import Dashboard from './Dashboard';
 import BasicForm from './form/Basic';
 import AdvancedForm from './form/Advanced';
@@ -146,19 +146,19 @@ export default class Admin extends React.Component<AdminProps> {
 
         return (
             <div>
-                <div className={`a-Layout-brandBar`}>
+                <div className={`cxd-Layout-brandBar`}>
                     <button
                         onClick={store.toggleOffScreen}
                         className="pull-right visible-xs"
                     >
                         <i className="glyphicon glyphicon-align-justify"></i>
                     </button>
-                    <div className={`a-Layout-brand`}>
+                    <div className={`cxd-Layout-brand`}>
                         <i className="fa fa-paw"></i>
                         <span className="hidden-folded m-l-sm">AMis Boilerplate</span>
                     </div>
                 </div>
-                <div className={`a-Layout-headerBar`}>
+                <div className={`cxd-Layout-headerBar justify-between shadow`}>
                     <div className="nav navbar-nav hidden-xs">
                         <Button
                             level="link"
@@ -240,6 +240,7 @@ export default class Admin extends React.Component<AdminProps> {
 
         return (
             <Layout
+                theme={store.theme}
                 aside={this.renderAside()}
                 header={this.renderHeader()}
                 folded={store.asideFolded}

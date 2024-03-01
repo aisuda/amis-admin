@@ -5,7 +5,7 @@ import {
 import { User } from "./User";
 export const MainStore = types
     .model('MainStore', {
-        theme: 'default',
+        theme: 'cxd',
         user: types.optional(User, {}),
         asideFixed: true,
         asideFolded: false,

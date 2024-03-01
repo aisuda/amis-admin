@@ -9,10 +9,26 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
-    <!--DEPENDENCIES_INJECT_PLACEHOLDER-->
-    <link rel="stylesheet" title="default" href="amis/lib/themes/default.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/v4-shims.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/amis/lib/helper.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/amis/lib/themes/cxd.css"
+    />
     <link rel="stylesheet" href="./scss/style.scss" />
     <style>
       .app-wrapper {
@@ -24,13 +40,13 @@
   </head>
   <body>
     <div id="root" class="app-wrapper"></div>
-    <script src="./mod.js"></script>
-    <script type="text/javascript">
-      /* @require ./index.tsx fis 用法，标记为同步依赖，将依赖用 <script> 打在 html 中加载 */
-      mod.require(["./index.tsx"], function (app) {
-        // var initialState = {};
-        app.bootstrap(document.getElementById("root") /*, initialState*/);
-      });
+    <script type="module">
+      import {bootstrap} from './index.tsx';
+
+      // window.enableAMISDebug = true;
+
+      const initialState = {};
+      bootstrap(document.getElementById('root'), initialState);
     </script>
   </body>
 </html>

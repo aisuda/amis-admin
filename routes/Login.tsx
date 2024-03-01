@@ -1,4 +1,3 @@
-import filter = require('lodash/filter');
 import * as React from 'react';
 import AMisRenderer from '../components/AMisRenderer';
 import { inject, observer } from 'mobx-react';
@@ -29,9 +28,10 @@ const schema = {
             children: (props:any) => (
                 <div className="list-group list-group-sm">
                     {props.renderFormItems({
-                        controls: [
+                        body: [
                             {
                                 name: 'username',
+                                asFormItem: true,
                                 children: (props:any) => (
                                     <div className="list-group-item">
                                         <input 
@@ -46,6 +46,7 @@ const schema = {
                             },
                             {
                                 name: 'password',
+                                asFormItem: true,
                                 children: (props:any) => (
                                     <div className="list-group-item">
                                         <input 
